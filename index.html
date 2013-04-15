@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="fwk_head">
+
+        <title>.:euHReka Workspace:.</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <script src="standard/web_frameworks/prototype.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/scriptaculous/src/effects.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/scriptaculous/src/builder.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/scriptaculous/src/dragdrop.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/scriptaculous/src/controls.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/xml2json/ObjTree.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/wz_jsgraphics.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/RSH/rsh.compressed.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/datejs/date.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/LABjs/LAB.js" type="text/javascript"></script>
+        <!-- origin layer -->
+        <script type="text/javascript" src="standard/origin.js"></script>
+        <script type="text/javascript" src="standard/global.js"></script>
+        <script type="text/javascript" src="standard/applications.js"></script>
+        <script type="text/javascript" src="standard/firstRequest.js"></script>
+        <script type="text/javascript" src="standard/historyManager.js"></script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> 
+    </head>
+    <body id="frameWork">
+        <div id="infoMessage" class="info_message"></div>
+        <div class="fwk_loadingInfo">
+            <div id="loadingDiv" class="fwk_start_loadingDiv fwk_start_loadingDiv"></div>
+            <div id="loadingBars" class="fwk_start_loadingBars fwk_start_loadingDiv"></div>
+        </div>
+		
+		<div class="scm_notifications" id="scm_notifications">
+		</div>
+		
+		
+        <div id="fwk_payroll_running" class="framework_payroll_running" style="display:none"></div>
+        <div class="fwk_wholeFrameWork">
+            <div class="fwk_general_top">
+                <div id="fwk_1"></div>
+                <div id="fwk_2"></div>
+                <div id="fwk_3">
+                    <div id="banner" class="fwk_start_banner"></div>
+                    <div id="applicationTakeRoleOf_main" class="applicationTakeRoleOf_main"></div>
+                </div>
+                <div id="fwk_4" class="application_Banner application_handCursor" ></div>
+                <div id="fwk_5">
+                    <div id="top" class="appNav_top"></div>
+                    <div id="fwk_5_bottom" class="fwk_5_bottom">
+                        <div class="application_main_icons_div">
+                            <!--<div id="fwk_print" class="application_main_print" onclick="window.print();"></div>
+                            <div id="help_button" class="application_main_help"></div> -->
+                            <button id="fwk_print" class="icon application_main_print"  style = 'display:none' onclick="window.print();" alt='Print' title='Print'></button>
+                            <button id="help_button" class="icon application_main_help" alt='Help' title='Help' style = 'float:right'></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fwk_6">
+                <div id="menus"></div>
+            </div>
+            <div id="fwk_7">
+                <!--</div>-->
+                <div id="content" class="fwk_content"></div>
+                <!--</div>-->
+            </div>
+            <div style="clear:both">&nbsp;</div>
+        </div>
+        <div class="loading_app" id="loading_app">&nbsp;</div>
+        <div id="loading_app_semitrans">&nbsp;</div>
+        <!-- SSW modules files -->
+
+        <script src="modules/simpleTable/simpleTable.js" type="text/javascript"></script>
+        <script src="modules/modules.js" type="text/javascript"></script>
+        <script src="modules/accordion/accordion.js" type="text/javascript"></script>
+        <script src="modules/autocompleter/autocompleter.js" type="text/javascript"></script>
+        <script src="modules/balloon/balloon.js" type="text/javascript"></script>
+        <script src="modules/contextMenu/contextMenu.js" type="text/javascript"></script>
+        <script src="modules/multiContextMenu/multiContextMenu.js" type="text/javascript"></script>
+        <script src="modules/boxGrid/boxGrid.js" type="text/javascript"></script>
+        <script src="modules/fieldDisplayer/fieldDisplayer2.js" type="text/javascript"></script>
+        <script src="modules/fieldDisplayer/fieldDisplayer.js" type="text/javascript"></script>
+        <script src="modules/datePicker/datePicker.js" type="text/javascript"></script>
+        <script src="modules/drawTree/drawTree.js" type="text/javascript"></script>
+        <script src="modules/hourField/hourFiled.js" type="text/javascript"></script>
+        <script src="modules/infoPopUp/infoPopUp.js" type="text/javascript"></script>
+        <script src="modules/multiselectSearchbox/multiselectSearchbox.js" type="text/javascript"></script>
+        <script src="modules/semitransparentBuilder/semitransparentBuilder.js" type="text/javascript"></script>
+        <script src="modules/Wizard/Wizard.js" type="text/javascript"></script>
+        <script src="modules/tablekit/tablekit.js" type="text/javascript"></script>
+        <script src="modules/tablekit/tablekitWithSearch.js" type="text/javascript"></script>
+        <script src="modules/tabs/tabs.js" type="text/javascript"></script>
+        <script src="modules/multiSelect/multiSelect.js" type="text/javascript"></script>
+        <script src="modules/treeHandler/treeHandler.js" type="text/javascript"></script>
+		<script src="modules/linedTree/linedTree.js" type="text/javascript"></script>
+		<script src="modules/dhtmlxgantt/dhtmlxgantt.js" type="text/javascript"></script>
+		<script src="modules/dhtmlxgantt/dhtmlxcommon.js" type="text/javascript"></script>
+		
+        <script src="modules/unmovableWidgets/unmovableWidgets.js" type="text/javascript"></script>
+        <script src="modules/groupedLayout/groupedLayout.js" type="text/javascript"></script>
+        <script src="modules/widgets/widgets.js" type="text/javascript"></script>
+        <script src="modules/editableDiv/editableDiv.js" type="text/javascript"></script>
+        <script src="modules/ckeditor/ckeditor.js" type="text/javascript"></script>
+        <script src="modules/buttonDisplayer/megaButtonDisplayer.js" type="text/javascript"></script>
+        <script src="modules/progressBar/progressBar.js" type="text/javascript"></script>
+        <script src="modules/listSearch/listSearch.js" type="text/javascript"></script>
+        <script src="modules/titledPanel/titledPanel.js" type="text/javascript"></script>
+        <script src="modules/timeScheduleVisualizer/TimeScheduleVisualizer.js" type="text/javascript"></script>
+        
+        <!-- Framework layer -->
+        <script src="standard/PFM/parentPFM.js" type="text/javascript"></script>
+        <script src="standard/menus/menus.js" type="text/javascript"></script>
+        <script src="standard/menus/mycompanies.js" type="text/javascript"></script>
+        <script src="standard/menus/mydetails.js" type="text/javascript"></script>
+        <script src="standard/menus/myselections.js" type="text/javascript"></script>
+        <script src="standard/GenericApplications/getContentDisplayer.js" type="text/javascript"></script>
+        <script src="standard/GenericCatalog/GenericCatalog.js" type="text/javascript"></script>
+        <script src="standard/fastEntry/fastEntryMenu.js" type="text/javascript"></script>
+        <script src="standard/GetWidgets/GetWidgets.js" type="text/javascript"></script>
+        <script src="standard/genericApplications/genericApp.js" type="text/javascript"></script>
+	    <script src="standard/fieldsPanel/getContentModule.js" type="text/javascript"></script>
+        <script src="standard/fieldsPanel/dynamicFieldsPanel.js" type="text/javascript"></script>
+        <script src="standard/takeRoleOf/takeRoleOf.js" type="text/javascript"></script>
+        <script src="standard/help/help.js" type="text/javascript"></script>
+        <script src="standard/appNavigation/appNavigation.js" type="text/javascript"></script>
+        <script src="standard/personalDataChange/pendingRequestContent.js" type="text/javascript"></script>
+		<!-- SCM files needed at startup -->
+		<script src="standard/SCM/hrw_request.js" type="text/javascript"></script>
+		<script src="standard/SCM/scm_userAction.js" type="text/javascript"></script>	
+        <script src="standard/SCM/scm_tickets.js" type="text/javascript"></script>	
+        <script src="standard/SCM/scm_menus.js" type="text/javascript"></script>	
+		<script src="standard/SCM/scm_ticketApp.js" type="text/javascript"></script>	
+		<script src="standard/SCM/scm_notifications.js" type="text/javascript"></script>
+		<script src="standard/SCM/scm_saverToTicket.js" type="text/javascript"></script>	
+		<script src="standard/SCM/scm_employeeSearch.js" type="text/javascript"></script>	
+	
+        <!-- Standard layer -->
+        <script src="standard/benefits/mybenefits.js" type="text/javascript"></script>
+        <!--script src="standard/parentCalendar/parentCalendar.js" type="text/javascript"></script>-->	
+		<!--<script src="standard/dm/uploadModule.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/analyticalInsight/analyticalInsight.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/personalDataChange/pendingRequestContent.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/appraisal/appraisal.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/benefits/benefits.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/candidates/candidates.js" type="text/javascript"></script>-->	
+		<script src="standard/dm/uploadModule.js" type="text/javascript"></script>
+        <script src="standard/dm/coverflow.js" type="text/javascript"></script>
+		<script src="standard/dm/sendDocument_transaction.js" type="text/javascript"></script>
+        <!--<script src="standard/dm/myDocuments.js" type="text/javascript"></script>
+		<script src="standard/dm/myDocuments_admin.js" type="text/javascript"></script>
+		<script src="standard/dm/sendDocumentHistory.js" type="text/javascript"></script>
+		<script src="standard/dm/sendDocumentHistory_admin.js" type="text/javascript"></script>
+		<script src="standard/dm/legalHoldList.js" type="text/javascript"></script>
+		<script src="standard/dm/uploadModule.js" type="text/javascript"></script>
+		
+		<script src="standard/dm/sendDocument.js" type="text/javascript"></script>
+		<script src="standard/dm/sendDocument_admin.js" type="text/javascript"></script>
+		<script src="standard/dm/expiredDocs.js" type="text/javascript"></script>	-->
+		<script src="standard/processMng/pm_menus.js" type="text/javascript"></script>
+		
+		<!--<script src="standard/myData/myData.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/myEvents/myEvents.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/myTickets/myTickets.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/payslip/payslip.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/quotas/quotas.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/rept/rept.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/SkillPort/skillPort.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/benefits/enrollement.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/benefits/benefitStatement.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/SCM/hrw_request.js" type="text/javascript"></script>-->	
+		<!--<script src="standard/SCM/scm_userAction.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/SCM/scm_tickets.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/SCM/scm_menus.js" type="text/javascript"></script>-->	
+		<!--<script src="standard/SCM/scm_ticketApp.js" type="text/javascript"></script>-->	
+		<!--<script src="standard/SCM/scm_notifications.js" type="text/javascript"></script>-->	
+		<!--<script src="standard/SCM/scm_saverToTicket.js" type="text/javascript"></script>-->	
+		<!--<script src="standard/SCM/scm_employeeSearch.js" type="text/javascript"></script>-->	
+		<!--<script src="standard/search/search.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/search/favorites_search.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/search/search_menus.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/search/saved_search.js" type="text/javascript"></script>-->	
+        <!--<script src="standard/BOFrame/BOFrame.js" type="text/javascript"></script>-->	
+        <script src="standard/compensation/reviewPeriods.js" type="text/javascript"></script>
+        <script src="standard/compensation/budgets.js" type="text/javascript"></script>
+        <script src="standard/compensation/orgStatus.js" type="text/javascript"></script>	
+        <script src="standard/compensation/CompOrgUnits.js" type="text/javascript"></script>
+        <!--<script src="standard/Onboarding/fastinit.js" type="text/javascript" ></script>-->	
+        <!--<script src="standard/Onboarding/tablesort.js" type="text/javascript" ></script>-->	
+
+        <!--<script src="standard/activitiesCalendar/activitiesCalendar.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/compCatl/compCatl.js" type="text/javascript"></script> -->
+<!--        <script src="standard/advancedSearch/advancedSearch.js" type="text/javascript"></script>-->
+        <!--<script src="standard/personalDataChange/PDChange.js" type="text/javascript"></script>-->
+        <!--<script src="standard/personalDataChange/personalDataChange.js" type="text/javascript"></script>
+        <script src="standard/personalDataChange/PersonalDetails.js" type="text/javascript"></script>-->
+        <!--<script src="standard/benefits/dependents.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/book/book.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/bookCurriculum/bookCurriculum.js" type="text/javascript"></script>-->
+        <!--script src="standard/calendar/calendar.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/catalog/catalogFollowUp.js" type="text/javascript"></script>
+        <script src="standard/catalog/catalogCourseGroup.js" type="text/javascript"></script>
+        <script src="standard/catalog/catalogCourseType.js" type="text/javascript"></script>
+        <script src="standard/catalog/catalogCurrDetails.js" type="text/javascript"></script>
+        <script src="standard/catalog/catalogCurrSessionDetails.js" type="text/javascript"></script>
+        <script src="standard/catalog/catalogCourseSessionDetails.js" type="text/javascript"></script> 
+        <script src="standard/catalog/catalogMaintView.js" type="text/javascript"></script>
+        <script src="standard/catalog/catalog.js" type="text/javascript"></script>  -->
+   <!-- <script src="standard/learning/newTraining.js" type="text/javascript"></script> -->
+   <!--<script src="standard/jobCatalogue/jobCatalogue.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/maintainJob.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/JobAddData.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/AddEvalRes.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/AddSurvRes.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/AddPlanComp.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/JobAddDataDisplay.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/createJob.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/maintainJobFam.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/maintainJobDisplay.js" type="text/javascript"></script>
+        <script src="standard/jobCatalogue/maintainJobFamDisplay.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/history/history.js" type="text/javascript"></script> -->
+      
+		
+		
+		
+        <!--<script src="standard/inbox/inbox.js" type="text/javascript"></script>-->
+        <!--<script src="standard/delegation/delegation.js" type="text/javascript"></script>-->
+        <!--<script src="standard/help/startPage.js" type="text/javascript"></script>-->
+        <!--<script src="standard/help/startPagesMenu.js" type="text/javascript"></script>-->
+        
+        <!--script src="standard/listCalendar/listCalendar.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/myDevelopment/myDevelopment.js" type="text/javascript"></script> -->
+   <!-- <script src="standard/PFM/PFM_BoxGrid.js" type="text/javascript"></script>
+        <script src="standard/PFM/PFM_Dashboard.js" type="text/javascript"></script>
+        <script src="standard/PFM/PFM_DevPlan.js" type="text/javascript"></script>
+        <script src="standard/PFM/PFM_JobProfileMatchUp.js" type="text/javascript"></script>
+        <script src="standard/PFM/PFM_IndividualDocs.js" type="text/javascript"></script>
+        <script src="standard/PFM/PFM_TeamOv.js" type="text/javascript"></script>
+        <script src="standard/PFM/PFM_ShowDocs.js" type="text/javascript"></script> -->
+   <!--<script src="standard/OM_CostCenter/OM_CostCenter.js" type="text/javascript"></script>
+        <script src="standard/OM_Display/OM_Display.js" type="text/javascript"></script>
+        <script src="standard/new OM_Display/displayTree.js" type="text/javascript"></script>
+        <script src="standard/OM_Maintain/OM_Maintain.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/maintainTree.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/massTrans.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/createOrgUnit.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/updateOrgUnit.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/createPosition.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/updatePosition.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/newAssign.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/assignHolder.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/assignHolderAddOcc.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/changeAssign.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/manageHolderAssign.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/displayOrgUnit.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/displayPosition.js" type="text/javascript"></script>
+        <script src="standard/new OM_Maintain/displayPerson.js" type="text/javascript"></script>
+        <script src="standard/OM_MassTrans/OM_MassTrans.js" type="text/javascript"></script>
+        <script src="standard/OM_DeleteDelimit/OM_DeleteDelimit.js" type="text/javascript"></script>
+        <script src="standard/OM_MaintainObject/OM_MaintObjCreate.js" type="text/javascript"></script>
+        <script src="standard/OM_MaintainObject/OM_MaintObjModify.js" type="text/javascript"></script>
+        <script src="standard/OM_MaintainObject/OM_MaintObjView.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/compCatl/compCatlAddComp.js" type="text/javascript"></script>
+        <script src="standard/compCatl/compCatAddGrp.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/OM_Assignments/OM_PosAssign.js" type="text/javascript"></script>
+        <script src="standard/OM_Assignments/OM_HolderAssign.js" type="text/javascript"></script>
+        <script src="standard/OM_Assignments/OM_ManageHolderAssign.js" type="text/javascript"></script>-->
+        <!--script src="standard/payslip/payslip.js" type="text/javascript"></script-->
+   <!-- <script src="standard/prebook/prebook.js" type="text/javascript"></script> -->
+        <!--script src="standard/quotas/quotas.js" type="text/javascript"></script-->
+        <!--<script src="standard/rept/rept.js" type="text/javascript"></script>-->
+   <!-- <script src="standard/reporting/reporting.js" type="text/javascript"></script>  -->
+   <!-- <script src="standard/teacher/teacher.js" type="text/javascript"></script> -->
+        <!--script src="standard/teamCalendar/teamCalendar.js" type="text/javascript"></script>-->
+        <!--script src="standard/timeEntryScreen/timeEntryScreen.js" type="text/javascript"></script-->
+        <!--script src="standard/fastEntry/fastEntryScreen.js" type="text/javascript"></script-->
+        <!--script src="standard/timeSheet/timeSheet.js" type="text/javascript"></script-->
+        
+        <!--<script src="standard/fieldsPanel/fieldsPanel.js" type="text/javascript"></script>-->
+       
+        <!--script src="standard/PCR/PCR_Overview.js" type="text/javascript"></script-->
+        <!--script src="standard/PCR/PCR_Steps.js" type="text/javascript"></script-->
+        
+        <!--<script src="standard/benefits/benefitsScreens.js" type="text/javascript"></script>-->
+        <!--<script src="standard/benefits/dependents.js" type="text/javascript"></script>-->
+         <!--Compensation module -->
+
+         <!--Onboarding module -->
+        <!--script src="standard/Onboarding/Onboarding.js" type="text/javascript"></script>
+        <script src="standard/Onboarding/CarPool.js" type="text/javascript"></script>
+        <script src="standard/Onboarding/CarPage.js" type="text/javascript"></script>
+        <script src="standard/Onboarding/Models.js" type="text/javascript"></script>
+        <script src="standard/Onboarding/PageModel.js" type="text/javascript"></script>
+        <script src="standard/Onboarding/Parameters.js" type="text/javascript"></script>
+        <script src="standard/Onboarding/TimeSchedule.js" type="text/javascript"></script>
+        <script src="standard/Onboarding/TimeSchedulePage.js" type="text/javascript"></script>
+        <script src="standard/Onboarding/WorkSchedule.js" type="text/javascript"></script-->
+        <!--link href="standard/Onboarding/style.css" rel="stylesheet" type="text/css" media="all"  /-->
+        <script src="standard/Onboarding/fastinit.js" type="text/javascript" ></script>	
+        <!--script src="standard/Onboarding/tablesort.js" type="text/javascript" ></script-->
+
+			
+    </body>
+</html>

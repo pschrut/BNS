@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+	<o_content>
+		<o_value_descriptions>
+      		<yglui_str_description id="0005" short="5 - Outstanding" text="Performance far exceeded expectations and was consistently sustained through
+exceptional results in all essential areas of responsibility and, either: (1)
+included the completion of a major goal or project, or (2) made an exceptional
+or unique contribution in support of major objectives. Employee demonstrates
+competencies in a superior way and is recognized by peers as a positive
+example."/>   
+      	<yglui_str_description id="0004" short="4 - Exceeds Requirements" text="Employee achieves and frequently exceeds the standards and expectations
+required for the job while demonstrating a high level of proficiency in the
+competencies required for the job. Annual goals were met."/>
+      <yglui_str_description id="0003" short="3 - Meets Requirements" text="Employee demonstrates performance at a level that consistently meets all
+expectations and sometimes exceeds the requirements of the job. Critical annual
+goals were met."/>
+      <yglui_str_description id="0002" short="2 - Needs Improvement" text="Meets only the minimum requirements and the employee is seen as capable of
+improvement and progression towards meeting performance expectations. This
+rating describes those whose performance could be improved through development,
+experience, and/or effort. A specific developmental plan must accompany this
+performance level."/>
+			<yglui_str_description id="0001" short="1 - Unsatisfactory" text="Performance was consistently below expectations in most essential areas of
+responsibility, and/or reasonable progress toward critical goals was not made.
+Significant improvement is needed in one or more important areas. A specific
+developmental plan must accompany this performance level and performance must
+improve in order to remain in position."/>
+		</o_value_descriptions>
+	</o_content>
+</EWS> 

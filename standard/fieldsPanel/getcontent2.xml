@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+    <o_date_ranges>
+        <yglui_str_dates screen="1">
+            <dates>
+                <yglui_str_date_fields date_value="2009-02-01" dateid="RETRO"></yglui_str_date_fields>
+                <yglui_str_date_fields date_value="2010-06-30" dateid="FUTURE"></yglui_str_date_fields>
+            </dates>
+        </yglui_str_dates>
+    </o_date_ranges>
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="1">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="2009-08-19" depend_field="" depend_type="" display_attrib="MAN" display_group="DANI_GROUP" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="H" label_type="V" length="000010" seqnr="02" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="DANI_GROUP" fieldformat="I" fieldid="BETRG" fieldlabel="Amount" fieldsource="" fieldtype="" label_type="V" length="000018" seqnr="04" service_pai="" service_values="" show_text="" type="CURR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="DANI_GROUP" fieldformat="I" fieldid="EXBEL" fieldlabel="Ext. document number" fieldsource="" fieldtype="" label_type="V" length="000008" seqnr="06" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="LGART" fieldlabel="Wage Type" fieldsource="" fieldtype="H" label_type="V" length="000004" seqnr="03" service_pai="" service_values="GET_SUBTYPES2" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="S" fieldid="WAERS" fieldlabel="Currency" fieldsource="" fieldtype="" label_type="V" length="000005" seqnr="05" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CUKY"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="S" fieldid="ZEINH" fieldlabel="Unit of time/meas." fieldsource="T" fieldtype="" label_type="V" length="000003" seqnr="08" service_pai="" service_values="GET_FIELD_VAL" show_text="" type="NUMC"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="ANZHL" fieldlabel="" fieldsource="T" fieldtype="" label_type="" length="000021" seqnr="09" service_pai="" service_values="GET_FIELD_VAL" show_text="" type="DEC"></yglui_str_wid_fs_field>
+             </fs_fields>
+        </yglui_str_wid_fs_record>
+        <yglui_str_wid_fs_record screen="2">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="2009-08-19" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="H" label_type="V" length="000010" seqnr="01" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="BETRG" fieldlabel="Amount" fieldsource="" fieldtype="" label_type="V" length="000018" seqnr="04" service_pai="" service_values="" show_text="" type="CURR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="EXBEL" fieldlabel="Ext. document number" fieldsource="" fieldtype="" label_type="V" length="000008" seqnr="06" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="LGART" fieldlabel="Wage Type" fieldsource="" fieldtype="H" label_type="V" length="000004" seqnr="03" service_pai="" service_values="GET_SUBTYPES2" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="S" fieldid="WAERS" fieldlabel="Currency" fieldsource="" fieldtype="" label_type="V" length="000005" seqnr="05" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CUKY"></yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>
+    </o_field_settings>
+    <o_field_values>
+        <yglui_str_wid_record rec_key="P_3000063320101O50000" screen="1">
+            <hrobject objid="30000633" otype="P" plvar=""></hrobject>
+            <contents>
+                <yglui_str_wid_content key_str="3000063320101O50   2009061820090618000" rec_index="1" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-06-18"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BETRG" fieldlabel="Amount" fieldtechname="BETRG" fieldtseqnr="000000" value="100"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="EXBEL" fieldlabel="Ext. document number" fieldtechname="EXBEL" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="LGART" fieldlabel="Wage Type" fieldtechname="LGART" fieldtseqnr="000000" value="1O50">Overtime 150%</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="WAERS" fieldlabel="Currency" fieldtechname="WAERS" fieldtseqnr="000000" value="EUR">European Euro</yglui_str_wid_field>
+                    </fields>
+                    <tcontents>
+                        <yglui_str_wid_tcontent seqnr="000001">
+                            <fields>
+                                <yglui_str_wid_field fieldid="ANZHL" fieldlabel="" fieldtechname="ANZHL" fieldtseqnr="000001" value="0.00"></yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="ZEINH" fieldlabel="Unit of time/meas." fieldtechname="ZEINH" fieldtseqnr="000001" value="eso es"></yglui_str_wid_field>
+                            </fields>
+                        </yglui_str_wid_tcontent>
+                        <yglui_str_wid_tcontent seqnr="000002">
+                            <fields>
+                                <yglui_str_wid_field fieldid="ANZHL" fieldlabel="" fieldtechname="ANZHL" fieldtseqnr="000002" value="0.45"></yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="ZEINH" fieldlabel="Unit of time/meas." fieldtechname="ZEINH" fieldtseqnr="000002" value="hola farola"></yglui_str_wid_field>
+                            </fields>
+                        </yglui_str_wid_tcontent>
+                    </tcontents>
+                    <buttons>
+                        <yglui_str_wid_button action="REC_PYCHANGEREMU" busid="" disma="" label_tag="Change" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+                        <yglui_str_wid_button action="REC_PYDELETEREMU" busid="" disma="" label_tag="Delete" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+        <yglui_str_wid_record rec_key="P_3000063320101O50001" screen="2">
+            <hrobject objid="30000633" otype="P" plvar=""></hrobject>
+            <contents>
+                <yglui_str_wid_content key_str="3000063320101O50   2009061820090618000" rec_index="1" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-06-18"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BETRG" fieldlabel="Amount" fieldtechname="BETRG" fieldtseqnr="000000" value="100"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="EXBEL" fieldlabel="Ext. document number" fieldtechname="EXBEL" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="LGART" fieldlabel="Wage Type" fieldtechname="LGART" fieldtseqnr="000000" value="1O50">Overtime 150%</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="WAERS" fieldlabel="Currency" fieldtechname="WAERS" fieldtseqnr="000000" value="EUR">European Euro</yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="REC_PYCHANGEREMU" busid="" disma="" label_tag="Change" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+                        <yglui_str_wid_button action="REC_PYDELETEREMU" busid="" disma="" label_tag="Delete" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+    <o_screen_buttons>
+        <yglui_str_wid_button action="SCR_PYADDREMU" busid="" disma="" label_tag="Add" okcode="INS" screen="1" status="" tarap="" tarty="" type="INS"></yglui_str_wid_button>
+    </o_screen_buttons>
+    <o_widget_screens screenmode="">
+        <yglui_str_wid_screen>
+            <yglui_str_wid_screen all_modifiable="" appid="REL_REMU" dyn_panel="" label_tag="remInfo" list_mode="" no_translation="X" screen="1" secondary="" selected="X" table_mode=""></yglui_str_wid_screen>
+            <yglui_str_wid_screen all_modifiable="" appid="REL_REMU" dyn_panel="" label_tag="remInfo" list_mode="" no_translation="X" screen="2" secondary="" selected="" table_mode=""></yglui_str_wid_screen>
+        </yglui_str_wid_screen>
+    </o_widget_screens>
+    <labels>
+        <item id="remInfo" service="" value="Remuneration"></item>
+    </labels>
+    <messages></messages>
+    <webmessage_type></webmessage_type>
+    <webmessage_text></webmessage_text>
+</EWS>

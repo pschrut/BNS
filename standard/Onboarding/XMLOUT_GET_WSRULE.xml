@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_areas>
+    <yglui_str_wid_area area="euHReka" subarea="Antwerp"/>
+    <yglui_str_wid_area area="euHReka" subarea="Gent"/>
+    <yglui_str_wid_area area="euHReka" subarea="Bergen"/>
+  </o_areas>
+  <o_eegrps>
+    <yglui_str_wid_eegrp group="Regular" subgroup="Employee"/>
+    <yglui_str_wid_eegrp group="Regular" subgroup="Student Hourly"/>
+  </o_eegrps>
+  <o_columns>
+    <yglui_str_wid_column columnid="WSRC" columnpos="1"/>
+    <yglui_str_wid_column columnid="DESC" columnpos="2"/>
+    <yglui_str_wid_column columnid="PWSC" columnpos="3"/>
+    <yglui_str_wid_column columnid="DESC" columnpos="4"/>
+    <yglui_str_wid_column columnid="RULE" columnpos="5"/>
+    <yglui_str_wid_column columnid="FROM" columnpos="6"/>
+    <yglui_str_wid_column columnid="TOOO" columnpos="7"/>
+  </o_columns>
+  <o_tabvalues>
+    <yglui_str_wid_wsrval wsrid="FF35010Z" wsrdesc="Full time admin HQ" pwsid="NORM" pwsdesc="Normal shift" dayrule="02" Startdate="01.01.1990" Enddate="31.12.9999" dwhrs="7,00" wwhrs="35,00" wwdays="5,00" mwhrs="151,67" awhrs="1820,00" amhrs="6,00"/>
+    <yglui_str_wid_wsrval wsrid="FF40020Z" wsrdesc="Full time regular" pwsid="NORM" pwsdesc="Normal shift" dayrule="01" Startdate="01.01.1990" Enddate="31.12.9999" dwhrs="8,00" wwhrs="40,00" wwdays="5,00" mwhrs="171,67" awhrs="1920,00" amhrs="6,00"/>
+    <yglui_str_wid_wsrval wsrid="LF40010Z" wsrdesc="Full time flextime" pwsid="FLEX" pwsdesc="Flextime shift" dayrule="01" Startdate="01.01.1990" Enddate="31.12.9999" dwhrs="7,00" wwhrs="35,00" wwdays="5,00" mwhrs="151,67" awhrs="1820,00" amhrs=""/>
+    <yglui_str_wid_wsrval wsrid="OF40010Z" wsrdesc="Full time 3 shift" pwsid="3-WK" pwsdesc="3 week rotating shift" dayrule="01" Startdate="01.01.1990" Enddate="31.12.9999" dwhrs="7,00" wwhrs="35,00" wwdays="5,00" mwhrs="151,67" awhrs="1820,00" amhrs=""/>
+    <yglui_str_wid_wsrval wsrid="FF40030Z" wsrdesc="Full time normal" pwsid="NORM" pwsdesc="Normal shift" dayrule="01" Startdate="01.01.1990" Enddate="31.12.9999" dwhrs="6,00" wwhrs="30,00" wwdays="5,00" mwhrs="131,67" awhrs="1720,00" amhrs="13,00"/>
+  </o_tabvalues>
+  <o_actions>
+    <yglui_vie_tty_ac actio="WSR_ADD" actiot="((L))Add a new work schedule rule((L))" busid="" bustx="" class="" disma="" filter_param="" mandt="300" methd="" okcod="" status="" 
+      tarap="WSR_ADD" tartb="" tarty="W" views="WSR_Actions" /> 
+  </o_actions>
+  <labels>
+    <item id="WSRC" service="" value="WSR" />
+    <item id="WSRD" service="" value="Work schedule rule" />
+    <item id="PWSC" service="" value="PWS" />
+    <item id="DESC" service="" value="Description" />  
+    <item id="PWSD" service="" value="Period workk schedule" />
+    <item id="RULE" service="" value="Rule" />
+    <item id="DTRL" service="" value="Day type rule" />
+    <item id="FROM" service="" value="From" />
+    <item id="VFRM" service="" value="Valid From" />
+    <item id="TOOO" service="" value="To" />
+    <item id="WTVL" service="" value="Working time" />
+    <item id="DWHR" service="" value="Daily working hours" />
+    <item id="WWHR" service="" value="Weekly working hours" />
+    <item id="WWDA" service="" value="Weekly workdays" />
+    <item id="MWHR" service="" value="Monthly working hours" />
+    <item id="AWHR" service="" value="Annual working hours" />
+    <item id="AMHR" service="" value="Additional monthly hours" />
+  </labels>
+</EWS>

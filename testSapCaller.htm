@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>test backend framework</title>
+    <script type="text/javascript" src="http://www.google.com/jsapi" ></script>
+    <script type="text/javascript">
+              google.load("prototype", "1.6.0.3");
+    </script>
+    <style>
+     input {
+         width: 500px;
+     }
+    </style>
+    <script type="text/javascript">
+    
+    var __hostNameLogin = "proxy.aspx?url=" + escape("http://eu2r3edc.euhreka.erp:8002/sap/bc/yglui_req_sso?sap-client=300");
+    var __hostNameServices = "proxy.aspx?url=" + escape("http://eu2r3edc.euhreka.erp:8002/sap/bc/yglui_httpentry?sap-client=300");
+    
+    function callxdoc() {
+        $("callButton").hide();
+        $("results").update("Requesting Logon");
+        new Ajax.Request(__hostNameLogin, {
+            method: 'post',
+            postBody: "<EWS><SERVICE>CHECK</SERVICE><PARAM></PARAM></EWS>",
+            onSuccess: function(transport) {
+                $("results").update("<p>Connected</p>");
+                $("callButton").show();
+            },
+            onFailure: function() {
+                $("results").insert("<p>Request failed</p>");
+                $("results").insert("<p>Address: " + host + "</p>");
+            }
+        });
+    }
+    
+    function testService() {
+        $("results").update("initiating AJAX request");
+        $("XMLOUT").value = "";
+        new Ajax.Request(__hostNameServices, {
+            method: 'post',
+            postBody: $("XMLIN").value,
+            onSuccess: function(transport) {
+                $("results").insert("<p>Request OK</p>");
+                $("results").insert("<p>"+transport.getAllHeaders()+"</p>");                                
+                $("XMLOUT").value = transport.responseText;
+            },
+            onFailure: function() {
+                $("results").insert("<p>Request failed</p>");
+                $("results").insert("<p>Address: " + host + "</p>");                          
+            }});
+    }
+    </script>
+</head>
+<body onload="javascript:callxdoc();">
+    <table>
+        <tr>
+            <td>XML IN</td>
+            <td></td>
+            <td>XML OUT</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
+                <textarea cols="50" rows="30" id="XMLIN"><EWS><SERVICE>GET_OM</SERVICE><OBJECT TYPE="O">50000105</OBJECT><DEL></DEL><PARAM><o_date>2009-01-29</o_date><o_depth>2</o_depth></PARAM></EWS></textarea>
+                <br />
+                <input name="button" type="button" onclick="javascript:$('XMLIN').focus(); $('XMLIN').select();" value="Select all" style="width:auto;" />
+            </td>
+            <td>
+                <button id="callButton" onclick="javascript:testService();">=></button>
+            </td>
+            <td style="text-align:center;">
+                <textarea cols="50" rows="30" id="XMLOUT"></textarea>
+                <br />
+                <input name="button" type="button" onclick="javascript:$('XMLOUT').focus(); $('XMLOUT').select();" value="Select all" style="width:auto;" />
+            </td>
+            <td>
+                <div id="results"></div>
+            </td>
+        </tr>       
+    </table>
+</body>
+</html>

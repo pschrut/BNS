@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="2">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="DESCR" fieldlabel="" fieldsource="" fieldtype="S" label_type="N" length="000000" seqnr="02" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="I" fieldid="LABEL" fieldlabel="" fieldsource="" fieldtype="S" label_type="N" length="000004" seqnr="01" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>
+    </o_field_settings>
+    <o_field_values>
+        <yglui_str_wid_record rec_key="L50000433100200011E000" screen="2">
+            <contents>
+                <yglui_str_wid_content buttons="" key_str="30001L 50000433100200011  2009041699991231E         000" rec_index="1" selected="X" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="DESCR" fieldlabel="" fieldtechname="DESCRIPTION" fieldtseqnr="000000" value="">                                                                               Learning Group for Belgium</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="LABEL" fieldlabel="" fieldtechname="SUBTY" fieldtseqnr="000000" value="">General description</yglui_str_wid_field>
+                    </fields>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+    <o_future_date></o_future_date>
+    <o_retro_date></o_retro_date>
+    <o_screen_buttons>
+        <yglui_str_wid_button action="APP_LSOCREATECG" disma="M" label_tag="Create" okcode="INS" screen="*" tarap="" tarty="" type="INS"></yglui_str_wid_button>
+        <yglui_str_wid_button action="APP_LSOMAINTAINCG" disma="M" label_tag="Update" okcode="MOD" screen="*" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+    </o_screen_buttons>
+    <o_widget_screens>
+        <yglui_str_wid_screen all_modifiable="" appid="TM_L_CG" label_tag="Course Group: Object" list_mode="" screen="1" selected=""></yglui_str_wid_screen>
+        <yglui_str_wid_screen all_modifiable="" appid="TM_L_CG" label_tag="Course Group: Description" list_mode="" screen="2" selected="X"></yglui_str_wid_screen>
+    </o_widget_screens>
+    <labels>
+        <item id="ADDITIONALDATA" service="" value="Extra"></item>
+        <item id="PARENT" service="" value="Parent"></item>
+    </labels>
+    <messages></messages>
+    <webmessage_type></webmessage_type>
+    <webmessage_text></webmessage_text>
+</EWS>

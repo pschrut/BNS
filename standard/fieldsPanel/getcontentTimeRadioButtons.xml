@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_date_ranges></o_date_ranges>
+  <o_field_settings>
+    <yglui_str_wid_fs_record screen="1">
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="ABWTG" fieldlabel="Days" fieldsource="" fieldtype="" label_type="V" length="000008" seqnr="00" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="RADIO_G01_1" fieldformat="D" fieldid="ALLDF" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000001" seqnr="04" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="RADIO_G01_2" fieldformat="R" fieldid="AMPM" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000000" seqnr="05" service_pai="" service_values="GET_AM_PM" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="ABS" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="APPID" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="AWART" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000004" seqnr="01" service_pai="" service_values="GET_SUBTYPES2" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="2009-09-09" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA_H" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000010" seqnr="02" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="RADIO_G01_3" fieldformat="H" fieldid="BEGUZ" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000008" seqnr="06" service_pai="" service_values="" show_text="" type="TIMS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="T" fieldid="COMMENT" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="009999" seqnr="09" service_pai="" service_values="" show_text="X" type="STRG"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="EDITABLE" fieldlabel="" fieldsource="" fieldtype="" label_type="V" length="000000" seqnr="00" service_pai="" service_values="" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="2009-09-09" depend_field="BEGDA_H" depend_type="X" display_attrib="MAN" display_group="" fieldformat="P" fieldid="ENDDA_H" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000010" seqnr="03" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="BEGUZ" depend_type="X" display_attrib="OPT" display_group="RADIO_G01_3" fieldformat="H" fieldid="ENDUZ" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000008" seqnr="07" service_pai="" service_values="" show_text="" type="TIMS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="INFOTYPE" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="X" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="O" fieldid="OPT_G01_1" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="O" fieldid="OPT_G01_2" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="O" fieldid="OPT_G01_3" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="O" fieldid="OPT_G01_4" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="PERNR" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000008" seqnr="00" service_pai="" service_values="" show_text="B" type="NUMC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="STATUS" fieldlabel="" fieldsource="Q" fieldtype="" label_type="" length="000000" seqnr="10" service_pai="" service_values="" show_text="I" type=""></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="RADIO_G01_4" fieldformat="I" fieldid="STDAZ" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000009" seqnr="08" service_pai="GET_STDAZ" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="C" fieldid="VTKEN" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000001" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+      </fs_fields>
+    </yglui_str_wid_fs_record>
+  </o_field_settings>
+  <o_field_values>
+    <yglui_str_wid_record rec_key="" screen="1">
+      <hrobject objid="" otype="" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="" rec_index="0" selected="" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="ABWTG" fieldlabel="" fieldtechname="ABWTG" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ALLDF" fieldlabel="" fieldtechname="ALLDF" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="AMPM" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="APPID" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="AWART" fieldlabel="" fieldtechname="AWART" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="BEGDA_H" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="BEGUZ" fieldlabel="" fieldtechname="BEGUZ" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMMENT" fieldlabel="" fieldtechname="COMMENT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="EDITABLE" fieldlabel="" fieldtechname="EDITABLE" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDA_H" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDUZ" fieldlabel="" fieldtechname="ENDUZ" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="INFOTYPE" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OPT_G01_1" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OPT_G01_2" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OPT_G01_3" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value="">X</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OPT_G01_4" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PERNR" fieldlabel="" fieldtechname="PERNR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="STATUS" fieldlabel="" fieldtechname="STATUS" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="STDAZ" fieldlabel="" fieldtechname="STDAZ" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="VTKEN" fieldlabel="" fieldtechname="VTKEN" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_ABS_DELETE" busid="ABS_DEL_EE" disma="" label_tag="Delete" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_ABS_SUBMIT" busid="ABS_REQ_EE" disma="" label_tag="Submit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+  </o_field_values>
+  <o_screen_buttons>
+    <yglui_str_wid_button action="APP_ABS_DELETE" busid="ABS_DEL_EE" disma="" label_tag="Delete" okcode="DEL" screen="*" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+    <yglui_str_wid_button action="APP_ABS_SUBMIT" busid="ABS_REQ_EE" disma="" label_tag="Submit" okcode="INS" screen="*" status="" tarap="" tarty="" type="INS"></yglui_str_wid_button>
+  </o_screen_buttons>
+  <o_widget_screens>
+    <yglui_str_wid_screen all_modifiable="" appid="ABS" dyn_panel="" label_tag="AbsTitle" list_mode="" screen="1" secondary="" selected="X" table_mode="" translation=""></yglui_str_wid_screen>
+  </o_widget_screens>
+  <labels>
+    <item id="9DOC" service="" value="Document Management"></item>
+    <item id="9DOCTitle" service="" value="Document Management"></item>
+    <item id="ABSTitle" service="" value="Absence maintenance"></item>
+    <item id="ADDITIONALDATA" service="" value="Extra"></item>
+    <item id="ALLDF" service="" value="All Day"></item>
+    <item id="AMPM" service="" value="Half Day"></item>
+    <item id="AWART" service="" value="Type"></item>
+    <item id="BEGDA_H" service="" value="When"></item>
+    <item id="BEGUZ" service="" value="From"></item>
+    <item id="COMMENT" service="" value="Comment"></item>
+    <item id="ENDDA_H" service="" value="To"></item>
+    <item id="ENDUZ" service="" value="To"></item>
+    <item id="F9DOC" service="" value="Document Management"></item>
+    <item id="STATUS" service="" value="Status"></item>
+    <item id="STDAZ" service="" value="Number of Hours"></item>
+  </labels>
+  <messages></messages>
+  <webmessage_type></webmessage_type>
+  <webmessage_text></webmessage_text>
+</EWS>

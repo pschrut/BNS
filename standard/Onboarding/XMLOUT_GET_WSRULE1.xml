@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_columns>
+    <yglui_str_wid_column columnid="WSRC" columnpos="1"/>
+    <yglui_str_wid_column columnid="DESC" columnpos="2"/>
+    <yglui_str_wid_column columnid="PWSC" columnpos="3"/>
+    <yglui_str_wid_column columnid="DESC" columnpos="4"/>
+    <yglui_str_wid_column columnid="RULE" columnpos="5"/>
+    <yglui_str_wid_column columnid="FROM" columnpos="6"/>
+    <yglui_str_wid_column columnid="TOOO" columnpos="7"/>
+  </o_columns>
+  <o_tabvalues>
+    <yglui_str_wid_wsrval wsrid="" wsrdesc="" pwsid="" pwsdesc="" dayrule="" Startdate="" Enddate="" dwhrs="" wwhrs="" wwdays="" mwhrs="" awhrs="" amhrs=""/>
+  </o_tabvalues>
+  <labels>
+    <item id="WSRC" service="" value="WSR" />
+    <item id="WSRD" service="" value="Work schedule rule" />
+    <item id="PWSC" service="" value="PWS" />
+    <item id="DESC" service="" value="Description" />  
+    <item id="PWSD" service="" value="Period workk schedule" />
+    <item id="RULE" service="" value="Rule" />
+    <item id="DTRL" service="" value="Day type rule" />
+    <item id="FROM" service="" value="From" />
+    <item id="VFRM" service="" value="Valid From" />
+    <item id="TOOO" service="" value="To" />
+    <item id="WTVL" service="" value="Working time" />
+    <item id="DWHR" service="" value="Daily working hours" />
+    <item id="WWHR" service="" value="Weekly working hours" />
+    <item id="WWDA" service="" value="Weekly workdays" />
+    <item id="MWHR" service="" value="Monthly working hours" />
+    <item id="AWHR" service="" value="Annual working hours" />
+    <item id="AMHR" service="" value="Additional monthly hours" />
+  </labels>
+</EWS>

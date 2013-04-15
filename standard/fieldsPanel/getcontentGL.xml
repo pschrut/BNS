@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_date_ranges></o_date_ranges>
+  <o_field_settings>
+    <yglui_str_wid_fs_record screen="1">
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="" display_group="" fieldformat="I" fieldid="ABBREVIATION" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000012" seqnr="02" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="9999-12-31" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="D" fieldid="ENDDATE" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000010" seqnr="05" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="T" fieldid="GENERALDESCR" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000000" seqnr="03" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="SCLAS" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000002" seqnr="08" service_pai="" service_values="" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="V" fieldid="SOBID" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000045" seqnr="07" service_pai="" service_values="" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="STARTDATE" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000010" seqnr="04" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="TITLE" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000040" seqnr="01" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="R" fieldid="TRANSLATION" fieldlabel="Sprachenschlüssel" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="02" service_pai="" service_values="" show_text="I" type="LANG"></yglui_str_wid_fs_field>
+      </fs_fields>
+    </yglui_str_wid_fs_record>
+    <yglui_str_wid_fs_record screen="2">
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="V" fieldid="COMP" fieldlabel="" fieldsource="" fieldtype="H" label_type="" length="000008" seqnr="03" service_pai="" service_values="" show_text="B" type="NUMC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="COMP" depend_type="" display_attrib="OUO" display_group="" fieldformat="V" fieldid="COMP_GROUP" fieldlabel="" fieldsource="" fieldtype="G" label_type="" length="000008" seqnr="01" service_pai="" service_values="" show_text="B" type="NUMC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="C" fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldsource="" fieldtype="" label_type="V" length="000001" seqnr="06" service_pai="" service_values="" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="OBJID" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000008" seqnr="99" service_pai="" service_values="" show_text="" type="NUMC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="RATING" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="OTYPE" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000002" seqnr="98" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="RATING" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000004" seqnr="04" service_pai="" service_values="" show_text="B" type="NUMC"></yglui_str_wid_fs_field>
+      </fs_fields>
+    </yglui_str_wid_fs_record>
+  </o_field_settings>
+  <o_field_values>
+    <yglui_str_wid_record rec_key="C5000011410001E000" screen="1">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content buttons="" key_str="30001C 500001141000    1  2007010199991231E         000" rec_index="1" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="ABBREVIATION" fieldlabel="" fieldtechname="SHORT" fieldtseqnr="000000" value="">Bus. Analyst</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDATE" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="GENERALDESCR" fieldlabel="" fieldtechname="DESCRIPTION" fieldtseqnr="000000" value="Quickly understands the business issues and data challenges of client's        organization and industry.                                                     Identifies client organization's strengths and weaknesses and suggests         areas of improvement.                                                          Reviews and edits requirements, specifications, business processes and         recommendations related to proposed solution.                                  Develops functional specifications and system design specifications for        client engagements."></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="SCLAS" fieldlabel="" fieldtechname="SCLAS" fieldtseqnr="000000" value="9C">9C</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="SOBID" fieldlabel="" fieldtechname="SOBID" fieldtseqnr="000000" value="Technical Jobs"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="STARTDATE" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value="2007-01-01"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TITLE" fieldlabel="" fieldtechname="STEXT" fieldtseqnr="000000" value="">Business Analyst</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TRANSLATION" fieldlabel="Sprachenschlüssel" fieldtechname="LANGU" fieldtseqnr="000000" value="EN">Englisch</yglui_str_wid_field>
+          </fields>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003033C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003033C 500001142009052699991231" rec_index="1" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003033">Konzeptionelles Denken</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003025">Information</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="">nicht angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003033"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0002">Learning</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003036C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003036C 500001142009052699991231" rec_index="2" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003036">Organization &amp; follow-up</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003026">Organisation German</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="">nicht angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003036"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0004">Expert</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003038C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003038C 500001142009052699991231" rec_index="3" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003038">Kunden-Service-Orientierung</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003027">Ergebnisorientierung</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="">nicht angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003038"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0003">Performing</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003039C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003039C 500001142009052699991231" rec_index="4" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003039">Problemlösungskompetenz</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003027">Ergebnisorientierung</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="">nicht angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003039"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0004">Expert</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003042C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003042C 500001142009052699991231" rec_index="5" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003042">Accuracy</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003027">Ergebnisorientierung</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="">nicht angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003042"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0003">Performing</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003057C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003057C 500001142009052699991231" rec_index="6" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003057">Teamwork &amp; Cooperation</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003029">Interaction</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="">nicht angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003057"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0004">Expert</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003059C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003059C 500001142009052699991231" rec_index="7" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003059">Interpersonnaly communication</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003029">Interaction</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="">nicht angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003059"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0003">Performing</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003060C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003060C 500001142009052699991231" rec_index="8" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003060">Written communciation</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003029">Interaction</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="X">angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003060"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0003">Performing</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003061C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003061C 500001142009052699991231" rec_index="9" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003061">Listening skill</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003029">Interaction</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="">nicht angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003061"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0003">Performing</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="01C 50000114A031Q 50003062C 500001" screen="2">
+      <hrobject objid="50000114" otype="C" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="01C 50000114A031Q 50003062C 500001142009052699991231" rec_index="10" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="COMP" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003062">Formale / informale Präsentation</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="COMP_GROUP" fieldlabel="" fieldtechname="CLASS_ID" fieldtseqnr="000000" value="50003029">Interaction</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ESSENTIAL" fieldlabel="Mußanforderung" fieldtechname="ESSENTIAL" fieldtseqnr="000000" value="X">angekreuzt</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OBJID" fieldlabel="" fieldtechname="TBJID" fieldtseqnr="000000" value="50003062"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OTYPE" fieldlabel="" fieldtechname="TTYPE" fieldtseqnr="000000" value="Q"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="RATING" fieldlabel="" fieldtechname="PROFCY" fieldtseqnr="000000" value="0004">Expert</yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="REC_PFMCOMPDEL" busid="" disma="M" label_tag="Löschen Kompetenz" okcode="DEL" screen="" status="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPDET" busid="" disma="D" label_tag="Details" okcode="CHANGE_OBJECT" screen="" status="" tarap="CQK_DET" tarty="P" type=""></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_PFMCOMPMOD" busid="" disma="M" label_tag="Edit" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+  </o_field_values>
+  <o_screen_buttons>
+    <yglui_str_wid_button action="SCR_PFMADDCOMP" busid="" disma="D" label_tag="Neue Kompetenz" okcode="INS" screen="2" status="" tarap="CQK_QK" tarty="A" type="INS"></yglui_str_wid_button>
+    <yglui_str_wid_button action="APP_JOB_SAVE" busid="" disma="M" label_tag="" okcode="MOD" screen="*" status="" tarap="JOB_DF" tarty="A" type="MOD"></yglui_str_wid_button>
+  </o_screen_buttons>
+  <o_widget_screens screenmode="">
+    <yglui_str_wid_screen>
+      <yglui_str_wid_screen all_modifiable="X" appid="JOB_DF" dyn_panel="" label_tag="Job" list_mode="" screen="1" secondary="" selected="X" table_mode="" translation=""></yglui_str_wid_screen>
+      <yglui_str_wid_screen all_modifiable="X" appid="JOB_DF" dyn_panel="" label_tag="Job Profile" list_mode="" screen="2" secondary="" selected="" table_mode="X" translation=""></yglui_str_wid_screen>
+    </yglui_str_wid_screen>
+  </o_widget_screens>
+  <labels>
+    <item id="ABBREVIATION" service="" value="Kürzel"></item>
+    <item id="COMP" service="" value="Kompetenzen"></item>
+    <item id="ENDDATE" service="" value="Bis"></item>
+    <item id="GENERALDESCR" service="" value="Beschreibung"></item>
+    <item id="PARENT" service="" value="Übergeordnet"></item>
+    <item id="STARTDATE" service="" value="Von"></item>
+    <item id="TITLE" service="" value="Anrede"></item>
+  </labels>
+  <messages></messages>
+  <webmessage_type></webmessage_type>
+  <webmessage_text></webmessage_text>
+</EWS>

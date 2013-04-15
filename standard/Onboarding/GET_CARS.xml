@@ -1,0 +1,105 @@
+  <?xml version="1.0" encoding="utf-8" ?> 
+ <EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_date_ranges /> 
+ <o_field_settings>
+ <yglui_str_wid_fs_record screen="1" tcontent_empty="">
+  <hrobject objid="" otype="" plvar="" /> 
+ <fs_fields>
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="D" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="H" label_type="V" length="000010" sadv_id="" seqnr="06" service_pai="" service_values="" show_text="" type="DATS" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="P" fieldid="BUYDA" fieldlabel="Buy Date" fieldsource="" fieldtype="S" label_type="V" length="000010" sadv_id="" seqnr="15" service_pai="" service_values="" show_text="" type="DATS" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="CMPID" fieldlabel="Description of the Leasing Category" fieldsource="" fieldtype="S" label_type="V" length="000030" sadv_id="" seqnr="16" service_pai="" service_values="" show_text="" type="CHAR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="CO2EM" fieldlabel="CO2 Emissions" fieldsource="" fieldtype="" label_type="V" length="000003" sadv_id="" seqnr="17" service_pai="" service_values="" show_text="" type="NUMC" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="ECAPC" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000004" sadv_id="" seqnr="09" service_pai="" service_values="" show_text="X" type="NUMC" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="V" fieldid="EGTYPE" fieldlabel="Type of fuel" fieldsource="" fieldtype="H" label_type="V" length="000001" sadv_id="" seqnr="03" service_pai="" service_values="" show_text="I" type="CHAR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="D" fieldid="ENDDA" fieldlabel="End Date" fieldsource="" fieldtype="H" label_type="V" length="000010" sadv_id="" seqnr="07" service_pai="" service_values="" show_text="" type="DATS" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="ENGINESIZE" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000008" sadv_id="" seqnr="08" service_pai="" service_values="" show_text="X" type="NUMC" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="V" fieldid="FACTO" fieldlabel="Car Manufacturer" fieldsource="" fieldtype="H" label_type="V" length="000002" sadv_id="" seqnr="01" service_pai="" service_values="" show_text="I" type="CHAR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="V" fieldid="KFZKZ" fieldlabel="License Plate Number" fieldsource="" fieldtype="H" label_type="V" length="000010" sadv_id="" seqnr="04" service_pai="" service_values="" show_text="" type="CHAR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="LEASC" fieldlabel="Leasing Category" fieldsource="" fieldtype="S" label_type="V" length="000002" sadv_id="" seqnr="11" service_pai="" service_values="EOB_IDTEXT" show_text="" type="CHAR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="LISTP" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000020" sadv_id="" seqnr="12" service_pai="" service_values="" show_text="X" type="CURR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="V" fieldid="MODEL" fieldlabel="Car Model" fieldsource="" fieldtype="H" label_type="V" length="000006" sadv_id="" seqnr="02" service_pai="" service_values="" show_text="I" type="CHAR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="MTEXT" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000040" sadv_id="" seqnr="05" service_pai="" service_values="" show_text="X" type="CHAR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="POLLC" fieldlabel="Pollution Category" fieldsource="" fieldtype="S" label_type="V" length="000002" sadv_id="" seqnr="14" service_pai="" service_values="EOB_IDTEXT" show_text="" type="CHAR" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="SEATS" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000001" sadv_id="" seqnr="10" service_pai="" service_values="" show_text="" type="NUMC" /> 
+  <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="TRANSMISSIONTYPE" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000001" sadv_id="" seqnr="13" service_pai="" service_values="" show_text="X" type="CHAR" /> 
+  </fs_fields>
+  </yglui_str_wid_fs_record>
+  </o_field_settings>
+ <o_field_values>
+ <yglui_str_wid_record rec_key="A4TTR12320100130" screen="1">
+  <hrobject objid="" otype="" plvar="" /> 
+ <contents>
+ <yglui_str_wid_content key_str="A4TTR12320100130" rec_index="0" selected="X" tcontents="">
+ <fields>
+  <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-12-16" /> 
+  <yglui_str_wid_field fieldid="BUYDA" fieldlabel="Buy Date" fieldtechname="BUYDA" fieldtseqnr="000000" value="2009-11-11" /> 
+  <yglui_str_wid_field fieldid="CMPID" fieldlabel="Description of the Leasing Category" fieldtechname="CMPID" fieldtseqnr="000000" value="D'ieteren audi" /> 
+  <yglui_str_wid_field fieldid="CO2EM" fieldlabel="CO2 Emissions" fieldtechname="CO2EM" fieldtseqnr="000000" value="145" /> 
+  <yglui_str_wid_field fieldid="ECAPC" fieldlabel="" fieldtechname="ECAPC" fieldtseqnr="000000" value="">0000</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="EGTYPE" fieldlabel="Type of fuel" fieldtechname="EGTYPE" fieldtseqnr="000000" value="4">Diesel</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="2010-01-30" /> 
+  <yglui_str_wid_field fieldid="ENGINESIZE" fieldlabel="" fieldtechname="ENGINESIZE" fieldtseqnr="000000" value="">00000000</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="FACTO" fieldlabel="Car Manufacturer" fieldtechname="FACTO" fieldtseqnr="000000" value="AU">Audi</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="KFZKZ" fieldlabel="License Plate Number" fieldtechname="KFZKZ" fieldtseqnr="000000" value="TTR123" /> 
+  <yglui_str_wid_field fieldid="LEASC" fieldlabel="Leasing Category" fieldtechname="LEASC" fieldtseqnr="000000" value="D1" /> 
+  <yglui_str_wid_field fieldid="LISTP" fieldlabel="" fieldtechname="LISTP" fieldtseqnr="000000" value="">0.00</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="MODEL" fieldlabel="Car Model" fieldtechname="MODEL" fieldtseqnr="000000" value="A4">A4</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="MTEXT" fieldlabel="" fieldtechname="MTEXT" fieldtseqnr="000000" value="" /> 
+  <yglui_str_wid_field fieldid="POLLC" fieldlabel="Pollution Category" fieldtechname="POLLC" fieldtseqnr="000000" value="32" /> 
+  <yglui_str_wid_field fieldid="SEATS" fieldlabel="" fieldtechname="SEATS" fieldtseqnr="000000" value="0" /> 
+  <yglui_str_wid_field fieldid="TRANSMISSIONTYPE" fieldlabel="" fieldtechname="TRANSMISSIONTYPE" fieldtseqnr="000000" value="" /> 
+  </fields>
+ <buttons>
+  <yglui_str_wid_button action="REC_CAR_SUBMIT" busid="" disma="" label_tag="Save" okcode="MOD" screen="" status="" tarap="CARMOD" tartb="" tarty="B" type="MOD" views="" /> 
+  </buttons>
+  </yglui_str_wid_content>
+  </contents>
+  </yglui_str_wid_record>
+ <yglui_str_wid_record rec_key="A6284DTTR12420100130" screen="1">
+  <hrobject objid="" otype="" plvar="" /> 
+ <contents>
+ <yglui_str_wid_content key_str="A6284DTTR12420100130" rec_index="1" selected="" tcontents="">
+ <fields>
+  <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-12-16" /> 
+  <yglui_str_wid_field fieldid="BUYDA" fieldlabel="Buy Date" fieldtechname="BUYDA" fieldtseqnr="000000" value="2009-11-11" /> 
+  <yglui_str_wid_field fieldid="CMPID" fieldlabel="Description of the Leasing Category" fieldtechname="CMPID" fieldtseqnr="000000" value="" /> 
+  <yglui_str_wid_field fieldid="CO2EM" fieldlabel="CO2 Emissions" fieldtechname="CO2EM" fieldtseqnr="000000" value="145" /> 
+  <yglui_str_wid_field fieldid="ECAPC" fieldlabel="" fieldtechname="ECAPC" fieldtseqnr="000000" value="">0000</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="EGTYPE" fieldlabel="Type of fuel" fieldtechname="EGTYPE" fieldtseqnr="000000" value="4">Diesel</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="2010-01-30" /> 
+  <yglui_str_wid_field fieldid="ENGINESIZE" fieldlabel="" fieldtechname="ENGINESIZE" fieldtseqnr="000000" value="">00000000</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="FACTO" fieldlabel="Car Manufacturer" fieldtechname="FACTO" fieldtseqnr="000000" value="AU">Audi</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="KFZKZ" fieldlabel="License Plate Number" fieldtechname="KFZKZ" fieldtseqnr="000000" value="TTR124" /> 
+  <yglui_str_wid_field fieldid="LEASC" fieldlabel="Leasing Category" fieldtechname="LEASC" fieldtseqnr="000000" value="" /> 
+  <yglui_str_wid_field fieldid="LISTP" fieldlabel="" fieldtechname="LISTP" fieldtseqnr="000000" value="">0.00</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="MODEL" fieldlabel="Car Model" fieldtechname="MODEL" fieldtseqnr="000000" value="A6284D">Audi A6 2.8 4d</yglui_str_wid_field> 
+  <yglui_str_wid_field fieldid="MTEXT" fieldlabel="" fieldtechname="MTEXT" fieldtseqnr="000000" value="" /> 
+  <yglui_str_wid_field fieldid="POLLC" fieldlabel="Pollution Category" fieldtechname="POLLC" fieldtseqnr="000000" value="32" /> 
+  <yglui_str_wid_field fieldid="SEATS" fieldlabel="" fieldtechname="SEATS" fieldtseqnr="000000" value="0" /> 
+  <yglui_str_wid_field fieldid="TRANSMISSIONTYPE" fieldlabel="" fieldtechname="TRANSMISSIONTYPE" fieldtseqnr="000000" value="" /> 
+  </fields>
+ <buttons>
+  <yglui_str_wid_button action="REC_CAR_SUBMIT" busid="" disma="" label_tag="Save" okcode="MOD" screen="" status="" tarap="CARMOD" tartb="" tarty="B" type="MOD" views="" /> 
+  </buttons>
+  </yglui_str_wid_content>
+  </contents>
+  </yglui_str_wid_record>
+  </o_field_values>
+ <o_screen_buttons>
+  <yglui_str_wid_button action="APP_ADDCAR" busid="" disma="M" label_tag="Add car" okcode="NEW" screen="*" status="" tarap="CARADD" tartb="" tarty="" type="" views="CARPAGE" /> 
+  <yglui_str_wid_button action="APP_MMODEL" busid="" disma="M" label_tag="Maintain models" okcode="" screen="*" status="" tarap="MODELS" tartb="" tarty="" type="" views="Models" /> 
+  <yglui_str_wid_button action="APP_MODCAR" busid="" disma="M" label_tag="Change car" okcode="MOD" screen="*" status="" tarap="CARMOD" tartb="" tarty="" type="MOD" views="CARPAGE" /> 
+  </o_screen_buttons>
+ <o_widget_screens screenmode="">
+ <yglui_str_wid_screen>
+  <yglui_str_wid_screen all_modifiable="" appid="MODELS" dyn_panel="" label_tag="Model_Modif" list_mode="X" screen="1" secondary="" selected="X" table_mode="" translation="" /> 
+  </yglui_str_wid_screen>
+  </o_widget_screens>
+  <o_wid_pos /> 
+ <labels>
+  <item id="COMP_GROUP" service="" value="Compensation group" /> 
+  </labels>
+  <messages /> 
+  <webmessage_type /> 
+  <webmessage_text /> 
+  </EWS>

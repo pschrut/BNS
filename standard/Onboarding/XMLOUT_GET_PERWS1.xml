@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_columns>
+    <yglui_str_wid_column columnid="PWSC" columnpos="1"/>
+    <yglui_str_wid_column columnid="DESC" columnpos="2"/>
+    <yglui_str_wid_column columnid="WEEK" columnpos="3"/>
+    <yglui_str_wid_column columnid="DAY1" columnpos="4"/>
+    <yglui_str_wid_column columnid="DAY2" columnpos="5"/>
+    <yglui_str_wid_column columnid="DAY3" columnpos="6"/>
+    <yglui_str_wid_column columnid="DAY4" columnpos="7"/>
+    <yglui_str_wid_column columnid="DAY5" columnpos="8"/>
+    <yglui_str_wid_column columnid="DAY6" columnpos="9"/>
+    <yglui_str_wid_column columnid="DAY7" columnpos="10"/>
+  </o_columns>
+  <o_tabvalues>
+    <yglui_str_wid_pwsval pwsid="" pwsdesc="">
+      <weeks>
+        <yglui_str_wid_pwsweeks weeknbr="001" day1="" day2="" day3="" day4="" day5="" day6="" day7=""/>
+      </weeks>
+    </yglui_str_wid_pwsval>
+  </o_tabvalues>
+  <labels>
+    <item id="PWSC" service="" value="PWS" />
+    <item id="DESC" service="" value="Description" />  
+    <item id="PWSD" service="" value="Period work schedule" />
+    <item id="WEEK" service="" value="Week" />
+    <item id="DAY1" service="" value="01" />
+    <item id="DAY2" service="" value="02" />
+    <item id="DAY3" service="" value="03" />
+    <item id="DAY4" service="" value="04" />
+    <item id="DAY5" service="" value="05" />
+    <item id="DAY6" service="" value="06" />
+    <item id="DAY7" service="" value="07" />
+    <item id="NPWS" service="" value="New Period Work Schedule" />
+    <item id="MDWS" service="" value="Modify Period Work Schedule" />
+  </labels>
+</EWS>

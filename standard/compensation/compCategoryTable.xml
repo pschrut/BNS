@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xml_definition>
+  <toSAP>
+    <SERVICE>COM_EMP_LIST</SERVICE>
+    <OBJECT TYPE="O">50004475</OBJECT>
+    <PARAM>
+      <CREVI>SR09</CREVI><!-- review period -->
+      <CCATE>1</CCATE><!-- compensation category -->
+    </PARAM>
+  </toSAP>
+
+  <fromSAP>
+    <EWS>
+      <o_summary manager="John Smith" total_ees="7" pending_ees="5">
+        <budgets>
+          <yglui_str_com_bud id="MRIN" name="Merit Increase" remaining="15000.0" spent="35000.0" total="50000.0" />
+          <yglui_str_com_bud id="PROM" name="Promotion" remaining="2600.0" spent="7400.0" total="10000.0" />
+          <id>MRIN</id>
+        </budgets>
+      </o_summary>
+      <o_record_settings>
+        <yglui_str_com_caf id="position" label=""  techname="" type="text" modifiable="" hidden="" collapsed="" group="" order="" inputsize="" update_method="" icon="" curr_conv_rat="" budget=""/>
+        <yglui_str_com_caf id="grade" label=""  techname="" type="text" modifiable="" hidden="" collapsed="" group="" order="" inputsize="" update_method="" icon="" curr_conv_rat="" budget=""/>
+        <!-- Attributes description 
+                budget: It will only be filled for those amount input fields that need to update a specific budget on the top summary 
+            -->
+      </o_record_settings>
+      <o_records>
+        <y_glui_str_com_rec name="Hillary Dollar" >
+          <comments>
+            <yglui_str_com_com author="" date="" value="Possible comment to be displayed when clicking on the post it icon. Let me know what format you prefer in case some managers added a comment for the same employee, as we need to differentiate each entry"></yglui_str_com_com>
+          </comments>
+          <fields>
+            <yglui_str_com_fie id="position" f_pernr="" f_plan="SADJ" eligible="" value="Engineer"/>
+            <yglui_str_com_fie id="grade" f_pernr="" f_plan="SADJ" eligible="" value="1B"/>
+          </fields>
+        </y_glui_str_com_rec>
+        <y_glui_str_com_rec/>
+      </o_records>
+    </EWS>
+  </fromSAP>
+</xml_definition>

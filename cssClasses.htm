@@ -1,0 +1,749 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- all core styles, includes modules, widgets and third party -->
+		<link href="css/CSS2.css" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+		    <link rel="stylesheet" type="text/css" href="css/CSS2_IE7.css" />
+		<![endif]-->
+		<!--[if lt IE 7]>
+		    <link rel="stylesheet" type="text/css" href="css/CSS2_IE6.css" />
+		<![endif]-->
+	    <title>Css classes</title>
+		<style type="text/css">
+	        body#bodyCssClasses {
+	            background: none;
+	            margin-left: 20px;
+	        }
+			div.category{
+				width:800px;
+				border: 1px solid #444;
+				margin-bottom: 25px;
+			}
+
+			div.categoryContent{
+				padding: 5px 10px 0px 10px;
+				border-top: 1px solid #444;
+            }
+			div.categoryHeader{
+                background-color: #a1bee2;
+				padding: 0px 10px 0px 10px;
+            }
+			div.classContainer{
+				padding: 4px 0px 4px 0px;
+			}
+			div.classContainer:hover{
+                background-color: #a1bee2;
+            }
+			div.categoryHeader > h2{
+                display:inline-block;
+                width:80%;
+			}
+			div.categoryHeader > a.collapseButton{
+				display:inline-block;
+                text-align:right;
+                width:20%;
+            }
+			div.sampleContainer{
+                display:inline-block;
+                margin:0px 5px 0px 5px;
+			}
+			.fixedWidth{
+				width:100px;
+			}
+			.fixedHeight{
+                height:50px;
+            }
+			.generalComponent{
+				margin: 10px 5px 40px 5px;
+			}
+			.generalComponentCode{
+				margin: 10px 5px 10px 5px;
+				border: 1px solid black;
+				padding: 10px;
+			}
+			.generalComponentDescription{
+                margin: 10px 5px 10px 5px;
+				
+            }
+			.generalComponent h3{
+				background-color: #a1bee2;
+				padding:4px;
+			}
+	    </style>
+		<script src="standard/web_frameworks/prototype.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/scriptaculous/src/effects.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/scriptaculous/src/builder.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/scriptaculous/src/dragdrop.js" type="text/javascript"></script>
+        <script src="standard/web_frameworks/scriptaculous/src/controls.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			function fillContent(){
+				var categories = [
+				    {
+						name: "Top menu icons",
+						classes: ["topMenu_navigationElement_div_up topMenu_application_WA_ED",
+						"topMenu_navigationElement_div_up topMenu_application_WA_ED_active",
+						"topMenu_navigationElement_div_up topMenu_application_WA_PT",
+						"topMenu_navigationElement_div_up topMenu_application_WA_PT_active",
+						"topMenu_navigationElement_div_up topMenu_application_WA_PAY",
+						"topMenu_navigationElement_div_up topMenu_application_WA_PAY_active",
+						"topMenu_navigationElement_div_up topMenu_application_WA_BEN",
+						"topMenu_navigationElement_div_up topMenu_application_WA_BEN_active",
+						"topMenu_navigationElement_div_up topMenu_application_waReporting",
+						"topMenu_navigationElement_div_up topMenu_application_waReporting_active",
+						"topMenu_navigationElement_div_up topMenu_application_waDocuments",
+						"topMenu_navigationElement_div_up topMenu_application_waDocuments_active",
+						"topMenu_navigationElement_div_up topMenu_application_recruitment",
+						"topMenu_navigationElement_div_up topMenu_application_recruitment_active",
+						"topMenu_navigationElement_div_up topMenu_application_vacancies",
+						"topMenu_navigationElement_div_up topMenu_application_vacancies_active",
+						"topMenu_navigationElement_div_up topMenu_application_activitiesCalendar",
+						"topMenu_navigationElement_div_up topMenu_application_activitiesCalendar_active",
+						"topMenu_navigationElement_div_up topMenu_application_reReporting",
+						"topMenu_navigationElement_div_up topMenu_application_reReporting_active",
+						"topMenu_navigationElement_div_up topMenu_application_reDocuments",
+						"topMenu_navigationElement_div_up topMenu_application_reDocuments_active",
+						"topMenu_navigationElement_div_up topMenu_application_talentManagement",
+						"topMenu_navigationElement_div_up topMenu_application_talentManagement_active",
+						"topMenu_navigationElement_div_up topMenu_application_LMS",
+						"topMenu_navigationElement_div_up topMenu_application_LMS_active",
+						"topMenu_navigationElement_div_up topMenu_application_APPR",
+						"topMenu_navigationElement_div_up topMenu_application_APPR_active",
+						"topMenu_navigationElement_div_up topMenu_application_APPR",
+						"topMenu_navigationElement_div_up topMenu_application_APPR_active",
+						"topMenu_navigationElement_div_up topMenu_application_REPT",
+						"topMenu_navigationElement_div_up topMenu_application_REPT_active",
+						"topMenu_navigationElement_div_up topMenu_application_taDocuments",
+						"topMenu_navigationElement_div_up topMenu_application_taDocuments_active",
+						"topMenu_navigationElement_div_up topMenu_application_analyticalInsight",
+						"topMenu_navigationElement_div_up topMenu_application_analyticalInsight_active",
+						"topMenu_navigationElement_div_up topMenu_application_SC_OM",
+						"topMenu_navigationElement_div_up topMenu_application_SC_OM_active",
+						"topMenu_navigationElement_div_up topMenu_application_HM",
+						"topMenu_navigationElement_div_up topMenu_application_HM_active",
+						"topMenu_navigationElement_div_up topMenu_application_TI_PL",
+						"topMenu_navigationElement_div_up topMenu_application_TI_PL_active",
+						"topMenu_navigationElement_div_up topMenu_application_TI_active",
+						"topMenu_navigationElement_div_up topMenu_application_TI_HM_active",
+						"topMenu_navigationElement_div_up topMenu_application_WA_HOM_active",
+						"topMenu_navigationElement_div_up topMenu_application_TM_HOM_active",
+						"topMenu_navigationElement_div_up topMenu_application_SC_HOM_active",
+						"topMenu_navigationElement_div_up topMenu_application_HM_HOM_active",
+						"topMenu_navigationElement_div_up topMenu_application_SC_WIW",
+						"topMenu_navigationElement_div_up topMenu_application_SC_WIW_active",
+						"topMenu_navigationElement_div_up topMenu_application_SM_DSB_active",
+						"topMenu_navigationElement_div_up topMenu_application_SM_DSB",
+						"topMenu_navigationElement_div_up topMenu_application_RC_active",
+						"topMenu_navigationElement_div_up topMenu_application_RC",
+						"topMenu_navigationElement_div_up topMenu_application_RC_PDA_active",
+						"topMenu_navigationElement_div_up topMenu_application_RC_PDA",
+						"topMenu_navigationElement_div_up topMenu_application_RC_VAC_active",
+						"topMenu_navigationElement_div_up topMenu_application_RC_VAC",
+						"topMenu_navigationElement_div_up topMenu_application_RC_STA_active",
+						"topMenu_navigationElement_div_up topMenu_application_RC_STA",
+						"topMenu_navigationElement_div_up topMenu_application_AN_active",
+						"topMenu_navigationElement_div_up topMenu_application_AN",
+						"topMenu_navigationElement_div_up topMenu_application_AN_HOM_active",
+						"topMenu_navigationElement_div_up topMenu_application_AN_HOM",
+						"topMenu_navigationElement_div_up topMenu_application_AN_REP_active",
+						"topMenu_navigationElement_div_up topMenu_application_AN_REP",
+						"topMenu_navigationElement_div_up topMenu_application_AN_AN_active",
+						"topMenu_navigationElement_div_up topMenu_application_AN_AN",
+						"topMenu_navigationElement_div_up topMenu_application_AN_ADH_active",
+						"topMenu_navigationElement_div_up topMenu_application_AN_ADH"		
+						]
+		            },
+				    {
+						name: "Flags",
+						classes: ["OM_flag_01 OM_flag_common",
+						"OM_flag_02 OM_flag_common",
+						"OM_flag_03 OM_flag_common",
+						"OM_flag_04 OM_flag_common",
+						"OM_flag_05 OM_flag_common",
+						"OM_flag_06 OM_flag_common",
+						"OM_flag_07 OM_flag_common",
+						"OM_flag_08 OM_flag_common",
+						"OM_flag_09 OM_flag_common",
+						"OM_flag_10 OM_flag_common",
+						"OM_flag_11 OM_flag_common",
+						"OM_flag_12 OM_flag_common",
+						"OM_flag_13 OM_flag_common",
+						"OM_flag_14 OM_flag_common",
+						"OM_flag_15 OM_flag_common",
+						"OM_flag_16 OM_flag_common",
+						"OM_flag_17 OM_flag_common",
+						"OM_flag_18 OM_flag_common",
+						"OM_flag_19 OM_flag_common",
+						"OM_flag_20 OM_flag_common",
+						"OM_flag_21 OM_flag_common",
+						"OM_flag_22 OM_flag_common",
+						"OM_flag_23 OM_flag_common",
+						"OM_flag_24 OM_flag_common",
+						"OM_flag_25 OM_flag_common",
+						"OM_flag_26 OM_flag_common",
+						"OM_flag_27 OM_flag_common",
+						"OM_flag_28 OM_flag_common",
+						"OM_flag_29 OM_flag_common",
+						"OM_flag_30 OM_flag_common",
+						"OM_flag_31 OM_flag_common",
+						"OM_flag_32 OM_flag_common",
+						"OM_flag_33 OM_flag_common",
+						"OM_flag_34 OM_flag_common",
+						"OM_flag_35 OM_flag_common",
+						"OM_flag_36 OM_flag_common",
+						"OM_flag_37 OM_flag_common",
+						"OM_flag_38 OM_flag_common",
+						"OM_flag_39 OM_flag_common",
+						"OM_flag_40 OM_flag_common",
+						"OM_flag_41 OM_flag_common",
+						"OM_flag_42 OM_flag_common",
+						"OM_flag_43 OM_flag_common",
+						"OM_flag_44 OM_flag_common",
+						"OM_flag_45 OM_flag_common",
+						"OM_flag_46 OM_flag_common",
+						"OM_flag_47 OM_flag_common",
+						"OM_flag_48 OM_flag_common",
+						"OM_flag_49 OM_flag_common",
+						"OM_flag_50 OM_flag_common",
+						"OM_flag_51 OM_flag_common",
+						"OM_flag_52 OM_flag_common",
+						"OM_flag_53 OM_flag_common",
+						"OM_flag_54 OM_flag_common",
+						"OM_flag_55 OM_flag_common",
+						"OM_flag_56 OM_flag_common",
+						"OM_flag_57 OM_flag_common",
+						"OM_flag_58 OM_flag_common",
+						"OM_flag_59 OM_flag_common",
+						"OM_flag_60 OM_flag_common",
+						"OM_flag_MA OM_flag_common"
+						]
+		            },
+					{
+					    name: "Ratings",
+					    classes: ["rating_box rating_tile_red",
+					    "rating_box rating_tile_orange",
+					    "rating_box rating_tile_yellow",
+					    "rating_box rating_tile_green",
+					    "rating_box rating_tile_blue",
+					    "rating_box rating_tile_red_highlighted",
+					    "rating_box rating_tile_orange_highlighted",
+					    "rating_box rating_tile_yellow_highlighted",
+					    "rating_box rating_tile_green_highlighted",
+					    "rating_box rating_tile_blue_highlighted"					    
+						]
+					},
+					{
+					    name: "PFM icons",
+					    classes: ["PFM_goalIcon"
+						]
+					},
+					{
+					    name: "OM icons",
+					    classes: ["applicationOM_folder",
+					    "applicationOM_manager",
+					    "applicationOM_person",
+					    "applicationOM_staff",
+					    "applicationOM_staff2"
+						]
+					},
+					{
+					    name: "Popup and Balloon",
+					    classes: ["balloon_lowerLeftCorner",
+					    "balloon_lowerRightCorner",
+					    "balloon_upperLeftCorner",
+					    "balloon_upperRightCorner",
+					    "balloon_lowerPeak_show",
+					    "popUp_upperLeftCorner",
+					    "popUp_upperRightCorner",
+					    "popUp_lowerLeftCorner",
+					    "popUp_lowerRightCorner"
+						]
+					},
+					{
+					    name: "Lined Tree",
+					    classes: ["linedTree_collapseIcon linedTree_spacer",
+					    "linedTree_collapseIcon linedTree_whiteSpacer",
+					    "linedTree_collapseIcon linedTree_plus2",
+					    "linedTree_collapseIcon linedTree_plus3",
+					    "linedTree_collapseIcon linedTree_plus4",
+					    "linedTree_collapseIcon linedTree_plus5",
+					    "linedTree_collapseIcon linedTree_minus2",
+					    "linedTree_collapseIcon linedTree_minus3",
+					    "linedTree_collapseIcon linedTree_minus4",
+					    "linedTree_collapseIcon linedTree_minus5",
+					    "linedTree_collapseIcon linedTree_minus4",
+					    "linedTree_collapseIcon linedTree_line2",
+					    "linedTree_collapseIcon linedTree_line3",
+					    "linedTree_collapseIcon linedTree_line4",
+					    "linedTree_checkIcon linedTree_check0",
+					    "linedTree_checkIcon linedTree_check1",
+					    "linedTree_checkIcon linedTree_check2"
+						]
+					},
+					{
+					    name: "Attachments",
+					    classes: ["attachDiv attach_XLS",
+					    "attachDiv attach_XLSX",
+					    "attachDiv attach_PDF",
+					    "attachDiv attach_DOC",
+					    "attachDiv attach_DOCX",
+					    "attachDiv attach_JPG",
+					    "attachDiv attach_GIF",
+					    "attachDiv attach_JPEG",
+					    "attachDiv attach_PNG",
+					    "attachDiv attach_TIF",
+					    "attachDiv attach_TIFF",
+					    "attachDiv attach_RTF",
+					    "attachDiv attach_TXT",
+					    "attachDiv attach_PPT",
+					    "attachDiv attach_PPTX",
+					    "attachDiv attach_PPS",
+					    "attachDiv attach_ODF",
+					    "attachDiv attach_ODS"
+					    
+						]
+					},
+					{
+                        name: "Small icons",
+                        classes: ["application_down_arrow",
+						"application_up_arrow",
+						"application_verticalR_arrow",
+						"application_verticalL_arrow",
+						"application_icon_green",
+						"application_icon_red",
+						"application_icon_orange",
+						"application_rounded_x",
+						"application_rounded_question",
+						"application_rounded_ok",
+						"application_rounded_x1",
+						"application_rounded_question1",
+						"application_rounded_tilt", 
+						"application_rounded_ok1", 
+						"application_currentSelection",
+						"rating_emptyStar rating_sizeStar",
+                        "rating_fullStar rating_sizeStar",
+                        "rating_rateStar rating_sizeStar",
+						"applicationmyData_validity",
+						"application_stickyNote",
+						"application_stickyNoteRed",
+						"application_rounded_maximize_blue",
+						"application_rounded_maximize",
+						"application_rounded_minimize",
+						"application_remove_blue",
+						"application_arrowUp_blue",
+						"application_arrowDown_blue"
+					    ]
+                    },
+					{
+                        name: "General framework and modules images",
+                        classes: ["table_sortColDesc",
+						"table_sortColAsc'",
+						"info_div_up_leftCorner",
+						"info_div_up_rightCorner",
+						"info_div_down_leftCorner", 
+						"info_div_down_rightCorner",
+						"application_popUpMode_closeDiv",
+						"fwk_successful_left",
+						"fwk_successful_right",
+						"fwk_successful_left",
+						"fwk_successful_right",
+						"widget_collapseButton",
+						"widget_expandButton",
+						"tabs_tabs_content_left_d_d",
+						"tabs_tabs_content_left_d_s",
+						"tabs_tabs_content_left_s_d",
+						"tabs_tabs_content_left_initial_s",
+						"tabs_tabs_content_left_initial_d",
+						"tabs_tabs_content_right_d_d",
+						"tabs_tabs_content_right_d_s",
+						"tabs_tabs_content_right_s_d",
+						"tabs_tabs_content_right_final_d",
+						"tabs_tabs_content_right_final_s",
+						"datePicker_icon_box",
+						"application_main_print",
+						"application_main_help",
+						"application_main_mail",
+						"application_rounded_options",
+						"application_rounded_close",
+						"application_rounded_minimize",
+						"application_rounded_maximize",
+						"moduleInfoPopUp_indicatorIconQuestion",
+						"moduleInfoPopUp_indicatorIconExclamation",
+						"moduleInfoPopUp_indicatorIconConfirmation",
+						"fwk_info_logo",
+						"balloon_upperLeftCorner",
+						"balloon_upperRightCorner",
+						"balloon_lowerLeftCorner",
+						"balloon_lowerRightCorner",
+						"balloon_lowerPeak_show",
+						"fwk_infoDiv fixedHeight"
+                        ]
+                    },
+					{
+                        name: "SCM icons",
+                        classes: ["SCM_ticketingDuplicateEnabled",
+						"SCM_ticketingDuplicateDisabled",
+						"SCM_DotBlackIcon SCM_DotIconsSize",
+						"SCM_DotBlackTicon SCM_DotIconsSize",
+						"SCM_DotBlueIcon SCM_DotIconsSize",
+						"SCM_DotBlueTicon SCM_DotIconsSize",
+						"SCM_DotBlueIcon SCM_DotIconsSize",
+						"SCM_DotBrownTicon SCM_DotIconsSize",
+						"SCM_DotGrayIcon SCM_DotIconsSize",
+						"SCM_DotGrayTicon SCM_DotIconsSize",
+						"SCM_DotGreenIcon SCM_DotIconsSize",
+						"SCM_DotGreenTicon SCM_DotIconsSize",
+						"SCM_DotMauveIcon SCM_DotIconsSize",
+						"SCM_DotMauveBlackTicon SCM_DotIconsSize",
+						"SCM_DotMauveBlackTicon SCM_DotIconsSize",
+						"SCM_DotMauveBlueIcon SCM_DotIconsSize",
+						"SCM_DotMauveBlueTicon SCM_DotIconsSize",
+						"SCM_DotMauveTicon SCM_DotIconsSize",
+						"SCM_DotOrangeIcon SCM_DotIconsSize",
+						"SCM_DotOrangeTicon SCM_DotIconsSize",
+						"SCM_DotRedIcon SCM_DotIconsSize",
+						"SCM_DotRedTicon SCM_DotIconsSize",
+						"SCM_ItemAccess SCM_itemSize",
+						"SCM_ItemBinary SCM_itemSize",
+						"SCM_ItemExcel SCM_itemSize",
+						"SCM_ItemHTML SCM_itemSize",
+						"SCM_ItemImage SCM_itemSize",
+						"SCM_ItemNote SCM_itemSize",
+						"SCM_ItemPDF SCM_itemSize",
+						"SCM_ItemPowerPoint SCM_itemSize",
+						"SCM_ItemSap SCM_itemSize",
+						"SCM_ItemText SCM_itemSize",
+						"SCM_ItemWord SCM_itemSize",
+						"SCM_TicketItem SCM_itemSize",
+						"SCM_TicketItemClose SCM_itemSize",
+						"SCM_ticketScreen_skillMandatoryOnClose SCM_ticketScreen_skillMandatorySize",
+						"SCM_ticketScreen_skillMandatoryOnCreate SCM_ticketScreen_skillMandatorySize",
+						"SCM_ticketingAddDocDisabled SCM_ticketingIconsSize",
+						"SCM_ticketingAddDocEnabled SCM_itemSize",
+						"SCM_ticketingCloseDisabled SCM_itemSize",
+						"SCM_ticketingCloseEnabled SCM_itemSize",
+						"SCM_ticketingGeneralPoolDisabled SCM_itemSize",
+						"SCM_ticketingGeneralPoolEnabled SCM_itemSize",
+						"SCM_ticketingSaveSendDisabled SCM_itemSize",
+						"SCM_ticketingSaveSendEnabled SCM_itemSize",
+						"SCM_ticketingScheduleDisabled SCM_itemSize",
+						"SCM_ticketingScheduleEnabled SCM_itemSize",
+						"SCM_ticketingSendToDisabled SCM_itemSize",
+						"SCM_ticketingSendToEnabled SCM_itemSize",
+						"SCM_ticketingPendingDisabled SCM_itemSize",
+						"SCM_ticketingPendingEnabled SCM_itemSize",
+						"SCM_ticketingWaitingDisabled SCM_itemSize",
+						"SCM_ticketingWaitingEnabled SCM_itemSize",
+						"SCM_ticketingProcessingDisabled SCM_itemSize",
+						"SCM_ticketingProcessingEnabled SCM_itemSize",
+						"SCM_ticketingPauseIcon SCM_ticketingPausePlayIconSize",
+						"SCM_ticketingPlayIcon SCM_ticketingPausePlayIconSize",
+						"SCM_ActionNewItemIcon SCM_ActionsIconSize",
+						"SCM_ActionNewUserIcon SCM_ActionsIconSize",
+						"SCM_ActionServicesIcon SCM_ActionsIconSize"
+                        ]
+                    },
+                    {
+                        name: "PM icons",
+                        classes: ["PM_viewCalendarLeftSelected",
+						"PM_viewCalendarLeft",
+						"PM_viewCalendarCenterSelected",
+						"PM_viewCalendarCenter",
+						"PM_viewCalendarRightSelected",
+						"PM_viewCalendarRight",
+						"PM_viewTreeLeftSelected",
+						"PM_viewTreeLeft",
+						"PM_viewTreeCenterSelected",
+						"PM_viewTreeCenter",
+						"PM_viewTreeRightSelected",
+						"PM_viewTreeRight",
+						"PM_viewListLeftSelected",
+						"PM_viewListLeft",
+						"PM_viewListCenterSelected",
+						"PM_viewListCenter",
+						"PM_viewListRightSelected",
+						"PM_viewListRight",
+						"PM_viewGanttLeftSelected",
+						"PM_viewGanttLeft",
+						"PM_viewGanttCenterSelected",
+						"PM_viewGanttCenter",
+						"PM_viewGanttRightSelected",
+						"PM_viewGanttRight",
+						"PM_viewCoverflowLeftSelected",
+						"PM_viewCoverflowLeft",
+						"PM_viewCoverflowCenterSelected",
+						"PM_viewCoverflowCenterSelected",
+						"PM_viewCoverflowCenter",
+						"PM_viewCoverflowRightSelected",
+						"PM_viewCoverflowRight",
+						"PM_view9BoxLeftSelected",
+						"PM_view9BoxLeft",
+						"PM_view9BoxCenterSelected",
+						"PM_view9BoxCenter",
+						"PM_view9BoxRightSelected",
+						"PM_view9BoxRight",
+						"PM_viewProfilerLeftSelected",
+						"PM_viewProfilerLeft",
+						"PM_viewProfilerCenterSelected",
+						"PM_viewProfilerCenter",
+						"PM_viewProfilerRightSelected",
+						"PM_viewProfilerRight",
+						"PM_viewProfilerRight",
+						"PM_viewTeamRosterLeftSelected",
+						"PM_viewTeamRosterLeft",
+						"PM_viewTeamRosterCenterSelected",
+						"PM_viewTeamRosterCenter",
+						"PM_viewTeamRosterRightSelected",
+						"PM_viewTeamRosterRight",
+						"PM_viewThumbnailsLeftSelected",
+						"PM_viewThumbnailsLeft",
+						"PM_viewThumbnailsCenterSelected",
+						"PM_viewThumbnailsCenter",
+						"PM_viewThumbnailsRightSelected",
+						"PM_viewThumbnailsRight",
+						"PM_viewCalibrationLeftSelected",
+						"PM_viewCalibrationLeft",
+						"PM_viewCalibrationCenterSelected",
+						"PM_viewCalibrationCenter",
+						"PM_viewCalibrationRightSelected",
+						"PM_viewCalibrationRight"
+                        ]
+                    },
+                    {
+                        name: "Learning icons",
+                        classes: ["learning_locationIcon",
+						"learning_externalTeacherIcon",
+						"learning_internalTeacherIcon",
+						"learning_companyIcon",
+						"learning_roomIcon",
+						"application_inProgress_training_icon_curr_div",
+						"application_catalog_image"
+                        ]
+                    }
+				];
+				var textCategories = [
+				{
+					name: "General text classes",
+					classes: [
+					   {name:"application_main_title",textToShow:"Main title"},
+					   {name:"application_main_title2",textToShow:"Main title 2"},
+					   {name:"application_main_title3",textToShow:"Main title 3"},
+					   {name:"application_text_bolder",textToShow:"Bold text"},
+					   {name:"application_main_text",textToShow:"Normal text"},
+					   {name:"application_action_link",textToShow:"Text for links"},
+					   {name:"application_main_soft_text",textToShow:"Information text"},
+					   {name:"application_main_error_text",textToShow:"Error text"},
+					   {name:"application_legend_text",textToShow:"Legend text"}
+					]
+				}];
+				
+				var horizontalRepeating = [
+                {
+                    name: "Images repeating horizontally",
+                    classes: [
+                       "tabs_tabs_content_center",
+					   "unmWidgets_titleDiv",
+					   "dhxeditor_dhx_skyblue_btns",
+					   "application_header_bar",
+					   "barInColor_eeColor01",
+					   "barInColor_eeColor02",
+					   "barInColor_eeColor03",
+					   "barInColor_eeColor04",
+					   "barInColor_eeColor05",
+					   "barInColor_eeColor06",
+					   "barInColor_eeColor07",
+					   "barInColor_eeColor08",
+					   "barInColor_eeColor09",
+					   "barInColor_eeColor10",
+					   "barInColor_eeColor11",
+					   "barInColor_eeColor12",
+					   "table_doubleHeaderUpper",
+					   "table_doubleHeaderLower"
+                    ]
+                }];
+				var verticalRepeating = [
+                {
+                    name: "Images repeating vertically",
+                    classes: [
+                       "accordion_horizontal_toggle",
+					   "fwk_infoDiv"
+                    ]
+                }];
+				var generalClasses = [
+                {
+                    name: "General components",
+                    elements: [
+                        {
+							name: "Form fields",
+							code: "<div class='field'><div class='fieldLabel application_main_soft_text' title='Field'><span class='application_main_soft_text'>Label</span></div><div class='fieldValue'>Value</div></div>",
+							description: "<p>We have to apply <b>field</b> class to the container, <b>fieldLabel</b> to the label and <b>fieldValue</b> to the value. Also, we should apply <b>application_main_soft_text</b> to the label text. </p><p>In the value part we can add any type of fieldDisplayer (autocompleters, date pickers...)</p>"
+						},
+						{
+                            name: "Visually dependant form fields",
+                            code: "<div class='multipleFields'><div class='field'><div class='fieldLabel application_main_soft_text' title='Field'><span class='application_main_soft_text'>Label</span></div><div class='fieldValue'>Value</div></div><div class='field'><div class='fieldLabel application_main_soft_text' title='Other field'><span class='application_main_soft_text'>Other field</span></div><div class='fieldValue'>Other value</div></div></div>",
+                            description: "<p>We can place one field near another just be sorrounding them with another div with class <b>multipleFields</b></p>"
+                        },
+						{
+                            name: "Links menu",
+                            code: "<div class='linksMenu' id=''><div class='getContentLinks fieldDispFloatLeft megaButtonDisplayer_floatLeft megaButtonDisplayer_active' id=screensNavigationLayer_link_1>Personal Details</div><div class='getContentLinks fieldDispFloatLeft application_action_link megaButtonDisplayer_floatLeft' id=screensNavigationLayer_link_3>Personal ID's</div></div>",
+                            description: "<p>A normal menu made with links. We just need to apply <b>linksMenu</b> to the container div.</p>"
+                        },
+                        {
+                            name: "2 columns layout",
+                            code: "<div class='columnsContainer'><div class='column2Columns'><div class='field'><div class='fieldLabel application_main_soft_text' title='Other field'><span class='application_main_soft_text'>Other field</span></div><div class='fieldValue' id=''>Other value</div></div><div class='field'><div class='fieldLabel application_main_soft_text' title='Other field'><span class='application_main_soft_text'>Other field</span></div><div class='fieldValue' id=''>Other value</div></div></div><div class='column2Columns'><div class='field'><div class='fieldLabel application_main_soft_text' title='Other field'><span class='application_main_soft_text'>Other field</span></div><div class='fieldValue' id=''>Other value for2</div></div><div class='field'><div class='fieldLabel application_main_soft_text' title='Other field'><span class='application_main_soft_text'>Other field</span></div><div class='fieldValue' id=''>Other value for2</div></div></div> </div>",
+                            description: "<p>Layout with two columns. We just have to apply <b>columnsContainer</b> to the external container and <b>column2Columns</b> to each column container. We can also create layouts with more columns using <b>column3Columns</b>, <b>column4Columns</b> and <b>column5Columns</b></p>"
+                        },
+                        {
+                            name: "Elements in the same line",
+                            code: "<div class='inlineContainer'><div class='inlineElement'><div class=leftRoundedCorner><SPAN class=centerRoundedButton>ButtonLeft</SPAN><SPAN class=rightRoundedCorner></SPAN></div></div><div class='inlineElementRight'><div class=leftRoundedCorner><SPAN class=centerRoundedButton>ButtonRight</SPAN><SPAN class=rightRoundedCorner></SPAN></div></div><div class='inlineElementRight'><div class='fieldDispFloatLeft fieldDispField datePicker_mainContainer' id=REL_SALA_1_5_STVOR><div class=datePicker_fields><INPUT class='datePicker_text_day application_autocompleter_box' id=anonymous_element_12 maxLength=2 size=2/><INPUT class='datePicker_text_month application_autocompleter_box' id=anonymous_element_13 maxLength=2 size=2 /><INPUT class='datePicker_text_year application_autocompleter_box' id=anonymous_element_11 maxLength=4 size=4/></div><div class=datePicker_icon_box><div class=datePicker_icon></div></div></div></div></div>",
+                            description: "<p>The container div must have class <b>inlineContainer</b> and elements inside it can be aligned to the left, using <b>inlineElement</b> or to the right, using <b>inlineElementRight</b></p><p>We can have any kind of elements here.</p>"
+                        }
+					]
+                }];
+				
+				
+				
+				//Text categories
+				var body = $("bodyCssClasses");
+				for (var i = 0; i < textCategories.size(); i++) {
+				    var newDiv = new Element("div", {"id": "category_" + i, "class": "category"});
+                    var categoryHeader = new Element("div", {"id": "categoryHeader_" + i, "class": "categoryHeader"});
+                    categoryHeader.insert(new Element("h2").insert(textCategories[i].name));
+                    var categoryContent = new Element("div", {"id": "categoryContent_" + i, "class": "categoryContent"});
+                    var collapseButton = new Element("a", {"id":"collapseButton_"+i,"class": "collapseButton","href":"#"}).insert("show/hide");
+                    collapseButton.observe("click",collapse.bind(this,categoryContent));
+                    categoryContent.hide();
+                    categoryHeader.insert(collapseButton);
+                    for(var j=0; j<textCategories[i].classes.size(); j++){
+                        var className = textCategories[i].classes[j].name;
+                        var classDiv = new Element("div", {"class": "classContainer"});
+                        var sampleContainer = new Element("div", {"class": "sampleContainer"});
+                        sampleContainer.insert(new Element("div", {"class": className}).insert(textCategories[i].classes[j].textToShow));
+                        classDiv.insert(sampleContainer);
+                        classDiv.insert(new Element("span").insert(className));
+                        categoryContent.insert(classDiv);
+                    }
+                    newDiv.insert(categoryHeader);
+                    newDiv.insert(categoryContent);
+                    body.insert(newDiv);
+                }
+				
+				//General components
+				for (var i = 0; i < generalClasses.size(); i++) {
+                    var newDiv = new Element("div", {"id": "category_" + i, "class": "category"});
+                    var categoryHeader = new Element("div", {"id": "categoryHeader_" + i, "class": "categoryHeader"});
+                    categoryHeader.insert(new Element("h2").insert(generalClasses[i].name));
+                    var categoryContent = new Element("div", {"id": "categoryContent_" + i, "class": "categoryContent"});
+                    var collapseButton = new Element("a", {"id":"collapseButton_"+i,"class": "collapseButton","href":"#"}).insert("show/hide");
+                    collapseButton.observe("click",collapse.bind(this,categoryContent));
+                    categoryContent.hide();
+                    categoryHeader.insert(collapseButton);
+                    for(var j=0; j<generalClasses[i].elements.size(); j++){
+                        var className = generalClasses[i].elements[j].name;
+						var classDescription = generalClasses[i].elements[j].description;
+						var classCode = generalClasses[i].elements[j].code;
+                        
+						var classDiv = new Element("div", {"class": "generalComponent"});
+						var classTitle = (new Element("h3")).insert(className);
+						var classDescriptionContainer = (new Element("div", {"class": "generalComponentDescription"})).insert(classDescription);
+						var classCodeContainer = (new Element("div", {"class": "generalComponentCode"})).insert(classCode);
+						
+					    classDiv.insert(classTitle);
+						classDiv.insert(classDescriptionContainer);
+						classDiv.insert("Example (inspect with firebug or similar to see the code):");
+						classDiv.insert(classCodeContainer);
+						
+                        categoryContent.insert(classDiv);
+                    }
+                    newDiv.insert(categoryHeader);
+                    newDiv.insert(categoryContent);
+                    body.insert(newDiv);
+                }
+				
+				//Icons
+				for(var i=0; i<categories.size(); i++){
+				    var newDiv = new Element("div", {"id": "category_" + i, "class": "category"});
+					var categoryHeader = new Element("div", {"id": "categoryHeader_" + i, "class": "categoryHeader"});
+					categoryHeader.insert(new Element("h2").insert(categories[i].name));
+					var categoryContent = new Element("div", {"id": "categoryContent_" + i, "class": "categoryContent"});
+					var collapseButton = new Element("a", {"id":"collapseButton_"+i,"class": "collapseButton","href":"#"}).insert("show/hide");
+					collapseButton.observe("click",collapse.bind(this,categoryContent));
+					categoryContent.hide();
+					categoryHeader.insert(collapseButton);
+                    for(var j=0; j<categories[i].classes.size(); j++){
+						var className = categories[i].classes[j];
+						var classDiv = new Element("div", {"class": "classContainer"});
+						var sampleContainer = new Element("div", {"class": "sampleContainer"});
+						sampleContainer.insert(new Element("div", {"class": className}));
+						classDiv.insert(sampleContainer);
+						classDiv.insert(new Element("span").insert(className));
+						categoryContent.insert(classDiv);
+					}
+					newDiv.insert(categoryHeader);
+					newDiv.insert(categoryContent);
+					body.insert(newDiv);
+				}
+				
+				//Images repeated horizontally
+				for(var i=0; i<horizontalRepeating.size(); i++){
+                    var newDiv = new Element("div", {"id": "category_" + i, "class": "category"});
+                    var categoryHeader = new Element("div", {"id": "categoryHeader_" + i, "class": "categoryHeader"});
+                    categoryHeader.insert(new Element("h2").insert(horizontalRepeating[i].name));
+                    var categoryContent = new Element("div", {"id": "categoryContent_" + i, "class": "categoryContent"});
+                    var collapseButton = new Element("a", {"id":"collapseButton_"+i,"class": "collapseButton","href":"#"}).insert("show/hide");
+                    collapseButton.observe("click",collapse.bind(this,categoryContent));
+                    categoryContent.hide();
+                    categoryHeader.insert(collapseButton);
+                    for(var j=0; j<horizontalRepeating[i].classes.size(); j++){
+                        var className = horizontalRepeating[i].classes[j];
+                        var classDiv = new Element("div", {"class": "classContainer"});
+                        var sampleContainer = new Element("div", {"class": "sampleContainer"});
+                        sampleContainer.insert(new Element("div", {"class": className + " fixedWidth"}));
+                        classDiv.insert(sampleContainer);
+                        classDiv.insert(new Element("span").insert(className));
+                        categoryContent.insert(classDiv);
+                    }
+                    newDiv.insert(categoryHeader);
+                    newDiv.insert(categoryContent);
+                    body.insert(newDiv);
+                }
+                
+                //Images repeated vertically
+				for(var i=0; i<verticalRepeating.size(); i++){
+                    var newDiv = new Element("div", {"id": "category_" + i, "class": "category"});
+                    var categoryHeader = new Element("div", {"id": "categoryHeader_" + i, "class": "categoryHeader"});
+                    categoryHeader.insert(new Element("h2").insert(verticalRepeating[i].name));
+                    var categoryContent = new Element("div", {"id": "categoryContent_" + i, "class": "categoryContent"});
+                    var collapseButton = new Element("a", {"id":"collapseButton_"+i,"class": "collapseButton","href":"#"}).insert("show/hide");
+                    collapseButton.observe("click",collapse.bind(this,categoryContent));
+                    categoryContent.hide();
+                    categoryHeader.insert(collapseButton);
+                    for(var j=0; j<verticalRepeating[i].classes.size(); j++){
+                        var className = verticalRepeating[i].classes[j];
+                        var classDiv = new Element("div", {"class": "classContainer"});
+                        var sampleContainer = new Element("div", {"class": "sampleContainer"});
+                        sampleContainer.insert(new Element("div", {"class": className + " fixedHeight"}));
+                        classDiv.insert(sampleContainer);
+                        classDiv.insert(new Element("span").insert(className));
+                        categoryContent.insert(classDiv);
+                    }
+                    newDiv.insert(categoryHeader);
+                    newDiv.insert(categoryContent);
+                    body.insert(newDiv);
+                }
+			}
+			function collapse(div){
+				if(Element.visible(div)){
+					div.blindUp({duration:0.5});
+				}else{
+					div.blindDown({duration:0.5});
+				}
+				
+			}		
+		</script>
+	</head>
+    <body id="bodyCssClasses" onload="javascript:fillContent()">
+        <h1>Css classes</h1>
+    </body>
+</html>

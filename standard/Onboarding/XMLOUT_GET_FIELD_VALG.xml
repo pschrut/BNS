@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_records_found>3</o_records_found> 
+  <o_values>
+    <item id="ZZ99" service="" value="euHReka" /> 
+    <item id="ZZ98" service="" value="euHReka 98" /> 
+    <item id="ZZ97" service="" value="euHReka 97" /> 
+  </o_values>
+  <labels /> 
+  <messages/>
+</EWS>

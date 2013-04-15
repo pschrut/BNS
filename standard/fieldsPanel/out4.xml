@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+
+    <o_field_settings>
+
+        <yglui_str_wid_fs_record screen="1">
+
+            <fs_fields>
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="BANKL" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000015" seqnr="05" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CHAR" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="BANKN" fieldlabel="Bank Account" fieldsource="" fieldtype="" label_type="V" length="000018" seqnr="06" service_pai="" service_values="" show_text="" type="CHAR" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="BANKS" fieldlabel="Bank Country" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="04" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CHAR" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000010" seqnr="10" service_pai="" service_values="" show_text="" type="DATS" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="BKORT" fieldlabel="City" fieldsource="" fieldtype="" label_type="V" length="000025" seqnr="03" service_pai="" service_values="" show_text="" type="CHAR" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="BKPLZ" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000010" seqnr="02" service_pai="" service_values="" show_text="" type="CHAR" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="BEGDA" depend_type="X" display_attrib="MAN" display_group="" fieldformat="P" fieldid="ENDDA" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000010" seqnr="11" service_pai="" service_values="" show_text="" type="DATS" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="STRAS" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000030" seqnr="01" service_pai="" service_values="" show_text="" type="CHAR" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="WAERS" fieldlabel="Payment currency" fieldsource="" fieldtype="" label_type="V" length="000005" seqnr="08" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CUKY" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="ZLSCH" fieldlabel="Payment method" fieldsource="" fieldtype="" label_type="V" length="000001" seqnr="07" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CHAR" />
+
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="ZWECK" fieldlabel="Purpose" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="09" service_pai="" service_values="" show_text="" type="CHAR" />
+
+            </fs_fields>
+
+        </yglui_str_wid_fs_record>
+
+    </o_field_settings>
+
+    <o_field_values>
+
+        <yglui_str_wid_record rec_key="P_3000042900090000" screen="1">
+
+            <contents>
+
+                <yglui_str_wid_content buttons="" key_str="3000042900090 9999123120080101000" rec_index="1" selected="X" tcontents="">
+
+                    <fields>
+
+                        <yglui_str_wid_field fieldid="BANKL" fieldlabel="" fieldtechname="BANKL" fieldtseqnr="000000" value="001">Fortis Bank</yglui_str_wid_field>
+
+                        <yglui_str_wid_field fieldid="BANKN" fieldlabel="Bank Account" fieldtechname="BANKN" fieldtseqnr="000000" value="001-4218443-86" />
+
+                        <yglui_str_wid_field fieldid="BANKS" fieldlabel="Bank Country" fieldtechname="BANKS" fieldtseqnr="000000" value="BE">Belgium</yglui_str_wid_field>
+
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value="2008-01-01" />
+
+                        <yglui_str_wid_field fieldid="BKORT" fieldlabel="City" fieldtechname="BKORT" fieldtseqnr="000000" value="" />
+
+                        <yglui_str_wid_field fieldid="BKPLZ" fieldlabel="" fieldtechname="BKPLZ" fieldtseqnr="000000" value="" />
+
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31" />
+
+                        <yglui_str_wid_field fieldid="STRAS" fieldlabel="" fieldtechname="STRAS" fieldtseqnr="000000" value="" />
+
+                        <yglui_str_wid_field fieldid="WAERS" fieldlabel="Payment currency" fieldtechname="WAERS" fieldtseqnr="000000" value="EUR">European Euro</yglui_str_wid_field>
+
+                        <yglui_str_wid_field fieldid="ZLSCH" fieldlabel="Payment method" fieldtechname="ZLSCH" fieldtseqnr="000000" value="T">Domestic banktransfers</yglui_str_wid_field>
+
+                        <yglui_str_wid_field fieldid="ZWECK" fieldlabel="Purpose" fieldtechname="ZWECK" fieldtseqnr="000000" value="" />
+
+                    </fields>
+
+                </yglui_str_wid_content>
+
+            </contents>
+
+        </yglui_str_wid_record>
+
+    </o_field_values>
+
+    <o_future_date />
+
+    <o_retro_date />
+
+    <o_screen_buttons />
+
+    <o_widget_screens>
+
+        <yglui_str_wid_screen all_modifiable="" appid="PD_BANK" label_tag="Main" list_mode="" screen="1" selected="X" />
+
+        <yglui_str_wid_screen all_modifiable="" appid="PD_BANK" label_tag="Other" list_mode="X" screen="2" selected="" />
+
+    </o_widget_screens>
+
+    <labels>
+
+        <item id="ADDITIONALDATA" service="" value="Extra" />
+
+        <item id="BANKL" service="" value="Bank" />
+
+        <item id="BKPLZ" service="" value="Postal code" />
+
+        <item id="STRAS" service="" value="Street" />
+
+    </labels>
+
+    <messages />
+
+    <webmessage_type />
+
+    <webmessage_text />
+
+</EWS>
+
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+    <o_begda_i>2009-05-14</o_begda_i>
+    <o_endda_i>2009-05-26</o_endda_i>
+    <o_events_filter absence="X" approved="X" attendance="X" availability="X" overtime="X" sent_approval="X" sent_deletion="N" substitution="X"></o_events_filter>
+    <o_events_status></o_events_status>
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="1">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="ABWTG" fieldlabel="Days" fieldsource="" fieldtype="" label_type="V" length="000008" seqnr="00" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="RADIO_G01_1" fieldformat="C" fieldid="ALLDF" fieldlabel="Full-day" fieldsource="" fieldtype="" label_type="V" length="000001" seqnr="04" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="RADIO_G01_2" fieldformat="R" fieldid="AMPM" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000000" seqnr="05" service_pai="" service_values="GET_AM_PM" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="ABS" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="APPID" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="AWART" fieldlabel="Att./Absence type" fieldsource="" fieldtype="" label_type="V" length="000004" seqnr="01" service_pai="" service_values="GET_SUBTYPES2" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="2009-05-18" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA_H" fieldlabel="Start Date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="02" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="RADIO_G01_3" fieldformat="H" fieldid="BEGUZ" fieldlabel="Start time" fieldsource="" fieldtype="" label_type="V" length="000008" seqnr="06" service_pai="" service_values="" show_text="" type="TIMS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="T" fieldid="COMMENT" fieldlabel="" fieldsource="" fieldtype="" label_type="V" length="009999" seqnr="09" service_pai="" service_values="" show_text="B" type="STRG"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="2009-05-18" depend_field="BEGDA" depend_type="X" display_attrib="MAN" display_group="" fieldformat="P" fieldid="ENDDA_H" fieldlabel="End Date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="03" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="BEGUZ" depend_type="X" display_attrib="OPT" display_group="RADIO_G01_3" fieldformat="H" fieldid="ENDUZ" fieldlabel="End time" fieldsource="" fieldtype="" label_type="V" length="000008" seqnr="07" service_pai="" service_values="" show_text="" type="TIMS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="INFOTYPE" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="O" fieldid="OPT_G01_1" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="O" fieldid="OPT_G01_2" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="O" fieldid="OPT_G01_3" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="O" fieldid="OPT_G01_4" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000000" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="V" fieldid="PERNR" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000008" seqnr="00" service_pai="" service_values="" show_text="B" type="NUMC"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="V" fieldid="STATUS" fieldlabel="" fieldsource="Q" fieldtype="" label_type="" length="000000" seqnr="10" service_pai="" service_values="" show_text="B" type=""></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="RADIO_G01_4" fieldformat="I" fieldid="STDAZ" fieldlabel="Absence hours" fieldsource="" fieldtype="" label_type="V" length="000009" seqnr="08" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="C" fieldid="VTKEN" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000001" seqnr="00" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>       
+    </o_field_settings>
+    <o_field_values>
+        <yglui_str_wid_record rec_key="P_3000042920029010000" screen="1">
+            <contents>
+                <yglui_str_wid_content key_str="3000042920029010   2009051520090515000" rec_index="1" selected="X" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ABWTG" fieldlabel="Days" fieldtechname="ABWTG" fieldtseqnr="000000" value="0.29"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ALLDF" fieldlabel="Full-day" fieldtechname="ALLDF" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="APPID" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value="">ATT</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="AWART" fieldlabel="Att./Absence type" fieldtechname="AWART" fieldtseqnr="000000" value="9010">Training (No Quota)</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BEGDA_H" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-05-15"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BEGUZ" fieldlabel="Start time" fieldtechname="BEGUZ" fieldtseqnr="000000" value="15:00:00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="COMMENT" fieldlabel="" fieldtechname="COMMENT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA_H" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="2009-05-15"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDUZ" fieldlabel="" fieldtechname="ENDUZ" fieldtseqnr="000000" value="17:00:00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="INFOTYPE" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value="">2002</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="OPT_G01_1" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="OPT_G01_2" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value="">X</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="OPT_G01_3" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PERNR" fieldlabel="" fieldtechname="PERNR" fieldtseqnr="000000" value="30000429">John Barrack</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="STATUS" fieldlabel="" fieldtechname="STATUS" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="STDAZ" fieldlabel="Attendance hours" fieldtechname="STDAZ" fieldtseqnr="000000" value="2.00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="VTKEN" fieldlabel="" fieldtechname="VTKEN" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="REC_ATT_DELETE" disma="" label_tag="Delete" okcode="DEL" screen="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+                        <yglui_str_wid_button action="REC_ATT_SUBMIT" disma="" label_tag="Submit" okcode="MOD" screen="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+    <o_freedays>
+        <yglui_str_incidence abwtg="0.0" afternoon="" allday="" ampm="" app_id="" avl_dailywsc="" avl_dwsgrouping="00" avl_esgrouping="" avl_hcid="" avl_option="" avl_option_id="" avl_prevday="" avl_psgrouping="00" avl_wscrule="" avl_wscvariant="" begda="2009-05-16" begda_formatted="" beguz="00:00:00" beguz_char="" compstext="" compstype="" dailyworkedhours="0.0" dayname="" del_flag="" display="" ename="" endda="2009-05-16" endda_formatted="" enduz="00:00:00" enduz_char="" evaltext="" evaltype="" halfam="" halfpm="" incidence_comment="" incidence_key="" infty="" morning="" pernr="30000429" status="" stdaz="0.0" subty="FREE" type="FREE">FREE DAY</yglui_str_incidence>
+        <yglui_str_incidence abwtg="0.0" afternoon="" allday="" ampm="" app_id="" avl_dailywsc="" avl_dwsgrouping="00" avl_esgrouping="" avl_hcid="" avl_option="" avl_option_id="" avl_prevday="" avl_psgrouping="00" avl_wscrule="" avl_wscvariant="" begda="2009-05-17" begda_formatted="" beguz="00:00:00" beguz_char="" compstext="" compstype="" dailyworkedhours="0.0" dayname="" del_flag="" display="" ename="" endda="2009-05-17" endda_formatted="" enduz="00:00:00" enduz_char="" evaltext="" evaltype="" halfam="" halfpm="" incidence_comment="" incidence_key="" infty="" morning="" pernr="30000429" status="" stdaz="0.0" subty="FREE" type="FREE">FREE DAY</yglui_str_incidence>
+        <yglui_str_incidence abwtg="0.0" afternoon="" allday="" ampm="" app_id="" avl_dailywsc="" avl_dwsgrouping="00" avl_esgrouping="" avl_hcid="" avl_option="" avl_option_id="" avl_prevday="" avl_psgrouping="00" avl_wscrule="" avl_wscvariant="" begda="2009-05-23" begda_formatted="" beguz="00:00:00" beguz_char="" compstext="" compstype="" dailyworkedhours="0.0" dayname="" del_flag="" display="" ename="" endda="2009-05-23" endda_formatted="" enduz="00:00:00" enduz_char="" evaltext="" evaltype="" halfam="" halfpm="" incidence_comment="" incidence_key="" infty="" morning="" pernr="30000429" status="" stdaz="0.0" subty="FREE" type="FREE">FREE DAY</yglui_str_incidence>
+        <yglui_str_incidence abwtg="0.0" afternoon="" allday="" ampm="" app_id="" avl_dailywsc="" avl_dwsgrouping="00" avl_esgrouping="" avl_hcid="" avl_option="" avl_option_id="" avl_prevday="" avl_psgrouping="00" avl_wscrule="" avl_wscvariant="" begda="2009-05-24" begda_formatted="" beguz="00:00:00" beguz_char="" compstext="" compstype="" dailyworkedhours="0.0" dayname="" del_flag="" display="" ename="" endda="2009-05-24" endda_formatted="" enduz="00:00:00" enduz_char="" evaltext="" evaltype="" halfam="" halfpm="" incidence_comment="" incidence_key="" infty="" morning="" pernr="30000429" status="" stdaz="0.0" subty="FREE" type="FREE">FREE DAY</yglui_str_incidence>
+    </o_freedays>
+    <o_future_date>2009-08-18</o_future_date>
+    <o_object_list>
+        <yglui_str_hrobject objid="30000429" otype="P" plvar=""></yglui_str_hrobject>
+    </o_object_list>
+    <o_retro_date>2009-04-18</o_retro_date>
+    <o_workschedules>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-14"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-15"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="FREE" workschedule_id="2009-05-16"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="FREE" workschedule_id="2009-05-17"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-18"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-19"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-20"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-21"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-22"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="FREE" workschedule_id="2009-05-23"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="FREE" workschedule_id="2009-05-24"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-25"></yglui_str_dailyworkschedule>
+        <yglui_str_dailyworkschedule daily_wsc="AD1Z" workschedule_id="2009-05-26"></yglui_str_dailyworkschedule>
+    </o_workschedules>
+    <o_widget_screens screenmode="">
+        <yglui_str_wid_screen>
+            <yglui_str_wid_screen all_modifiable="" appid="REL_REMU" dyn_panel="" label_tag="Hola Farola" list_mode="" no_translation="X" screen="1" secondary="" selected="X" table_mode=""></yglui_str_wid_screen>
+        </yglui_str_wid_screen>
+    </o_widget_screens>
+    <labels>
+        <item id="ABSTitle" service="" value="Absence maintenance"></item>
+        <item id="ATTTitle" service="" value="Attendence maintenance"></item>
+        <item id="AVLTitle" service="" value="Availability maintenance"></item>
+        <item id="COMMENT" service="" value="Comment"></item>
+        <item id="OVTTitle" service="" value="Overtime maintenance"></item>
+        <item id="SUBTitle" service="" value="Substitution maintenance"></item>
+    </labels>
+    <messages></messages>
+    <webmessage_type></webmessage_type>
+    <webmessage_text></webmessage_text>
+</EWS>

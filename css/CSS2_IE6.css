@@ -1,0 +1,1678 @@
+
+/**************************************
+    GENERAL STYLES FRAMEWORK
+**************************************/
+.loading_app {
+    position: absolute;
+}
+div#loading_app_semitrans{
+    width: expression(window.screen.availWidth - 21);
+    height:expression(window.screen.availHeight);
+    position: absolute;
+	background-color: transparent;
+	background-image: url('../css/images/semitransparent.gif');
+}
+#fwk_1 {
+    overflow: hidden;
+}
+#fwk_3{
+    width:519px;
+}
+div.fwk_loadingInfo{
+    position:absolute;
+    top:40px;
+    right:0px;
+}
+.fwk_successful
+{
+    margin-right:0px;
+    margin-left:0px;
+    position:relative;
+}
+#fwk_7
+{
+
+}
+.applications_container_div{
+    padding:0px;
+}
+.application_icon_close
+{
+	background: transparent url(images/imagesAll.gif) -1088px -22px no-repeat;
+}
+.application_pasteIcon
+{
+    background-position-y:-179px;
+}
+.application_sap_info_text_div
+{
+    width:97%;
+    margin-left:5px;
+}
+.application_main_icons_div{
+	width: 84px;
+}
+.applications_popUp_container_div
+{
+    margin-right:20px;
+}
+/**********End of general styles Framwork**********/
+
+/**************************
+          MODULES
+***************************/
+
+/****************************
+        AUTOCOMPLETER
+*****************************/
+.autocompleter_container .autocompleter_button_showall
+{
+	margin-left: -4px;
+}
+div.autocompleter_autocomplete ul
+{
+	height: expression( this.scrollHeight > 200 ? "200px" : "auto" );
+}
+div.autocompleter_form_container
+{
+	overflow: visible;
+}
+/**********End of Autocompleter*********/
+
+/******************************
+       CONFIRMATION BOX
+******************************/
+.moduleConfirmationBox_container
+{
+	height: -1px;
+	margin-left: 0px;
+	margin-top: -1px;
+	position: absolute;
+	width: 500px;
+}
+/**********End of Confirmation Box*********/
+
+/******************************
+          INFO MODULE (used in hash to html)
+******************************/
+.infoModule_info_css{
+    margin-left:170px;
+}
+.infoModule_labels_css{
+    margin-left:15px;
+}
+/**********End of Info Module*********/
+
+/*******************************
+    MULTI SELECT SEARCH BOX
+********************************/
+div.multiselectSearchbox_container input.multiselectSearchbox_button_showall{
+    margin-left: -4px;
+}
+div.multiselectSearchbox_form_container{
+    overflow: visible;
+}
+/**********End of Multi Select Search Box*********/
+
+/******************************
+      UNMOVABLE WIDGETS
+******************************/
+.unmWidgets_contentDiv
+{
+    margin-top:0px;
+}
+/**********End of Unmovable Widgets*********/
+
+/*************************
+          WIDGETS
+**************************/
+.widget_collapseButton
+{
+	clear: right;
+	position: relative;
+	right: 1px;
+}
+.widget_content
+{
+	overflow: hidden;
+	width: 100%;
+}
+
+.widget_outerOptions
+{
+	left: 300px;
+	position: absolute;
+	z-index: 5001;
+}
+.widget_w
+{
+	overflow: auto;
+	_height:100%;
+}
+/**********End of Widgets*********/
+
+/**********End of MODULES*********/
+
+/************************
+       APPLICATIONS
+*************************/
+
+/******************************
+          APP NAVIGATION
+*******************************/
+.appNavigation_floatingTab
+{
+	margin-top: 20px;
+}
+div.appNavigation
+{
+	margin-left: 18px;
+}
+/**********End of App Navigation**********/
+
+/*****************************
+             BOOK
+*****************************/
+.application_book_status
+{
+	width: 700px;
+}
+.book_application_content_schedule_viewDetails
+{
+	margin-left: 210px;
+}
+/**********End of Book*********/
+
+/*************************
+          CALENDAR 
+**************************/
+.applicationCAL_filterOptions
+{
+	margin-left: 307px;
+	top:5px;
+}
+div#CAL_tableContainer table tr td div.CAL_dayContent
+{
+	float: left;
+	position: relative;
+}
+div#CAL_tableContainer table tr td div.CAL_nonWholeDayEventBorders
+{
+	border-left-width: 2px;
+	border-right-width: 2px;
+}
+div.CAL_acronymWrapper
+{
+	width: 79%! important;
+}
+div.CAL_checkboxesContainer
+{
+	margin-right: 90px;
+}
+div.CAL_eventText acronym
+{
+	width: 80%! important;
+}
+div.CAL_IE6_event
+{
+	background-position-y: 9px !important;
+	margin-top: -9px;
+}
+div.CAL_wholeDayEventText acronym
+{
+	float: left;
+	overflow: hidden;
+	width: 100%! important;
+}
+/**********End of Calendar*********/
+
+/************************
+          CATALOG
+*************************/
+.genCat_comp
+{
+    float:left;
+    height:40px;
+    width:60%;  
+}
+/**********End of Catalog*********/
+
+/********************************
+           CURRICULUM
+********************************/
+.bookCurr_application_content_schedule_viewDetails{
+    margin-left:210px;
+}
+/**********End of Curriculum*********/
+
+/******************************
+           DELEGATION
+*******************************/
+.applicationDEL_checkButtonSelectAll
+{
+	top: 18px;
+}
+.applicationDEL_divMailCheckboxRemoveDelegation
+{
+	margin-top: -3px;
+	text-indent: -14px;
+}
+.applicationDEL_divRadioAddNewDelegation
+{
+	text-indent: -14px;
+}
+.applicationDEL_divSpecific
+{
+	margin-left: 50px;
+}
+.applicationDEL_divTextCheckboxAddNewDelegation
+{
+	margin-top: -2px;
+	text-indent: -14px;
+}
+/**********End of Delegation*********/
+
+/********************************
+          FIELDS PANEL
+********************************/
+.fieldPanelSimpleTableDiv
+{
+    overflow-x:scroll;
+    width:100%;
+}
+.fieldsPanel_button_next{   
+    margin-left:6px;   
+}
+.fieldsPanel_mainRadioGroup{
+    margin-bottom:40px;    
+}
+.fieldsPanel_DisplayRadioContent
+{
+	width: 95%;	
+}
+.fieldsPanel_group
+{	
+	margin-bottom: 22px;
+	margin-top: 22px;		
+}
+.fieldsPanel_radioButton
+{	
+	margin-top: 3px;
+}
+.fieldsPanel_radioGroup
+{	
+	width: 100%;
+}
+/**********End of Fields Panel*********/
+
+/*****************************
+             INBOX
+/*****************************/
+#applicationInbox_results {
+    margin-left:7px;
+}
+/**********End of Inbox*********/
+
+/********************************
+          LIST CALENDAR
+********************************/
+#applicationlistCalendar_content 
+{
+    height:       55px;
+}
+#applicationlistCalendar_form_divButton 
+{
+    margin-right: 40px;
+}
+
+/**********End of List Calendar*********/
+
+/********************************
+            TIME ENTRY
+********************************/
+
+#applicationtimeEntryScreen_body, #applicationfastEntryScreen_body {
+    margin-left: 4px;
+    width: 663px;
+    padding-bottom: 7px;
+}
+.applicationtimeEntryScreen_employees, .applicationfastEntryScreen_employees {
+	width: 147px;
+}
+#applicationtimeEntryScreen_addSelection, #applicationfastEntryScreen_addSelection {
+	margin-left: 147px;
+}
+#applicationtimeEntryScreen_employeeSelection, #applicationfastEntryScreen_employeeSelection {
+    height: expression( this.scrollHeight > 109 ? "109px" : "auto" );
+}
+.applicationtimeEntryScreen_employeeSelectionFast, .applicationfastEntryScreen_employeeSelectionFast {
+	height: expression( this.scrollHeight > 109 ? "109px" : "auto" );
+	margin-left: 73px;
+}
+#applicationtimeEntryScreen_employeeSelectionContainer, #applicationfastEntryScreen_employeeSelectionContainer {
+    height: expression( this.scrollHeight < 27 ? "27px" : "auto" );
+}
+
+/*******End of Time Entry******/
+
+/**************************
+          MENUS
+***************************/
+
+/******************************
+          LEFT MENUS
+*******************************/
+.menus_item_container
+{    
+    margin-right:4px;
+}
+#SCM_TickGr_GroupingTree{
+	height: expression( this.scrollHeight > 170 ? "170px" : "auto" );
+	zoom: 1.0;
+}
+#SCM_myCurrTicketDivExt_Tickets{
+	height: expression( this.scrollHeight > 105 ? "105px" : "auto" );
+	zoom: 1.0;
+}
+.SCM_TicketGr_ddTxt_myCurTickets{
+	height: 1%;
+}
+.SCM_myCurrTicketDiv_categ{
+	padding-bottom: 0;
+}
+.SCM_PoolTable_actions_before {
+	float: left;
+	margin-left: 3px;
+}
+#SCM_myCurrTicket {
+    zoom: 1.0;
+}
+.SCM_myCurrTicketDiv_categ {
+	zoom: 1.0;
+}
+#SCM_myCurrTicketDivExt_Tickets ul {
+	height: expression( this.scrollHeight > 115 ? "115px" : "auto" );
+	overflow: auto;
+}
+#SCM_myCurrTicketDivExt_Notification ul {
+	height: expression( this.scrollHeight > 95 ? "95px" : "auto" );
+	overflow: auto;
+}
+/**********End of Left Menus*********/
+/**************************
+          MY DETAILS
+***************************/
+div.my_details_color
+{
+	margin-right: 15px;
+}
+div.my_details_idDiv_noRadio
+{
+	margin-left: 10px;
+}
+div.my_details_oType_container
+{
+	float: left;
+	margin-left: 10px;
+	width: 190px;
+}
+div.my_details_positionName
+{
+	width: 90px;
+}
+/**********End of My Details*********/
+/**********End of Menus*********/
+
+/************************
+          OM
+*************************/
+
+/*****************************
+        OM DISPLAY
+*****************************/
+#OMdisplay_backToRoot
+{
+	left: 11px;
+}
+#OMdisplay_form_orgUnitLabel
+{
+	margin-left: 0px;
+}
+#OMdisplay_form_positionLabel
+{
+	margin-left: 0px;
+}
+.OMdisplay_flag_bottomLeft
+{
+	font-size: 0px;
+	top: 10px;
+}
+.OMdisplay_flag_bottomRight
+{
+	font-size: 0px;
+	top: 10px;
+}
+.OMdisplay_flag_topLeft
+{
+	font-size: 0px;
+	top: -1px;
+}
+.OMdisplay_flag_topRight
+{
+	font-size: 0px;
+	top: -1px;
+}
+.OMdisplay_legend_positionEmpty
+{
+	font-size: 6px;
+}
+.OMdisplay_legend_positionNormal
+{
+	font-size: 6px;
+}
+.OMdisplay_legend_positionObsolete
+{
+	font-size: 6px;
+}
+.OMdisplay_legend_positionVacancy
+{
+	font-size: 6px;
+}
+.OMdisplay_widget_initialInfo
+{
+	margin-left: 7px;
+}
+.OMdisplay_widget_initialInfo_arrowD_image
+{
+	margin-top: 0px;
+}
+.OMdisplay_widget_initialInfo_arrowU_image
+{
+	margin-bottom: -15px;
+	margin-top: 0px;
+}
+.OMdisplay_widget_oneChild
+{
+	margin-top: 28px;
+}
+.OMdisplay_widget_title_arrowL_imageMin
+{
+	top: 3px;
+}
+.OMdisplay_widget_title_arrowR_imageMin
+{
+	top: 3px;
+}
+.OMdisplay_widget_title_positions
+{
+	margin-top: 0px;
+}
+.OMdisplay_widget_title_positions_span
+{
+	float: left;
+	position: relative;
+	top: 3px;
+}
+/**********End of OM Display*********/
+/************************
+   OM DELETE DELIMIT
+*************************/
+.OM_DeleteDelimittitle
+{
+    margin-left:100px;
+}
+/**********End of OM Delete Delimit*********/
+/************************
+       OM MAINTAIN
+************************/
+#applicationOM_manager_legend
+{
+	position: absolute;
+}
+.OM_AdvSearch
+{
+	margin-right: 10px;
+}
+.OM_CB
+{
+	margin-top: 5px;
+}
+/**********End of OM Maintain*********/
+
+/**********End of OM*********/
+
+/**************************************
+      PARENT CALENDAR / FILTER PANEL
+***************************************/
+.timeFilter_buttonDiv 
+{
+    right: -104px;
+}
+.timeFilter_div 
+{
+    margin-left: 7px;
+    width: 80%;
+}
+/**********End of Parent Calendar*********/
+
+/**************************
+          PAYSLIP
+**************************/
+.payslip_listDates
+{
+    margin-left:3px;
+}
+/**********End of Payslip*********/
+
+/**************************
+        PERFORMANCE
+***************************/
+.PFM_JobProfileLegend
+{
+	margin-left: 20px;
+}
+.PFM_ratingCurrent_cell
+{
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.PFM_ratingRequired_cell
+{
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.PFM_showDocsLegend
+{
+	margin-left: 15px;
+}
+.PFM_ShowDocsWidgDiv
+{
+	margin-left: 20px;
+}
+.PFM_titleIndividualDoc
+{
+	margin-left: 40px;
+}
+
+/**********End of Performance*********/
+
+/************************
+          QUOTA
+*************************/
+.quota_alignDate
+{
+	margin-bottom: 20px;
+	margin-left: 7px;
+}
+.quota_alignDivNegative
+{
+	margin-bottom: -20px;
+}
+.quota_alignTable
+{
+	margin-top: 50px;
+}
+.quota_alignText
+{
+	margin-left: 3px;
+	margin-top: 50px;
+}
+.quota_alignTitleTable
+{
+	margin-bottom: -20px;
+	margin-top: 0px;
+}
+/**********End of Quota*********/
+
+/****************************
+         TAKE ROL OFF
+****************************/
+.applicationTakeRoleOf_button
+{
+    right:0px;
+}
+/**********End of Take Rol Of*********/
+
+/********************************
+          TEAM CALENDAR
+********************************/
+#applicationTeamCalendar_outer
+{
+	height: 55px;
+}
+.applicationTeamCalendar_cell
+{
+	overflow: hidden;
+}
+.applicationTeamCalendar_cell_moreEvents
+{
+	font-size: 0px;
+}
+.applicationTeamCalendar_navButtonsDiv
+{
+	margin-left: 7px;
+}
+.applicationTeamCalendar_textInMiddleButton
+{
+	margin-top: 0px;
+	position: relative;
+	top: 12px;
+}
+.applicationTeamCalendar_textInMiddleName
+{
+	margin-top: 0px;
+	padding-left: 3px;
+	position: relative;
+	top: 12px;
+}
+/**********End of Team Calendar*********/
+
+/*************************** 
+        TIMESHEET 
+***************************/
+
+.applicationtimeSheet_errorMessageDiv {
+    margin: 20px 16px 0px 0px;
+}
+
+/******** End of Timesheet *******/
+
+/**************************
+          TOP MENU
+**************************/
+.topMenu_navigationElement_div_down
+{
+	overflow: hidden;
+}
+.topMenu_right_menu_div
+{
+	margin-right: 26px;
+}
+/**********End of Top Menu*********/
+
+/**********End of APPLICATIONS*********/
+
+/***************************************/
+
+/*********************
+        INFOPOPUP
+**********************/
+.moduleInfoPopUp_textMessagePart
+{
+	/*margin-left:0px;*/
+}
+.moduleInfoPopUp_closeButton
+{
+	float:right;
+	z-index:5001;
+	position:relative;
+}
+div#idDivInfoPopUpContainer div.autocompleter_autocomplete{
+    position: absolute;
+}
+div.popUp_upperLeftCorner {
+	background: transparent url(images/balloon/bubble_combined.gif) 0px 0px
+		no-repeat;
+	float: left;
+	height: 25px;
+	width: 25px;
+}
+div.popUp_upperRightCorner {
+	background: transparent url(images/balloon/bubble_combined.gif) -25px
+		0px no-repeat;
+	float: left;
+	height: 25px;
+	width: 25px;
+}
+div.popUp_lowerLeftCorner {
+	background: transparent url(images/balloon/bubble_combined.gif) 0px
+		-25px no-repeat;
+	float: left;
+	height: 25px;
+	width: 25px;
+}
+div.popUp_lowerRightCorner {
+	background: transparent url(images/balloon/bubble_combined.gif) -25px
+		-25px no-repeat;
+	float: left;
+	height: 25px;
+	width: 25px;
+}
+
+/******* End of INFOPOPUP *********/
+
+/***************************************/
+
+/*********************
+        LOCKCOLTABLE
+**********************/
+.tbody {
+    margin: 0;
+    padding: 0;
+}
+.holder{
+    padding-bottom: 20px;  /* space for the scrollbar */
+    width: 100%;           /* gives pagewide scrollbar on the div */
+    overflow: auto;
+    overflow-y: hidden;
+}
+.row-table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-collapse: collapse;
+}
+.row-table thead th{
+    padding-top: 1px;      /* even out crossbrowser total height difference */
+    height: 100px;
+}
+.row-table  th,
+.data-table th {
+   /*border: 1px solid #c9dded;*/
+    padding: 0 3px;
+/*    width: 90px;*/
+/*    height: 30px;*/
+/*    font-weight: bold;*/
+/*    text-transform: uppercase;*/
+}
+.row-table  td,
+.data-table td {
+    /*border: 1px solid #c9dded;*/
+    padding: 0px 3px;
+    height: 24px;
+/*    background: #f6f9fc;*/
+}
+.data-table {
+    margin-left: 1px;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+.data-table thead th{
+/*    height: 30px;*/
+    background: #DCD2CE
+}
+.data-table td span {
+    display: block;
+ /*   width: 60px;*/
+}
+/******* End of LOCKCOLTABLE *********/
+/***************************************/
+
+/***********************************
+     Onboarding style
+***********************************/
+.Onb_search{
+    margin-left:7px;
+}
+/**********************************
+    END OF Onboarding style
+***********************************//*********************
+        BALLOON
+**********************/
+div.balloon_lowerLeftCorner {
+	background: transparent url(images/balloon/bubble_combined.gif) 0px
+		-25px no-repeat;
+	float: left;
+	height: 25px;
+	position: relative;
+	width: 25px;
+}
+div.balloon_lowerPeak_show { /* Peak's dimensions = 98 x 96 px */
+	background: transparent url(images/balloon/bubble_combined.gif) -50px
+		0px no-repeat;
+	float: left;
+	position: relative;
+	width: 98px;
+}
+div.balloon_lowerRightCorner {
+	background: transparent url(images/balloon/bubble_combined.gif) -25px
+		-25px no-repeat;
+	float: left;
+	height: 25px;
+	position: relative;
+	width: 25px;
+}
+div.balloon_upperLeftCorner {
+	background: transparent url(images/balloon/bubble_combined.gif) 0px 0px
+		no-repeat;
+	float: left;
+	height: 25px;
+	left: 0px;
+	position: relative;
+	top: 0px;
+	width: 25px;
+}
+div.balloon_upperRightCorner {
+	background: transparent url(images/balloon/bubble_combined.gif) -25px
+		0px no-repeat;
+	float: left;
+	height: 25px;
+	position: relative;
+	width: 25px;
+}
+/******* End of BALLOON *********/
+/********************************/
+
+/******* Images using gifs instead of PNG *********/
+/**************************************************/
+.rating_emptyStar {
+	background: transparent url(../css/images/imagesAll.gif) -900px 0px no-repeat;
+}
+
+.rating_fullStar {
+	background: transparent url(../css/images/imagesAll.gif) -920px 0px no-repeat;
+}
+
+.rating_rateStar {
+	background: transparent url(../css/images/imagesAll.gif) -940px 0px no-repeat;
+}
+.application_learning_statusBarGreen {
+	background: transparent url(images/imagesAll.gif) -1082px -92px	no-repeat;
+}
+.application_learning_statusBarYellow {
+	background: transparent url(images/imagesAll.gif) -1165px -71px no-repeat;
+}
+.application_learning_statusBarRed {
+	background: transparent url(images/imagesAll.gif) -1165px -92px	no-repeat;
+}
+.application_currentSelection {
+	background: transparent url(images/imagesAll.gif) -325px 0px no-repeat;
+}
+.application_editSelection {
+	background: url(images/imagesAll.gif) -1888px 0px no-repeat;
+}
+.application_curriculumType {
+	background: transparent url(images/imagesAll.gif) -1254px -71px	no-repeat;	
+}
+.application_curriculum {
+	background: transparent url(images/imagesAll.gif) -1326px -71px	no-repeat;			
+}
+
+.application_down_arrow {
+	background: transparent url(images/imagesAll.gif) -43px 0px no-repeat;
+}
+
+.application_emptyBubble {
+	background: transparent url(images/imagesAll.gif) -256px -209px	no-repeat;
+}
+.application_icon_green {
+	background: transparent url(images/imagesAll.gif) -176px 0px no-repeat;
+}
+
+.application_icon_orange {
+	background: transparent url(images/imagesAll.gif) -198px 0px no-repeat;
+}
+
+.application_icon_red {
+	background: transparent url(images/imagesAll.gif) -220px 0px no-repeat;
+}
+.application_job {
+    background: transparent url(images/imagesAll.gif) -1228px -95px no-repeat;
+}
+
+.application_jobFamily {
+	background: transparent url(images/imagesAll.gif) -326px -253px	no-repeat;
+}
+.application_main_help {
+	background: transparent url(images/imagesAll.gif) -86px -235px no-repeat;
+}
+.application_main_mail {
+	background: transparent url(images/imagesAll.gif) 0px -235px no-repeat;
+}
+
+.application_main_help_active {
+	background: transparent url(images/imagesAll.gif) -130px -235px	no-repeat;
+}
+
+.application_main_print {
+	background: transparent url(images/imagesAll.gif) -43px -235px no-repeat;
+}
+.application_next_arrow {
+	background: transparent url(images/imagesAll.gif) -108px 0px no-repeat;
+}
+.application_pasteIcon {
+	background: transparent url(images/imagesAll.gif) -348px -180px	no-repeat;
+}
+
+.application_popUpMode_closeDiv {
+	background: transparent url(images/imagesAll.gif) -273px -127px	no-repeat;
+}
+.application_previous_arrow {
+	background: transparent url(images/imagesAll.gif) -95px 0px no-repeat;
+}
+.application_rating_possible {
+	background: transparent url(images/imagesAll.gif) -118px -203px	no-repeat;
+}
+.application_rounded {
+	background: transparent url(images/imagesAll.gif) -308px -197px	no-repeat;
+}
+
+.application_rounded_close {
+	background: transparent url(images/imagesAll.gif) -411px -210px	no-repeat;
+}
+
+.application_rounded_draft {
+	background: transparent url(images/imagesAll.gif) -352px 0px no-repeat;
+}
+
+.application_rounded_draft1 {
+	background: transparent url(images/imagesAll.gif) -338px 0px no-repeat;
+}
+
+.application_rounded_maximize {
+	background: transparent url(images/imagesAll.gif) -369px -210px	no-repeat;
+}
+
+.application_rounded_minimize {
+	background: transparent url(images/imagesAll.gif) -397px -210px	no-repeat;
+}
+
+.application_rounded_ok {
+	background: transparent url(images/imagesAll.gif) -243px 0px no-repeat;
+}
+
+.application_rounded_ok1 {
+	background: transparent url(images/imagesAll.gif) -256px 0px no-repeat;
+}
+
+.application_rounded_options {
+	background: transparent url(images/imagesAll.gif) -383px -210px	no-repeat;
+}
+
+.application_rounded_question {
+	background: transparent url(images/imagesAll.gif) -297px 0px no-repeat;
+}
+
+.application_rounded_question1 {
+	background: transparent url(images/imagesAll.gif) -311px 0px no-repeat;
+}
+
+.application_rounded_x {
+	background: transparent url(images/imagesAll.gif) -269px 0px no-repeat;
+}
+
+.application_rounded_x1 {
+	background: transparent url(images/imagesAll.gif) -283px 0px no-repeat;
+}
+
+.application_Sblue_STRA2 {
+	background: transparent url(images/imagesAll.gif) -57px -496px no-repeat;
+}
+
+.application_Sblue_STRA3 {
+	background: transparent url(images/imagesAll.gif) -114px -496px	no-repeat;
+}
+
+.application_Sblue_STRA4 {
+	background: transparent url(images/imagesAll.gif) -169px -496px	no-repeat;
+}
+
+.application_Sblue_STRA5 {
+	background: transparent url(images/imagesAll.gif) -226px -496px	no-repeat;
+}
+
+.application_STRA2 {
+	background: transparent url(images/imagesAll.gif) 0px -442px no-repeat;
+}
+
+.application_STRA3 {
+	background: transparent url(images/imagesAll.gif) -57px -442px no-repeat;
+}
+
+.application_STRA4 {
+	background: transparent url(images/imagesAll.gif) -112px -442px	no-repeat;
+}
+
+.application_STRA5 {
+	background: transparent url(images/imagesAll.gif) -169px -443px	no-repeat;
+}
+.application_up_arrow {
+	background: transparent url(images/imagesAll.gif) -72px 0px no-repeat;
+}
+
+.application_verticalL_arrow {
+	background: transparent url(images/imagesAll.gif) 0px 0px no-repeat;
+}
+
+.application_verticalR_arrow {
+	background: transparent url(images/imagesAll.gif) -24px 0px no-repeat;
+}
+.inbox_ticketAction_attachedFile {
+	background: transparent url(images/imagesAll.gif) -402px -253px	no-repeat;
+}
+
+.XBG_thirdAxisOrange {
+	background: transparent url(images/imagesAll.gif) -198px 0px no-repeat;
+}
+.XBG_thirdAxisGreen {
+	background: transparent url(images/imagesAll.gif) -176px 0px no-repeat;
+}
+
+.XBG_thirdAxisRed {
+	background: transparent url(images/imagesAll.gif) -220px 0px no-repeat;
+}
+
+.centerRoundedButton {
+	background: transparent url(images/imagesAll.gif) -504px -115px	no-repeat;
+}
+
+.centerRoundedButtonDisable {
+	background: transparent url(images/imagesAll.gif) -504px -196px	no-repeat;
+}
+
+.rightRoundedCorner {
+	background: url(images/imagesAll.gif) -1284px -115px no-repeat;
+}
+
+.rightRoundedCornerDisable {
+	background: url(images/imagesAll.gif) -1284px -196px no-repeat;
+}
+.datePicker_icon_box {
+	background: transparent url(images/imagesAll.gif) -275px -176px	no-repeat;
+}
+
+.group_module_arrowR_margin {
+	background: transparent url(images/imagesAll.gif) -24px 0px no-repeat;
+}
+
+.group_module_arrowD_margin {
+	background: transparent url(images/imagesAll.gif) -43px 0px no-repeat;
+}
+
+.moduleInfoPopUp_indicatorIconConfirmation {
+	background: transparent url(images/imagesAll.gif) -274px -233px	no-repeat;
+}
+
+.moduleInfoPopUp_indicatorIconExclamation {
+	background: transparent url(images/imagesAll.gif) -225px -233px	no-repeat;
+}
+
+.moduleInfoPopUp_indicatorIconQuestion {
+	background: transparent url(images/imagesAll.gif) -177px -233px	no-repeat;
+}
+
+.tabs_tabs_content_left_d_d {
+	background: transparent url(images/imagesAll.gif) 0px -176px no-repeat;
+}
+
+.tabs_tabs_content_left_d_s {
+	background: transparent url(images/imagesAll.gif) -21px -176px no-repeat;
+}
+
+.tabs_tabs_content_left_initial_d {
+	background: transparent url(images/imagesAll.gif) -49px -176px no-repeat;
+}
+
+.tabs_tabs_content_left_initial_s {
+	background: transparent url(images/imagesAll.gif) -73px -176px no-repeat;
+}
+
+.tabs_tabs_content_left_s_d {
+	background: transparent url(images/imagesAll.gif) -100px -176px	no-repeat;
+}
+
+.tabs_tabs_content_right_d_d {
+	background: transparent url(images/imagesAll.gif) -127px -176px	no-repeat;
+}
+
+.tabs_tabs_content_right_d_s {
+	background: transparent url(images/imagesAll.gif) -148px -175px	no-repeat;
+}
+
+.tabs_tabs_content_right_final_d {
+	background: transparent url(images/imagesAll.gif) -176px -175px	no-repeat;
+}
+
+.tabs_tabs_content_right_final_s {
+	background: transparent url(images/imagesAll.gif) -224px -175px	no-repeat;
+}
+
+.tabs_tabs_content_right_s_d {
+	background: transparent url(images/imagesAll.gif) -197px -176px	no-repeat;
+}
+
+.widget_collapseButton {
+	background: transparent url(images/imagesAll.gif) -437px -133px	no-repeat;
+}
+
+.genCat_icon1 {
+	background: transparent url(images/imagesAll.gif) 0px -208px no-repeat;
+}
+
+.genCat_icon2 {
+	background: transparent url(images/imagesAll.gif) -56px -208px no-repeat;
+}
+
+.genCat_icon3 {
+	background: transparent url(images/imagesAll.gif) -40px -208px no-repeat;
+}
+
+.fieldsPanel_dateImage {
+	background: transparent url(images/imagesAll.gif) no-repeat scroll -480px -133px;
+}
+
+.menus_myTeamActionImage {
+	background: transparent url(images/imagesAll.gif) -366px 0px no-repeat;
+}
+.SCM_reload_lastEmployee {
+	background: transparent url(images/imagesAll.gif) -125px 0px no-repeat;
+}
+.SCM_ticketingDuplicateEnabled {
+	background: transparent url(images/imagesAll.gif) -2310px -1px no-repeat;
+}
+.SCM_ticketingDuplicateDisabled {
+	background: transparent url(images/imagesAll.gif) -2337px -1px no-repeat;
+}
+
+.FastEntryMenu_legend_iconGreen {
+	background: transparent url(images/imagesAll.gif) -176px 0px no-repeat;
+}
+.FastEntryMenu_legend_iconOrange {
+	background: transparent url(images/imagesAll.gif) -198px 0px no-repeat;
+}
+.FastEntryMenu_legend_iconRed {
+	background: transparent url(images/imagesAll.gif) -220px 0px no-repeat;
+}
+.applicationmyData_navigationMenuItem_selected {
+	background: transparent url(images/imagesAll.gif) -248px -176px
+		no-repeat;
+}
+
+.applicationmyData_validity {
+	background: transparent url(images/imagesAll.gif) -480px -133px
+		no-repeat;
+}
+
+.application_MoreTabs {
+	background: transparent url(images/imagesAll.gif) -125px 2px no-repeat;
+}
+
+.applicationOM_folder {
+	background: transparent url(images/imagesAll.gif) 0px -208px no-repeat;
+}
+
+.applicationOM_manager {
+	background: transparent url(images/imagesAll.gif) -20px -208px no-repeat;
+}
+
+.applicationOM_person {
+	background: transparent url(images/imagesAll.gif) -40px -208px no-repeat
+}
+
+.applicationOM_staff {
+	background: transparent url(images/imagesAll.gif) -74px -209px no-repeat;
+}
+
+.applicationOM_staff2 {
+	background: transparent url(images/imagesAll.gif) -56px -208px no-repeat;
+}
+.Rept_exportExcel {
+	background: url(images/imagesAll.gif) -1000px 0px no-repeat;
+}
+.Rept_exportPDF {
+	background: url(images/imagesAll.gif) -1102px 0px no-repeat;
+}
+.Rept_exportXML {
+	background: url(images/imagesAll.gif) -1165px 0px no-repeat;
+}
+.applicationTeamCalendar_cell_moreEvents {
+	background: transparent url(images/imagesAll.gif) -154px -1px no-repeat;
+}
+.application_catalog_image {
+	background: transparent url(images/imagesAll.gif) -390px -180px	no-repeat;
+}
+.application_inProgress_training_icon_curr_div {
+	background: transparent url(images/imagesAll.gif) -369px -181px no-repeat;
+	height: 13px;
+	width: 15px;
+}
+.SCM_ActionNewItemIcon {
+	background: url(images/imagesAll.gif) -1810px 0px no-repeat;
+}
+
+.SCM_ActionNewUserIcon {
+	background: url(images/imagesAll.gif) -1827px 0px no-repeat;
+}
+
+.SCM_ActionServicesIcon {
+	background: url(images/imagesAll.gif) -1848px 0px no-repeat;
+}
+
+.SCM_ActionOutOfSLAIcon {
+	background: url(images/imagesAll.gif) -1870px 0px no-repeat;
+}
+.SCM_ActionAmberAlertIcon {
+	background: url(images/imagesAll.gif) -1870px 0px no-repeat;
+}
+.SCM_ItemAccess {
+	background: url(images/imagesAll.gif) -960px 0px no-repeat;
+}
+
+.SCM_ItemBinary {
+	background: url(images/imagesAll.gif) -981px 0px no-repeat;
+}
+
+.SCM_ItemExcel {
+	background: url(images/imagesAll.gif) -1000px 0px no-repeat;
+}
+
+.SCM_ItemHTML {
+	background: url(images/imagesAll.gif) -1021px 0px no-repeat;
+}
+
+.SCM_ItemImage {
+	background: url(images/imagesAll.gif) -1041px 0px no-repeat;
+}
+
+.SCM_ItemMail {
+	background: url(images/imagesAll.gif) -1062px 0px no-repeat;
+}
+
+.SCM_ItemNote {
+	background: url(images/imagesAll.gif) -1082px 0px no-repeat;
+}
+
+.SCM_ItemPDF {
+	background: url(images/imagesAll.gif) -1102px 0px no-repeat;
+}
+
+.SCM_ItemPowerPoint {
+	background: url(images/imagesAll.gif) -1123px 0px no-repeat;
+}
+
+.SCM_ItemSap {
+	background: url(images/imagesAll.gif) -1144px 0px no-repeat;
+}
+
+.SCM_ItemText {
+	background: url(images/imagesAll.gif) -1165px 0px no-repeat;
+}
+
+.SCM_ItemWord {
+	background: url(images/imagesAll.gif) -1184px 0px no-repeat;
+}
+
+.SCM_TicketItem {
+	background: url(images/imagesAll.gif) -1205px 0px no-repeat;
+}
+
+.SCM_TicketItemClose {
+	background: url(images/imagesAll.gif) -1222px 0px no-repeat;
+}
+
+.SCM_DotBlackIcon {
+	background: url(images/imagesAll.gif) -498px 0px no-repeat;
+}
+
+.SCM_DotBlackTicon {
+	background: url(images/imagesAll.gif) -518px 0px no-repeat;
+}
+
+.SCM_DotBlueIcon {
+	background: url(images/imagesAll.gif) -538px 0px no-repeat;
+}
+
+.SCM_DotBlueTicon {
+	background: url(images/imagesAll.gif) -558px 0px no-repeat;
+}
+
+.SCM_DotBrownIcon {
+	background: url(images/imagesAll.gif) -578px 0px no-repeat;
+}
+
+.SCM_DotBrownTicon {
+	background: url(images/imagesAll.gif) -599px 0px no-repeat;
+}
+
+.SCM_DotGrayIcon {
+	background: url(images/imagesAll.gif) -618px 0px no-repeat;
+}
+
+.SCM_DotGrayTicon {
+	background: url(images/imagesAll.gif) -638px 0px no-repeat;
+}
+
+.SCM_DotGreenIcon {
+	background: url(images/imagesAll.gif) -659px 0px no-repeat;
+}
+
+.SCM_DotGreenTicon {
+	background: url(images/imagesAll.gif) -679px 0px no-repeat;
+}
+
+.SCM_DotMauveIcon {
+	background: url(images/imagesAll.gif) -698px 0px no-repeat;
+}
+
+.SCM_DotMauveBlackIcon {
+	background: url(images/imagesAll.gif) -718px 0px no-repeat;
+}
+
+.SCM_DotMauveBlackTicon {
+	background: url(images/imagesAll.gif) -738px 0px no-repeat;
+}
+
+.SCM_DotMauveBlueIcon {
+	background: url(images/imagesAll.gif) -759px 0px no-repeat;
+}
+
+.SCM_DotMauveBlueTicon {
+	background: url(images/imagesAll.gif) -780px 0px no-repeat;
+}
+
+.SCM_DotMauveTicon {
+	background: url(images/imagesAll.gif) -800px 0px no-repeat;
+}
+
+.SCM_DotOrangeIcon {
+	background: url(images/imagesAll.gif) -820px 0px no-repeat;
+}
+
+.SCM_DotOrangeTicon {
+	background: url(images/imagesAll.gif) -840px 0px no-repeat;
+}
+
+.SCM_DotRedIcon {
+	background: url(images/imagesAll.gif) -860px 0px no-repeat;
+}
+
+.SCM_DotRedTicon {
+	background: url(images/imagesAll.gif) -880px 0px no-repeat;
+}
+
+.SCM_DotBlackNicon {
+	background: url(images/imagesAll.gif) -1930px 0px no-repeat;
+}
+
+.SCM_DotBlackNTicon {
+	background: url(images/imagesAll.gif) -1910px 0px no-repeat;
+}
+
+.SCM_DotBlueNicon {
+	background: url(images/imagesAll.gif) -1970px 0px no-repeat;
+}
+
+.SCM_DotBlueNTicon {
+	background: url(images/imagesAll.gif) -1950px 0px no-repeat;
+}
+
+.SCM_DotBrownNicon {
+	background: url(images/imagesAll.gif) -2090px 0px no-repeat;
+}
+
+.SCM_DotBrownNTicon {
+	background: url(images/imagesAll.gif) -2070px 0px no-repeat;
+}
+
+.SCM_DotGreenNicon {
+	background: url(images/imagesAll.gif) -2130px 0px no-repeat;
+}
+
+.SCM_DotGreenNTicon {
+	background: url(images/imagesAll.gif) -2110px 0px no-repeat;
+}
+
+.SCM_DotMauveNicon {
+	background: url(images/imagesAll.gif) -2050px 0px no-repeat;
+}
+
+.SCM_DotMauveBlackNicon {
+	background: url(images/imagesAll.gif) -2290px 0px no-repeat;
+}
+
+.SCM_DotMauveBlackNTicon {
+	background: url(images/imagesAll.gif) -2270px 0px no-repeat;
+}
+
+.SCM_DotMauveBlueNicon {
+	background: url(images/imagesAll.gif) -2250px 0px no-repeat;
+}
+
+.SCM_DotMauveBlueNTicon {
+	background: url(images/imagesAll.gif) -2228px 0px no-repeat;
+}
+
+.SCM_DotMauveNTicon {
+	background: url(images/imagesAll.gif) -2030px 0px no-repeat;
+}
+
+.SCM_DotOrangeNicon {
+	background: url(images/imagesAll.gif) -2170px 0px no-repeat;
+}
+
+.SCM_DotOrangeNTicon {
+	background: url(images/imagesAll.gif) -2150px 0px no-repeat;
+}
+
+.SCM_DotRedNicon {
+	background: url(images/imagesAll.gif) -2010px 0px no-repeat;
+}
+
+.SCM_DotRedNTicon {
+	background: url(images/imagesAll.gif) -1990px 0px no-repeat;
+}
+
+.SCM_ticketScreen_skillMandatoryOnClose {
+	background: url(images/imagesAll.gif) -1239px 0px no-repeat;
+}
+
+.SCM_ticketScreen_skillMandatoryOnCreate {
+	background: url(images/imagesAll.gif) -1259px 0px no-repeat;
+}
+.SCM_ticketingAddDocDisabled {
+	background: url(images/imagesAll.gif) -1279px 0px no-repeat;
+}
+
+.SCM_ticketingAddDocEnabled {
+	background: url(images/imagesAll.gif) -1304px 0px no-repeat;
+}
+
+.SCM_ticketingCloseDisabled {
+	background: url(images/imagesAll.gif) -1329px 0px no-repeat;
+}
+
+.SCM_ticketingCloseEnabled {
+	background: url(images/imagesAll.gif) -1354px 0px no-repeat;
+}
+
+.SCM_ticketingGeneralPoolDisabled {
+	background: url(images/imagesAll.gif) -1379px 0px no-repeat;
+}
+
+.SCM_ticketingGeneralPoolEnabled, .applicationtimeEntryScreen_employeesIcon, .applicationfastEntryScreen_employeesIcon {
+	background: url(images/imagesAll.gif) -1404px 0px no-repeat;
+}
+
+.SCM_ticketingSaveSendDisabled {
+	background: url(images/imagesAll.gif) -1429px 0px no-repeat;
+}
+
+.SCM_ticketingSaveSendEnabled {
+	background: url(images/imagesAll.gif) -1457px 0px no-repeat;
+}
+
+.SCM_ticketingScheduleDisabled {
+	background: url(images/imagesAll.gif) -1485px 0px no-repeat;
+}
+
+.SCM_ticketingScheduleEnabled {
+	background: url(images/imagesAll.gif) -1514px 0px no-repeat;
+}
+
+.SCM_ticketingSendToDisabled {
+	background: url(images/imagesAll.gif) -1541px 0px no-repeat;
+}
+
+.SCM_ticketingSendToEnabled {
+	background: url(images/imagesAll.gif) -1570px 0px no-repeat;
+}
+
+.SCM_ticketingPendingDisabled {
+	background: url(images/imagesAll.gif) -1659px 0px no-repeat;
+}
+
+.SCM_ticketingPendingEnabled {
+	background: url(images/imagesAll.gif) -1687px 0px no-repeat;
+}
+
+.SCM_ticketingWaitingDisabled {
+	background: url(images/imagesAll.gif) -1599px 0px no-repeat;
+}
+
+.SCM_ticketingWaitingEnabled {
+	background: url(images/imagesAll.gif) -1629px 0px no-repeat;
+}
+
+.SCM_ticketingProcessingDisabled {
+	background: url(images/imagesAll.gif) -1715px 0px no-repeat;
+}
+
+.SCM_ticketingProcessingEnabled {
+	background: url(images/imagesAll.gif) -1743px 0px no-repeat;
+}
+.SCM_ticketingPauseIcon {
+	background: url(images/imagesAll.gif) -1771px -3px no-repeat;
+}
+
+.SCM_ticketingPlayIcon {
+	background: url(images/imagesAll.gif) -1792px -3px no-repeat;
+}
+
+.Onb_link {
+	background: transparent url(images/imagesAll.gif) -369px -210px	no-repeat;
+}
+.Onb_verticalR_arrow {
+	background: transparent url(images/imagesAll.gif) -24px 0px no-repeat;
+}
+
+.Onb_down_arrow {
+	background: transparent url(images/imagesAll.gif) -43px 0px no-repeat;
+}
+.Onb_autocompleter_button_showall {
+	background: transparent url(images/imagesAll.gif) -366px 2px no-repeat;
+}
+.Onb_pasteIcon {
+	background: transparent url(images/imagesAll.gif) -348px -180px	no-repeat;
+}
+
+.Onb_copyIcon {
+	background: transparent url(images/imagesAll.gif) -368px -180px	no-repeat;
+}
+.Onb_verticalR_arrow {
+	background: transparent url(images/imagesAll.gif) -24px 0px no-repeat;
+}
+
+.Onb_down_arrow {
+	background: transparent url(images/imagesAll.gif) -43px 0px no-repeat;
+}
+.myDocuments_ViewList {
+	background: url(images/imagesAll.gif) -1260px -33px no-repeat;
+}
+
+.myDocuments_ViewListGreyed {
+	background: url(images/imagesAll.gif) -1220px -33px no-repeat;
+}
+
+.expiredDocuments_ViewList {
+	background: url(images/imagesAll.gif) -1500px -33px no-repeat;
+}
+
+.expiredDocuments_ViewListGreyed {
+	background: url(images/imagesAll.gif) -1460px -33px no-repeat;
+}
+
+.myDocuments_ViewGrid {
+	background: url(images/imagesAll.gif) -1180px -33px no-repeat;
+}
+
+.myDocuments_ViewGridGreyed {
+	background: url(images/imagesAll.gif) -1140px -33px no-repeat;
+}
+
+.myDocuments_ViewCoverflow {
+	background: url(images/imagesAll.gif) -1421px -33px no-repeat;
+}
+
+.myDocuments_ViewCoverflowGreyed {
+	background: url(images/imagesAll.gif) -1381px -33px no-repeat;
+}
+
+.myDocuments_ViewCatalog {
+	background: url(images/imagesAll.gif) -1340px -33px no-repeat;
+}
+
+.myDocuments_ViewCatalogGreyed {
+	background: url(images/imagesAll.gif) -1300px -33px no-repeat;
+}
+
+.expiredDocuments_ViewCatalog {
+	background: url(images/imagesAll.gif) -1580px -33px no-repeat;
+}
+
+.expiredDocuments_ViewCatalogGreyed {
+	background: url(images/imagesAll.gif) -1540px -33px no-repeat;
+}
+.myDocuments_msgIcon {
+	background: url(images/imagesAll.gif) -1061px -0px no-repeat;
+}
+
+.myDocuments_txtIcon {
+	background: url(images/imagesAll.gif) -1081px -0px no-repeat;
+}
+
+.myDocuments_pdfIcon {
+	background: url(images/imagesAll.gif) -1101px -0px no-repeat;
+}
+
+.myDocuments_docIcon, .myDocuments_docxIcon {
+	background: url(images/imagesAll.gif) -1183px -0px no-repeat;
+}
+
+.myDocuments_pptIcon, .myDocuments_pptxIcon, .myDocuments_pptmIcon {
+	background: url(images/imagesAll.gif) -1123px -0px no-repeat;
+}
+
+.myDocuments_xlsIcon, .myDocuments_xlsxIcon, .myDocuments_xltIcon, .myDocuments_xlcIcon, .myDocuments_xlsmIcon {
+	background: url(images/imagesAll.gif) -999px -0px no-repeat;
+}
+
+.myDocuments_gifIcon, .myDocuments_jpgIcon, .myDocuments_jpegIcon , .myDocuments_bmpIcon, .myDocuments_tifIcon, .myDocuments_tiffIcon, .myDocuments_pngIcon{
+	background: url(images/imagesAll.gif) -1041px -0px no-repeat;
+}
+
+.myDocuments_xmlIcon {
+	background: url(images/imagesAll.gif) -1164px -0px no-repeat;
+}
+.PM_calendarView{
+	background: url(images/imagesAll.gif) -1421px -33px no-repeat;
+}
+.PM_calendarViewGray{
+	background: url(images/imagesAll.gif) -1381px -33px no-repeat;
+}
+.PM_treeView{
+	background: url(images/imagesAll.gif) -1260px -33px no-repeat;
+}
+.PM_treeViewGray{
+	background: url(images/imagesAll.gif) -1220px -33px no-repeat;
+}
+.PM_catalogView{
+	background: url(images/imagesAll.gif) -1340px -33px no-repeat;
+}
+.PM_catalogViewGray{
+	background: url(images/imagesAll.gif) -1300px -33px no-repeat;
+}
+.PM_gridView{
+	background: url(images/imagesAll.gif) -1180px -33px no-repeat;
+}
+.PM_gridViewGray{
+	background: url(images/imagesAll.gif) -1140px -33px no-repeat;
+}
+
+.PM_application_rounded_ok1 {
+	background: #6633CC url(images/imagesAll.gif) -256px 0px no-repeat;
+}
+
+/*** End of Images using gifs instead of PNG ******/
+/**************************************************/

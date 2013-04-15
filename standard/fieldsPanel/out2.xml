@@ -1,0 +1,116 @@
+﻿<EWS>
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="1">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="ANSAL" depend_type="X" display_attrib="OPT" display_group="" fieldformat="I" fieldid="ANCUR" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000005" seqnr="10" service_pai="" service_values="" show_text="B" type="CUKY"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="ANSAL" fieldlabel="Sueldo anual" fieldsource="" fieldtype="" label_type="V" length="000021" seqnr="12" service_pai="" service_values="" show_text="" type="CURR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="ANZHL" fieldlabel="" fieldsource="T" fieldtype="" label_type="V" length="000000" seqnr="03" service_pai="" service_values="" show_text="" type=""></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="" fieldsource="" fieldtype="H" label_type="N" length="000010" seqnr="02" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="BETRG" fieldlabel="" fieldsource="T" fieldtype="" label_type="V" length="000000" seqnr="02" service_pai="" service_values="" show_text="" type=""></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="BSGRD" fieldlabel="Grado de ocupación" fieldsource="" fieldtype="" label_type="V" length="000006" seqnr="08" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="V" fieldid="DIVGV" fieldlabel="Horas tbjo.período" fieldsource="" fieldtype="" label_type="V" length="000006" seqnr="09" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="BEGDA" depend_type="X" display_attrib="MAN" display_group="" fieldformat="P" fieldid="ENDDA" fieldlabel="" fieldsource="" fieldtype="H" label_type="N" length="000010" seqnr="03" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="LGART" fieldlabel="" fieldsource="T" fieldtype="" label_type="V" length="000000" seqnr="01" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type=""></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="PREAS" fieldlabel="Motivo modificación" fieldsource="" fieldtype="H" label_type="V" length="000002" seqnr="01" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="TRFAR" fieldlabel="Clase conv.colectivo" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="04" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="TRFAR" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="TRFGB" fieldlabel="Área de convenio" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="05" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="TRFGB" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="TRFGR" fieldlabel="Grupo profesional" fieldsource="" fieldtype="" label_type="V" length="000008" seqnr="06" service_pai="" service_values="GET_FIELD_VAL" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="TRFGR" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="TRFST" fieldlabel="Subgrupo profesional" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="07" service_pai="" service_values="GET_FIELD_VAL" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="P" fieldid="VGLSV" fieldlabel="Próximo ascenso" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="10" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="S" fieldid="ZEINH" fieldlabel="" fieldsource="T" fieldtype="" label_type="V" length="000000" seqnr="04" service_pai="" service_values="" show_text="" type=""></yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>
+    </o_field_settings>
+    <o_field_values>
+        <yglui_str_wid_record rec_key="P_3000042900080000" screen="1">
+            <contents>
+                <yglui_str_wid_content key_str="3000042900080      2008123120080101000" rec_index="1" selected="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ANCUR" fieldlabel="" fieldtechname="ANCUR" fieldtseqnr="000000" value="EUR">European Euro</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ANSAL" fieldlabel="Sueldo anual" fieldtechname="ANSAL" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value="2008-01-01"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BSGRD" fieldlabel="Grado de ocupación" fieldtechname="BSGRD" fieldtseqnr="000000" value="11.00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="DIVGV" fieldlabel="Horas tbjo.período" fieldtechname="DIVGV" fieldtseqnr="000000" value="11.00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="2008-12-31"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PREAS" fieldlabel="Motivo modificación" fieldtechname="PREAS" fieldtseqnr="000000" value="00">No Reason</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFAR" fieldlabel="Clase conv.colectivo" fieldtechname="TRFAR" fieldtseqnr="000000" value="01">International</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFGB" fieldlabel="Área de convenio" fieldtechname="TRFGB" fieldtseqnr="000000" value="01">International</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFGR" fieldlabel="Grupo profesional" fieldtechname="TRFGR" fieldtseqnr="000000" value="E01"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFST" fieldlabel="Subgrupo profesional" fieldtechname="TRFST" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="VGLSV" fieldlabel="Próximo ascenso" fieldtechname="VGLSV" fieldtseqnr="000000" value="0000-00-00"></yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="NEXT" disma="" label_tag="next" okcode="" screen="" tarap="" tarty="" type="NEXT"></yglui_str_wid_button>
+                    </buttons>
+                    <tcontents>
+                        <yglui_str_wid_tcontent seqnr="000001">
+                            <fields>
+                                <yglui_str_wid_field fieldid="ANZHL" fieldlabel="" fieldtechname="ANZHL" fieldtseqnr="000001" value="0.00"></yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="BETRG" fieldlabel="" fieldtechname="BETRG" fieldtseqnr="000001" value="2000"></yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="LGART" fieldlabel="" fieldtechname="LGART" fieldtseqnr="000001" value="0030">Base Rate(CAP)</yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="ZEINH" fieldlabel="" fieldtechname="ZEINH" fieldtseqnr="000001" value=""></yglui_str_wid_field>
+                            </fields>
+                        </yglui_str_wid_tcontent>
+                    </tcontents>
+                </yglui_str_wid_content>
+                <yglui_str_wid_content key_str="3000042900080      2009013120090101000" rec_index="2" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ANCUR" fieldlabel="" fieldtechname="ANCUR" fieldtseqnr="000000" value="EUR">European Euro</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ANSAL" fieldlabel="Sueldo anual" fieldtechname="ANSAL" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-01-01"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BSGRD" fieldlabel="Grado de ocupación" fieldtechname="BSGRD" fieldtseqnr="000000" value="0.00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="DIVGV" fieldlabel="Horas tbjo.período" fieldtechname="DIVGV" fieldtseqnr="000000" value="0.00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="2009-01-31"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PREAS" fieldlabel="Motivo modificación" fieldtechname="PREAS" fieldtseqnr="000000" value="00">No Reason</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFAR" fieldlabel="Clase conv.colectivo" fieldtechname="TRFAR" fieldtseqnr="000000" value="Z1">Z1</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFGB" fieldlabel="Área de convenio" fieldtechname="TRFGB" fieldtseqnr="000000" value="ZZ">All</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFGR" fieldlabel="Grupo profesional" fieldtechname="TRFGR" fieldtseqnr="000000" value="GRP C"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFST" fieldlabel="Subgrupo profesional" fieldtechname="TRFST" fieldtseqnr="000000" value="4"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="VGLSV" fieldlabel="Próximo ascenso" fieldtechname="VGLSV" fieldtseqnr="000000" value="0000-00-00"></yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="NEXT" disma="" label_tag="next" okcode="" screen="" tarap="" tarty="" type="NEXT"></yglui_str_wid_button>
+                        <yglui_str_wid_button action="PREVIOUS" disma="" label_tag="previous" okcode="" screen="" tarap="" tarty="" type="PREVIOUS"></yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+                <yglui_str_wid_content key_str="3000042900080      9999123120090201000" rec_index="3" selected="X">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ANCUR" fieldlabel="" fieldtechname="ANCUR" fieldtseqnr="000000" value="EUR">European Euro</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ANSAL" fieldlabel="Sueldo anual" fieldtechname="ANSAL" fieldtseqnr="000000" value="30600"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-02-01"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BSGRD" fieldlabel="Grado de ocupación" fieldtechname="BSGRD" fieldtseqnr="000000" value="0.00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="DIVGV" fieldlabel="Horas tbjo.período" fieldtechname="DIVGV" fieldtseqnr="000000" value="0.00"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PREAS" fieldlabel="Motivo modificación" fieldtechname="PREAS" fieldtseqnr="000000" value="01">Pay scale increase</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFAR" fieldlabel="Clase conv.colectivo" fieldtechname="TRFAR" fieldtseqnr="000000" value="Z3">Z3</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFGB" fieldlabel="Área de convenio" fieldtechname="TRFGB" fieldtseqnr="000000" value="ZZ">All</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFGR" fieldlabel="Grupo profesional" fieldtechname="TRFGR" fieldtseqnr="000000" value="GRP 3"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRFST" fieldlabel="Subgrupo profesional" fieldtechname="TRFST" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="VGLSV" fieldlabel="Próximo ascenso" fieldtechname="VGLSV" fieldtseqnr="000000" value="0000-00-00"></yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="PREVIOUS" disma="" label_tag="previous" okcode="" screen="" tarap="" tarty="" type="PREVIOUS"></yglui_str_wid_button>
+                    </buttons>
+                    <tcontents>
+                        <yglui_str_wid_tcontent seqnr="000001">
+                            <fields>
+                                <yglui_str_wid_field fieldid="ANZHL" fieldlabel="" fieldtechname="ANZHL" fieldtseqnr="000001" value="0.00"></yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="BETRG" fieldlabel="" fieldtechname="BETRG" fieldtseqnr="000001" value="2500"></yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="LGART" fieldlabel="" fieldtechname="LGART" fieldtseqnr="000001" value="0010">Salary (CAP)</yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="ZEINH" fieldlabel="" fieldtechname="ZEINH" fieldtseqnr="000001" value=""></yglui_str_wid_field>
+                            </fields>
+                        </yglui_str_wid_tcontent>
+                        <yglui_str_wid_tcontent seqnr="000002">
+                            <fields>
+                                <yglui_str_wid_field fieldid="ANZHL" fieldlabel="" fieldtechname="ANZHL" fieldtseqnr="000002" value="0.00"></yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="BETRG" fieldlabel="" fieldtechname="BETRG" fieldtseqnr="000002" value="50"></yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="LGART" fieldlabel="" fieldtechname="LGART" fieldtseqnr="000002" value="0020">Salary(Manual)</yglui_str_wid_field>
+                                <yglui_str_wid_field fieldid="ZEINH" fieldlabel="" fieldtechname="ZEINH" fieldtseqnr="000002" value=""></yglui_str_wid_field>
+                            </fields>
+                        </yglui_str_wid_tcontent>
+                    </tcontents>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+</EWS>

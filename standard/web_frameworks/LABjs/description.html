@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LABjs (Loading And Blocking JavaScript) project description</title>
+</head>
+
+<body>
+
+<h1>
+LABjs (Loading And Blocking JavaScript)
+</h1>
+
+<p>
+<a href="http://labjs.com">http://labjs.com</a>
+</p>
+<p>
+Current version: 0.5.1 <a href="LABjs-0.5.1.zip" target="_blank">LABjs-0.5.1.zip</a>.
+</p>
+<h2>
+Release Notes
+</h2>
+<p>
+	<b>0.5.1:</b><br />
+	Addressed a possible memory leak (IE mostly) bug. Minor change.
+</p>
+<p>
+	<b>0.5:</b><br />
+	You can now choose whether you want LABjs to append your scripts to the HEAD (default) or to the BODY of the page (slight possible delay if BODY isn't ready yet). 
+	Theoretically, it doesn't seem like there should be a difference if a script is in the HEAD or BODY, but if you run into an issue with them in the HEAD, you can 
+	tell your scripts to instead go on the end of the BODY tag. See Example 6 for what this looks like.
+</p>
+<p>
+Questions or Thoughts? Contact me <a href="http://getify.tw">@getify</a> on twitter.
+</p>
+<p>
+	If you like this project, you also might like to check out <a href="http://test.getify.com/mpAjax">mpAjax (multi-part Ajax responses)</a> and <a href="http://flxhr.flensed.com">flXHR (easy cross-domain Ajax)</a>.
+</p>
+<br /><br />
+<p>
+This project is a simple little tool (1.6k compressed!) for being able to load javascript files dynamically. It's like a lot of similar projects where the goal is to improve the speed of page load by allowing scripts to load in parallel. The thing it does slightly differently than most others like it is it allows you to "block", which is to say, load one or more scripts in parallel, then wait for them to finish, before going on to something else, like loading more scripts.
+</p>
+<p>
+What I wanted was a pattern where I could load scripts in parallel, just like with script tags, but also block and wait if there was an explicit ordering dependency that required it. 
+</p>
+<p>
+What most loaders fail to do well is let you define "dependencies" simply based on loading order. With regular script tags, the browser blocks for you, so you can make sure for instance that jquery.js loads before jqueryui.js.  But imagine you've got 3 scripts that can download in parallel (not dependent on each other), and then two more that need to wait for those 3 to load. You can't do that with script tags, and you also can't do that very easily with a lot of the script loaders/frameworks that I've found. 
+</p>
+<p>
+Most of them rely on intrusive concepts to do "dependency" management. For instance, each child script has to "signal" (callback) that it's done loading, to the parent page. Or the parent script and child scripts have to explicitly declare dependencies using some framework or conventions. Also, some other loader libraries rely on attaching a single load callback handler for EACH script. This makes it awkward or difficult to wait for several to load at a time, before proceeding, since you as the author have to keep track of what has loaded yourself.
+</p>
+<p>
+jsLAB lets you load pretty much any script file, whether you control it or not, with no intrusion or convention for dependencies, other than the order and blocking that you define. It keeps track of what you've asked for and what has downloaded, only loads a unique script filename once, and lets you only define your handler once for a set of scripts that will load together in parallel. The API style (with chaining) makes is very easy to convert a set of script tags in your page into code to load them, without having to worry that race conditions will cause issues for scripts loading in the wrong order if there are implicit dependencies involved.
+</p>
+<p>
+Example:
+</p>
+<p>
+Old:
+</p>
+<pre>
+&lt;script src="jquery.js">&lt;/script>
+&lt;script src="jquery.ui.js">&lt;/script>
+&lt;script src="myplugin.jquery.js">&lt;/script>
+&lt;script src="initpage.js">&lt;/script>
+</pre>
+<p>
+New:
+</p>
+<pre>
+$LAB
+.script("jquery.js")
+.block(function(){
+      $LAB
+      .script("jquery.ui.js")
+      .script("myplugin.jquery.js")
+      .block(function(){
+            $LAB.script("initpage.js");
+      });
+});
+</pre>
+<p>
+In the above example, "jquery.ui.js" and "myplugin.jquery.js" can load in parallel because there's no dependencies, but they will wait for "jquery.js" to load first, since they depend on it, and then "initpage.js" will wait for all of them to load before it runs, to it makes sure all code it will call is in place, similar to a $document.ready(...) concept.
+</p>
+<p>
+The page link above also shows a few other variations on the .script(...) signature. For instance, you don't have to do a single script() call for each file (though I think it makes thing more readable). You can pass as many scripts singularly as parameters to one script() call. You can also pass an array of scripts, and it will loop through them and load them in the same way. Lastly, you can pass in an object instead of string, and the object literal can contain "src", "type", and "language" specifications, if you want to override the defaults of "text/javascript" and "Javascript", for some reason.
+</p>
+
+
+
+</body>
+</html>

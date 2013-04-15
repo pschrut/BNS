@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_date_ranges></o_date_ranges>
+  <o_field_settings>
+    <yglui_str_wid_fs_record screen="1">
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="10" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="9999-12-31" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="ENDDA" fieldlabel="End Date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="11" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="HSNMR" fieldlabel="House number" fieldsource="" fieldtype="" label_type="V" length="000006" seqnr="02" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="Belgium" default_value="BE" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="LAND1" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000003" seqnr="05" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="LOCAT" fieldlabel="2nd Address Line" fieldsource="" fieldtype="S" label_type="V" length="000040" seqnr="08" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="NAME2" fieldlabel="C/O name" fieldsource="" fieldtype="S" label_type="V" length="000040" seqnr="06" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="ORT01" fieldlabel="City" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="04" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="POSTA" fieldlabel="Apartment ID" fieldsource="" fieldtype="S" label_type="V" length="000006" seqnr="07" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="PSTLZ" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000010" seqnr="03" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="STRAS" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000060" seqnr="01" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="TELNR" fieldlabel="Telephone Number" fieldsource="" fieldtype="S" label_type="V" length="000014" seqnr="09" service_pai="EL_SERVICIO_PAI" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+      </fs_fields>
+    </yglui_str_wid_fs_record>
+  </o_field_settings>
+  <o_field_values>
+    <yglui_str_wid_record rec_key="P_3000000200061000" screen="1">
+      <hrobject objid="30000002" otype="P" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content key_str="3000000200061      2009043020070101000" rec_index="1" selected="" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2007-01-01"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="2009-04-30"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="HSNMR" fieldlabel="House number" fieldtechname="HSNMR" fieldtseqnr="000000" value="15"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LAND1" fieldlabel="" fieldtechname="LAND1" fieldtseqnr="000000" value="BE">Belgium</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LOCAT" fieldlabel="2nd Address Line" fieldtechname="LOCAT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="NAME2" fieldlabel="C/O name" fieldtechname="NAME2" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ORT01" fieldlabel="City" fieldtechname="ORT01" fieldtseqnr="000000" value="Luik"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="POSTA" fieldlabel="Apartment ID" fieldtechname="POSTA" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PSTLZ" fieldlabel="" fieldtechname="PSTLZ" fieldtseqnr="000000" value="4000"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="STRAS" fieldlabel="" fieldtechname="STRAS" fieldtseqnr="000000" value="Grote straat"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TELNR" fieldlabel="Telephone Number" fieldtechname="TELNR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="NEXT" busid="" disma="" label_tag="next" okcode="" screen="" status="" tarap="" tarty="" type="NEXT"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+        <yglui_str_wid_content key_str="3000000200061      2009080320090501000" rec_index="2" selected="" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-05-01"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="2009-08-03"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="HSNMR" fieldlabel="House number" fieldtechname="HSNMR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LAND1" fieldlabel="" fieldtechname="LAND1" fieldtseqnr="000000" value="BM">Bermuda</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LOCAT" fieldlabel="2nd Address Line" fieldtechname="LOCAT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="NAME2" fieldlabel="C/O name" fieldtechname="NAME2" fieldtseqnr="000000" value="baby"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ORT01" fieldlabel="City" fieldtechname="ORT01" fieldtseqnr="000000" value="milan"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="POSTA" fieldlabel="Apartment ID" fieldtechname="POSTA" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PSTLZ" fieldlabel="" fieldtechname="PSTLZ" fieldtseqnr="000000" value="5600"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="STRAS" fieldlabel="" fieldtechname="STRAS" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TELNR" fieldlabel="Telephone Number" fieldtechname="TELNR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="NEXT" busid="" disma="" label_tag="next" okcode="" screen="" status="" tarap="" tarty="" type="NEXT"></yglui_str_wid_button>
+            <yglui_str_wid_button action="PREVIOUS" busid="" disma="" label_tag="previous" okcode="" screen="" status="" tarap="" tarty="" type="PREVIOUS"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+        <yglui_str_wid_content key_str="3000000200061      2009082420090804000" rec_index="3" selected="" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-08-04"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="2009-08-24"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="HSNMR" fieldlabel="House number" fieldtechname="HSNMR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LAND1" fieldlabel="" fieldtechname="LAND1" fieldtseqnr="000000" value="BE">Belgium</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LOCAT" fieldlabel="2nd Address Line" fieldtechname="LOCAT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="NAME2" fieldlabel="C/O name" fieldtechname="NAME2" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ORT01" fieldlabel="City" fieldtechname="ORT01" fieldtseqnr="000000" value="test"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="POSTA" fieldlabel="Apartment ID" fieldtechname="POSTA" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PSTLZ" fieldlabel="" fieldtechname="PSTLZ" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="STRAS" fieldlabel="" fieldtechname="STRAS" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TELNR" fieldlabel="Telephone Number" fieldtechname="TELNR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="NEXT" busid="" disma="" label_tag="next" okcode="" screen="" status="" tarap="" tarty="" type="NEXT"></yglui_str_wid_button>
+            <yglui_str_wid_button action="PREVIOUS" busid="" disma="" label_tag="previous" okcode="" screen="" status="" tarap="" tarty="" type="PREVIOUS"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+        <yglui_str_wid_content key_str="3000000200061      9999123120090825000" rec_index="4" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-08-25"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="HSNMR" fieldlabel="House number" fieldtechname="HSNMR" fieldtseqnr="000000" value="number"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LAND1" fieldlabel="" fieldtechname="LAND1" fieldtseqnr="000000" value="BE">Belgium</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LOCAT" fieldlabel="2nd Address Line" fieldtechname="LOCAT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="NAME2" fieldlabel="C/O name" fieldtechname="NAME2" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ORT01" fieldlabel="City" fieldtechname="ORT01" fieldtseqnr="000000" value="city"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="POSTA" fieldlabel="Apartment ID" fieldtechname="POSTA" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PSTLZ" fieldlabel="" fieldtechname="PSTLZ" fieldtseqnr="000000" value="1234"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="STRAS" fieldlabel="" fieldtechname="STRAS" fieldtseqnr="000000" value="Example"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TELNR" fieldlabel="Telephone Number" fieldtechname="TELNR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+          </fields>
+          <buttons>
+            <yglui_str_wid_button action="PREVIOUS" busid="" disma="" label_tag="previous" okcode="" screen="" status="" tarap="" tarty="" type="PREVIOUS"></yglui_str_wid_button>
+            <yglui_str_wid_button action="REC_ADCHANGEPERMADDR" busid="" disma="" label_tag="Change" okcode="MOD" screen="" status="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+          </buttons>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+  </o_field_values>
+  <o_screen_buttons>
+    <yglui_str_wid_button action="SCR_ADADDPERMADDR" busid="" disma="" label_tag="Add" okcode="INS" screen="1" status="" tarap="" tarty="" type="INS"></yglui_str_wid_button>
+  </o_screen_buttons>
+  <o_widget_screens screenmode="">
+    <yglui_str_wid_screen>
+      <yglui_str_wid_screen all_modifiable="" appid="PD_ADDR" dyn_panel="" label_tag="addrPerm" list_mode="" screen="1" secondary="" selected="X" table_mode="" translation=""></yglui_str_wid_screen>
+    </yglui_str_wid_screen>
+  </o_widget_screens>
+  <labels>
+    <item id="LAND1" service="" value="Country"></item>
+    <item id="PSTLZ" service="" value="Postal code"></item>
+    <item id="STRAS" service="" value="Street"></item>
+    <item id="addrEmer" service="" value="Emergency"></item>
+    <item id="addrMail" service="" value="Mailing"></item>
+    <item id="addrPerm" service="" value="Permanent"></item>
+  </labels>
+  <messages></messages>
+  <webmessage_type></webmessage_type>
+  <webmessage_text></webmessage_text>
+</EWS>

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="fwk_head">
+        <title>.:euHReka Workspace Templates Platform:.</title>
+		<!-- all core styles, includes modules, widgets and third party --> 
+        <link href="../../css/CSS2.css" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="../../css/CSS2_IE7.css" />
+        <![endif]-->		
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="../../css/CSS2_IE6.css" />
+        <![endif]-->
+		<!-- blackbirdjs --> 
+		<link href="../web_frameworks/blackbirdjs/blackbird.css" rel="stylesheet" type="text/css" />
+		<script src="../web_frameworks/blackbirdjs/blackbird.js" type="text/javascript"></script>
+		<!-- /blackbirdjs -->       	
+		<script src="../web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+	    <script src="../web_frameworks/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+		<script src="../web_frameworks/xml2json/ObjTree.js" type="text/javascript"></script>     
+        <script src="../web_frameworks/wz_jsgraphics.js" type="text/javascript"></script>
+        <script src="../web_frameworks/RSH/rsh.compressed.js" type="text/javascript"></script>
+        <script src="../web_frameworks/datejs/date.js" type="text/javascript"></script>
+		<script type="text/javascript" src="templatesOrigin.js"></script>
+		<script type="text/javascript" src="../global.js"></script> 
+		<script type="text/javascript" src="../applications.js"></script>	
+		<script type="text/javascript" src="templatesFirstRequest.js"></script>	
+		<script type="text/javascript" src="../historyManager.js"></script>
+		<script src="../../modules/modules.js" type="text/javascript"></script> 
+        <script src="../../modules/accordion/accordion.js" type="text/javascript"></script> 
+        <script src="../../modules/autocompleter/autocompleter.js" type="text/javascript"></script>
+        <script src="../../modules/balloon/balloon.js" type="text/javascript"></script>
+        <script src="../../modules/confirmationBox/confirmationBox.js" type="text/javascript"></script>
+        <script src="../../modules/contextMenu/contextMenu.js" type="text/javascript"></script>
+        <script src="../../modules/datePicker/datePicker.js" type="text/javascript"></script>
+        <script src="../../modules/drawTree/drawTree.js" type="text/javascript"></script>
+        <script src="../../modules/hourField/hourFiled.js" type="text/javascript"></script>
+        <script src="../../modules/multiselectSearchbox/multiselectSearchbox.js" type="text/javascript"></script>
+        <script src="../../modules/infoModule/infoModule.js" type="text/javascript"></script>
+        <script src="../../modules/semitransparentBuilder/semitransparentBuilder.js" type="text/javascript"></script>
+        <script src="../../modules/tablekit/tablekit.js" type="text/javascript"></script>
+        <script src="../../modules/tabs/tabs.js" type="text/javascript"></script>
+        <script src="../../modules/treeHandler/treeHandler.js" type="text/javascript"></script>
+        <script src="../../modules/unmovableWidgets/unmovableWidgets.js" type="text/javascript"></script>
+        <script src="../../modules/widgets/widgets.js" type="text/javascript"></script>
+        <script src="../../modules/editableDiv/editableDiv.js" type="text/javascript"></script>
+        
+        <script src="../ContentPanel/ContentPanel.js" type="text/javascript"></script>
+        <script src="CP.js" type="text/javascript"></script>
+        <script src="../GenericCatalog/GenericCatalog.js" type="text/javascript"></script>   
+		<script src="../GetWidgets/GetWidgets.js" type="text/javascript"></script>
+        <script src="../../modules/fieldDisplayer/fieldDisplayer.js"></script>
+		<script src="GW.js" type="text/javascript"></script>
+        <script src="FieldDisplayer.js" type="text/javascript"></script>
+		<script type="text/javascript">	
+	    function createObjects(){       
+			//********************************************************************
+			//var app = new CPExample();
+			//var app1 = new GWExample();
+            var app1 = new FieldDisplayerApp();
+			//*********************************************************************		
+			app1.run();
+	    }		
+		</script>	    
+    </head>
+    <body id="frameWork" style="background-image:url('back.jpg')">
+    	<div style="top:0px;left:0px;position:absolute;width:300px;height:300px;background-image:url('ie6.jpg');background-repeat:no-repeat"></div>
+		<div id="infoMessage" class="info_message"></div> 
+        <div class="fwk_loadingInfo">        
+            <div id="loadingDiv" class="fwk_start_loadingDiv fwk_start_loadingDiv"></div>
+            <div id="loadingBars" class="fwk_start_loadingBars fwk_start_loadingDiv"></div>        
+        </div>
+        <div id="fwk_payroll_running" class="framework_payroll_running" style="display:none"></div> 
+        <div class="fwk_wholeFrameWork">        
+           <div class="fwk_general_top">
+              <div id="fwk_1"></div>
+              <div id="fwk_2"></div>
+              <div id="fwk_3">              
+                      <div id="banner" class="fwk_start_banner"></div>
+              </div>
+              <div id="fwk_4"></div>
+              <div id="fwk_5">                    
+                    <div id="top" class="appNav_top"></div>
+                    <div id="fwk_5_bottom" class="fwk_5_bottom"><div id="idTemporary"></div></div>                                        
+              </div>
+           </div>
+           <div id="fwk_6">
+                   <div id="menus"></div>
+           </div>
+           <div id="fwk_7" style="position:absolute;left:310px;top:200px">
+                <div id="content" class="fwk_content"></div>
+           </div>
+           <div style="clear:both">&nbsp;</div>
+         </div>		
+		
+    	
+        
+		
+    </body>		
+</html>

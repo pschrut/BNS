@@ -1,0 +1,2296 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Modules2</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <link href="../css/CSS2.css" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="../css/CSS2_IE7.css" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="../css/CSS2_IE6.css" />
+        <![endif]-->
+
+        <script src="../standard/web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+        <script src="../standard/web_frameworks/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+        <script src="../standard/web_frameworks/xml2json/ObjTree.js" type="text/javascript"></script>
+        <script src="../standard/origin.js" type="text/javascript"></script>
+        <script src="../standard/web_frameworks/datejs/date.js" type="text/javascript"></script><!-- Necessary for the DatePicker -->
+        <script src="../standard/web_frameworks/wz_jsgraphics.js" type="text/javascript"></script><!-- Necessary for the DrawTree -->
+        <!-- modules -->
+        <script src="groupedLayout/groupedLayout.js" type="text/javascript"></script>
+        <script src="../../standard/global.js" type="text/javascript"></script>
+        <script src="simpleTable/simpleTable.js" type="text/javascript"></script>
+        <script src="buttonDisplayer/megaButtonDisplayer.js" type="text/javascript"></script>
+        <script src="tablekit/tablekit.js" type="text/javascript"></script>
+        <script src="tablekit/tablekitWithSearch.js" type="text/javascript"></script>
+        <script src="modules.js" type="text/javascript"></script>
+        <script src="infoPopUp/infoPopUp.js" type="text/javascript"></script>
+        <script src="semitransparentBuilder/semitransparentBuilder.js" type="text/javascript"></script>
+        <script src="dhtmlxeditor/dhtmlxeditor.js" type="text/javascript"></script>
+        <script src="boxGrid/boxGrid.js" type="text/javascript"></script>
+        <script src="progressBar/progressBar.js" type="text/javascript"></script>
+        <script src="multicontextMenu/multiContextMenu.js" type="text/javascript"></script>
+        <!-- /modules -->
+        <!-- blackbirdjs -->
+        <link href="../standard/web_frameworks/blackbirdjs/blackbird.css" rel="stylesheet" type="text/css" />
+        <script src="../standard/web_frameworks/blackbirdjs/blackbird.js" type="text/javascript"></script>
+        <!-- /blackbirdjs -->
+        <style type="text/css">
+            h2{
+                color: white;
+                background:#492682;
+                margin:5px;
+                padding:3px;
+                text-decoration:underline;
+                cursor: pointer;
+            }
+            h3{
+                border:solid #492682;
+                margin:5px;
+                padding:3px;
+            }
+            h4{
+                color:black;
+                margin-left:25px;
+                padding:3px;
+            }
+            h5{
+                color:black;
+                margin-left:35px;
+                padding:3px;
+            }
+            pre
+            {
+                background: #fffeee;
+                font-style: italic;
+                border: 1px solid #492682;
+                padding:3px;
+                margin: 5px;
+                margin-left: 35px;
+            }
+
+            p {
+                margin-left:25px;
+            }
+
+            .howTo {
+
+                margin-left:35px;
+                padding:3px;
+            }
+            .portal_column
+            {
+                width: 27%;
+                float: left;
+                height: 100%;
+            }
+            .code
+            {
+                clear: both;
+                background-color: #CCCCCC;
+                border: 1px solid black;
+                font-weight: bold;
+            }
+            .widget1_class{
+                width:400px;
+                float:left;
+            }
+            .widget2_class{
+                width:400px;
+                height:400px;
+                clear:right
+            }
+            .widget3_class{
+                width:800px;
+            }
+            .page2_class{
+                margin-top:100px;
+            }
+            body
+            {
+                background-image:none;
+            }
+            .textarea {
+                border: 1px solid black;
+                background-color: white;
+                width: 400px;
+                height: auto;
+                padding: 2px;
+                cursor:text;
+                padding-bottom: 5px;
+            }
+            .reset {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                border-right: 1px solid black;
+                float: left;
+                width: 20px;
+                height: 21px;
+                background-color: white;
+                font-family: verdana;
+                font-weight: bold;
+                line-height: 21px;
+                vertical-align:middle;
+                cursor: pointer;
+            }
+            #searchBox {
+                float:left;
+                height: 19px;
+                border: 1px solid black;
+                border-right: none;
+            }
+            .label_example{
+                float:left;
+                color:Gray;
+                margin-right:30px;
+                margin-left:5px;
+            }
+            .info_example{
+                width: 150px;
+                float:left;
+            }
+            .link_example{
+                margin-left:5px;
+            }
+            .aligningTitle
+            {
+                margin-top:20px;
+                margin-left:10px;
+            }
+            .aligningButton
+            {
+                float:left;
+                clear:both;
+                margin-top:20px;
+            }
+            .aligningDisplayer
+            {
+                float:left;
+                clear:both;
+            }
+            .moduleInfoPopUp_stdButton
+            {
+                float:left;    
+                margin-left:3px;
+            }
+            .moduleInfoPopUp_stdButton_div_right       
+            {
+                float:right;
+                margin-right:30px;
+                margin-top:10px;
+                height:30px;
+            }
+            .moduleInfoPopUp_stdButton_div_left      
+            {
+                float:left;
+                height:30px;
+                margin-left:-3px;
+                margin-top:20px;
+            }   
+            .tableBoxGrid{
+                width: 100%;
+	            border: solid 1px #dcd2ce;
+            }
+            .horizontalTitle{
+                height: 22px;
+                width:auto;
+            }
+            .verticalTitle{
+                height: auto;
+                width:22px;
+            }
+            .headerHorCellTable{
+                height: 32px;
+                width:auto;
+                background-color: #eeece1;
+            }
+            .headerVerCellTable{
+                background-color: #eeece1;
+                width:130px;
+                text-align:center;
+            }
+            .horTitleLabel{
+                text-indent: 130px;
+                text-align: center;
+            }
+            .verTitleLabel{
+                margin-top: 22px;
+            }
+            .cellTable{
+                text-align: center;
+            }
+         
+        </style>
+		<script type="text/javascript">
+            var global = {
+                getLabel: function(param){return param},
+                dateFormat: 'dd.MM.yyyy',
+				currentApplication: {
+                    view: ""
+				}
+                
+            };
+        </script>
+    </head>
+    <body>
+        <h1>MODULES</h1>
+
+
+
+        <hr />
+
+        <!-- ########################################################### GROUPEDLAYOUT ############################################## -->
+        <h2 id="H2" onclick="javascript:$('groupedContain').toggle()">GROUPEDLAYOUT</h2>
+        <div id='groupedContain' style="display:none">
+            <h3>Description</h3>
+            <p>This module allows the user to get the html code to draw a tree included in a table.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">grouped (Boolean) True: if the tree can have 3 levels; False: if the tree has two levels as much</li>
+                <li class="howTo">container div (DOM) The div where we want to insert the tabel. </li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">No events</li>
+            </ul>
+            <h3>Example: Draw grouped layout</h3>
+            <div id='containGrouped' style='margin-top:50px; margin-left:50px;'></div>
+            <script type="text/javascript">
+                var testDiv = new Element('div', { 'id': 'TestDiv', 'class': 'application_action_link link_example' }).update('this is a test action');
+                testDiv.observe('click', function() {
+                    if (log) {
+                        log.info('action launch');
+                    }
+                }.bind(this));
+                var element0 = new Element('div').insert("<div class='application_icon_green'></div><span>Deliver result</span>");
+                var element1 = new Element('div').insert("<div class='application_emptyBubble'></div><span>Establishing focus</span>");
+                var element2 = new Element('div').insert("<div class='application_emptyBubble'></div><span>Getting results</span>");
+                var element3 = new Element('div').insert("<div class='application_emptyBubble'></div><span>Analytical thinking</span>");
+                var details1 = new Element('div').insert("<div class='label_example'>Details: </div><div class='info_example'>This is a test information</div>");
+                var details2 = new Element('div').insert("<div class='label_example'>Details: </div><div class='info_example'>This is a test information</div>");
+                var details3 = new Element('div').insert("<div class='label_example'>Details: </div><div class='info_example'>This is a test information</div>");
+                var rating = new Element('div').update(getRating(5, 3, 4));
+                var rating2 = new Element('div').update(getRating(5, 4, 2));
+                var rating3 = new Element('div').update(getRating(5, 2, -1));
+                var link1 = new Element('div').insert("<div class='application_action_link' onClick='javascript:document.fire(\"EWS:openApplication\", $H({app:\"APPR\"}))'>View details </div>");
+                var link2 = new Element('div').insert("<div class='application_action_link' onClick='javascript:document.fire(\"EWS:openApplication\", $H({app:\"BOOK\"}))'>View details </div>");
+                var link3 = new Element('div').insert("<div class='application_action_link' onClick='javascript:document.fire(\"EWS:openApplication\", $H({app:\"APPR\"}))'>View details </div>");
+
+                var grouped = { headers: [{ column: "Title" }, { column: "Target date" }, { column: "Rating" }, { column: "Modules"}],
+                    elements: [
+                        { id: '0',
+                            groupBy: -1,
+                            value: 'parent1',
+                            icon:'application_emptyBubble'
+                        },
+                        { id: '9',
+                            groupBy: -1,
+                            value: 'parent2',
+                            icon:'application_emptyBubble'
+                        },
+                        { id: '1',
+                            groupBy: '9',
+                            value: 'child1',
+                            icon: 'application_icon_orange',
+                            columns:
+                                [{ fieldId: '121209', value: '12-12-09' }, { fieldId: 'eval1', value: rating }, { fieldId: '001', value: 'high'}]
+                        },
+                        { id: '3',
+                            groupBy: '1',
+                            value: 'details',
+                            info: 'this is a detail test info'
+                        },
+                        { id: '2',
+                            groupBy: '1',
+                            value: link1
+                        },
+                        { id: '4',
+                            groupBy: '0',
+                            value: 'child2',
+                            icon: 'application_icon_green',
+                            columns:
+                                [{ fieldId: '121209', value: '12-12-09' }, { fieldId: 'eval2', value: rating2 }, { fieldId: '002', value: 'low'}]
+                        },
+                        { id: '5',
+                            groupBy: '4',
+                            value: details2
+                        },
+                        { id: '6',
+                            groupBy: '4',
+                            value: link2
+                        },
+                        { id: '7',
+                            groupBy: '0',
+                            value: 'child3',
+                            icon:'application_emptyBubble',
+                            columns:
+                                [{ fieldId: '121209', value: '12-12-09' }, { fieldId: 'eval3', value: rating3 }, { fieldId: '003', value: 'Normal text'}]
+                        },
+                        { id: '8',
+                            groupBy: '7',
+                            value: details3
+                        },
+                        { id: '10',
+                            groupBy: '7',
+                            value: link3
+                        }
+                    ]};
+                var gr3= new groupedLayout(grouped,$('containGrouped'));
+                var html = gr3.buildGroupLayout();
+
+
+                function addGr3(){
+                    var aux =   {  id: '34',
+                        groupBy: '-1',
+                        value: 'test1',
+                        icon: 'application_icon_green',
+                        columns:
+                            [{ fieldId: '121209', value: '12-12-09' }, { fieldId: 'eval1', value: rating }, { fieldId: '001', value: 'high'}]
+                    };
+                    gr3.addRow(aux);
+                }
+                function modifyGr3(){
+                    var aux =   {  id: '1',
+                        groupBy: '9',
+                        value: 'test1',
+                        icon: 'application_icon_green',
+                        columns:
+                            [{ fieldId: '121209', value: '12-12-09' }, { fieldId: 'eval1', value: rating }, { fieldId: '001', value: 'high'}]
+                    };
+
+                    gr3.modifyRow(aux);
+                }
+            </script>
+            <input type="text" id='hola' style="margin-left:20px;"/>
+            <input type="button" value="DELETE IT!" onclick="javascript:gr3.deleteRow($('hola').getValue())" />
+            <input type="button" value="ADD IT!" onclick="javascript:addGr3()" />
+            <input type="button" value="MODIFY IT!" onclick="javascript:modifyGr3()" />
+            <h4 style='clear:both;'>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example shows how to draw a grouped layout.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">origin.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+var testDiv = new Element(&#39;div&#39;, { &#39;id&#39;: &#39;TestDiv&#39;, &#39;class&#39;: &#39;application_action_link link_example&#39; }).update(&#39;this is a test action&#39;);
+                testDiv.observe(&#39;click&#39;, function() {
+                    if (log) {
+                        log.info(&#39;action launch&#39;);
+                    }
+                }.bind(this));
+                var element0 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;application_icon_green&#39;&gt;&lt;/div&gt;&lt;span&gt;Deliver result&lt;/span&gt;&quot;);
+                var element1 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;application_emptyBubble&#39;&gt;&lt;/div&gt;&lt;span&gt;Establishing focus&lt;/span&gt;&quot;);
+                var element2 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;application_emptyBubble&#39;&gt;&lt;/div&gt;&lt;span&gt;Getting results&lt;/span&gt;&quot;);
+                var element3 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;application_emptyBubble&#39;&gt;&lt;/div&gt;&lt;span&gt;Analytical thinking&lt;/span&gt;&quot;);
+                var details1 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;label_example&#39;&gt;Details: &lt;/div&gt;&lt;div class=&#39;info_example&#39;&gt;This is a test information&lt;/div&gt;&quot;);
+                var details2 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;label_example&#39;&gt;Details: &lt;/div&gt;&lt;div class=&#39;info_example&#39;&gt;This is a test information&lt;/div&gt;&quot;);
+                var details3 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;label_example&#39;&gt;Details: &lt;/div&gt;&lt;div class=&#39;info_example&#39;&gt;This is a test information&lt;/div&gt;&quot;);
+                var rating = new Element(&#39;div&#39;).update(getRating(5, 3, 4));
+                var rating2 = new Element(&#39;div&#39;).update(getRating(5, 4, 2));
+                var rating3 = new Element(&#39;div&#39;).update(getRating(5, 2, -1));
+                var link1 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;application_action_link&#39; onClick=&#39;javascript:document.fire(\&quot;EWS:openApplication\&quot;, $H({app:\&quot;APPR\&quot;}))&#39;&gt;View details &lt;/div&gt;&quot;);
+                var link2 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;application_action_link&#39; onClick=&#39;javascript:document.fire(\&quot;EWS:openApplication\&quot;, $H({app:\&quot;BOOK\&quot;}))&#39;&gt;View details &lt;/div&gt;&quot;);
+                var link3 = new Element(&#39;div&#39;).insert(&quot;&lt;div class=&#39;application_action_link&#39; onClick=&#39;javascript:document.fire(\&quot;EWS:openApplication\&quot;, $H({app:\&quot;APPR\&quot;}))&#39;&gt;View details &lt;/div&gt;&quot;);
+
+                var grouped = { headers: [{ column: &quot;Title&quot; }, { column: &quot;Target date&quot; }, { column: &quot;Rating&quot; }, { column: &quot;Modules&quot;}],
+                    elements: [
+                        { id: &#39;0&#39;,
+                            groupBy: -1,
+                            value: &#39;parent1&#39;,
+                            icon:&#39;application_emptyBubble&#39;
+                        },
+                        { id: &#39;9&#39;,
+                            groupBy: -1,
+                            value: &#39;parent2&#39;,
+                            icon:&#39;application_emptyBubble&#39;
+                        },
+                        { id: &#39;1&#39;,
+                            groupBy: &#39;9&#39;,
+                            value: &#39;child1&#39;,
+                            icon: &#39;application_icon_orange&#39;,
+                            columns:
+                                [{ fieldId: &#39;121209&#39;, value: &#39;12-12-09&#39; }, { fieldId: &#39;eval1&#39;, value: rating }, { fieldId: &#39;001&#39;, value: &#39;high&#39;}]
+                        },
+                        { id: &#39;3&#39;,
+                            groupBy: &#39;1&#39;,
+                            value: &#39;details&#39;,
+                            info: &#39;this is a detail test info&#39;
+                        },
+                        { id: &#39;2&#39;,
+                            groupBy: &#39;1&#39;,
+                            value: link1
+                        },
+                        { id: &#39;4&#39;,
+                            groupBy: &#39;0&#39;,
+                            value: &#39;child2&#39;,
+                            icon: &#39;application_icon_green&#39;,
+                            columns:
+                                [{ fieldId: &#39;121209&#39;, value: &#39;12-12-09&#39; }, { fieldId: &#39;eval2&#39;, value: rating2 }, { fieldId: &#39;002&#39;, value: &#39;low&#39;}]
+                        },
+                        { id: &#39;5&#39;,
+                            groupBy: &#39;4&#39;,
+                            value: details2
+                        },
+                        { id: &#39;6&#39;,
+                            groupBy: &#39;4&#39;,
+                            value: link2
+                        },
+                        { id: &#39;7&#39;,
+                            groupBy: &#39;0&#39;,
+                            value: &#39;child3&#39;,
+                            icon:&#39;application_emptyBubble&#39;,
+                            columns:
+                                [{ fieldId: &#39;121209&#39;, value: &#39;12-12-09&#39; }, { fieldId: &#39;eval3&#39;, value: rating3 }, { fieldId: &#39;003&#39;, value: &#39;Normal text&#39;}]
+                        },
+                        { id: &#39;8&#39;,
+                            groupBy: &#39;7&#39;,
+                            value: details3
+                        },
+                        { id: &#39;10&#39;,
+                            groupBy: &#39;7&#39;,
+                            value: link3
+                        }
+                    ]};
+                var gr3= new groupedLayout(grouped,$(&#39;containGrouped&#39;));
+                var html = gr3.buildGroupLayout();
+
+
+                function addGr3(){
+                    var aux =   {  id: &#39;34&#39;,
+                        groupBy: &#39;-1&#39;,
+                        value: &#39;test1&#39;,
+                        icon: &#39;application_icon_green&#39;,
+                        columns:
+                            [{ fieldId: &#39;121209&#39;, value: &#39;12-12-09&#39; }, { fieldId: &#39;eval1&#39;, value: rating }, { fieldId: &#39;001&#39;, value: &#39;high&#39;}]
+                    };
+                    gr3.addRow(aux);
+                }
+                function modifyGr3(){
+                    var aux =   {  id: &#39;1&#39;,
+                        groupBy: &#39;9&#39;,
+                        value: &#39;test1&#39;,
+                        icon: &#39;application_icon_green&#39;,
+                        columns:
+                            [{ fieldId: &#39;121209&#39;, value: &#39;12-12-09&#39; }, { fieldId: &#39;eval1&#39;, value: rating }, { fieldId: &#39;001&#39;, value: &#39;high&#39;}]
+                    };
+
+                    gr3.modifyRow(aux);
+                }
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id='Div2' style='margin-top:50px; margin-left:50px;'&gt;&lt;/div&gt;
+            </pre>
+        </div>
+
+        <!-- ######################################################BUTTON DISPLAYER########################################## -->
+        <!-- Ending MARIÁN's zone -->
+        <h2 id="H3" onclick="javascript: $('megaButtonDisplayerBody').toggle();">MEGA BUTTON DISPLAYER</h2>
+        <div id="megaButtonDisplayerBody" style="display: none">
+            <h3 id="H4">Description</h3>
+            <p>
+                The MegaButtonDisplayer is a module for making objects (buttons / links) giving a json like 'in' parameter. The module gives a div containing all buttons you want to create, rady to be inserted in the DOM.
+            </p>
+            <h3>Parameters</h3>
+            <ul>
+                <li> json - JSON constructed with information of the xmlOut or of a service or info tha the user knows about the element</li>
+            </ul>
+            <h3>Methods</h3>
+            <ul>
+                <li><b>createButton(button, index)</b>: Create the button/buttons with the information we pass in the json.</li>
+                <li><b>enable(idButton)</b>: Make the button enable using the id. We have to call it this way(megaButtonDisplayer instance.enable(idOfButton))</li>
+                <li><b>disable(idButton)</b>: Make the button disable using the id.We have to call it this way(megaButtonDisplayer instance.disable(idOfButton))</li>
+				<li><b>setActive(idButton)</b>: Make the button active (disabled but saying it's the active one). We have to call it this way(megaButtonDisplayer instance.disable(idOfButton))</li>
+                <li><b>updateHandler(idButton,handler){</b>: update the Handler of the button after create it</li>
+                <li><b>updateData(idButton,data){</b>: update the data of the button after create it</li>
+                <li><b>updateHandlerContext(idButton,handlerContext){</b>: update the context (this) of the button after create it</li>
+                <li><b>updateEvent(idButton,event){</b>: update the event of the button after create it</li>
+                <li><b>updateLabel(idButton,label){</b>: update the label of the button after create it</li>
+                <li><b>getButtons()</b>: Return the div that contains the button/buttons we want to insert in the DOM</li>
+            </ul>
+            <h3>Example #1</h3>
+            <p>Firs of all for creating a new megaButtonDisplayer we should create a JSON where we are going to add all buttons we want to show.</p>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">Blah</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">megaButtonDisplayer.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <p>We need to create a JSON with information that will be passed to the module, it should be done using a JSON format. The parameter we can pass the JSON are: </p>
+            <ul>
+                <li><b>elements:[]</b>:Array that will contain all the buttons we want to display</li>
+                <li><b>defaultEventOrHandler</b>:true if all buttons we are going to create fires an event</li>
+                <li><b>defaultButtonClassName</b>:class we can apply all buttons we create</li>
+				<li><b>defaultDisabledClass</b>: Class to apply by default to the disabled links</li>
+				<li><b>defaultActiveClass</b>: Class to apply by default to the active links</li>
+                <li><b>mainClass</b>:class of the container div of all buttons</li>
+            </ul>
+            <p>After declare the json object, we create a veriable that contains all the information for a button. We can create a variable HTML for every button to display. These are the parameter, we can declare:</p>
+            <ul> 
+                <li><b>className</b>: The class we want to apply to the button/link (In case we want to create a link, we have to pass 'application_action_link' plus the class we want to apply)</li>
+                <li><b>type</b>: If is a button 'button', if is a link 'link'</li>
+                <li><b>eventOrHandler</b>: true if the button/link fires an event</li>
+                <li><b>event</b>: If the button/link fires an event, we pass this parameter (ej:'EWS:openApplication')</li>
+                <li><b>data</b>: Only if the button/link fires an <b>event</b>, and we want to pass some arguments, we have to include this parameter</li>
+                <li><b>standardButton</b>: In case we want to create a button (it's only for buttons) in the new way, we have to pass this button with value 'true'; If the button is a different button, containing other thing different from a label, we don't hae to pass this parameter</li>
+                <li><b>handlerContext</b>: Context of a button/link that call a method/function, in this case is null, because we pass the context in the function</li>
+                <li><b>handler</b>: This parameter we pass it when the button/link calls a function. handler is the name of the function (The way of the handler is this.nameOfFunction.bind(this, args); in case there are no args, we pass (this,''))</li>
+                <li><b>idButton</b>: It will be the id of the button / link; </li>
+                <li><b>label</b>: Text that will appearin the button /link.  Another parameter to pass to the json is the type of elements to display (buttons or links)</li>
+            </ul>
+            <pre>
+                //Creating the data
+                var json = {
+                    elements:[],
+                    defaultButtonClassName:'classOfMainDiv'
+                    
+                };
+                var auxCancel =   {
+                    label: global.getLabel('cancel'),
+                    idButton:'OM_MassTrans_cancel',
+                    className:'OM_MassTrans_buttonsSecond',
+                    handlerContext: null,
+                    handler: this.cancelButtonSecondScreen.bind(this),
+                    type: 'button',
+                    standardButton:true
+                };                 
+                json.elements.push(auxCancel); 
+                var auxDelete =   {
+                    idButton:'applicationDEL_buttonDelete',
+                    event: "EWS:applicationDEL_delete",    
+                    label: global.getLabel("delete"),
+                    type: 'button',
+                    standardButton:true
+                 };                 
+                json.elements.push(auxDelete);     
+                //we call ButtonDisplayer class to get the elements to display
+                this.ButtonDisplayerExample=new megaButtonDisplayer(json);
+                //when we are going to insert the div containing the buttons we do this:
+                this.virtualHtml.insert(this.ButtonDisplayerExample.getButtons());
+            </pre>
+            <h5>HTML Code</h5>
+            <h3>Example</h3>
+            <p>
+                <div id='displayer' class="aligningDisplayer"></div>
+                <script type="text/javascript">
+                    function cancelButton(){
+                        alert('you have clicked Cancel Button');
+                    }
+                    function saveButton(){
+                        alert('you have clicked Save Button');
+                    }
+                    var json = {
+                        elements:[]
+                    };
+                    var auxCancel =   {
+                        label: 'Cancel',
+                        idButton:'ExampleCancel',
+                        className:'ButtonCancel',
+                        handlerContext: null,
+                        handler: cancelButton.bind(this, ''),
+                        type: 'button',
+                        standardButton:true
+                    };                 
+                    json.elements.push(auxCancel); 
+                    var auxSave =   {
+                        label: 'Save',
+                        idButton:'ExampleSave',
+                        handlerContext: null,
+                        handler: saveButton.bind(this),
+                        type: 'button',
+                        standardButton:true
+                    };                 
+                    json.elements.push(auxSave);     
+                    var MegaButtonDisplayer=new megaButtonDisplayer(json);   
+                    $("displayer").insert(MegaButtonDisplayer.getButtons());
+                </script>
+            </p>
+            <p>&nbsp;&nbsp;</p>
+        </div>
+
+        <h2 id="H5" onclick="javascript: $('simpleTableBody').toggle();">SIMPLE TABLE</h2>
+        <div id="simpleTableBody" style="display: none">
+            <h1>Simple Table example page</h1>
+        <div id="table" class="textarea"></div>
+        <script type="text/javascript">
+            var data ={
+                header: [   {text: 'Column1', id: 'col1'},
+                    {text: 'Column2', id: 'col2'},
+                    {text: 'Column3', id: 'col3'}],
+                rows: $H({
+                    row1: { data: [{ text: 'Text 1', id: 'id1'},
+                            { text: 'Text 2', id: 'id2'},
+                            { text: 'Text 3', id: 'id3'}],
+                        element: '<div>This is content</div>'},
+                    row2: { data: [{ text: 'Text 1', id: 'id1'},
+                            { text: 'Text 2', id: 'id2'},
+                            { text: 'Text 3', id: 'id3'}],
+                        element: '<div>This is content</div>'}
+                })};
+            var table = new SimpleTable(data,{});
+            $('table').insert(table.getElement());
+            function _removeRow2() {
+                table.removeRow($('rowId_delete').value);
+            }
+            var lastId = 3;
+            function _insertRow() {
+                var col1 = $('input_col1').value;
+                var col2 = $('input_col2').value;
+                var col3 = $('input_col3').value;
+                var update = $('update').checked;
+                var rowId = $('rowId').value;
+                var data = $H({});
+                data.set('row'+lastId, {data: [
+                        {text: col1},
+                        {text: col2},
+                        {text: col3}
+                    ],
+                    element: '<div>This is content</div>'});
+                lastId++;
+                if(!update)
+                    table.addRow(data);
+                else
+                    table.updateRow(rowId,data);
+            }
+        </script>
+        Row ID <input type="text" id="rowId_delete"><input type="button" onclick="_removeRow2();" value="Click to remove a row" />
+        <h3>Adding / Editing a row</h3>
+        Column 1 <input type="text" id="input_col1"> Column 2 <input type="text" id="input_col2"> Column 3 <input type="text" id="input_col3">
+        | Update row <input type="checkbox" id="update"/> Row ID <input type="text" id="rowId"/><input type="button" id="submit_col" onclick="javascript: _insertRow();" value="Insert into table" />
+        <h3>Code for this example</h3>
+        <pre>
+            //Creating the information to form the table
+            var data ={
+                header: [   {text: 'Column1', id: 'col1'},
+                    {text: 'Column2', id: 'col2'},
+                    {text: 'Column3', id: 'col3'}],
+                rows: $H({
+                    row1: { data: [{ text: 'Text 1', id: 'id1'},
+                            { text: 'Text 2', id: 'id2'},
+                            { text: 'Text 3', id: 'id3'}],
+                        element: '&lt;div>This is content&lt;/div>'},
+                    row2: { data: [{ text: 'Text 1', id: 'id1'},
+                            { text: 'Text 2', id: 'id2'},
+                            { text: 'Text 3', id: 'id3'}],
+                        element: '&lt;div>This is content&lt;/div>'}
+                })};
+            //Instantiating the table
+            var table = new SimpleTable(data);
+            //Inserting in the document the generated table
+            $('table').insert(table.getElement());
+            //This function is called when clicking on the delete button (To be implemented by the programmer)
+            function _removeRow2() {
+                //simpleTable method to remove a row
+                table.removeRow($('rowId_delete').value);
+            }
+            var lastId = 3;
+            //Implemented function to the programmer to insert a new row
+            function _insertRow() {
+                var col1 = $('input_col1').value;
+                var col2 = $('input_col2').value;
+                var col3 = $('input_col3').value;
+                var update = $('update').checked;
+                var rowId = $('rowId').value;
+                var data = $H({});
+                data.set('row'+lastId, {data: [
+                        {text: col1},
+                        {text: col2},
+                        {text: col3}
+                    ],
+                    element: '<div>This is content</div>'});
+                lastId++;
+                if(!update)
+                    //Method provided by simpleTable to add a new row
+                    table.addRow(data);
+                else
+                    //Method provided by simpleTable to update a row
+                    table.updateRow(rowId,data);
+            }
+        </pre>
+        <h3>HTML Code</h3>
+        <pre>
+        &lt;div id="table" class="textarea">&lt;/div></pre>
+        <h3>Module parameters</h3>
+        <ul>
+            <li>data: The data set to create the table</li>
+        </ul>
+        </div>
+        <!-- ###########################################################   ############################################### -->
+        <!--***************************************************************-->
+        <h2 id="idTitleTableKit" onclick="javascript:$('tableKitBody').toggle()" style='clear:both;'>TABLEKIT with WEB SEARCH</h2>
+        <div id='tableKitBody' style="display:none">
+            <h3>Description</h3>
+            <p>This module allows you to create a sortable table with an input field to search in its rows</p>
+            <p>Reloading the table. Use this method: tableObject.reloadTable(domElement)</p>
+            <h3>Parameters: The same as in tablekit, plus 'webSearch', 'searchLabel' and 'noResultsLabel'</h3>
+            <ul>
+                <li class="howTo">webSearch :(boolean) true: Is used to show a filter or not</li>
+                <li class="howTo">searchLabel :(string) 'search' label in the proper language</li>
+                <li class="howTo">noResultsLabel :(string) 'noResults' label in the proper language</li>
+                <li class="howTo">TABLEKIT Parameters below: You have to pass this parameters so the module will call the tablekit with them</li>
+                <li class="howTo">marginL :(integer) Is used to position the pagination into the tFoot</li>
+                <li class="howTo">pages : Number of lines in pages if you want pagination in tables</li>
+                <li class="howTo">Option : Default</li>
+                <li class="howTo">autoLoad : true: If you don't want the script to load automatically set this to false</li>
+                <li class="howTo">stripe : true: enables row striping</li>
+                <li class="howTo">sortable : true: enables column sorting</li>
+                <li class="howTo">resizable : true: enables column resizing</li>
+                <li class="howTo">editable : false: enables cell editing</li>
+                <li class="howTo">rowEvenClass : 'table_roweven': css class used for row striping</li>
+                <li class="howTo">rowOddClass : 'table_rowodd': css class used for row striping</li>
+                <li class="howTo">sortableSelector : ['table.sortable']: selector for finding tables to make sortable</li>
+                <li class="howTo">columnClass : 'table_sortcol': css class for each sortable column header cell</li>
+                <li class="howTo">descendingClass : 'table_sortColDesc': css class for sortable column header cell when sorted descending</li>
+                <li class="howTo">ascendingClass : 'table_sortColAsc': css class for sortable column header cell when sorted ascending</li>
+                <li class="howTo">noSortClass : 'nosort': css class for sortable column header cell to disable sorting for that column</li>
+                <li class="howTo">defaultSortDirection : 1: initial sort direction for all columns, 1 means ascending, -1 means desceding.</li>
+                <li class="howTo">sortFirstAscendingClass : 'table_sortfirstasc': css class for sortable column header cell to trigger initial ascendant sorting for that column</li>
+                <li class="howTo">sortFirstDecendingClass : 'table_sortfirstdesc': css class for sortable column header cell to trigger initial decendant sorting for that column</li>
+                <li class="howTo">resizableSelector : ['table.resizable']: selector for finding tables to make resizable</li>
+                <li class="howTo">minWidth : 10: minimum width in pixels of a resizable column</li>
+                <li class="howTo">showHandle : true: shows the resize handle, with this set to false cell no handle is visible and resize is immediate with mousemove</li>
+                <li class="howTo">resizeOnHandleClass : 'table_resize-handle-active': css class applied to header cell when the mouse pointer is in the resize handle zone (right hand cell border)</li>
+                <li class="howTo">editableSelector : ['table.editable']: selector for finding tables to make editable</li>
+                <li class="howTo">formClassName : 'table_editable-cell-form': css class given to the form when a cell is made editable</li>
+                <li class="howTo">noEditClass : 'noedit': css class used on a header cell to indicate column is not editable, or on an individual body cell to indicate that cell is not editable.</li>
+                <li class="howTo">editAjaxURI : '/': form data is POSTed to this URI from the editable cell forms</li>
+                <li class="howTo">editAjaxOptions : {}: options for the <a href="http://prototypejs.org/api/ajax/updater" title="Prototype API">Prototype Ajax.Updater</a> used in editable cells</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">NO events</li>
+            </ul>
+            <h4>Comments on example</h4>
+            <p class="howTo">NOTE: If you want to enable pagination, you HAVE to enable sort!</p>
+            <p class="howTo">If you have a really big header title, you can have problems because the table may grow, so what you have to do is assign a fixed with to the header, and the column will adapt to this width. Other thing you have to do is create an acronym for the div inside the th, that contents the text:</p>
+            <p><b>&quot;&lt;tr&gt;&lt;th class=&#39;table_sortfirstdesc OM_massTransWidthTitle&#39;&gt;&lt;acronym title=&quot; titleLabel &quot;&gt;&quot; titleLabel &quot;&lt;/acronym&gt;&quot;</b></p>
+            <p>This way the column will adapt to the text with the fixed size you have assign to the header, and you will see a text cutted, but if you put the mouse over the text, you will see the complete text</p>
+            <h3>Example #1</h3>
+            <p>TableKit with pagination; 5 lines per page and margin = 100px and input field</p>
+            <div id='contentTable' style='width:1000px;'>
+                <table class="sortable" id='exampleTable'>
+                    <thead>
+                        <tr>
+                            <th class="table_sortfirstdesc" id="urgency" style='width:80px;'>Urgency</th>
+                            <th id="creation-date" style='width:150px;'>Date</th>
+                            <th id="time" style='width:70px;'>Time</th>
+                            <th id="title" style='width:200px;'>Title</th>
+                            <th id="status" style='width:100px;'>Status</th>
+                            <th id="author" style='width:100px;'>Requested By</th>
+                            <th id="cost" style='width:100px;'>Cost</th>
+                            <th id="size" style='width:100px;'>Size</th>
+                        </tr>
+                    </thead>
+                    <tbody id='exampleTableBody'>
+                        <tr id="N938747839">
+                            <td><div class="urg5">5</div></td>
+                            <td>24/10/2005 10:47:41 AM</td>
+                            <td>10:47:41 AM</td>
+                            <td>Keyboard is Broken</td>
+                            <td>In Progress</td>
+                            <td>Tom</td>
+                            <td>$200.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr id="N938712239">
+                            <td><div class="urg5">5</div></td>
+                            <td>24/10/2005 10:49:41 AM</td>
+                            <td>10:49:41 AM</td>
+                            <td>Keyboard is Broken</td>
+                            <td>In Progress</td>
+                            <td>Tom</td>
+                            <td>$200.00</td>
+                            <td>30 KB</td>
+                        </tr>
+                        <tr id="N938744539">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="N938746764">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>
+                        <tr id="Tr1">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="Tr2">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>
+                        <tr id="Tr3">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="Tr4">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>
+                        <tr id="Tr5">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="Tr6">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>
+                        <tr id="Tr7">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="Tr8">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>
+                        <tr id="Tr9">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="Tr10">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>     
+                        <tr id="Tr11">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="Tr12">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>                                                                                                                                          
+                    </tbody>
+                </table>
+            </div>
+            <script type="text/javascript">
+            var table = new tableKitWithSearch($('exampleTable'), { pages: 5, marginL:100, searchLabel: "Search", noResultsLabel: "No results found"});
+            </script>
+
+            <h4>How to</h4>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">tableKit.js</li>
+                <li class="howTo">tableKitWithSearch.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+         &ltscript type="text/javascript"&gt
+            var table = new tableKitWithSearch($('exampleTable'), { pages: 5, marginL:100, webSearch: true });
+        &lt/script&gt
+
+        <b>If you want to use the pagination make sure that the option autoload is setting to false!!!</b>
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id='contentTable'&gt
+        &lt;table class="sortable resizable" id='exampleTable'&gt
+            &lt;thead&gt
+                &lt;tr&gt
+                    &lt;th class="table_sortfirstdesc" id="Th1"&gtUrgency&lt;/th&gt
+                    &lt;th id="Th2"&gtDate&lt;/th&gt
+                    &lt;th id="Th3"&gtTime&lt;/th&gt
+                    &lt;th id="Th4"&gtTitle&lt;/th&gt
+                    &lt;th id="Th5" style="width:500px;"&gtStatus&lt;/th&gt
+                    &lt;th id="Th6"&gtRequested By&lt;/th&gt
+                    &lt;th id="Th7"&gtCost&lt;/th&gt
+                    &lt;th id="Th8"&gtSize&lt;/th&gt
+                &lt;/tr&gt
+            &lt;/thead&gt
+            &lt;tbody&gt
+                &lt;tr id="Tr1"&gt
+                    &lt;td&gt&lt;div class="urg5"&gt5&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt24/10/2005 10:47:41 AM&lt;/td&gt
+                    &lt;td&gt10:47:41 AM&lt;/td&gt
+                    &lt;td&gtKeyboard is Broken&lt;/td&gt
+                    &lt;td&gtIn Progress&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$200.00&lt;/td&gt
+                    &lt;td&gt30KB&lt;/td&gt
+                &lt;/tr&gt
+                &lt;tr id="Tr2"&gt
+                    &lt;td&gt&lt;div class="urg5"&gt5&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt24/10/2005 10:49:41 AM&lt;/td&gt
+                    &lt;td&gt10:49:41 AM&lt;/td&gt
+                    &lt;td&gtKeyboard is Broken&lt;/td&gt
+                    &lt;td&gtIn Progress&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$200.00&lt;/td&gt
+                    &lt;td&gt30 KB&lt;/td&gt
+                &lt;/tr&gt
+                &lt;tr id="Tr3"&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt24/10/2005 10:49:41 PM&lt;/td&gt
+                    &lt;td&gt10:49:41 PM&lt;/td&gt
+                    &lt;td&gtWindows is crashing&lt;/td&gt
+                    &lt;td&gtNew&lt;/td&gt&lt;td&gtBill&lt;/td&gt
+                    &lt;td&gt$300.00&lt;/td&gt
+                    &lt;td&gt30MB&lt;/td&gt
+                &lt;/tr&gt
+                &lt;tr id="Tr4"&gt
+                    &lt;td&gt&lt;div class="urg4"&gt4&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt17/02/2006&lt;/td&gt
+                    &lt;td&gt12:43:16 PM&lt;/td&gt
+                    &lt;td&gtHelp, I'm on fire!&lt;/td&gt
+                    &lt;td&gtNew&lt;/td&gt
+                    &lt;td&gtJohn&lt;/td&gt
+                    &lt;td&gt$250.00&lt;/td&gt
+                    &lt;td&gt30KB&lt;/td&gt
+                &lt;/tr&gt
+                &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/07/2006xxx&lt;/td&gt
+                    &lt;td&gt03:04:34 PM&lt;/td&gt
+                    &lt;td&gtThe ring came&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$200.50&lt;/td&gt
+                    &lt;td&gt30GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt16/07/2008xxx&lt;/td&gt
+                    &lt;td&gt03:11:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 1&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$300.50&lt;/td&gt
+                    &lt;td&gt40GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/10/2006xxx&lt;/td&gt
+                    &lt;td&gt13:04:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 2&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$204.50&lt;/td&gt
+                    &lt;td&gt50GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/11/2006xxx&lt;/td&gt
+                    &lt;td&gt14:04:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 3&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$240.50&lt;/td&gt
+                    &lt;td&gt60GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/07/2016xxx&lt;/td&gt
+                    &lt;td&gt03:14:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 4&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$234.50&lt;/td&gt
+                    &lt;td&gt70GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt30/07/2006xxx&lt;/td&gt
+                    &lt;td&gt03:24:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 5&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$340.50&lt;/td&gt
+                    &lt;td&gt80GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/07/2006xxx&lt;/td&gt
+                    &lt;td&gt03:54:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 6&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$200.50&lt;/td&gt
+                    &lt;td&gt90GB&lt;/td&gt
+                 &lt;/tr&gt
+            &lt;/tbody&gt
+        &lt;/table&gt
+    &lt;/div&gt
+            </pre>
+            <h3>Example #2</h3>
+            <p>Sortable tableKit without rows</p>
+            <div id='Div1'style='width:1000px;'>
+                <table class="sortable resizable" id='exampleTable2'>
+                    <thead>
+                        <tr>
+                            <th class="table_sortfirstdesc" id="Th1">Urgency</th>
+                            <th id="Th2">Date</th>
+                            <th id="Th3">Time</th>
+                            <th id="Th4">Title</th>
+                            <th id="Th5" style="width:500px;">Status</th>
+                            <th id="Th6">Requested By</th>
+                            <th id="Th7">Cost</th>
+                            <th id="Th8">Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <script type="text/javascript">
+                var table2 = new tableKitWithSearch($('exampleTable2'), { pages: 5, marginL:100, searchLabel: "Search", noResultsLabel: "No results found"});
+                            
+            </script>
+
+            <h4>How to</h4>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">Tablekit.js</li>
+                <li class="howTo">tableKitWithSearch.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+            var table2 = new tableKitWithSearch($('exampleTable2'), { pages: 5, marginL:100, searchLabel: "Search", noResultsLabel: "No results found"});
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+            The same HTML code than in the example 1 but without rows
+            </pre>
+            <hr />
+        </div>            
+     
+
+        <!-- ###########################################################   ############################################### -->
+        <!--***************************************************************-->
+        <h2 id="H1" onclick="javascript:$('infoPopUpContainer').toggle()" style='clear:both;'>InfoPopUp</h2>
+        <div id='infoPopUpContainer' style="display:none">
+            <h3>Description</h3>
+            <p>The infoPopUp allows users to see some information in a ballon, and perform some actions through buttons.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">htmlContent: (String) The HTML content of the infoPopUp. It contains both text and buttons</li>
+                <li class="howTo">indicatorIcon: (String) The indicator value. This can/should be one of the following values ("void", "question", "exclamation", "confirmation", "information") However, you can give a specific css class, for example, if we wanted to have the 'help' icon, we'd put <b>indicatorIcon:'application_main_help'</b> </li>                
+                <li class="howTo">closeButton: (Hash) The close button hash having one parameter "callBack"</li>
+                <li class="howTo">width: (Hash) The pop up width</li>
+                <li class="howTo">events: (Hash) The hash of events</li>
+                <li class="howTo">showCloseButton: (Boolean) Defines if the top-right close button ('X') will be shown or not (default = true). If we put is as false, parameter 'closeButton' is not necessary</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onOpen: Fired when the confirmation box is shown on the screen</li>
+                <li class="howTo">onClose: Fired when the confirmation box is withdrawn from the screen</li>
+            </ul>
+
+            <h3>Example #1</h3>
+            <h4>Complex information box</h4>
+            <div id='Div3' style='width:1000px;'>
+            <script type="text/javascript">
+                //events
+                document.observe('EWS:example1InfoPopUpClose', function(event) {
+                    
+                        alert("Info pop up 1 closed");
+                    
+                } .bindAsEventListener(this));
+
+                //information 
+                var hash = $H({
+                    title: 'Org. Unit Details - Team 2 (my team)',
+                    subTitle1: $H({
+                        subTitle: 'Basic Data',
+                        rows: [$H({ label: 'Org. Unit Name', info: 'Team 2' }), $H({ label: 'Org. Unit Code', info: 'ARINORGU1T2' }), $H({ label: 'General Description', info: 'Team N2 from the organisational unit 1 in Arinso Company. This team is dedicated to be...' })]
+                    }),
+                    
+                    subTitle2: $H({
+                        subTitle: 'Address',
+                        rows: [$H({ label: 'Street / House Nr', info: 'Humaniteitslaan' }), $H({ label: 'Postal Code', info: '1070' }), $H({ label: 'City', info: 'Brussels' }), $H({ label: 'Country', info: 'Belgium' }), $H({ label: 'Telephone Number', info: '+32 2 558 06 70' })]
+                    })
+                    
+                });
+                var content = hashToHtml(hash);    
+                //insert hash with information in div                                
+                var contentHTML = new Element('div');
+                contentHTML.insert(content);
+                //buttons
+                var buttonsJson = {
+                    elements: [],
+                    mainClass: 'moduleInfoPopUp_stdButton_div_right'
+                };
+                var exampleFunction = function() {                    
+                    alert("This is an example button");
+                };                
+                var aux2 = {
+                    idButton: 'exampleButton',
+                    label: 'Example button',
+                    handlerContext: null,
+                    className: 'moduleInfoPopUp_stdButton',
+                    handler: exampleFunction,
+                    type: 'button',
+                    standardButton: true
+                };
+                  
+                buttonsJson.elements.push(aux2);                   
+                var ButtonObj = new megaButtonDisplayer(buttonsJson);
+                var buttons = ButtonObj.getButtons();                  
+                //insert buttons in div
+                contentHTML.insert(buttons);   
+                        
+                var objTestInfoPopUp1 = new infoPopUp({
+
+                    closeButton :   $H( {                        
+                        'callBack':     function() {
+
+                            objTestInfoPopUp1.close();
+                            delete objTestInfoPopUp1;
+                        }
+                    }),
+                    events :   $H({onClose: 'EWS:example1InfoPopUpClose'}),
+                    htmlContent : contentHTML,
+                    indicatorIcon : 'exclamation',                    
+                    width: 600
+                });
+                
+            </script> 
+
+            </div>
+            <p>Click <span onclick="objTestInfoPopUp1.create()" class='application_action_link'>HERE</span> to see it.</p>
+
+            <h4>How to</h4>
+
+            <h5>Comments on example</h5>
+            <p class="howTo">Boxes to hold a lot of information / details / fieldsPanel</p>
+            <p class="howTo">Those boxes have width = 600px</p>
+            <p class="howTo">Standard buttons: mainClass = moduleInfoPopUp_stdButton_div_right</p>
+            <p class="howTo">Standard buttons: each button class = moduleInfoPopUp_stdButton</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">infoPopUp.js</li>
+                <li class="howTo">semitransparentBuilder.js</li>                
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+               //events
+                document.observe(&#39;EWS:example1InfoPopUpClose&#39;, function(event) {
+                    
+                        alert(&quot;Info pop up 1 closed&quot;);
+                    
+                } .bindAsEventListener(this));            
+                //information 
+                var hash = $H({
+                    title: &#39;Org. Unit Details - Team 2 (my team)&#39;,
+                    subTitle1: $H({
+                        subTitle: &#39;Basic Data&#39;,
+                        rows: [$H({ label: &#39;Org. Unit Name&#39;, info: &#39;Team 2&#39; }), $H({ label: &#39;Org. Unit Code&#39;, info: &#39;ARINORGU1T2&#39; }), $H({ label: &#39;General Description&#39;, info: &#39;Team N2 from the organisational unit 1 in Arinso Company. This team is dedicated to be...&#39; }), $H({ label: &#39;General Text&#39;, info: &#39;This is the General Text for the team 2 Org. unit. You can enter here all the informations you want and that is really useful.&#39; })]
+                    }),
+                    
+                    subTitle2: $H({
+                        subTitle: &#39;Address&#39;,
+                        rows: [$H({ label: &#39;Street / House Nr&#39;, info: &#39;Humaniteitslaan&#39; }), $H({ label: &#39;Postal Code&#39;, info: &#39;1070&#39; }), $H({ label: &#39;City&#39;, info: &#39;Brussels&#39; }), $H({ label: &#39;Country&#39;, info: &#39;Belgium&#39; }), $H({ label: &#39;Telephone Number&#39;, info: &#39; 32 2 558 06 70&#39; }), $H({ label: &#39;Fax number&#39;, info: &#39; 32 2 558 06 80&#39; }), $H({ label: &#39;Email&#39;, info: &quot;&lt;div id=&#39;example_link_info&#39; class=&#39;application_action_link&#39;&gt;info.be@northgatearinso.com&lt;/div&gt;&quot;})]
+                    })
+                    
+                });
+                var content = hashToHtml(hash);    
+                //insert hash with information in div                                
+                var contentHTML = new Element(&#39;div&#39;);
+                contentHTML.insert(content);
+                //buttons
+                var buttonsJson = {
+                    elements: [],
+                    mainClass: 'moduleInfoPopUp_stdButton_div_right'
+                };                
+                var f = function() {                    
+                    objTestInfoPopUp1.close();
+                    delete objTestInfoPopUp1;
+                };                
+                var aux2 = {
+                    idButton: &#39;close&#39;,
+                    label: &#39;Close&#39;,
+                    handlerContext: null,
+                    className: &#39;moduleInfoPopUp_stdButton&#39;,
+                    handler: f,
+                    type: &#39;button&#39;,
+                    standardButton: true
+                };
+                  
+                buttonsJson.elements.push(aux2);                   
+                var ButtonObj = new megaButtonDisplayer(buttonsJson);
+                var buttons = ButtonObj.getButtons();                  
+                //insert buttons in div
+                contentHTML.insert(buttons);   
+                        
+                var objTestInfoPopUp1 = new infoPopUp({
+
+                    closeButton :   $H( {
+                        &#39;callBack&#39;:     function() {
+
+                            objTestInfoPopUp1.close();
+                            delete objTestInfoPopUp1;
+                        }
+                    }),
+                    htmlContent : contentHTML,
+                    indicatorIcon : &#39;exclamation&#39;,                    
+                    width: 600
+                });
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+            &lt;p&gt;Click &lt;span onclick=&quot;objTestInfoPopUp1.create()&quot; class=&#39;application_action_link&#39;&gt;HERE&lt;/span&gt; to see it.&lt;/p&gt;
+            </pre>
+
+
+            <h3>Example #2</h3>
+            <h4>Message box</h4>
+            <div id='Div2' style='width:1000px;'>
+            <script type="text/javascript">
+                //events
+                document.observe('EWS:example2InfoPopUpClose', function(event) {
+                    
+                        alert("Info pop up 2 closed");
+                    
+                } .bindAsEventListener(this));
+
+                var message = "<div> Are you sure you want to quit the app? </div>"                   
+                //insert hash with information in div                                
+                var contentHTML = new Element('div');
+                contentHTML.insert(message);
+                //buttons
+                var buttonsJson = {
+                    elements: [],
+                    mainClass: 'moduleInfoPopUp_stdButton_div_left'
+                };                
+                var exampleFunction = function() {                    
+                    alert("Now we'd close the app");
+                };   
+                var exampleFunction2 = function() {                    
+                    alert("Now we'd close the pop up, but stay in the app");
+                    objTestInfoPopUp2.close();
+                    delete objTestInfoPopUp2;                    
+                };                               
+                var aux2 = {
+                    idButton: 'yes',
+                    label: 'Yes',
+                    handlerContext: null,
+                    className: 'moduleInfoPopUp_stdButton',
+                    handler: exampleFunction,
+                    type: 'button',
+                    standardButton: true
+                };
+                var aux3 = {
+                    idButton: 'no',
+                    label: 'No',
+                    handlerContext: null,
+                    className: 'moduleInfoPopUp_stdButton',
+                    handler: exampleFunction2,
+                    type: 'button',
+                    standardButton: true
+                };                
+                  
+                buttonsJson.elements.push(aux2);                   
+                buttonsJson.elements.push(aux3);   
+                var ButtonObj = new megaButtonDisplayer(buttonsJson);
+                var buttons = ButtonObj.getButtons();                  
+                //insert buttons in div
+                contentHTML.insert(buttons);   
+                        
+                var objTestInfoPopUp2 = new infoPopUp({
+
+                    closeButton :   $H( {                        
+                        'callBack':     function() {
+
+                            objTestInfoPopUp2.close();
+                            delete objTestInfoPopUp2;
+                        }
+                    }),
+                    events      :   $H({onClose: 'EWS:example2InfoPopUpClose'}),
+                    htmlContent : contentHTML,
+                    indicatorIcon : 'exclamation',                    
+                    width: 350
+                });
+                
+            </script> 
+
+            </div>
+            <p>Click <span onclick="objTestInfoPopUp2.create()" class='application_action_link'>HERE</span> to see it.</p>
+
+            <h4>How to</h4>
+
+            <h5>Comments on example</h5>
+            <p class="howTo">Boxes to a small information message</p>
+            <p class="howTo">Those boxes have width = 350px</p>
+            <p class="howTo">Standard buttons: mainClass = moduleInfoPopUp_stdButton_div_left</p>
+            <p class="howTo">Standard buttons: each button class = moduleInfoPopUp_stdButton</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">infoPopUp.js</li>
+                <li class="howTo">semitransparentBuilder.js</li>                
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+                //events
+                document.observe(&#39;EWS:example2InfoPopUpClose&#39;, function(event) {
+                    
+                        alert(&quot;Info pop up 2 closed&quot;);
+                    
+                } .bindAsEventListener(this));
+
+                var message = &quot;&lt;div&gt; Are you sure you want to quit the app? &lt;/div&gt;&quot;                   
+                //insert hash with information in div                                
+                var contentHTML = new Element(&#39;div&#39;);
+                contentHTML.insert(message);
+                //buttons
+                var buttonsJson = {
+                    elements: [],
+                    mainClass: &#39;moduleInfoPopUp_stdButton_div_left&#39;
+                };                
+                var exampleFunction = function() {                    
+                    alert(&quot;Now we&#39;d close the app&quot;);
+                };   
+                var exampleFunction2 = function() {                    
+                    alert(&quot;Now we&#39;d close the pop up, but stay in the app&quot;);
+                    objTestInfoPopUp2.close();
+                    delete objTestInfoPopUp2;                    
+                };                               
+                var aux2 = {
+                    idButton: &#39;yes&#39;,
+                    label: &#39;Yes&#39;,
+                    handlerContext: null,
+                    className: &#39;moduleInfoPopUp_stdButton&#39;,
+                    handler: exampleFunction,
+                    type: &#39;button&#39;,
+                    standardButton: true
+                };
+                var aux3 = {
+                    idButton: &#39;no&#39;,
+                    label: &#39;No&#39;,
+                    handlerContext: null,
+                    className: &#39;moduleInfoPopUp_stdButton&#39;,
+                    handler: exampleFunction2,
+                    type: &#39;button&#39;,
+                    standardButton: true
+                };                
+                  
+                buttonsJson.elements.push(aux2);                   
+                buttonsJson.elements.push(aux3);   
+                var ButtonObj = new megaButtonDisplayer(buttonsJson);
+                var buttons = ButtonObj.getButtons();                  
+                //insert buttons in div
+                contentHTML.insert(buttons);   
+                        
+                var objTestInfoPopUp2 = new infoPopUp({
+
+                    closeButton :   $H( {                        
+                        &#39;callBack&#39;:     function() {
+
+                            objTestInfoPopUp2.close();
+                            delete objTestInfoPopUp2;
+                        }
+                    }),
+                    events      :   $H({onClose: &#39;EWS:example2InfoPopUpClose&#39;}),
+                    htmlContent : contentHTML,
+                    indicatorIcon : &#39;exclamation&#39;,                    
+                    width: 350
+                });
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+            &lt;p&gt;Click &lt;span onclick=&quot;objTestInfoPopUp1.create()&quot; class=&#39;application_action_link&#39;&gt;HERE&lt;/span&gt; to see it.&lt;/p&gt;
+            </pre>
+            
+            
+            <h3>Example #3</h3>
+            <h4>Hidding top-right close button 'X'</h4>
+            <script type="text/javascript">
+                var message = "infoPopUp without 'X' close button";
+                var contentHTML = new Element('div');
+                contentHTML.insert(message);
+                var buttonsJson = {
+                    elements: [],
+                    mainClass: 'moduleInfoPopUp_stdButton_div_right'
+                };
+                var exampleFunctionClose = function() {                    
+                    objTestInfoPopUp3.close();
+                    delete objTestInfoPopUp3;                    
+                };
+                var auxClose = {
+                    idButton: 'close',
+                    label: 'Close',
+                    handlerContext: null,
+                    className: 'moduleInfoPopUp_stdButton',
+                    handler: exampleFunctionClose,
+                    type: 'button',
+                    standardButton: true
+                };
+                buttonsJson.elements.push(auxClose);
+                var ButtonObj = new megaButtonDisplayer(buttonsJson);
+                var buttons = ButtonObj.getButtons();
+                contentHTML.insert(buttons);
+                var objTestInfoPopUp3 = new infoPopUp({
+                    htmlContent : contentHTML,
+                    indicatorIcon : 'void',                    
+                    width: 350,
+                    showCloseButton: false
+                });
+            </script>
+            <p>Click <span onclick="objTestInfoPopUp3.create()" class='application_action_link'>HERE</span> to see it.</p>
+            
+            <h4>Javascript Code</h4>
+            <pre>
+               var message = "infoPopUp without 'X' close button";
+                var contentHTML = new Element('div');
+                contentHTML.insert(message);
+                var buttonsJson = {
+                    elements: [],
+                    mainClass: 'moduleInfoPopUp_stdButton_div_right'
+                };
+                var exampleFunctionClose = function() {                    
+                    objTestInfoPopUp3.close();
+                    delete objTestInfoPopUp3;                    
+                };
+                var auxClose = {
+                    idButton: 'close',
+                    label: 'Close',
+                    handlerContext: null,
+                    className: 'moduleInfoPopUp_stdButton',
+                    handler: exampleFunctionClose,
+                    type: 'button',
+                    standardButton: true
+                };
+                buttonsJson.elements.push(auxClose);
+                var ButtonObj = new megaButtonDisplayer(buttonsJson);
+                var buttons = ButtonObj.getButtons();
+                contentHTML.insert(buttons);
+                var objTestInfoPopUp3 = new infoPopUp({
+                    htmlContent : contentHTML,
+                    indicatorIcon : 'void',                    
+                    width: 350,
+                    <b>showCloseButton: false</b>
+                });
+            </pre>
+            <h4>HTML Code</h4>
+            <pre>
+                &lt;p&gt;Click &lt;span onclick="objTestInfoPopUp3.create()" class='application_action_link'&gt;HERE&lt;/span&gt; to see it.&lt;/p&gt;
+            </pre>
+        </div> 
+
+        <!-- ###########################################################   ############################################### -->
+
+		<h2 id="H2" onclick="javascript:$('dhtmlx').toggle()">DHTMLX Editor</h2>
+        <div id='dhtmlx' style="display:none">
+            <h3>Description</h3>
+            <p>This is a rich text editor with basic functionalities</p>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">No events</li>
+            </ul>
+            <h3>Example: Initialize the editor</h3>
+            
+            <div id="editorObj" style="width: 400px; height: 300px; border: #909090 1px solid; margin: 40px"></div>
+		
+			<script>
+		  		var editor = new dhtmlXEditor("editorObj");
+			</script>
+			
+			<h5>HTML Code</h5>
+			<pre><code>
+				&lt;div id="editorObj" style="width: 400px; height: 300px; border: #909090 1px solid; margin: 40px"&gt;&lt;/div&gt;
+			</code></pre>
+            <h5>Javascript code</h5>
+            <pre><code>
+            	var editor = new dhtmlXEditor("editorObj");
+            </code></pre>
+            <h5>More info:</h5>
+            <p>Go to the <a href="http://www.dhtmlx.com/dhxdocs/doku.php?id=dhtmlxeditor:toc">DHTMLX Editor API</a></p>
+        </div>
+
+        <!-- ###########################################################   ############################################### -->
+        <h2 id="H6" onclick="javascript:$('boxGridContainer').toggle()" style='clear:both;'>BOX GRID</h2>
+        <div id='boxGridContainer' style="display:none">
+            <h3>Description</h3>
+            <p>The Box Grid module allows users to create a simple table with the posibility to have two headers (horizontal and vertical) and perform some actions on it.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo"><b>target</b>: (String) Id of the element in wich the table is going to be inserted.</li>
+                <li class="howTo"><b>numberOfRows</b>: (String) Number of rows for the box grid.</li>
+                <li class="howTo"><b>numberOfCols</b>: (String) Number of columns for the box grid.</li>
+            </ul>
+             <h3>Methods</h3>
+            <ul>
+                <li class="howTo"><b>setHorTitle(target,title)</b>: Method to insert the title for the horizontal axis, out of the table.</li>
+                <li class="howTo"><b>setVerTitle(target,title)</b>: Method to insert the title for the vertical axis, out of the table.</li>
+                <li class="howTo"><b>setHeaderStyle(target,color)</b>: Method to define color of header. The user can add it in the method or insert an empty string. In this last case the color by default (grey)will be used.</li>
+                <li class="howTo"><b>setCellStyle(target,width,height,color)</b>: Method to define cell style(width, height and color). The three parameters are mandatory, then if the user doesn't want to change the color an empty string has to be added and the default color (white) will be used.</li>
+                <li class="howTo"><b>fillCell(target,html,row,col)</b>: Method to fill a cell in the row and column specified with a html structure.</li>
+                <li class="howTo"><b>removeCell(target,row,col)</b>: Method to remove the content of a cell in the row and column specified.</li>
+                <li class="howTo"><b>removeCellByContent(target,idDiv)</b>: Method to remove the content of a cell with a content specified.</li>
+                <li class="howTo"><b>horizontalHeader(target,headerHash)</b>: Method to insert labels in horizontal header from a hash.</li>
+                <li class="howTo"><b>verticalHeader(target,headerHash)</b>: Method to insert labels in vertical header from a hash.</li>
+            </ul>
+            <h3>Example #1</h3>
+            <h4>Creating a Box Grid</h4>
+            <div id='boxGrid' style='width:1000px;margin-left:50px;'>
+            <script type="text/javascript">
+                var boxGrid = new boxGridModule('boxGrid', 5, 4, this);               
+                // insert titles of table
+                boxGrid.setHorTitle('boxGrid', 'Evaluation');
+                boxGrid.setVerTitle('boxGrid', 'Employee');
+                //applying size style in header
+                boxGrid.setHeaderStyle('boxGrid', '#3366CC');
+                //applying size style in cells
+                boxGrid.setCellStyle('boxGrid', '100', '50', '#22AA99');
+                //filling vertical header
+                var tableHeadY = $H({
+                    '1': 'Kate',
+                    '2': 'Benjamin',
+                    '3': 'Jack',
+                    '4': 'James'});             
+                boxGrid.verticalHeader('boxGrid', tableHeadY);               
+                //filling horizontal header
+                var tableHeadX = $H({
+                    '1': 'Work',
+                    '2': 'Effort',
+                    '3': 'Commitment'});
+                boxGrid.horizontalHeader('boxGrid', tableHeadX);
+                //filling a table cell by cell
+                var divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '1', '1');
+                divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '1', '2');
+                divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '1', '3');
+                divCell = "<div>Medium</div>";
+                boxGrid.fillCell('boxGrid', divCell, '2', '1');
+                divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '2', '2');
+                divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '2', '3');
+                divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '3', '1');
+                divCell = "<div>Low</div>";
+                boxGrid.fillCell('boxGrid', divCell, '3', '2');
+                divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '3', '3');
+                divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '4', '1');
+                divCell = "<div>High</div>";
+                boxGrid.fillCell('boxGrid', divCell, '4', '2');
+                divCell = "<div>Medium</div>";
+                boxGrid.fillCell('boxGrid', divCell, '4', '3');
+             </script> 
+            </div>
+            <h4>How to</h4>
+            <h5>Javascript Code</h5>
+            <pre>
+               var boxGrid = new boxGridModule('boxGrid', 5, 4, this);               
+                //insert titles of table
+                boxGrid.setHorTitle('boxGrid', 'Evaluation');
+                boxGrid.setVerTitle('boxGrid', 'Employee');
+                //applying size style in header
+                boxGrid.setHeaderStyle('boxGrid', '#3366CC');
+                //applying size style in cells
+                boxGrid.setCellStyle('boxGrid', '100', '50', '#22AA99');
+                //filling vertical header
+                var tableHeadY = $H({
+                    '1': 'Kate',
+                    '2': 'Benjamin',
+                    '3': 'Jack',
+                    '4': 'James'});             
+                boxGrid.verticalHeader('boxGrid', tableHeadY);               
+                //filling horizontal header
+                var tableHeadX = $H({
+                    '1': 'Work',
+                    '2': 'Effort',
+                    '3': 'Commitment'});
+                boxGrid.horizontalHeader('boxGrid', tableHeadX);
+                //filling a table cell by cell
+                var divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '1', '1');
+                divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '1', '2');
+                divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '1', '3');
+                divCell = &quot;&lt;div&gt; Medium &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '2', '1');
+                divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '2', '2');
+                divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '2', '3');
+                divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '3', '1');
+                divCell = &quot;&lt;div&gt; Low &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '3', '2');
+                divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '3', '3');
+                divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '4', '1');
+                divCell = &quot;&lt;div&gt; High &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '4', '2');
+                divCell = &quot;&lt;div&gt; Medium &lt;/div&gt;&quot; 
+                boxGrid.fillCell('boxGrid', divCell, '4', '3');
+            </pre>
+            
+
+            
+        </div>
+        <!-- ###########################################################  PROGRESSBAR  ############################################### -->
+        <h2 id="H7" onclick="javascript:$('progressBarContainer').toggle()" style='clear:both;'>PROGRESSBAR</h2>
+        <div id='progressBarContainer' style="display:none">
+            <h3>Description</h3>
+            <p>The progressBar module allows users to show/manage a progress bar</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo"><b>target</b>: (String) Id of the element in wich the progressBar is going to be inserted.</li>
+                <li class="howTo"><b>cellsNumber</b>: (Number) Number of cells for the progressBar.</li>
+            </ul>
+            <h4>Important comment</h4>
+            <p>We don't have a parameter to define bar's width, so it is very important to define it for its container (see example below)</p>
+             <h3>Methods</h3>
+            <ul>
+                <li class="howTo"><b>drawSuccess()</b>: Highlights the next empty cell as succedded (green).</li>
+                <li class="howTo"><b>drawFailure()</b>: Highlights the next empty cell as failed (red).</li>
+                <li class="howTo"><b>reset()</b>: Resets the bar.</li>
+                <li class="howTo"><b>getCellsNumber()</b>: Returns progressBar's number of cells.</li>
+                <li class="howTo"><b>getCurrentCell()</b>: Returns progressBar's current cell.</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">No events</li>
+            </ul>
+            <h3>Example</h3>
+            <h4>Using progressBar functionality</h4>
+            <div id="progressBar1" style="width:300px;margin-left:25px;"></div>
+            <br /><br />
+            <input id="restart" value="Restart" type="button" onclick="javascript:reset();" style="margin-left:25px;"/>
+            <script type="text/javascript">
+                function start() {
+                    var cells = pb.getCellsNumber();
+                    var time = 5000/cells;
+                    for (var i = 0; i < cells; i++) {
+                        var aleat = Math.round(Math.random() * cells);
+                        if (aleat%2 > 0)
+                            setTimeout("pb.drawFailure()", time*(i+1));
+                        else
+                            setTimeout("pb.drawSuccess()", time*(i+1));
+                    }
+                }
+                function reset() {
+                    if (pb.getCellsNumber() == pb.getCurrentCell()) {
+                        pb.reset();
+                        start();
+                    }
+                }
+    
+                var pb = new ProgressBar({
+                    target: "progressBar1",
+                    cellsNumber: 15
+                });
+                start();
+            </script>
+            <h4>How to</h4>
+            <h5>HTML Code</h5>
+            <pre>
+                &lt;div id="<u>progressBar1</u>" style="<u>width:300px;</u>"&gt;&lt;/div&gt;
+                &lt;input id="restart" value="Restart" type="button" onclick="javascript:reset();"/&gt;
+            </pre>
+            <h5>Javascript Code</h5>
+            <pre>
+                function start() {
+                    var cells = pb.getCellsNumber();
+                    var time = 5000/cells;
+                    for (var i = 0; i < cells; i++) {
+                        var aleat = Math.round(Math.random() * cells);
+                        if (aleat%2 > 0)
+                            setTimeout("pb.drawFailure()", time*(i+1));
+                        else
+                            setTimeout("pb.drawSuccess()", time*(i+1));
+                    }
+                }
+                function reset() {
+                    if (pb.getCellsNumber() == pb.getCurrentCell()) {
+                        pb.reset();
+                        start();
+                    }
+                }
+    
+                var pb = new ProgressBar({
+                    target: "<u>progressBar1</u>",
+                    cellsNumber: 15
+                });
+                start();
+            </pre>
+        </div>
+        <!-- ###########################################################   ############################################### -->
+
+
+        <!-- ###########################################################   ############################################### -->
+
+
+        <!-- ###########################################################   ############################################### -->
+
+    </body>
+</html>

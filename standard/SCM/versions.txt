@@ -1,0 +1,372 @@
+Vesions:
+2.2
+---
+Release date: EMR of July 2010
+Compatible HRW Version: 205 Final
+Files
+	* hrw_request.js 
+	* scm_createTicket.js
+	* scm_datePicker.js
+	* scm_editTicketNew.js
+	* scm_employeeHistory.js
+	* scm_menu.js
+	* scm_myPool.js
+	* scm_poolTable.js
+	* scm_popupScreen.js
+	* scm_searchTicket.js
+	* scm_ticketActions.js
+	* scm_ticketScreen.js
+	* scm_viewEditTicket.js
+	* ckeditor.js
+	* CSS2.css
+		.SCM_ticketScreen_MiddlePanelRight_header_email_acInput
+		.SCM_ticketScreen_MiddlePanelRight_header_email_field_label
+		.SCM_mailAttachment_mainDiv
+		.SCM_ticket_screen_FullWidth_withScrollBar
+		.SCM_ticketPopup_attachItem_line
+		.SCM_mailAttahment_container
+		.SCM_ticketAction_headerIcon
+		.SCM_ticketAction_contentItem
+		.SCM_ticketAction_innerContentItem
+
+Revisions
+ 	* In the pool, when putting tickets to pending, set the default comment in the popup correctly (Ticket 1049018)
+ 	* In the search, deactivate the property type when the user unselect the radio button
+ 	* Make the translation of labels more coherent (continue)  
+ 	* Solve a JS error when loading the ticket edition page
+ 	* When showing the close ticket popup, flag the send email or not by default depending on the HRW config
+ 	* When creating a ticket, overwrite company skill values by service skill values
+ 	* Load the list of processing tickets when building the "my current tickets" menu (Ticket 1052267)
+ 	* During ticket creation/edition, the autocompleter that contains skill value could be in the company or service skills list => read both values
+ 	* Make sure that it is not possible to have vertical scrollbar in the pools if there is less tickets that the number to show on the screen (Ticket 1049020 - 1049022)
+ 	* Once a pool action is performed, reset the text in the comment field (Ticket 1049294)
+ 	* Adapt to the new datePicker module (Ticket 1049002)
+ 	* Avoid an error in employee history when there is no search button created, but it try to be activated
+ 	* When sending a search request, use the default method to build skills list for the search by property
+ 	* When loading the ticket details for edit/view, also get the list of documents
+ 	* In the send email form, reduce the size of the mail from autocompleter and correct the attachements display (Ticket 1049296)
+ 	* In a ticket under edition, always select a default custom action type by default
+ 	* Correct the send email after ticket closure (Ticket 1049298)
+ 	* Replace the label Subject by Short Description (Ticket 1049006)
+ 	* Solve the problem of display for the collapse/expand button in the ticket action history (Ticket 1049017)
+ 	* In the ticket actions history, remove the bottom border to the last items of the groups 
+ 	* Correction of an error in ckeditor (http://dev.fckeditor.net/ticket/4566) (Ticket 1049557)
+ 	* In the grouping tree, make sure that the mapping between HRW ids and tree ids exists before using it
+ 	* When opening the send email interface (ticket detail in edit), select always a mail FROM by default (if defined) (Ticket 1049229)
+ 	* Stop observing the events when leaving even if the screen is not to reinitialize
+ 	* When encoding/decoding data, return '' for empty strings
+ 	* In the ticket details screen, keep the content of the CKEDITOR instances to show them when display the screen without reload
+ 	* When creating a ticket, make sure that the tables taht should contains the dynamic web forms is loaded before editing it
+ 	* Remove one call when loading the create ticket page
+ 	* Add a cache for the list of columns in the employee history to improve the load speed of pages
+ 	* Make sure that the company field of the employee search stay disabled when the user asked it manually
+ 	* In the ticket edition screen, truncate the title of the widget for employee details properly
+ 	* When a ticket is created, refresh the list of pending tickets
+ 	* In the ticket creation screen, avoid doing action when a search employee form out of the creation screen is launched
+ 	* In the search employee form, replace the keyPress event with the keyDown one
+ 	
+2.1
+---
+Release date: June 2010
+Compatible HRW Version: 205 Final
+Files
+	* hrw_request.js
+	* scm_createTicket.js
+	* scm_editTicket.js
+	* scm_editTicketNew.js
+	* scm_employeeSearch.js
+	* scm_menus.js
+	* scm_myPool.js
+	* scm_poolTable.js
+	* scm_popupScreens.js
+	* scm_saverToTicket.js
+	* scm_tickets.js
+	* scm_ticketScreen.js
+	* scm_viewEditTicket.js
+	* scm_viewTicket.js
+	* scm_viewTicketNew.js
+	* CSS2.css
+	
+.SCM_PoolTable_Body {
+	float: left;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: relative;
+}
+	
+Revisions
+	* Set a common way to encode/decode fields for the communication to the backend
+	* Add in the display of a scheduled ticket the date of the scheduling 
+	* Fix the bug when changing of ticket in the list of ticket documents. The property screen is now also updated.
+	* Fix the bug with the missing list of agents in the send to popup
+	* Fix the bug with the paragraphs of the description and solution that are lost
+	* Replace the ids in the grouping tree from the ids from the backend to a generated id with a mapping table
+	* Correct the sorting of the agents
+	* Force to schedule a ticket in the future
+	* Addition of a check on the date format before setting to schedule
+	* Correct the sorting by status
+	* Add the option to send a ticket in pending and in the general pool
+	* Do not display the id when selecting a pending reason
+	* If there is only one custom action, selct it by default
+ 	* In the list of custom actions, add the default one
+ 	* Create a standard methods for the encoding of text to display in attributes 
+ 	* Create a standard method for the remove of tags (remove the scripts and the <.../>)
+ 	* Deactivate the text editor spell check
+ 	* Fix a mix between the autocompleter for companies and services skills
+ 	* Make the translation of labels more coherent
+
+2.0 Modifications for release in EFR 2.05
+-----------------------------------------
+Release date: 3/5/2010
+Compatible HRW Version: 2.05
+Files
+	* scm_createTicket.js
+	* scm_editTicket.js
+	* scm_viewTicket.js
+	* scm_searchTicket.js
+	* scm_employeeHistory.js
+	* scm_generalPool.js
+	* scm_myActivity.js
+	* scm_myPool.js
+	* scm_opmPool.js
+	* scm_searchTicket.js
+	* scm_teamPool.js
+	* scm_ticketDocuments.js
+	* scm_tickets.js
+	* hrw_request.js
+	* scm_ticketApp.js
+	* scm_ticketTasks.js
+	* scm_popupScreens.js
+	* scm_datePicker.js
+	* scm_menus.js
+	* scm_editTicketNew.js
+	* scm_viewTicketNew.js
+	* scm_viewEditTicket.js
+	* scm_ticketActions.js
+	* global.js
+		CLASS_VIEW.scm_employeeHistory has new entry "standard/SCM/scm_datePicker.js"
+		CLASS_VIEW.scm_createTicket has new entry "standard/SCM/scm_datePicker.js"
+		CLASS_VIEW.scm_editTicket has new entry "standard/SCM/scm_datePicker.js"
+		CLASS_VIEW.scm_ticketDocuments has new entry "standard/SCM/scm_datePicker.js"
+		CLASS_VIEW.scm_viewTicket has new entry "standard/SCM/scm_datePicker.js"
+		CLASS_VIEW.scm_searchTicket has new entry "standard/SCM/scm_datePicker.js"
+	* imagesAll.gif/.png
+	* CSS2.js
+		.SCM_DotBlackNicon 
+		.SCM_DotBlackNTicon
+		.SCM_DotBlueNicon
+		.SCM_DotBlueNTicon
+		.SCM_DotBrownNicon
+		.SCM_DotBrownNTicon
+		.SCM_DotGrayNicon
+		.SCM_DotGrayNTicon
+		.SCM_DotGreenNicon
+		.SCM_DotGreenNTicon
+		.SCM_DotMauveNicon
+		.SCM_DotMauveBlackNicon
+		.SCM_DotMauveBlackNTicon
+		.SCM_DotMauveBlueNicon
+		.SCM_DotMauveBlueNTicon
+		.SCM_DotMauveNTicon
+		.SCM_DotOrangeNicon
+		.SCM_DotOrangeNTicon
+		.SCM_DotRedNicon
+		.SCM_DotRedNTicon
+Revisions
+	* Addition of the limitations of skills depending on the employee 
+	* Modify some backend method names for search and create/edit ticket that get services list
+	* Display the notification details on mouse over
+	* Addition of the version module
+	* Add the coloring of cells for solved tickets
+	* Add the icons for modified tickets
+	* Add a queue in the engine to allow doing calls in place of the heartbeat
+	* Use the queue in search ticket to load the list of skill types
+	* Allow to have items that are hyperlinks
+	* Store the list of pending reasons by company and load them in a "lazy" way in my pool
+	* Set that the general pool is a child of scm_pool and no more scm_myPool
+	* If there is no heartbeat in the XML from RHW, avoid to have an error
+	* Use the default methods to retrieve the value of the date pickers
+	* Addition of a subclass of the datePicker with the translations from SAP
+	* Make sure that linked calendar have consistent values to allow to continue
+	* Add the schedule elapsed actions in the notifications
+	* Retrieval of the company skill ID from the company settings and giving has parameter to the HRWTicket object
+	* Replace the company skill Id attribute to a client skill id (there are no comments for these modifications in the file)
+	* Definition of a constant in HrwEngine to indicate the empty value in HRW
+	* Addidion of the acitons for the inbox integration
+	
+1.2
+---
+Release date: 30/04/2010
+Compatible HRW Version: 2.05 PRE
+Files
+	* hrw_request.js
+	* scm_menus.js
+	* scm_tickets.js
+	* scm_ticketActions.js
+	* scm_editTicket.js
+	* scm_viewTicket.js
+	* scm_ticketSreen.js
+	* scm_createTicket.js
+	* scm_poolTable.js
+	* scm_popupScreens.js
+	* scm_ticketActions.js
+	* scm_searchTicket.js
+	* scm_employeeSearch.js
+	* scm_teamPool.js
+	* scm_myPool.js
+	* scm_ticketDocuments.js
+	* scm_myActivity.js
+	* global.js
+		CLASS_VIEW.scm_viewTicket has new entry "standard/SCM/scm_popupScreens.js"
+	* css2.css
+		.SCM_ticketAction_header {
+			font-weight: bolder;
+			background-color: #DCD2CE;
+			padding-left: 2px;
+		}
+		#text_area_SCM_popupPendingReason {
+			width: 485px;
+		}
+		#text_area_pendingReasonDropDown {
+			width: 300px;
+		}	
+		#SCM_listTeam div.autocompleter_form_container {
+			float: left;
+			padding-bottom: 5px;
+			width: 300px;
+		}
+		#SCM_listTeam input.application_autocompleter_box {
+			width: 200px;
+		}
+		#SCM_listTeam span {
+			padding-top: 2px;
+			padding-right: 5px;
+			float: left;
+		}		
+		.SCM_TicketGr_noResult {
+			font-weight: bold;
+			margin: 0 10px;
+			clear: both;
+			color: #EF090D;
+			width: 150px;
+		}
+Revisions
+	* Allow to edit doc type for emails
+	* Do not display the collpase button in actions history for description and solution
+	* solve the problem with the "Hide technical action" that lost coherence if reload a page or take in processing
+	* When there are error when saving creation/edition of tickets, the error fields are reinitialized when living
+	* The emails are considered as HTML documents and no more TXT documents 
+	* All descriptions are encoded before save and decoded before display to allow special characters
+	* When the user select an action in the history, use the action id and not the position to get it
+	* When searching for a company in the first step of a ticket search, replace the keypress by a keydown and the around form tag by a div
+	* Sort the pending reason lists
+	* Increase the size of the drop down lists with pending reasons
+	* Encoding of the employee search form fields to avoid problems with special characters
+	* Solve an issue with the display of the list of possible teams
+	* Replace the company skill Id attribute to a client skill id (there are no comments for these modifications in the file)
+	* Retrieval of the company skill ID from the company settings and giving has parameter to the HRWTicket object
+	* Display a different message if there is no ticket but if there are groups that could be selected
+	* Allow to don't have any customer action types during tickets view or edition
+	* Fix a bug with the auto selection of the first group by default
+	* Fix a bug when the user select in the pool a ticket with an unespected status
+	* Unable to select tickets processed by other employees in MyActivity and in Employee History
+	* Allow to have the same skills company and service based
+	* Display the customer in view/edit of a ticket if it is company based
+	
+1.1 Some improvements
+---------------------
+Release date: 1/04/2010
+Files
+	* scm_menus.js
+	* scm_saverToTicket.js
+	* scm_createTicket.js
+	* scm_ticketDocuments.js
+	* scm_editTicket.js
+	* scm_popupScreens.js
+	* scm_employeeSearch.js
+	* scm_tickets.js
+	* scm_ticketScreen.js
+	* scm_myPool.js
+	* scm_employeeHistory.js
+	* scm_userAction.js
+	* scm_viewTicket.js
+	* scm_searchTicket.js
+	* scm_popupScreens.js
+	* origine.js
+	* CSS2.css
+				.moduleInfoPopUp_stdButton_right {
+					float: right;
+					margin-right: 3px;
+				}
+				.SCM_ticketPopup_attachItem_buttonContainer{
+					clear:both;
+					margin-right: 30px;
+				}
+				#SCM_listTeam div.autocompleter_form_container {
+					float: left;
+					padding-left: 5px;
+					padding-bottom: 5px;
+					width: 250px;
+				}
+				#text_area_SCM_searchTicket_CustoFormSelect {
+					width: 240px;
+				}
+Revisions
+	* Addition of the click on notification ticket
+	* Correction in the saver to ticket to manage if there is no tickets in processing
+	* The security questions result are now saved when leaving sub screen with it
+	* Addition of a return code "4" for file uploads
+	* Correction for the attachment display the was not appearing the second time it was used
+	* Remove unusefull div in Attach item popup
+	* Update attach item popup
+	* In the employee search, if there is a last search result button and the data in the field change => it is removed
+	* Remove the iframe that call the download of a document in the screen with documents for a ticket and in the pool
+	* Do not display the document types for documents not defined as files
+	* Remove the authorizations rights for managers in origine.js
+	* Avoid multiple calls to get the notifications
+	* Avoid the initial call to get the list of tickets in processing because there is never tickets in processing when starting
+	* Addition of the list of pending reasons in the cache for HRW
+	* Replace alerts by the default module for error messages
+	* In the employee history, if there is no ID for the selected user, redirect to the General Pool if no My Pool
+	* Bug correction for the disable of company in the employee search
+	* Bug fix: If there no document name for a ticket item, ifx its extension to ''
+	* Manage if there is a child ticket
+	* Allow to display the contextual action in a balloon in the main application or in a contextMenu in the left menu
+	* In the user action, correct the usage of the cache. The condition to use it and the storage id.
+	* Limit the contextual actions on user to the authorized applications
+	* Bug fix in user actions, in the click on the user, the generated event was lost in IE
+	* During the selection of a company in a search of ticket, always overwrite the company name with a new selection
+	* Make the description of set to waiting non mandatory
+	
+1.0 Basic version
+-----------------
+Release date: 02/2010
+Files
+	* hrw_request.js
+	* scm_createTicket.js
+	* scm_editTicket.js
+	* scm_employeeHistory.js
+	* scm_employeeSearch.js
+	* scm_generalPool.js
+	* scm_home.js
+	* scm_hrwTicketObject.js
+	* scm_mailAttachObject.js
+	* scm_mailInputObject.js
+	* scm_menus.js
+	* scm_myActivity.js
+	* scm_myPool.js
+	* scm_notifications.js
+	* scm_opmPool.js
+	* scm_poolTable.js
+	* scm_popupScreens.js
+	* scm_saverToTicket.js
+	* scm_searchTicket.js
+	* scm_selectionBox.js
+	* scm_teamPool.js
+	* scm_ticketActions.js
+	* scm_ticketApp.js
+	* scm_ticketDocuments.js
+	* scm_tickets.js
+	* scm_ticketScreen.js
+	* scm_userAction.js
+	* scm_viewTicket.js

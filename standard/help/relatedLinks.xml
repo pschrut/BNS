@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+	<RelatedLinks>
+		<label>Related links</label>
+		<items>
+			<item>
+				<label>Rating Calibration</label>
+				<url>standard/help/RatingCalibration1.doc</url>
+			</item>
+			<item>
+				<label>NorthgateArinso</label>
+				<url>http://www.northgatearinso.com/</url>
+			</item>
+			<item>
+				<label>Calendar</label>
+				<url>
+					en_GL/Contents/Short_Content/Short_Content_7.xml
+				</url>
+			</item>
+			<item>
+				<label>My Data</label>
+				<url>
+					en_GL/Contents/Long_Content/Long_Content_10.xml
+				</url>
+			</item>
+			<item>
+				<label>HR Contact</label>
+				<url>en_GL/Contents/FAQ/FAQ_1.xml</url>
+			</item>
+		</items>
+	</RelatedLinks>
+</EWS>

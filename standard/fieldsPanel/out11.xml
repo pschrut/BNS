@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+    <o_date_ranges></o_date_ranges>
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="1">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA_H" fieldlabel="Start Date" fieldsource="" fieldtype="H" label_type="V" length="000010" seqnr="02" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="P" fieldid="CTEDT" fieldlabel="Valid Until" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="04" service_pai="" service_values="" show_text="X" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="CTTYP" fieldlabel="Contract Type" fieldsource="" fieldtype="H" label_type="V" length="000002" seqnr="01" service_pai="CTTYP_PAI" service_values="GET_FIELD_VALUE" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="ENDDA_H" fieldlabel="End Date" fieldsource="" fieldtype="H" label_type="V" length="000010" seqnr="03" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="S" fieldid="KDGF2" fieldlabel="EE Notice Period" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="12" service_pai="" service_values="" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="S" fieldid="KDGFR" fieldlabel="ER Notice Period" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="11" service_pai="" service_values="" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="KGZFR" fieldlabel="Sick Pay Supplement" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="07" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="KGZFR" depend_type="X" display_attrib="OPT" display_group="" fieldformat="S" fieldid="KGZZH" fieldlabel="SPS" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="08" service_pai="" service_values="GET_FIELD_VALUE" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="LFZFR" fieldlabel="Continued Pay" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="05" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="LFZZH" depend_type="X" display_attrib="OPT" display_group="" fieldformat="S" fieldid="LFZZH" fieldlabel="Continued Pay" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="06" service_pai="" service_values="GET_FIELD_VALUE" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="PRBZT" depend_type="X" display_attrib="OPT" display_group="" fieldformat="S" fieldid="PRBEH" fieldlabel="Prb" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="10" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="PRBZT" fieldlabel="Probationary Period" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="09" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>
+    </o_field_settings>
+    <o_field_values>
+        <yglui_str_wid_record rec_key="P_300004290016000" screen="1">
+            <contents>
+                <yglui_str_wid_content key_str="300004290016       2009040920090101000" rec_index="1" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="BEGDA_H" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-01-01"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="CTEDT" fieldlabel="Valid Until" fieldtechname="CTEDT" fieldtseqnr="000000" value="">00000000</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="CTTYP" fieldlabel="Contract Type" fieldtechname="CTTYP" fieldtseqnr="000000" value="53">Temporary worker</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA_H" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="2009-04-09"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="KDGF2" fieldlabel="EE Notice Period" fieldtechname="KDGF2" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="KDGFR" fieldlabel="ER Notice Period" fieldtechname="KDGFR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="KGZFR" fieldlabel="Sick Pay Supplement" fieldtechname="KGZFR" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="KGZZH" fieldlabel="SPS" fieldtechname="KGZZH" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="LFZFR" fieldlabel="Continued Pay" fieldtechname="LFZFR" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="LFZZH" fieldlabel="Continued Pay" fieldtechname="LFZZH" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PRBEH" fieldlabel="Prb" fieldtechname="PRBEH" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PRBZT" fieldlabel="Probationary Period" fieldtechname="PRBZT" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="NEXT" disma="" label_tag="next" okcode="" screen="" tarap="" tarty="" type="NEXT"></yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+                <yglui_str_wid_content key_str="300004290016       9999123120090410000" rec_index="2" selected="X" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="BEGDA_H" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-04-10"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="CTEDT" fieldlabel="Valid Until" fieldtechname="CTEDT" fieldtseqnr="000000" value="">20090510</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="CTTYP" fieldlabel="Contract Type" fieldtechname="CTTYP" fieldtseqnr="000000" value="25">Trial period</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA_H" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="KDGF2" fieldlabel="EE Notice Period" fieldtechname="KDGF2" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="KDGFR" fieldlabel="ER Notice Period" fieldtechname="KDGFR" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="KGZFR" fieldlabel="Sick Pay Supplement" fieldtechname="KGZFR" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="KGZZH" fieldlabel="SPS" fieldtechname="KGZZH" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="LFZFR" fieldlabel="Continued Pay" fieldtechname="LFZFR" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="LFZZH" fieldlabel="Continued Pay" fieldtechname="LFZZH" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PRBEH" fieldlabel="Prb" fieldtechname="PRBEH" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PRBZT" fieldlabel="Probationary Period" fieldtechname="PRBZT" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="PREVIOUS" disma="" label_tag="previous" okcode="" screen="" tarap="" tarty="" type="PREVIOUS"></yglui_str_wid_button>
+                        <yglui_str_wid_button action="REC_PDCHANGECONT" disma="" label_tag="Change" okcode="MOD" screen="" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+                        <yglui_str_wid_button action="REC_PDDELETECONT" disma="" label_tag="Delete" okcode="DEL" screen="" tarap="" tarty="" type="DEL"></yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+    <o_screen_buttons></o_screen_buttons>
+    <o_widget_screens>
+        <yglui_str_wid_screen all_modifiable="" appid="COR_CONT" label_tag="contractDetails" list_mode="X" screen="1" secondary="" selected="X" table_mode=""></yglui_str_wid_screen>
+    </o_widget_screens>
+    <labels>
+        <item id="ADDITIONALDATA" service="" value="Extra"></item>
+    </labels>
+    <messages></messages>
+    <webmessage_type></webmessage_type>
+    <webmessage_text></webmessage_text>
+</EWS>

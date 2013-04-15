@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_field_settings>
+    <yglui_str_wid_fs_record screen="1" tcontent_empty="">
+      <hrobject objid="" otype="" plvar=""/>
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" 
+          fieldformat="S" fieldid="WERKS" fieldlabel="Personnel Area" fieldsource="" fieldtype="" label_type="V" length="000008" sadv_id=""
+            seqnr="01" service_pai="" service_values="GET_FIELD_VALG" show_text="I" type="CHAR" />
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" 
+          fieldformat="S" fieldid="BTRTL" fieldlabel="Personnel Subarea" fieldsource="" fieldtype="" label_type="V" length="000008" sadv_id=""
+            seqnr="02" service_pai="" service_values="GET_FIELD_VALG" show_text="I" type="CHAR" />
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" 
+          fieldformat="S" fieldid="PERSG" fieldlabel="Employee Group" fieldsource="" fieldtype="" label_type="V" length="000008" sadv_id=""
+            seqnr="03" service_pai="" service_values="GET_FIELD_VALG" show_text="I" type="CHAR" />
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" 
+          fieldformat="S" fieldid="PERSK" fieldlabel="Employee Subgroup" fieldsource="" fieldtype="" label_type="V" length="000008" sadv_id=""
+            seqnr="04" service_pai="" service_values="GET_FIELD_VALG" show_text="I" type="CHAR" />
+      </fs_fields> 
+    </yglui_str_wid_fs_record>
+    <yglui_str_wid_fs_record screen="2" tcontent_empty="">
+      <hrobject objid="" otype="" plvar=""/>
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" 
+          fieldformat="I" fieldid="" fieldlabel="Search term" fieldsource="" fieldtype="" label_type="V" length="000020" sadv_id=""
+            seqnr="01" service_pai="" service_values="" show_text="I" type="CHAR" />
+      </fs_fields> 
+    </yglui_str_wid_fs_record>
+  </o_field_settings>
+  <o_field_values>
+    <yglui_str_wid_record rec_key="" screen="1">
+      <hrobject objid="" otype="" plvar=""/>
+      <contents>
+        <yglui_str_wid_content buttons="" key_str="" rec_index="" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="WERKS" fieldlabel="Personnel Area" fieldtechname="WERKS" fieldseqrn="000000" value="ZZ99">euHReka</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="BTRTL" fieldlabel="Personnel Subarea" fieldtechname="BTRTL" fieldseqrn="000000" value="0001">Brussels</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PERSG" fieldlabel="Employee Group" fieldtechname="PERSG" fieldseqrn="000000" value="1">Regular</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PERSK" fieldlabel="Employee Subgroup" fieldtechname="PERSK" fieldseqrn="000000" value="03">White collar</yglui_str_wid_field>
+          </fields>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+  </o_field_values>
+  <o_widget_screens>
+    <yglui_str_wid_screen all_modifiable="" appid="WSC_WORK" dyn_panel="" label_tag="Area" list_mode="" screen="1" secondary="" selected="" table_mode="" translation="" /> 
+    <yglui_str_wid_screen all_modifiable="" appid="WSC_WORK" dyn_panel="" label_tag="Search" list_mode="" screen="2" secondary="" selected="" table_mode="" translation="" /> 
+  </o_widget_screens>  
+  <o_screen_buttons>
+    <yglui_str_wid_button action="APP_PWS_CANCEL" busid="" disma="" label_tag="Cancel" okcode="DEL" screen="*" status="9Z" tarap="" tartb="" tarty="" type="DEL" views="" />
+    <yglui_str_wid_button action="APP_PWS_SAVE" busid="" disma="" label_tag="Save" okcode="BEAN" screen="*" status="10" tarap="" tartb="" tarty="" type="BEAN" views="" /> 
+  </o_screen_buttons>
+  <labels>
+    <item id="WSCD_01" service="" value="Check work schedule rule" /> 
+  </labels>
+</EWS>
+

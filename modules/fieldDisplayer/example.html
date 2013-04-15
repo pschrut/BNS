@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Modules</title>
+        <link href="../../css/CSS2.css" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="css/CSS2_IE7.css" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/CSS2_IE6.css" />
+        <![endif]-->
+        <script src="../../standard/web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+        <script src="../../standard/web_frameworks/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+        <script src="../../standard/origin.js" type="text/javascript"></script>
+        <script src="../../standard/web_frameworks/datejs/date.js" type="text/javascript"></script><!-- Necessary for the DatePicker -->
+        <script src="../../standard/web_frameworks/wz_jsgraphics.js" type="text/javascript"></script><!-- Necessary for the DrawTree -->
+        <!-- modules -->
+        <script src="fieldDisplayer.js" type="text/javascript"></script>
+        <script src="../modules.js" type="text/javascript"></script>
+        <script src="../datePicker/datePicker.js" type="text/javascript"></script>
+        <script src="../autocompleter/autocompleter.js" type="text/javascript"></script>
+        <script src="../hourField/hourFiled.js" type="text/javascript"></script>
+        <!-- /modules -->
+        <!-- blackbirdjs -->
+        <link href="../../standard/web_frameworks/blackbirdjs/blackbird.css" rel="stylesheet" type="text/css" />
+        <script src="../../standard/web_frameworks/blackbirdjs/blackbird.js" type="text/javascript"></script>
+        <style>
+            h3 {
+                border: 3px solid #492682;
+            }
+            pre {
+                background-color: #E1E1E1;
+                border: 1px solid black;
+                margin: 10px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Field Displayer example</h1>
+        <h3>Two input fields, mandatory with automatic format check</h3>
+        <div id="fields"></div>
+        <h5>Depent fields</h5>
+        <div id="fields_link"></div>
+        <script type="text/javascript">
+            var fieldDisplayer = new FieldDisplayer({fieldFormat: 'I', fieldId: 'FIELD1', displayAttrib: 'MAN', fieldLabel: 'Insert a number', type: 'NUMC',maxLength: 4});
+            var fieldDisplayerDec = new FieldDisplayer({fieldFormat: 'I', fieldId: 'FIELD1', displayAttrib: 'MAN', fieldLabel: 'Insert a decimal number', type: 'DEC',maxLength: 4});
+            var fieldDisplayerText= new FieldDisplayer({fieldFormat: 'I', fieldId: 'FIELD2', displayAttrib: 'MAN', fieldLabel: 'Insert your name', type: 'CHAR'});
+            $('fields').insert(fieldDisplayer.getElement());
+            $('fields').insert(fieldDisplayerDec.getElement());
+            $('fields').insert(fieldDisplayerText.getElement());
+            var fieldDisplayerLink = new FieldDisplayer({fieldFormat: 'I', fieldId: 'COUNTRY', displayAttrib: 'MAN', fieldLabel: 'Insert a country', type: 'CHAR',maxLength: 10, dependField: 'REGION'});
+            var fieldDisplayerLink2 = new FieldDisplayer({fieldFormat: 'I', fieldId: 'REGION', displayAttrib: 'MAN', fieldLabel: 'Insert a region', type: 'CHAR',maxLength: 10, dependField: 'DATE_FOUNDATION'});
+            var fieldDisplayerLink3 = new FieldDisplayer({fieldFormat: 'P', fieldId: 'DATE_FOUNDATION', displayAttrib: 'MAN', fieldLabel: 'Insert a region', type: 'CHAR',maxLength: 10,defaultValue: '20080401'});
+            $('fields_link').insert(fieldDisplayerLink.getElement());
+            $('fields_link').insert(fieldDisplayerLink2.getElement());
+            $('fields_link').insert(fieldDisplayerLink3.getElement());
+        </script>
+        <h4>Code</h4>
+        <pre>
+        &lt;div id="fields">&lt;/div>
+        &lt;script type="text/javascript">
+            var fieldDisplayer = new FieldDisplayer({fieldFormat: 'I', fieldId: 'FIELD1', displayAttrib: 'MAN', fieldLabel: 'Insert a number', type: 'NUMC'});
+            var fieldDisplayerText= new FieldDisplayer({fieldFormat: 'I', fieldId: 'FIELD1', displayAttrib: 'MAN', fieldLabel: 'Insert your name', type: 'CHAR'});
+            $('fields').insert(fieldDisplayer.getElement());
+            $('fields').insert(fieldDisplayerText.getElement());
+        &lt;/script></pre>
+        <h3>Fiel displayer with autocompleter</h3>
+        <div id="fields2"></div>
+        <script type="text/javascript">
+            var fieldDisplayerAutocompleter = new FieldDisplayer({fieldFormat: 'A', fieldId: 'DATEPICKER1', displayAttrib: 'MAN', fieldLabel: 'Insert a date'});
+            $('fields2').insert(fieldDisplayerAutocompleter.getElement());
+            function _parseFields() {
+                alert('Text Area value: '+fieldDisplayerAutocompleter.getValue());
+            }
+        </script>
+        <br />
+        <input type="button" onClick="javascript: _parseFields();" value="Get fields values" />
+        <h3>Fiel displayer with date input</h3>
+        <div id="fields3"></div>
+        <script type="text/javascript">
+            var fieldDisplayerDate = new FieldDisplayer({fieldFormat: 'P', fieldId: 'DATEPICKER1', displayAttrib: 'MAN', fieldLabel: 'Insert a date'});
+            $('fields3').insert(fieldDisplayerDate.getElement());
+            function _parseFields() {
+                alert('DatePicker value: '+fieldDisplayerDate.getValue());
+            }
+            function _setValue() {
+                fieldDisplayerDate.setValue('2007-01-01');
+            }
+        </script>
+        <br />
+        <input type="button" onClick="javascript: _parseFields();" value="Get fields values" />
+        <input type="button" onClick="javascript: _setValue();" value="Set field values" />
+        <h3>Field displayer with a select box</h3>
+        <div id="fields4"></div>
+        <script type="text/javascript">
+            var fieldDisplayerSelectBox = new FieldDisplayer({fieldFormat: 'S', fieldId: 'DATEPICKER2', displayAttrib: 'MAN', fieldLabel: 'Select a value'});
+            $('fields4').insert(fieldDisplayerSelectBox.getElement());
+            function _parseFields2() {
+                alert('DatePicker value: '+fieldDisplayerSelectBox.getValue());
+            }
+        </script>
+        <input type="button" onClick="javascript: _parseField2();" value="Get fields values" />
+        <h3>Field displayer with a text area</h3>
+        <div id="fields5"></div>
+        <script type="text/javascript">
+            var fieldDisplayerTextArea = new FieldDisplayer({fieldFormat: 'T', fieldId: 'DATEPICKER2', displayAttrib: 'MAN', fieldLabel: 'Select a value'});
+            $('fields5').insert(fieldDisplayerTextArea.getElement());
+            function _parseTextArea() {
+                alert('Text Area value: '+fieldDisplayerTextArea.getValue());
+            }
+        </script>
+        <input type="button" onClick="javascript: _parseTextArea();" value="Get fields values" />
+        <h3>Field displayer with a radio button</h3>
+        <div id="fields6"></div>
+        <script type="text/javascript">
+            var fieldDisplayerRadioButton = new FieldDisplayer({fieldFormat: 'R', fieldId: 'DATEPICKER2', displayAttrib: 'MAN', fieldLabel: 'Select a value'});
+            $('fields6').insert(fieldDisplayerRadioButton.getElement());
+            function _parseFields2() {
+                alert('DatePicker value: '+fieldDisplayerRadioButton.getValue());
+            }
+        </script>
+        <input type="button" onClick="javascript: _parseFields2();" value="Get fields values" />
+        <h3>Field displayer with a checkbox</h3>
+        <div id="fields7"></div>
+        <script type="text/javascript">
+            var fieldDisplayerCheckBox = new FieldDisplayer({fieldFormat: 'C', fieldId: 'DATEPICKER2', displayAttrib: 'MAN', fieldLabel: 'Select a value'});
+            $('fields7').insert(fieldDisplayerCheckBox.getElement());
+            function _parseFieldsCheckBox() {
+                alert('Check Box value: '+fieldDisplayerCheckBox.getValue());
+            }
+        </script>
+        <input type="button" onClick="javascript: _parseFieldsCheckBox();" value="Get fields values" />
+        <h3>Field type value</h3>
+        <div id="readonly"></div>
+        <script type="text/javascript">
+            var fieldDisplayerValue = new FieldDisplayer({fieldFormat:'V',fieldId: 'READONLY1', fieldLabel: 'This is text', defaultValue: 'This is text value'});
+            $('readonly').insert(fieldDisplayerValue.getElement());
+        </script>
+        <h3>Field displayer type hour</h3>
+        <div id="hourfield"></div>
+        <script type="text/javascript">
+            var fieldDisplayerHour = new FieldDisplayer({fieldFormat:'H', fieldId: 'HOURFIELD1', fieldLabel: 'Insert a time'});
+            $('hourfield').insert(fieldDisplayerHour.getElement());
+            function _parseFieldsHour() {
+                alert(fieldDisplayerHour.getValue());
+            }
+        </script>
+        <input type="button" onClick="javascript: _parseFieldsHour();" value="Get fields values" />
+    </body>
+</html>

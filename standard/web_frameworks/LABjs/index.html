@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LABjs (Loading And Blocking JavaScript)</title>
+<script type="text/javascript" language="javascript" src="LAB.js"></script>
+<script>
+// ** Simple blocking on a set of scripts
+
+	$LAB
+	.script("load.js")
+	.script("load2.js")
+	.script("load3.js")
+	.block(function(){
+		myscripts[myscripts.length-1].speak("Hello");
+	});
+	
+</script>
+</head>
+
+<body>
+
+<h1>
+LABjs (Loading And Blocking JavaScript)
+</h1>
+<p>
+<b>NOTE:</b> This is a live demo test script for LABjs (Loading And Blocking JavaScript). Read more about this project in the <a href="description.html" target="_blank">Project Description</a>.
+</p>
+<p>
+Current version: 0.5.1 <a href="LABjs-0.5.1.zip" target="_blank">LABjs-0.5.1.zip</a>.
+</p>
+<p>
+	Questions or Thoughts? Contact me <a href="http://getify.tw">@getify</a> on twitter.
+</p>
+<p>
+	If you like this project, you also might like to check out <a href="http://test.getify.com/mpAjax">mpAjax (multi-part Ajax responses)</a> and <a href="http://flxhr.flensed.com">flXHR (easy cross-domain Ajax)</a>.
+</p>
+<pre>
+Example 1:
+
+	$LAB
+	.script("script1.js")
+	.script("script2.js")
+	.script("script3.js")
+	.block(function(){
+		// wait for all to load, then do something
+		script1Func();
+		script2Func();
+		script3Func();
+	});
+
+
+Example 2:
+
+	$LAB	
+	.script({ src: "script1.js", type: "text/javascript" })
+	.script({ src: "script2.js", language: "javascript", type: "text/javascript" })
+	.script("script3.js")
+	.block(function(){
+		// wait for all to load, then do something
+		script1Func();
+		script2Func();
+		script3Func();
+	});
+
+
+Example 3:
+
+	$LAB
+	.script("script1.js", "script2.js", "script3.js")
+	.block(function(){
+		// wait for all to load, then do something
+		script1Func();
+		script2Func();
+		script3Func();
+	});
+
+
+Example 4:
+	
+	$LAB
+	.script( [ "script1.js", "script2.js" ], "script3.js")
+	.block(function(){
+		// wait for all to load, then do something
+		script1Func();
+		script2Func();
+		script3Func();
+	});
+	
+	
+Example 5:
+
+	$LAB
+	.script("script1.js")
+	.block(function(){
+		$LAB
+		.script("script2.js") // depends on script1 being loaded before
+		.script("script3.js") // also depends on script1 being loaded before
+		.block(function(){
+			$LAB
+			.script("script4.js") // depends on script1, script2 and script3 being loaded before
+			.block(function(){
+				script4Func();
+			});
+		});
+	});
+
+Example 6:
+
+	$LAB
+	.script("script1.js") // defaults to appending to the HEAD
+	.block(function(){
+		$LAB
+		.toBODY() // will append everything else to the BODY
+		.script("script2.js") // depends on script1 being loaded before
+		.script("script3.js") // also depends on script1 being loaded before
+		.block(function(){
+			$LAB
+			.toHEAD() // switch back to HEAD appending if you want
+			.script("script4.js") // depends on script1, script2 and script3 being loaded before
+			.block(function(){
+				script4Func();
+			});
+		});
+	});
+
+	
+</pre>
+
+
+</body>
+</html>

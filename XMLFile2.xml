@@ -1,0 +1,239 @@
+<EWS>
+    <o_data_work_extra begda="0000-00-00" begpc="" endda="0000-00-00" load="" pai=""/>
+    <o_date_ranges/>
+    <o_extra_scr all_modifiable="" appid="" dyn_panel="" label_tag="" list_mode="" onsave_checkmode="" onsave_clearmode="" onsave_nodefault="" screen="" secondary="" selected="" table_mode="" translation=""/>
+    <o_extra_screen appid="" collapsed="" color="0" parentid="" type="" widcolumn="" widrow=""/>
+    <o_extra_settings fs_fields="" screen="" tcontent_empty="">
+        <hrobject objid="" otype="" plvar=""/>
+        <tcontent_pai tcontent_pai=""/>
+    </o_extra_settings>
+    <o_extra_values contents="" rec_key="" screen="">
+        <hrobject objid="" otype="" plvar=""/>
+    </o_extra_values>
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="EXT_INFO" tcontent_empty="">
+            <hrobject objid="00000104" otype="P" plvar=""/>
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="RSZRR" fieldlabel="INSS number" fieldsource="" fieldtype="" label_type="V" length="000011" sadv_id="" seqnr="01" service_pai="" service_values="" show_text="" type="NUMC"/>
+                <yglui_str_wid_fs_field default_text="Unlimited" default_value="(1" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="CTTYP" fieldlabel="Contract Type" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="02" service_pai="CTTYP_PAI" service_values="GET_FIELD_VAL2" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="P" fieldid="CTEDT" fieldlabel="Valid Until" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="03" service_pai="" service_values="" show_text="" type="DATS"/>
+                <yglui_str_wid_fs_field default_text="Metal, machines, and electric PC" default_value="111" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="BEGPC" fieldlabel="Labour commission" fieldsource="" fieldtype="" label_type="V" length="000007" sadv_id="" seqnr="04" service_pai="" service_values="GET_FIELD_VAL2" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="EUR" default_value="EUR" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="WAERS" fieldlabel="Currency" fieldsource="" fieldtype="" label_type="V" length="000005" sadv_id="" seqnr="05" service_pai="" service_values="" show_text="" type="CUKY"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="06" service_pai="" service_values="" show_text="" type="DATS"/>
+            </fs_fields>
+            <tcontent_pai tcontent_pai=""/>
+        </yglui_str_wid_fs_record>
+        <yglui_str_wid_fs_record screen="GEN_INFO" tcontent_empty="">
+            <hrobject objid="00000104" otype="P" plvar=""/>
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="Securex" default_value="SX01" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="V" fieldid="BUTXT" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000000" sadv_id="" seqnr="01" service_pai="" service_values="" show_text="X" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="SX01" default_value="SX01" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="V" fieldid="BUKRS" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000000" sadv_id="" seqnr="02" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="03" service_pai="PCR_BEGDA_PAI" service_values="" show_text="" type="DATS"/>
+                <yglui_str_wid_fs_field default_text="" default_value="9999-12-31" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="P" fieldid="ENDDA" fieldlabel="End Date" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="04" service_pai="" service_values="" show_text="" type="DATS"/>
+                <yglui_str_wid_fs_field default_text="Reentry as Active" default_value="A9" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="MASSN" fieldlabel="Action Type" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="05" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="MASSN" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="MASSG" fieldlabel="Reason for Action" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="06" service_pai="PCR_BEGDA_PAI" service_values="GET_FIELD_VAL2" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="ZSCX" default_value="ZSCX" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="WERKS" fieldlabel="" fieldsource="" fieldtype="" label_type="V" length="000000" sadv_id="" seqnr="07" service_pai="" service_values="GET_PCR_VAL" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Others" default_value="0" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="STAT1" fieldlabel="Customer-specific" fieldsource="" fieldtype="" label_type="V" length="000001" sadv_id="" seqnr="08" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Active" default_value="3" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="STAT2" fieldlabel="Employment" fieldsource="" fieldtype="" label_type="V" length="000001" sadv_id="" seqnr="09" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="PERSG" fieldlabel="" fieldsource="" fieldtype="" label_type="V" length="000000" sadv_id="" seqnr="10" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="PERSK" fieldlabel="" fieldsource="" fieldtype="" label_type="V" length="000000" sadv_id="" seqnr="11" service_pai="" service_values="" show_text="" type="CHAR"/>
+            </fs_fields>
+            <tcontent_pai tcontent_pai=""/>
+        </yglui_str_wid_fs_record>
+        <yglui_str_wid_fs_record screen="ORG_ASSG" tcontent_empty="">
+            <hrobject objid="00000104" otype="P" plvar=""/>
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="White Collar" default_value="03" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="PERSK" fieldlabel="Employee subgroup" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="01" service_pai="" service_values="GET_FIELD_VAL2" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Regular" default_value="1" depend_field="PERSK" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="PERSG" fieldlabel="Employee group" fieldsource="" fieldtype="" label_type="V" length="000001" sadv_id="" seqnr="02" service_pai="" service_values="GET_FIELD_VAL2" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Dienstencheques" default_value="XB" depend_field="PERSG" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="ANSVH" fieldlabel="Work contract" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="03" service_pai="PCR_ANSVH_PAI" service_values="GET_FIELD_VAL2" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="SX01" default_value="SX01" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="BUKRS" fieldlabel="Company Code" fieldsource="" fieldtype="" label_type="V" length="000004" sadv_id="" seqnr="04" service_pai="" service_values="GET_FIELD_VAL0" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="ZSCX" default_value="ZSCX" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="I" fieldid="WERKS" fieldlabel="Personnel area" fieldsource="" fieldtype="" label_type="V" length="000004" sadv_id="" seqnr="05" service_pai="" service_values="GET_PCR_VAL" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="0000" default_value="0000" depend_field="WERKS" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="BTRTL" fieldlabel="Personnel subarea" fieldsource="" fieldtype="" label_type="V" length="000004" sadv_id="" seqnr="06" service_pai="" service_values="GET_FIELD_VAL2" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Non-payroll-relevant" default_value="99" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="A" fieldid="ABKRS" fieldlabel="Payroll area" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="07" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="50000160" default_value="50000160" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ORGEH" fieldlabel="Organizational unit" fieldsource="" fieldtype="" label_type="V" length="000008" sadv_id="" seqnr="08" service_pai="" service_values="" show_text="" type="NUMC"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="PROZT" fieldlabel="" fieldsource="" fieldtype="" label_type="V" length="000000" sadv_id="" seqnr="09" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="ZSCX" default_value="ZSCX" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="SBMOD" fieldlabel="Administrator group" fieldsource="" fieldtype="" label_type="V" length="000004" sadv_id="" seqnr="10" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="SCX" default_value="SCX" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="YYGCC" fieldlabel="Global Customer Code" fieldsource="" fieldtype="" label_type="V" length="000003" sadv_id="" seqnr="11" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="SCX" default_value="SCX" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="YYLCC" fieldlabel="Local Customer Code" fieldsource="" fieldtype="" label_type="V" length="000003" sadv_id="" seqnr="12" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="13" service_pai="" service_values="" show_text="" type="DATS"/>
+                <yglui_str_wid_fs_field default_text="" default_value="9999-12-31" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="P" fieldid="ENDDA" fieldlabel="End Date" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="14" service_pai="" service_values="" show_text="" type="DATS"/>
+                <yglui_str_wid_fs_field default_text="3" default_value="3" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZCATEGORIE" fieldlabel="Category" fieldsource="" fieldtype="" label_type="V" length="000001" sadv_id="" seqnr="15" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="0001234567" default_value="0001234567" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZSXCNR" fieldlabel="Contract number" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="16" service_pai="" service_values="" show_text="" type="NUMC"/>
+                <yglui_str_wid_fs_field default_text="00000009790030001234567" default_value="00000009790030001234567" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZFDCP" fieldlabel="FDCP reference" fieldsource="" fieldtype="" label_type="V" length="000023" sadv_id="" seqnr="17" service_pai="" service_values="" show_text="" type="NUMC"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZPYAREA" fieldlabel="Payroll Area" fieldsource="" fieldtype="" label_type="V" length="000007" sadv_id="" seqnr="18" service_pai="" service_values="" show_text="" type="NUMC"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="KOKRS" fieldlabel="Controlling Area" fieldsource="" fieldtype="" label_type="V" length="000004" sadv_id="" seqnr="19" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="PLANS" fieldlabel="Position" fieldsource="" fieldtype="" label_type="V" length="000008" sadv_id="" seqnr="20" service_pai="" service_values="" show_text="" type="NUMC"/>
+            </fs_fields>
+            <tcontent_pai tcontent_pai=""/>
+        </yglui_str_wid_fs_record>
+        <yglui_str_wid_fs_record screen="PER_DATA" tcontent_empty="">
+            <hrobject objid="00000104" otype="P" plvar=""/>
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="Mrs" default_value="2" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="ANRED" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000001" sadv_id="" seqnr="01" service_pai="ANRED_PAI" service_values="GET_FIELD_VAL2" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Test%" default_value="Test%" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="NACHN" fieldlabel="Last name" fieldsource="" fieldtype="" label_type="V" length="000040" sadv_id="" seqnr="02" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Reg 1211" default_value="Reg 1211" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="VORNA" fieldlabel="First name" fieldsource="" fieldtype="" label_type="V" length="000040" sadv_id="" seqnr="03" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="00000000097" default_value="00000000097" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="RSZRR" fieldlabel="INSS number" fieldsource="" fieldtype="" label_type="V" length="000011" sadv_id="" seqnr="04" service_pai="PCR_RSZRR_PAI" service_values="" show_text="" type="NUMC"/>
+                <yglui_str_wid_fs_field default_text="A" default_value="A" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="INITS" fieldlabel="Initials" fieldsource="" fieldtype="" label_type="V" length="000001" sadv_id="" seqnr="05" service_pai="INITS_PAI" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Female" default_value="2" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="A" fieldid="GESCH" fieldlabel="Gender" fieldsource="" fieldtype="" label_type="V" length="000001" sadv_id="" seqnr="06" service_pai="" service_values="" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="1972-03-06" default_value="1972-03-06" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="GBDAT" fieldlabel="Date of birth" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="07" service_pai="" service_values="" show_text="" type="DATS"/>
+                <yglui_str_wid_fs_field default_text="Canada" default_value="Canada" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="GBORT" fieldlabel="Birthplace" fieldsource="" fieldtype="" label_type="V" length="000040" sadv_id="" seqnr="08" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Belgium" default_value="BE" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="A" fieldid="GBLND" fieldlabel="Country of Birth" fieldsource="" fieldtype="" label_type="V" length="000003" sadv_id="" seqnr="09" service_pai="" service_values="" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Belgian" default_value="BE" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="A" fieldid="NATIO" fieldlabel="Nationality" fieldsource="" fieldtype="" label_type="V" length="000003" sadv_id="" seqnr="10" service_pai="" service_values="GET_NAT_VAL" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="Marr." default_value="1" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="S" fieldid="FAMST" fieldlabel="Marital Status" fieldsource="" fieldtype="" label_type="V" length="000001" sadv_id="" seqnr="11" service_pai="" service_values="" show_text="I" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="" label_type="V" length="000010" sadv_id="" seqnr="13" service_pai="" service_values="" show_text="" type="DATS"/>
+                <yglui_str_wid_fs_field default_text="tester" default_value="tester" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZDOC_NAAM" fieldlabel="Name on Documents" fieldsource="" fieldtype="" label_type="V" length="000026" sadv_id="" seqnr="14" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="DE" default_value="DE" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZTAAL2_CODE" fieldlabel="Communication language" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="15" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZCOPY_TAAL_CODE" fieldlabel="Copy document language" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="16" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZDOC_KANAAL_CODE" fieldlabel="Document channel" fieldsource="" fieldtype="" label_type="V" length="000001" sadv_id="" seqnr="17" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="20" default_value="20" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZCATEGORIE_CODE" fieldlabel="Category" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="18" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="00" default_value="00" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZSUBCAT_CODE" fieldlabel="Subcategorie" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="19" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZBEZOL_WIJZE_CODE" fieldlabel="Bezoldigingswijze" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="20" service_pai="" service_values="" show_text="" type="CHAR"/>
+                <yglui_str_wid_fs_field default_text="00" default_value="00" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="I" fieldid="ZZSOST_CODE" fieldlabel="Code Sociaal stelsel" fieldsource="" fieldtype="" label_type="V" length="000002" sadv_id="" seqnr="21" service_pai="" service_values="" show_text="" type="CHAR"/>
+            </fs_fields>
+            <tcontent_pai tcontent_pai=""/>
+        </yglui_str_wid_fs_record>
+    </o_field_settings>
+    <o_field_values>
+        <yglui_str_wid_record rec_key="" screen="EXT_INFO">
+            <hrobject objid="" otype="" plvar=""/>
+            <contents>
+                <yglui_str_wid_content buttons="" key_str="" rec_index="0" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="RSZRR" fieldlabel="" fieldtechname="RSZRR" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="CTTYP" fieldlabel="" fieldtechname="CTTYP" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="CTEDT" fieldlabel="" fieldtechname="CTEDT" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="BEGPC" fieldlabel="" fieldtechname="BEGPC" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="WAERS" fieldlabel="" fieldtechname="WAERS" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value=""/>
+                    </fields>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+        <yglui_str_wid_record rec_key="" screen="GEN_INFO">
+            <hrobject objid="" otype="" plvar=""/>
+            <contents>
+                <yglui_str_wid_content buttons="" key_str="" rec_index="0" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="BUTXT" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="BUKRS" fieldlabel="" fieldtechname="BUKRS" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="MASSN" fieldlabel="" fieldtechname="MASSN" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="MASSG" fieldlabel="" fieldtechname="MASSG" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="WERKS" fieldlabel="" fieldtechname="WERKS" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="STAT1" fieldlabel="" fieldtechname="STAT1" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="STAT2" fieldlabel="" fieldtechname="STAT2" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="PERSG" fieldlabel="" fieldtechname="PERSG" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="PERSK" fieldlabel="" fieldtechname="PERSK" fieldtseqnr="000000" value=""/>
+                    </fields>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+        <yglui_str_wid_record rec_key="" screen="ORG_ASSG">
+            <hrobject objid="" otype="" plvar=""/>
+            <contents>
+                <yglui_str_wid_content buttons="" key_str="" rec_index="0" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="PERSK" fieldlabel="" fieldtechname="PERSK" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="PERSG" fieldlabel="" fieldtechname="PERSG" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ANSVH" fieldlabel="" fieldtechname="ANSVH" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="BUKRS" fieldlabel="" fieldtechname="BUKRS" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="WERKS" fieldlabel="" fieldtechname="WERKS" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="BTRTL" fieldlabel="" fieldtechname="BTRTL" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ABKRS" fieldlabel="" fieldtechname="ABKRS" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ORGEH" fieldlabel="" fieldtechname="ORGEH" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="PROZT" fieldlabel="" fieldtechname="PROZT" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="SBMOD" fieldlabel="" fieldtechname="SBMOD" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="YYGCC" fieldlabel="" fieldtechname="YYGCC" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="YYLCC" fieldlabel="" fieldtechname="YYLCC" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZCATEGORIE" fieldlabel="" fieldtechname="ZZCATEGORIE" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZSXCNR" fieldlabel="" fieldtechname="ZZSXCNR" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZFDCP" fieldlabel="" fieldtechname="ZZFDCP" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZPYAREA" fieldlabel="" fieldtechname="ZZPYAREA" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="KOKRS" fieldlabel="" fieldtechname="KOKRS" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="PLANS" fieldlabel="" fieldtechname="PLANS" fieldtseqnr="000000" value=""/>
+                    </fields>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+        <yglui_str_wid_record rec_key="" screen="PER_DATA">
+            <hrobject objid="" otype="" plvar=""/>
+            <contents>
+                <yglui_str_wid_content buttons="" key_str="" rec_index="0" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ANRED" fieldlabel="" fieldtechname="ANRED" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="NACHN" fieldlabel="" fieldtechname="NACHN" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="VORNA" fieldlabel="" fieldtechname="VORNA" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="RSZRR" fieldlabel="" fieldtechname="RSZRR" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="INITS" fieldlabel="" fieldtechname="INITS" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="GESCH" fieldlabel="" fieldtechname="GESCH" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="GBDAT" fieldlabel="" fieldtechname="GBDAT" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="GBORT" fieldlabel="" fieldtechname="GBORT" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="GBLND" fieldlabel="" fieldtechname="GBLND" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="NATIO" fieldlabel="" fieldtechname="NATIO" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="FAMST" fieldlabel="" fieldtechname="FAMST" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZDOC_NAAM" fieldlabel="" fieldtechname="ZZDOC_NAAM" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZTAAL2_CODE" fieldlabel="" fieldtechname="ZZTAAL2_CODE" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZCOPY_TAAL_CODE" fieldlabel="" fieldtechname="ZZCOPY_TAAL_CODE" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZDOC_KANAAL_CODE" fieldlabel="" fieldtechname="ZZDOC_KANAAL_CODE" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZCATEGORIE_CODE" fieldlabel="" fieldtechname="ZZCATEGORIE_CODE" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZSUBCAT_CODE" fieldlabel="" fieldtechname="ZZSUBCAT_CODE" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZBEZOL_WIJZE_CODE" fieldlabel="" fieldtechname="ZZBEZOL_WIJZE_CODE" fieldtseqnr="000000" value=""/>
+                        <yglui_str_wid_field fieldid="ZZSOST_CODE" fieldlabel="" fieldtechname="ZZSOST_CODE" fieldtseqnr="000000" value=""/>
+                    </fields>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+    <o_screen_buttons>
+        <yglui_str_wid_button action="APP_PCR_CANCEL" busid="" disma="" label_tag="Cancel" okcode="" screen="*" showindisplay="" status="9Z" tarap="" tartb="" tarty="" type="" views=""/>
+        <yglui_str_wid_button action="APP_PCR_NEXT" busid="" disma="" label_tag="Next" okcode="INS" screen="*" showindisplay="" status="10" tarap="" tartb="" tarty="" type="INS" views=""/>
+    </o_screen_buttons>
+    <o_step_screens>
+        <yglui_str_wid_attributes appid="EXT_INFO" collapsed="" color="0" parentid="ZRO_HIRE" type="GROUP" widcolumn="1" widrow="3"/>
+        <yglui_str_wid_attributes appid="GEN_INFO" collapsed="" color="0" parentid="ZRO_HIRE" type="GROUP" widcolumn="1" widrow="1"/>
+        <yglui_str_wid_attributes appid="ORG_ASSG" collapsed="" color="0" parentid="ZRO_HIRE" type="GROUP" widcolumn="1" widrow="2"/>
+        <yglui_str_wid_attributes appid="PER_DATA" collapsed="" color="0" parentid="ZRO_HIRE" type="GROUP" widcolumn="2" widrow="1"/>
+    </o_step_screens>
+    <o_widget_screens>
+        <yglui_str_wid_screen all_modifiable="" appid="Z12_REHI" dyn_panel="" label_tag="conData" list_mode="" onsave_checkmode="" onsave_clearmode="" onsave_nodefault="" screen="EXT_INFO" secondary="" selected="" table_mode="" translation=""/>
+        <yglui_str_wid_screen all_modifiable="" appid="Z12_REHI" dyn_panel="" label_tag="genInfo" list_mode="" onsave_checkmode="" onsave_clearmode="" onsave_nodefault="" screen="GEN_INFO" secondary="" selected="" table_mode="" translation=""/>
+        <yglui_str_wid_screen all_modifiable="" appid="Z12_REHI" dyn_panel="" label_tag="defStat" list_mode="" onsave_checkmode="" onsave_clearmode="" onsave_nodefault="" screen="ORG_ASSG" secondary="" selected="" table_mode="" translation=""/>
+        <yglui_str_wid_screen all_modifiable="" appid="Z12_REHI" dyn_panel="" label_tag="perData" list_mode="" onsave_checkmode="" onsave_clearmode="" onsave_nodefault="" screen="PER_DATA" secondary="" selected="" table_mode="" translation=""/>
+    </o_widget_screens>
+    <labels>
+        <item id="ZRO_HIRE" service="" value="Step 1"/>
+        <item id="ANRED" service="" value="Title"/>
+        <item id="BUTXT" service="" value="Company Name"/>
+        <item id="BVCOA" service="" value="Legal cohabitation"/>
+        <item id="BVECH" service="" value="Partner's Profession"/>
+        <item id="BVEKI" service="" value="Partner's Income"/>
+        <item id="BVEPC" service="" value="Disability percentage"/>
+        <item id="BVGAR" service="" value="Garnishment-relevant"/>
+        <item id="BVXKK" service="" value="Child allowance"/>
+        <item id="BVXMV" service="" value="Disability"/>
+        <item id="BVXTL" service="" value="Tax-relevant"/>
+        <item id="DATOL" service="" value="Deceased date"/>
+        <item id="OBJPS" service="" value="Number"/>
+        <item id="PSTLZ" service="" value="Postal code"/>
+        <item id="STRAS" service="" value="Street"/>
+        <item id="TELNR" service="" value="Telephone Number"/>
+        <item id="ZSIT_01" service="" value="Actions"/>
+        <item id="ZZAFGRECHT_CODE" service="" value="Derived right"/>
+        <item id="ZZCATEGORIE" service="" value="Category"/>
+        <item id="ZZDIM_TYPE" service="" value="Dimona type"/>
+        <item id="ZZFADID" service="" value="Workplace ID"/>
+        <item id="ZZFDCP" service="" value="FDCP reference"/>
+        <item id="ZZLOONSBER_FL" service="" value="Payroll by Securex"/>
+        <item id="ZZPYAREA" service="" value="Payroll area"/>
+        <item id="ZZSHORT_NAME" service="" value="Short Name"/>
+        <item id="ZZSXCNR" service="" value="Contract number"/>
+        <item id="ZZTIJDSBLOKAANT" service="" value="Time ind. Dim. light"/>
+    </labels>
+    <messages/>
+    <webmessage_type/>
+    <webmessage_text/>
+</EWS>

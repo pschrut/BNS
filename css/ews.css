@@ -1,0 +1,991 @@
+﻿/*--------------------------------------------
+        EWS.CSS ORGANIZATION
+            0. NAMING CONVENTION
+            1. COLOR GLOSSARY
+            2. CONSTANTS
+            3. FRAMEWORK STYLES
+            4. AUTOCOMPLETER     
+            5. BALLOON     
+            6. CONTEXT MENU    
+            7. DATEPICKER
+            8. EDITABLE DIV
+            9. HOURFIELD
+            10.LEGEND
+            11.MOVABLE WIDGETS
+            12.MULTISELECT    
+            13.RATING
+            14.TABLEKIT
+            15.TABS
+            16.TOP MENU
+            17.TREEHANDLER
+            18.SEMITRANSPARENT
+            19.WIDGETS
+ ---------------------------------------------*/
+
+/* ********************************
+        0. NAMING CONVENTION
+***********************************
+
+SECTIONS:
+----------
+At first time, when we create a section, we should test if the sections is created already. Please check first at the top of this file
+and make sure that your section is not existing yet. 
+If the section exists or is created, we should add classes with a proper naming convention in that section. 
+If the section does not exists, please add it in the same way as the other sections: with the right separator + add it to the index at the top of this file. 
+
+CSS ADVICE
+-----------
+- before adding a new class, check if you can not find it back (partially) in the constants. 
+For example, if you want to have your font in red because you want to display an error, make sure that this class does not exist yet.
+(the chance that is does is very big)
+
+- marian, please put some links here to the best articles in smashingmagazine
+
+NAMING OF YOUR CLASS
+--------------------
+
+- start your class with a name starts by describing your context (application, subapplication, module, ...)
+It doesn't mind how long is the name of the class, the imprtant thing is the most explicit is the name 
+of the class, the more clear is to identify in the DOM and to use it and find it back later
+Example: calendar_selectedDay, autocompleter_dropdown
+
+- then use an underscore "_" to separate from the rest of your classname
+
+- after the underscore, descibe as good as possible what the class is doing or ment for
+
+- classes are case sensitive. They should not start with a number
+
+- Here some examples of naming convention sections:
+    - ews_representativeName (Framework)
+    - topMenu_representativeName (Top Menu)  
+    - tabs_representativeName (Tabs)
+        
+
+***********************************
+       END OF NAMING CONVENTION
+**********************************/
+/***********************************
+       BRANCH PROPERTIES
+**********************************/
+abbr, acronym
+{
+    border-bottom: none;
+}
+input[type=text] 
+{
+    background-color:#F7F6F4;
+    border: 1px solid #DCD2CE;
+}
+input[type="text"]
+{
+    margin: 0px;
+}
+input[type="text"]:focus
+{
+    margin: 0px;  
+}
+table
+{
+    border-spacing: 2px;
+    margin: 0px;
+}
+th, td
+{
+    padding: 0px;
+}
+/***********************************
+       END BRANCH PROPERTIES
+**********************************/
+
+/*********************************
+        1. COLOR GLOSSARY
+********************************
+
+   1. # Background Calendar Gray Hover: #998B82
+   2. # Dark General Gray: #D9D1CE 
+   3. # euHReka Light Purple: #edecf1 
+   4. # euHReka Dark Purple: #451876
+   5. # Green Calendar Actual Day: #acc460
+   6. # Light General Gray: #f7f6f4
+   7. # Link Blue: #0099CC
+   8. # Rating Border Gray: #737365
+   9. # Rating Background Green: #55D455
+   10.# Rating Background Yellow: #DADA44
+   11.# White: #ffffff 
+
+********************************
+       END OF COLOR GLOSSARY
+**********************************/
+/*********************************
+            3. CONSTANTS
+**********************************/
+.ews_alignMinMaxCloseOptionsInHeader
+{
+    margin: 5px 2px 0 0;
+}
+.ews_backgroundGraycellText
+{
+    background-color: #f7f6f4;
+}
+.ews_backgroundWhite
+{
+    background-color: White;
+}
+.ews_barsSize
+{
+    height: 22px;
+}
+.ews_cursorMove
+{
+    cursor: move;
+}
+.ews_cursorPointer
+{
+    cursor: pointer;
+}
+.ews_euhrekaPurple
+{
+    color: #451876;
+}
+.ews_floatLeft
+{
+    float: left;
+}
+.ews_floatRight
+{
+    float: right;
+}
+.ews_fontWhite
+{
+    color: #ffffff;
+}
+.ews_generalDarkGray
+{
+    background-color: #DCD2CE;
+}
+.ews_greenCalendarActualDay
+{
+    background-color: #acc460;
+}
+.ews_linkBlueText
+{
+    color: #0099CC;
+}
+.ews_lightLegendGray
+{
+    color: #D9D1CE;
+}
+.ews_textInCenter
+{
+    text-align: center;
+}
+.ews_totalHeight
+{
+    height:100%;
+}
+.ews_totalWidth
+{
+    width:100%;
+}
+/*********************************
+          END OF CONSTANTS
+**********************************/
+/*********************************
+          3. FRAMEWORK STYLES
+**********************************/
+body
+{
+    background: #edecf1 url( 'images/temporaryImg/body_background.png' ) no-repeat;
+    color: #595C62;
+    font-family: Trebuchet MS;
+    font-size: 12px;
+}
+.ews_acronymText
+{
+    white-space: nowrap;
+}
+.ews_alignTextInBars
+{
+    line-height: 22px;
+}
+.ews_arrowsSize
+{
+   height:16px;
+   width:15px;
+}
+.ews_border
+{
+    border: 1px solid #dcd2ce;
+}
+.ews_borderCollapse
+{
+    border-collapse:collapse;
+}
+.ews_calendarIcon
+{
+    background: #edecf1 url( 'images/temporaryImg/littleIcons.gif' ) -166px -19px no-repeat;
+    height: 18px;
+    width: 20px;
+}
+.ews_closeActualSelection
+{
+    background: url( 'images/temporaryImg/littleIcons.gif' ) -169px -66px no-repeat;
+    height:8px;
+    margin:5px;
+    width:8px;
+}
+.ews_closeIcon
+{
+    background: url(images/temporaryImg/littleIcons.gif) -71px -19px no-repeat;
+}
+.ews_downArrowIcon
+{
+    background: url( 'images/temporaryImg/littleIcons.gif' ) -29px -66px no-repeat;
+}
+.ews_headerBar
+{
+    background: transparent url(images/temporaryImg/bars.gif) 0px -54px no-repeat;
+}
+.ews_indentingText
+{
+    text-indent: 5px;
+}
+.ews_interImage
+{
+    background: url(images/temporaryImg/topSideInterImage.png) no-repeat;
+    height: 43px;
+    line-height: 30px;
+    text-indent: 110px;
+}
+.ews_leftArrowIcon
+{
+   background: transparent url(images/temporaryImg/littleIcons.gif) -13px -66px no-repeat;
+} 
+.ews_linkOptions
+{
+    color: #595C62;
+    text-decoration: none;
+}
+.ews_linkOptions:hover
+{
+    background-color: #F7F6F4;
+    cursor: pointer;
+}
+.ews_logo
+{
+    background: url(images/temporaryImg/iconImage.png) no-repeat;
+    height: 49px;
+}
+.ews_maximizeIcon
+{
+    background: url(images/temporaryImg/littleIcons.gif) -20px -19px no-repeat;
+}
+.ews_maxMinOptionsIconsSize
+{
+    height: 12px;
+    width: 12px;
+}
+.ews_minimizeIcon
+{
+    background: url(images/temporaryImg/littleIcons.gif) -54px -19px no-repeat;
+}
+.ews_movingBarsSize
+{
+    height: 20px;
+}
+.ews_optionsIcon
+{
+    background: url(images/temporaryImg/littleIcons.gif) -37px -19px no-repeat;
+}
+.ews_overflowText
+{
+    overflow: hidden;
+}
+.ews_rightArrowIcon
+{
+   background: transparent url(images/temporaryImg/littleIcons.gif) -14px -67px no-repeat;
+} 
+.ews_upArrowIcon
+{
+    background: url( 'images/temporaryImg/littleIcons.gif' ) -50px -66px no-repeat;
+}
+input.ews_noBorder
+{
+    background-color:Transparent;
+    border: 0px none;
+}
+/*********************************
+       END OF FRAMEWORK STYLES
+**********************************/
+/***********************************
+             ACCORDION
+***********************************/
+.accordion_alignDownArrow
+{
+    margin:7px 3px 0px 0px;
+}
+.accordion_alignLeftArrow
+{
+    margin:3px;
+}
+.accordion_border_bottom
+{
+    border-bottom: solid 2px #dcd2ce;
+}
+.accordion_borderSubMenu
+{
+    border-bottom: solid 5px #dcd2ce;
+}
+.accordion_roundedBottom
+{
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+}
+/***********************************
+         END OF ACCORDION
+***********************************/
+/***********************************
+         AUTOCOMPLETER
+***********************************/
+.autoCompleter_alignArrows
+{
+    left: 50%;
+    margin-top: 5px;
+    position: relative;
+}
+.autoCompleter_inputSize
+{
+    height: 18px;
+    width: 144px;
+}
+.autoCompleter_showAllOptionsButton
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -381px 0px no-repeat;
+    height: 20px;
+    width: 20px;
+}
+/***********************************
+         END OF AUTOCOMPLETER
+***********************************/
+/***********************************
+              BALLOON
+***********************************/
+.balloon_bottomSide
+{
+    border-bottom: solid 1px #dcd2ce;
+    height: 24px;
+}
+.balloon_contentBalloon
+{
+    border-left: solid 1px #dcd2ce;
+    border-right: solid 1px #dcd2ce;
+    padding: 0px 24px 0px 24px;
+}
+.balloon_cornersSize
+{
+    height: 25px;
+    width: 25px;
+}
+.balloon_leftBottomCorner
+{
+    background: transparent url(images/temporaryImg/bubble_combined.gif) 0px -25px no-repeat;
+}
+.balloon_leftTopCorner
+{
+    background: transparent url(images/temporaryImg/bubble_combined.gif) 0px 0px no-repeat;
+}
+.balloon_lowerPeak
+{
+    background: transparent url(images/temporaryImg/bubble_combined.gif) -50px 0px no-repeat;
+    height: 95px;
+    width: 98px;
+}
+.balloon_rightBottomCorner
+{
+    background: transparent url(images/temporaryImg/bubble_combined.gif) -25px -25px no-repeat;
+}
+.balloon_rightTopCorner
+{
+    background: transparent url(images/temporaryImg/bubble_combined.gif) -25px 0px no-repeat;
+}
+.balloon_topSide
+{
+    border-top: solid 1px #dcd2ce;
+    height: 24px;
+}
+.balloon_zIndex
+{
+    z-index: 5000;
+}
+/***********************************
+           END OF BALLOON
+***********************************/
+/***********************************
+           CONTEXT MENU
+***********************************/
+.contextMenu_alignTextCell
+{
+    padding: 3px;
+}
+.contextMenu_borderBottom
+{
+    border-bottom: solid 1px #dcd2ce;
+    margin-bottom: 2px;
+}
+.contextMenu_widthSize
+{
+    width: 150px;
+}
+/***********************************
+         END OF CONTEXT MENU
+***********************************/
+/***********************************
+           DATEPICKER
+***********************************/
+.datePickerCell
+{
+    border: 2px solid white;
+    text-align: center;
+}
+.datePickerClosedSize
+{
+    width: 135px;
+}
+.datePickerOpenedSize
+{
+    width: 228px;
+}
+.datePicker_boxDateDayMonth
+{
+    height: 18px;
+    width: 25px;
+}
+.datePicker_boxDateYear
+{
+    height: 18px;
+    width: 50px;
+}
+.datePicker_cellSize
+{
+    height: 17px;
+    width: 19px;
+}
+.datePicker_dayLink:hover
+{
+    background-color: #998B82;
+    color: White;
+}
+.datePicker_fontSizeTheadFoot
+{
+    font-size: 11px;
+}
+.datePicker_headFontSize
+{
+    font-size: 10px;
+}
+.datePicker_leftCellSize
+{
+    width: 25px;
+}
+.datePicker_leftColumnCalendar
+{
+    margin-bottom: 0px;
+}
+.datePicker_linkSizeMonths
+{
+    width:60px;
+}
+.datePicker_linkSizeYears
+{
+    width:50px;
+}
+.datePicker_monthBoxSize
+{
+    height:180px;
+}
+.datePicker_positioningArrows
+{
+    left:17px; 
+    position:relative;
+    top:5px;
+}
+.datePicker_positioningMonthYear
+{
+    position:absolute; 
+    top:46px; 
+}
+.datePicker_posMonths
+{
+    left:6px;
+}
+.datePicker_posYears
+{
+    right:6px; 
+}
+.datePicker_weeklyColumn
+{
+    width: 40px;
+}
+.datePicker_yearBoxSize
+{
+    height: 120px; 
+    width:50px;
+}
+/***********************************
+           END OF DATEPICKER
+***********************************/
+/*********************************
+          EDITABLE DIV
+**********************************/
+.editableDiv_textArea
+{
+    -moz-border-radius:6px;	
+	-ms-border-radius: 6px;   
+    padding:0px; 
+}
+/*********************************
+        END OF EDITABLE DIV
+**********************************/
+/***********************************
+             HOURFIELD
+***********************************/
+.hourField_generalBoxSize
+{
+    width: 160px;
+}
+.hourField_hourBoxesSize
+{
+    width: 18px;
+}
+/***********************************
+         END OF HOURFIELD
+***********************************/
+/*********************************
+             LEGEND
+**********************************/
+.legend_colorRatingImageSize
+{
+    height:15px;
+    width:15px;
+}
+.legend_grayRating
+{
+    background: transparent url(images/temporaryImg/littleIcons.gif) -257px -19px no-repeat;
+    height:7px;
+    width:15px;
+}
+.legend_greenBubble
+{
+    background: transparent url(images/temporaryImg/littleIcons.gif) -111px -44px no-repeat;
+}
+.legend_greenRating
+{
+    background: transparent url(images/temporaryImg/littleIcons.gif) -277px -19px no-repeat;
+}
+.legend_iconsSize
+{
+    height: 10px;
+    width: 10px;  
+}
+.legend_redBubble
+{
+    background: transparent url(images/temporaryImg/littleIcons.gif) -141px -44px no-repeat;
+}
+.legend_rowHeight
+{
+    height:30px;
+}
+.legend_scheduleRatingImage
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -222px -47px no-repeat;
+    height:10px;
+    width:50px;
+}
+.legend_tableSize
+{
+    width:1000px;
+}
+.legend_yellowBubble
+{
+    background: transparent url(images/temporaryImg/littleIcons.gif) -126px -44px no-repeat;
+}
+.legend_yellowRating
+{
+    background: transparent url(images/temporaryImg/littleIcons.gif) 0px -19px no-repeat;
+}
+/*********************************
+          END OF LEGEND
+**********************************/
+/***********************************
+           LIST SEARCH
+***********************************/
+.listSearch_boxSize
+{
+    height:19px;
+    width:190px;
+}
+.listSearch_alignClose
+{
+    _margin: 5px 3px 0px 0px;
+}
+/***********************************
+       END OF  LIST SEARCH
+***********************************/
+/***********************************
+        MEGABUTTONDISPLAYER
+***********************************/
+div.megaButton_leftPart:hover span.megaButton_centerPart
+{
+	background-position: 0px -524px;
+}
+div.megaButton_leftPart:hover span.megaButton_rightPart
+{
+	background-position: -780px -524px;
+}
+.megaButton_centerPart
+{
+    background: transparent url(images/temporaryImg/bars.gif) 0px -474px no-repeat;
+}
+.megaButton_centerPartDisable
+{
+	background: transparent url(images/temporaryImg/bars.gif) 0px -554px no-repeat;
+	color: #998B82;
+}
+.megaButton_generalProps
+{
+    height: 27px;
+	line-height: 25px;
+	padding-left: 15px;
+}
+.megaButton_rightPart
+{
+	background: url(images/temporaryImg/bars.gif) -779px -474px no-repeat;
+}
+.megaButton_rightPartDisable
+{
+	background: url(images/temporaryImg/bars.gif) -779px -554px no-repeat;
+}
+/***********************************
+     END OF MEGABUTTONDISPLAYER
+***********************************/
+/***********************************
+          MOVABLE WIDGETS
+***********************************/
+.movableWidgets_alignWidgets
+{
+    margin:0px 0px 5px 5px;
+}
+.movableWidgets_expandContent
+{
+    background: transparent url(images/temporaryImg/littleIcons.gif) -201px -66px no-repeat;
+}
+.movableWidgets_expandReduceSize
+{
+    height:14px;
+    width:14px;
+}
+.movableWidgets_reduceContent
+{
+    background: transparent url(images/temporaryImg/littleIcons.gif) -182px -66px no-repeat;
+}
+/***********************************
+       END OF MOVABLE WIDGETS
+***********************************/
+/***********************************         
+         MULTISELECT
+***********************************/
+.multiSelectBoxSize
+{
+    min-height:29px;
+    width:410px;
+}
+.multiSelectHeight
+{
+    height:25px;
+}
+.multiSelect_alignSpan
+{
+    line-height:25px;
+}
+.multiSelect_alignClose
+{
+    margin-top:9px;
+}
+.multiSelect_leftCornerSelection
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -70px -75px no-repeat;
+    margin:2px 0px 2px 2px;
+}
+.multiSelect_optionsBox
+{
+    width:380px;
+}
+.multiSelect_rightCornerSelection
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -469px -75px no-repeat;
+    margin:2px 0px 2px 0px;
+    width:20px;
+}
+/***********************************         
+         END OF MULTISELECT 
+***********************************/
+/***********************************
+            RATING
+***********************************/
+.rating_cellBottomBorder
+{
+    border-bottom:solid 1px #737365;
+}
+.rating_cellLRBorder
+{
+    border-left:solid 1px #737365;
+    border-right:solid 1px #737365;  
+}
+.rating_cellTopBorder
+{
+    border-top:solid 1px #737365;
+}
+.rating_currentLevelSize
+{
+    height:7px;
+}
+.rating_grayBackground
+{
+    background-color:#998B82;
+}
+.rating_greenBackground
+{
+    background-color:#55D455;
+}
+.rating_requiredLevelSize
+{
+    height:3px;
+}
+.rating_tableNoBordersSize
+{
+    width:40px;
+}
+.rating_yellowBackground
+{
+    background-color: #DADA44;
+}
+.rating_widthTd
+{
+    width:10px;
+}
+/***********************************         
+         END OF RATING 
+***********************************/
+/***********************************
+           SEMITRANSPARENT
+***********************************/
+.semitransparent
+{
+	background-color: black;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.semitransparentScreen
+{
+    left:0;
+    position:absolute;
+    top:0;
+    z-index: 5001;
+}
+.semitransparent_IE6
+{
+	background: transparent url(images/temporaryImg/semitransparent.png) repeat;
+}
+/***********************************
+       END OF SEMITRANSPARENT
+***********************************/
+/***********************************
+            TABLEKIT
+***********************************/
+.tablekit_ascendantBar
+{
+    background: transparent url(images/temporaryImg/bars.gif) 0px -446px no-repeat;
+}
+.tablekit_bar
+{
+    background: transparent url(images/temporaryImg/bars.gif) 0px -393px no-repeat;
+}
+.tableKit_currentColumn
+{
+    text-indent: 10px;
+}
+.tablekit_descendantBar
+{
+    background: transparent url(images/temporaryImg/bars.gif) 0px -419px no-repeat;
+}
+/***********************************
+         END OF TABLEKIT
+***********************************/
+/********************************
+              TABS
+*********************************/
+.tabs_contentTabActive
+{
+    background: transparent url(images/temporaryImg/bars.gif) -2445px -55px no-repeat;
+}
+.tabs_leftCornerActive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -118px -47px no-repeat;
+}
+.tabs_leftCornerActiveInactive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -134px -46px no-repeat;
+}
+.tabs_leftCornerInactive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -102px -47px no-repeat;
+}
+.tabs_leftCornerInactiveActive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -86px -47px no-repeat;
+}
+.tabs_leftCornerInactiveInactive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -70px -46px no-repeat;
+}
+.tabs_rightCornerActive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -186px -47px no-repeat;
+}
+.tabs_rightCornerInactive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -152px -46px no-repeat;
+}
+.tabs_rightLastCornerActive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -203px -47px no-repeat;
+}
+.tabs_rightLastCornerInactive
+{
+    background: transparent url(images/temporaryImg/bigIcons.gif) -169px -46px no-repeat;
+}
+.tabs_sizeCornersImages
+{
+    height: 22px;
+    width: 11px;
+}
+/***********************************
+              END OF TABS
+***********************************/
+/***********************************
+           4. TOP MENU
+***********************************/
+.topMenu_alignHelpPrint
+{
+    margin-top: 6px;
+}
+.topMenu_alignTabs
+{
+    margin-top: 26px;
+}
+.topMenu_alignTopIcons
+{
+    margin-right: 8px;
+}
+.topMenu_helpIcon
+{
+    background: transparent url(images/temporaryImg/icons.gif) -196px -446px no-repeat;
+}
+.topMenu_iconsSize
+{
+    height: 42px;
+    width: 50px;
+}
+.topMenu_printHelpSize
+{
+    height: 38px;
+    width: 39px;
+}
+.topMenu_printIcon
+{
+    background: transparent url(images/temporaryImg/icons.gif) -153px -446px no-repeat;
+}
+.topMenu_spanTitle
+{
+    font-size: 8px;
+    width: 42px;
+}
+.topMenu_WA
+{
+    background: transparent url(images/temporaryImg/icons.gif) -1px 0px no-repeat;
+}
+.topMenu_WA_active
+{
+    background: transparent url(images/temporaryImg/icons.gif) -1px -54px no-repeat;
+}
+.topMenu_WA_ED
+{
+    background: transparent url(images/temporaryImg/icons.gif) -1px -162px no-repeat;
+}
+.topMenu_WA_ED_active
+{
+    background: transparent url(images/temporaryImg/icons.gif) -1px -108px no-repeat;
+}
+.topMenu_WA_PAY
+{
+    background: transparent url(images/temporaryImg/icons.gif) -112px -162px no-repeat;
+}
+.topMenu_WA_PAY_active
+{
+    background: transparent url(images/temporaryImg/icons.gif) -111px -108px no-repeat;
+}
+.topMenu_WA_PT
+{
+    background: transparent url(images/temporaryImg/icons.gif) -56px -162px no-repeat;
+}
+.topMenu_WA_PT_active
+{
+    background: transparent url(images/temporaryImg/icons.gif) -56px -108px no-repeat;
+}
+.topMenu_TM
+{
+    background: transparent url(images/temporaryImg/icons.gif) -285px -330px no-repeat;
+}
+.topMenu_TM_active
+{
+    background: transparent url(images/temporaryImg/icons.gif) -109px -54px no-repeat;
+}
+.topMenu_SC
+{
+    background: transparent url(images/temporaryImg/icons.gif) -163px -1px no-repeat;
+}
+.topMenu_SC_active
+{
+    background: transparent url(images/temporaryImg/icons.gif) -163px -54px no-repeat;
+}
+/***********************************
+          END OF TOP MENU
+***********************************/
+/*********************************
+          TREEHANDLER
+**********************************/
+.treeHandler_alignArrows
+{
+    margin-right:5px;
+}
+.treeHandler_alignTreeLeft
+{
+    margin-left:15px;
+}
+.treeHandler_alignTreeTop
+{
+    margin-top:3px;
+}
+/*********************************
+       END OF TREEHANDLER
+**********************************/
+/***********************************
+              WIDGETS
+***********************************/
+.widgets_contentWidget
+{
+    padding: 0.4em;
+}
+/***********************************
+           END OF WIDGETS
+***********************************/

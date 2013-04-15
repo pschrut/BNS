@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_date_ranges></o_date_ranges>
+  <o_field_settings>
+    <yglui_str_wid_fs_record screen="1">
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="ABBR" fieldlabel="Object abbreviation" fieldsource="" fieldtype="" label_type="V" length="000012" seqnr="02" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="D" fieldid="BEGDA" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000010" seqnr="04" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="Classroom Training" default_value="0001" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="T" fieldid="DELIVERY" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000000" seqnr="07" service_pai="" service_values="" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="D" fieldid="ENDDA" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000010" seqnr="05" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="F" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="T" fieldid="F_SCLAS" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000002" seqnr="11" service_pai="" service_values="" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="A" fieldid="LANGUAGE" fieldlabel="Language" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="08" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="LANG"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="S" fieldid="LOCATION" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000045" seqnr="06" service_pai="" service_values="GET_LOCATION" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="SAP Basic HR" default_value="50003283" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="T" fieldid="PARENT" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000045" seqnr="10" service_pai="" service_values="" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="E" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="T" fieldid="SCLAS" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000002" seqnr="09" service_pai="" service_values="" show_text="I" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="TITLE" fieldlabel="Object name" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="03" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="R" fieldid="TRANSLATION" fieldlabel="Language Key" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="01" service_pai="" service_values="" show_text="B" type="LANG"></yglui_str_wid_fs_field>
+      </fs_fields>
+    </yglui_str_wid_fs_record>
+    <yglui_str_wid_fs_record screen="3">
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="DATE" fieldlabel="Date" fieldsource="T" fieldtype="" label_type="V" length="000010" seqnr="01" service_pai="DAYS_PAI" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="STARTTIME" depend_type="X" display_attrib="MAN" display_group="" fieldformat="H" fieldid="ENDTIME" fieldlabel="End Time" fieldsource="T" fieldtype="" label_type="V" length="000008" seqnr="03" service_pai="" service_values="" show_text="" type="TIMS"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="" fieldid="NDAYS" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000005" seqnr="04" service_pai="" service_values="" show_text="I" type="DEC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="DATE" depend_type="X" display_attrib="MAN" display_group="" fieldformat="H" fieldid="STARTTIME" fieldlabel="Start Time" fieldsource="T" fieldtype="" label_type="V" length="000008" seqnr="02" service_pai="" service_values="" show_text="" type="TIMS"></yglui_str_wid_fs_field>
+      </fs_fields>
+    </yglui_str_wid_fs_record>
+    <yglui_str_wid_fs_record screen="4">
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="MAXIMUM" fieldlabel="Maximum capacity" fieldsource="" fieldtype="" label_type="V" length="000006" seqnr="03" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="MINIMUM" fieldlabel="Minimum capacity" fieldsource="" fieldtype="" label_type="V" length="000006" seqnr="01" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="OPTIMUM" fieldlabel="Optimum capacity" fieldsource="" fieldtype="" label_type="V" length="000006" seqnr="02" service_pai="" service_values="" show_text="" type="DEC"></yglui_str_wid_fs_field>
+      </fs_fields>
+    </yglui_str_wid_fs_record>
+    <yglui_str_wid_fs_record screen="5">
+      <fs_fields>
+        <yglui_str_wid_fs_field default_text="" default_value="EUR" depend_field="EXTERNAL" depend_type="X" display_attrib="OPT" display_group="" fieldformat="S" fieldid="EXTCURR" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000005" seqnr="04" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CUKY"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="EXTERNAL" fieldlabel="External price" fieldsource="" fieldtype="" label_type="V" length="000021" seqnr="03" service_pai="" service_values="" show_text="" type="CURR"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="EUR" depend_field="INTERNAL" depend_type="X" display_attrib="OPT" display_group="" fieldformat="S" fieldid="INTCURR" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000005" seqnr="02" service_pai="" service_values="GET_FIELD_VAL" show_text="B" type="CUKY"></yglui_str_wid_fs_field>
+        <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="INTERNAL" fieldlabel="Internal price" fieldsource="" fieldtype="" label_type="V" length="000021" seqnr="01" service_pai="" service_values="" show_text="" type="CURR"></yglui_str_wid_fs_field>
+      </fs_fields>
+    </yglui_str_wid_fs_record>
+  </o_field_settings>
+  <o_field_values>
+    <yglui_str_wid_record rec_key="E5000328310001E000" screen="1">
+      <hrobject objid="50003283" otype="E" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content buttons="" key_str="30001E 500032831000    1  2009102720091031E         000" rec_index="1" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="ABBR" fieldlabel="Object abbreviation" fieldtechname="SHORT" fieldtseqnr="000000" value="">SAP050</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-10-27"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="DELIVERY" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="2009-10-31"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="F_SCLAS" fieldlabel="" fieldtechname="SCLAS" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LANGUAGE" fieldlabel="Language" fieldtechname="LANGU" fieldtseqnr="000000" value="EN">English</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LOCATION" fieldlabel="" fieldtechname="SOBID" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PARENT" fieldlabel="" fieldtechname="SOBID" fieldtseqnr="000000" value="50000436">SAP Basic HR</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="SCLAS" fieldlabel="" fieldtechname="SCLAS" fieldtseqnr="000000" value="D">Business event type</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TITLE" fieldlabel="Object name" fieldtechname="STEXT" fieldtseqnr="000000" value="">SAP Basic HR</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TRANSLATION" fieldlabel="Language Key" fieldtechname="LANGU" fieldtseqnr="000000" value="EN">English</yglui_str_wid_field>
+          </fields>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="E500032831000F *000" screen="1">
+      <hrobject objid="50003283" otype="E" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content buttons="" key_str="30001E 500032831000       2009090199991231F *       000" rec_index="2" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="ABBR" fieldlabel="Object abbreviation" fieldtechname="SHORT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-09-01"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="DELIVERY" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="F_SCLAS" fieldlabel="" fieldtechname="SCLAS" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LANGUAGE" fieldlabel="Language" fieldtechname="LANGU" fieldtseqnr="000000" value="EN">English</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LOCATION" fieldlabel="" fieldtechname="SOBID" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PARENT" fieldlabel="" fieldtechname="SOBID" fieldtseqnr="000000" value="50000436">SAP Basic HR</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="SCLAS" fieldlabel="" fieldtechname="SCLAS" fieldtseqnr="000000" value="D">Business event type</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TITLE" fieldlabel="Object name" fieldtechname="STEXT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TRANSLATION" fieldlabel="Language Key" fieldtechname="LANGU" fieldtseqnr="000000" value="FR">French</yglui_str_wid_field>
+          </fields>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="E500032831000D *000" screen="1">
+      <hrobject objid="50003283" otype="E" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content buttons="" key_str="30001E 500032831000       2009090199991231D *       000" rec_index="3" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="ABBR" fieldlabel="Object abbreviation" fieldtechname="SHORT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="BEGDA" fieldlabel="" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-09-01"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="DELIVERY" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="ENDDA" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="F_SCLAS" fieldlabel="" fieldtechname="SCLAS" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LANGUAGE" fieldlabel="Language" fieldtechname="LANGU" fieldtseqnr="000000" value="EN">English</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="LOCATION" fieldlabel="" fieldtechname="SOBID" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="PARENT" fieldlabel="" fieldtechname="SOBID" fieldtseqnr="000000" value="50000436">SAP Basic HR</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="SCLAS" fieldlabel="" fieldtechname="SCLAS" fieldtseqnr="000000" value="D">Business event type</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TITLE" fieldlabel="Object name" fieldtechname="STEXT" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="TRANSLATION" fieldlabel="Language Key" fieldtechname="LANGU" fieldtseqnr="000000" value="DE">German</yglui_str_wid_field>
+          </fields>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="E5000328310351000" screen="3">
+      <hrobject objid="50003283" otype="E" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content buttons="" key_str="30001E 500032831035    1  2009102720091031          000" rec_index="1" selected="X">
+          <fields>
+            <yglui_str_wid_field fieldid="NDAYS" fieldlabel="" fieldtechname="NDAYS" fieldtseqnr="000000" value="5">5 </yglui_str_wid_field>
+          </fields>
+          <tcontents>
+            <yglui_str_wid_tcontent seqnr="000001">
+              <fields>
+                <yglui_str_wid_field fieldid="DATE" fieldlabel="Date" fieldtechname="EVDAT" fieldtseqnr="000001" value="2009-10-27"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="ENDTIME" fieldlabel="End Time" fieldtechname="ENDUZ" fieldtseqnr="000001" value="17:00:00"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="STARTTIME" fieldlabel="Start Time" fieldtechname="BEGUZ" fieldtseqnr="000001" value="10:00:00"></yglui_str_wid_field>
+              </fields>
+            </yglui_str_wid_tcontent>
+            <yglui_str_wid_tcontent seqnr="000002">
+              <fields>
+                <yglui_str_wid_field fieldid="DATE" fieldlabel="Date" fieldtechname="EVDAT" fieldtseqnr="000002" value="2009-10-28"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="ENDTIME" fieldlabel="End Time" fieldtechname="ENDUZ" fieldtseqnr="000002" value="17:00:00"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="STARTTIME" fieldlabel="Start Time" fieldtechname="BEGUZ" fieldtseqnr="000002" value="09:00:00"></yglui_str_wid_field>
+              </fields>
+            </yglui_str_wid_tcontent>
+            <yglui_str_wid_tcontent seqnr="000003">
+              <fields>
+                <yglui_str_wid_field fieldid="DATE" fieldlabel="Date" fieldtechname="EVDAT" fieldtseqnr="000003" value="2009-10-29"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="ENDTIME" fieldlabel="End Time" fieldtechname="ENDUZ" fieldtseqnr="000003" value="17:00:00"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="STARTTIME" fieldlabel="Start Time" fieldtechname="BEGUZ" fieldtseqnr="000003" value="09:00:00"></yglui_str_wid_field>
+              </fields>
+            </yglui_str_wid_tcontent>
+            <yglui_str_wid_tcontent seqnr="000004">
+              <fields>
+                <yglui_str_wid_field fieldid="DATE" fieldlabel="Date" fieldtechname="EVDAT" fieldtseqnr="000004" value="2009-10-30"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="ENDTIME" fieldlabel="End Time" fieldtechname="ENDUZ" fieldtseqnr="000004" value="17:00:00"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="STARTTIME" fieldlabel="Start Time" fieldtechname="BEGUZ" fieldtseqnr="000004" value="09:00:00"></yglui_str_wid_field>
+              </fields>
+            </yglui_str_wid_tcontent>
+            <yglui_str_wid_tcontent seqnr="000005">
+              <fields>
+                <yglui_str_wid_field fieldid="DATE" fieldlabel="Date" fieldtechname="EVDAT" fieldtseqnr="000005" value="2009-10-31"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="ENDTIME" fieldlabel="End Time" fieldtechname="ENDUZ" fieldtseqnr="000005" value="12:00:00"></yglui_str_wid_field>
+                <yglui_str_wid_field fieldid="STARTTIME" fieldlabel="Start Time" fieldtechname="BEGUZ" fieldtseqnr="000005" value="09:00:00"></yglui_str_wid_field>
+              </fields>
+            </yglui_str_wid_tcontent>
+          </tcontents>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="E5000328310241000" screen="4">
+      <hrobject objid="50003283" otype="E" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content buttons="" key_str="30001E 500032831024    1  2009102720091031          000" rec_index="1" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="MAXIMUM" fieldlabel="Maximum capacity" fieldtechname="KAPZ3" fieldtseqnr="000000" value="20"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="MINIMUM" fieldlabel="Minimum capacity" fieldtechname="KAPZ1" fieldtseqnr="000000" value="0"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="OPTIMUM" fieldlabel="Optimum capacity" fieldtechname="KAPZ2" fieldtseqnr="000000" value="10"></yglui_str_wid_field>
+          </fields>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+    <yglui_str_wid_record rec_key="E5000328310211000" screen="5">
+      <hrobject objid="50003283" otype="E" plvar=""></hrobject>
+      <contents>
+        <yglui_str_wid_content buttons="" key_str="30001E 500032831021    1  2009102720091031          000" rec_index="1" selected="X" tcontents="">
+          <fields>
+            <yglui_str_wid_field fieldid="EXTCURR" fieldlabel="" fieldtechname="EWAER" fieldtseqnr="000000" value="EUR">European Euro</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="EXTERNAL" fieldlabel="External price" fieldtechname="EKOST" fieldtseqnr="000000" value="500"></yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="INTCURR" fieldlabel="" fieldtechname="IWAER" fieldtseqnr="000000" value="EUR">European Euro</yglui_str_wid_field>
+            <yglui_str_wid_field fieldid="INTERNAL" fieldlabel="Internal price" fieldtechname="IKOST" fieldtseqnr="000000" value="250"></yglui_str_wid_field>
+          </fields>
+        </yglui_str_wid_content>
+      </contents>
+    </yglui_str_wid_record>
+  </o_field_values>
+  <o_screen_buttons>
+    <yglui_str_wid_button action="SCR_LSOIMPS" busid="" disma="M" label_tag="Import Schedule from Course Type" okcode="" screen="3" status="" tarap="" tarty="" type=""></yglui_str_wid_button>
+    <yglui_str_wid_button action="APP_LSOSAVEC" busid="" disma="M" label_tag="Save" okcode="" screen="*" status="" tarap="" tarty="" type=""></yglui_str_wid_button>
+  </o_screen_buttons>
+  <o_widget_screens screenmode="">
+    <yglui_str_wid_screen>
+      <yglui_str_wid_screen all_modifiable="" appid="TM_L_C" dyn_panel="" label_tag="C_OBJ" list_mode="" no_translation="" screen="1" secondary="" selected="X" table_mode=""></yglui_str_wid_screen>
+      <yglui_str_wid_screen all_modifiable="" appid="TM_L_C" dyn_panel="" label_tag="C_SCHED" list_mode="" no_translation="X" screen="3" secondary="" selected="" table_mode=""></yglui_str_wid_screen>
+      <yglui_str_wid_screen all_modifiable="" appid="TM_L_C" dyn_panel="" label_tag="C_CAP" list_mode="" no_translation="X" screen="4" secondary="" selected="" table_mode=""></yglui_str_wid_screen>
+      <yglui_str_wid_screen all_modifiable="" appid="TM_L_C" dyn_panel="" label_tag="C_PRI" list_mode="" no_translation="X" screen="5" secondary="" selected="" table_mode=""></yglui_str_wid_screen>
+    </yglui_str_wid_screen>
+  </o_widget_screens>
+  <labels>
+    <item id="0001" service="" value="General Description"></item>
+    <item id="0002" service="" value="Course Contents"></item>
+    <item id="0003" service="" value="Notes"></item>
+    <item id="0004" service="" value="Extended Course Contents"></item>
+    <item id="023" service="" value="Requires"></item>
+    <item id="026" service="" value="Is held by"></item>
+    <item id="028" service="" value="Imparts"></item>
+    <item id="036" service="" value="Is organized by"></item>
+    <item id="1" service="" value="Object"></item>
+    <item id="2" service="" value="Description"></item>
+    <item id="3" service="" value="Schedule"></item>
+    <item id="4" service="" value="Capacity"></item>
+    <item id="5" service="" value="Pricing"></item>
+    <item id="6" service="" value="Settings"></item>
+    <item id="7" service="" value="Booking Status"></item>
+    <item id="8" service="" value="Static Course Content"></item>
+    <item id="9" service="" value="Qualifications"></item>
+    <item id="A023" service="" value="Requires"></item>
+    <item id="A026" service="" value="Is held by"></item>
+    <item id="A028" service="" value="Imparts"></item>
+    <item id="A036" service="" value="Is organized by"></item>
+    <item id="DELIVERY" service="" value="Delivery Method"></item>
+    <item id="LOCATION" service="" value="Location"></item>
+  </labels>
+  <messages></messages>
+  <webmessage_type></webmessage_type>
+  <webmessage_text></webmessage_text>
+</EWS>

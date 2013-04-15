@@ -1,0 +1,143 @@
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head id="abapdoc_head"> 
+      <META>
+        <STYLE type="text/css">
+    BODY
+{
+}
+TABLE
+{
+	font-size: smaller;
+       margin-right:50px;
+       margin-left:50px;
+	border-collapse: collapse;
+	table-layout: auto;
+}
+.AUTHOR
+{
+	font-size: smaller;
+	text-transform: lowercase;
+	color: gray;
+}
+.SMALL
+{
+	font-size: smaller;
+}
+.LOW
+{
+	text-transform: lowercase;
+}
+TD
+{
+	padding-right: 3px;
+	padding-left: 3px;
+}
+TH
+{
+	border-bottom: gray 1px solid;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding-right: 3px;
+	padding-left: 3px;
+        text-align: left;
+}
+H1
+{
+	font-variant: small-caps;
+	padding-right: 3px;
+	padding-left: 3px;
+       text-align: left;
+}
+H2
+{
+	font-variant: small-caps;
+	color: white;
+	border-right: gray 1px solid;
+	padding-right: 3px;
+	border-top: gray 1px solid;
+	padding-left: 3px;
+	border-left: gray 1px solid;
+	border-bottom: gray 1px solid;
+        text-align: left;
+	background-color: rgb(78,0,100);
+}
+H3
+{
+	font-weight: bold;
+	font-variant: small-caps;
+	padding-right: 3px;
+	padding-left: 3px;
+	border-bottom: rgb(78,0,100) 2px solid;
+        text-align: left;
+}
+H4
+{
+	font-weight: bold;
+	font-variant: small-caps;
+	padding-right: 3px;
+	border-bottom: rgb(78,0,100) 1px dotted;
+	padding-left: 3px;
+        text-align: left;
+}
+.commentLine
+{
+	color: blue;
+}
+.TD-KEY
+{
+}
+.TABLE-NESTED
+{	
+	font-size: smaller;
+}
+    </STYLE>
+      </META>
+        <title>.:ABAPdoc:.</title> 
+        <script src="standard/web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+        <script type="text/javascript" src="standard/origin.js"></script> 
+<script>
+    /**
+    *@param strParamName {String} Parameter name to retrieve
+    *@description obtains get parameters by name
+    *@returnsString
+    */
+    function getURLParam(strParamName) {
+        var strHref = window.location.href;
+        var params = strHref.toQueryParams();
+        var firstPartParams = $H(strHref.toQueryParams());
+        var secondPartParams = $H(strHref.substr(strHref.indexOf("#") + 1).toQueryParams());
+        var result = firstPartParams.merge(secondPartParams);
+        return (result.get(strParamName)) ? result.get(strParamName) : '';
+    }
+    function callxdoc() {
+        var reqCla = getURLParam('cla');
+        var reqTyp = getURLParam('typ');
+        if (getURLParam('cla') == "") { reqCla = "YGLUI_FWK" };
+        if (getURLParam('typ') == "") { reqTyp = "DEVC" };
+        $("results").update("Requesting abapdoc for " + reqCla + " (" + reqTyp + ")");
+        $("XMLOUT").value = "";
+        /*var __hostName = escape("http://eu2r3edc.euhreka.erp:8002/sap/bc/yglui_httpentry?sap-client=300");*/
+        new Ajax.Request(__hostName, {
+            method: 'post',
+            postBody: "<EWS><SERVICE>XDOC</SERVICE><PARAM>"
+                      + "<CLA>" + reqCla + "</CLA>"
+                      + "<TYP>" + reqTyp + "</TYP></PARAM></EWS>#READ",
+            onSuccess: function(transport) {
+                $("XMLOUT").insert(transport.responseText);
+                $("results").update("");
+            },
+            onFailure: function() {
+                $("results").insert("<p>request failed</p>");
+                $("results").insert("<p>address: " + $("SAPCALLER_ADDRESS").value + "</p>");
+            }
+        });
+    }
+    
+</script> 
+</head>
+    <body id="abapdoc" onload="javascript:callxdoc();"> 
+                <div id="XMLOUT"></div> 
+                <div id="results"></div> 
+    </body> 
+</html>
+    

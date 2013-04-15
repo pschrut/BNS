@@ -1,0 +1,855 @@
+
+/**************************************
+    GENERAL STYLES FRAMEWORK
+**************************************/
+#fwk_3
+{
+    width:519px;
+}
+.framework_payroll_running
+{
+    height:34px;
+}
+/**********End of general styles Framwork**********/
+
+
+/*************************************************
+    COMMON STYLES ALL APPLICATIONS / MODULES
+**************************************************/
+.applications_container_div
+{
+    float:none;
+}
+/********End of common styles all applications and modules*******/
+
+/**************************
+          MODULES
+***************************/
+.datePicker_icon_box
+{
+	margin-top: 3px;
+}
+/*****************************
+        AUTOCOMPLETER
+******************************/
+.autocompleter_container .autocompleter_button_showall
+{
+    background-position-y:0px;
+    height:20px;
+}
+div.autocompleter_autocomplete
+{
+    margin:     0px;
+    position:   absolute;
+    clear:      both;
+}
+div.autocompleter_autocomplete ul
+{
+	height: auto;
+}
+div.autocompleter_form_container
+{
+	display: inline-block;
+}
+div.autocompleter_not_overflow ul
+{
+	padding-right: 0px;
+}
+/**********End of Autocompleter**********/
+
+/*****************************
+        FIELD DISPLAYER
+******************************/
+.fieldDisplayer_input
+{
+    margin-left: 1px;
+}
+.fieldDisplayer_select
+{
+    margin-left: 1px;
+}
+/**********End of Field Displayer**********/
+
+/*********************
+        MENUS
+**********************/
+
+/*********************
+        INFOPOPUP
+**********************/
+.moduleInfoPopUp_closeButton
+{
+	/*float:left;*/
+}
+.moduleInfoPopUp_stdButton_div_left
+{
+    margin-top:10px;
+}
+div#idDivInfoPopUpContainer div.autocompleter_autocomplete{
+    position: absolute;
+}    
+/******* End of INFOPOPUP *********/
+
+/*************** 
+    LEFT MENUS
+****************/
+div.my_selections_employeeColor
+{
+	margin-right: auto;
+}
+div.my_selections_employeeColor_noId
+{
+	margin-top: -16px;
+}
+div.my_selections_employeeIdDiv
+{
+	width: 35px;
+}
+li.my_selections_employeeLi
+{
+	width: 207px;
+}
+.SCM_PoolTable_actions_before {
+	float: left;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+#popupUploadForm {
+	width: 300px;
+}
+.SCM_searchTicket_NoRadio {
+	width: 10px;
+	height: 10px;
+	float: left;
+}
+.SCM_searchTicket_NoRadio {
+	width: 10px;
+	height: 10px;
+	float: left;
+}
+.SCM_searchTicket_FormRadio {
+	width: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.SCM_FindEmpLine {
+	clear: both;
+}
+/**********End of Left Menu**********/
+/**********End of Menus**********/
+
+/*************************
+        MULTISELECT
+**************************/
+
+.multiSelect_alignClose
+{
+    margin-left:2px;
+}
+.multiSelect_closeButton
+{
+	float:left;
+	clear:right;
+}
+/**********End of Multi Select********/
+/************************************
+        MULTI SELECT SEARCH BOX
+************************************/
+div.multiselectSearchbox_autocomplete ul
+{
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+div.multiselectSearchbox_expand_width span.multiselectSearchbox_delete
+{
+	left: -10px;
+	position: relative;
+}
+div.multiselectSearchbox_expand_width table.multiselectSearchbox_container_table
+{
+	margin-left: 3px;
+}
+div.multiselectSearchbox_expand_width td.multiselectSearchbox_containerTdLeft
+{
+	padding-right: 11px;
+	width: 0px;
+}
+div.multiselectSearchbox_expand_width td.multiselectSearchbox_containerTdRight
+{
+	padding-left: 5px;
+	width: 0px;
+}
+div.multiselectSearchbox_form_container
+{
+	display: inline-block;
+}
+div.multiselectSearchbox_not_overflow ul
+{
+	padding-right: 0px;
+}
+/**********End of Multi Select Search Box**********/
+
+/*************************
+          WIDGETS
+**************************/
+
+.widget_w {
+	padding-bottom: 14px;
+	padding-top: 8px;
+}
+
+/**********End of Widgets*********/
+
+/******************************
+           TREEHANDLER
+*******************************/
+.treeHandler_input
+{
+    margin: -2px 0px 0px;
+}
+/**********End of TreeHandler**********/
+
+/************End of MODULES*************/
+
+/**************************
+        APPLICATIONS
+***************************/
+.applications_popUp_container_div
+{
+    margin-right:40px;
+}
+/**************************
+           ADVS
+**************************/
+ #application_advs_bottom
+{
+    margin-left:430px;
+    width: 150px;      
+}
+
+.ADVS_backButton{
+    margin-right:165px;
+}
+
+.advsSearchLinks{
+    border: 1px solid #DCD2CE;
+	float: left;
+	width: 110px;
+	clear:both;
+	margin-top: 6px;
+	margin-right: 22px;
+	padding-bottom:3px;
+	padding-left:5px;
+}
+/**********End of Advs**********/
+
+/***************************
+            BOOK
+***************************/
+#application_book_cancelPre_content
+{
+	margin-left: 20px;
+}
+.application_book_cancelBook_content
+{
+	margin-left: 20px;
+}
+.application_book_cancelPre_left_column
+{
+	width: 150px;
+}
+.application_book_cancelPre_right_column
+{
+	width: 200px;
+}
+.application_book_radio_button
+{
+	float: none;
+	margin-top: 15px;
+}
+.book_application_content_schedule_viewDetails
+{
+	margin-left: 155px;
+}
+.book_application_label_contain
+{
+	margin-left: 12px;
+	width: 700px;
+}
+.book_application_label_for
+{
+	margin-top: 14px;
+}
+.book_application_main_text
+{
+	float: none;
+	margin-top: 12px;
+}
+.book_application_main_text2
+{
+	float: none;
+}
+.book_application_main_viewDetails
+{
+	float: none;
+}
+.book_application_mass
+{
+	margin-top: 10px;
+	width: auto;
+}
+.book_application_table
+{
+	width: 700px;
+}
+.book_application_thLang
+{
+	width: 80px;
+}
+.book_application_thWait
+{
+	width: 80px;
+}	
+/**********End of Book**********/
+
+/*************************
+        CALENDAR 
+ *************************/
+#CAL_previousMonth, #CAL_previousYear, #CAL_nextMonth, #CAL_nextYear
+{
+	height: 22px;
+	width: 9px;
+}
+.applicationCAL_filterOptions
+{
+	top: -25px;
+}
+div.CAL_acronymWrapper
+{
+	width: 82%;
+}
+div.CAL_eventText acronym
+{
+	float: left;
+	overflow: hidden;
+}
+div#CAL_controlsContainer {
+	height: 50px;
+}
+.CAL_optionList, .applicationTeamCalendar_optionList, .FastEntryMenu_optionList {
+	margin-left: 25px;
+}
+
+/**********End of Calendar**********/
+
+/********************************
+            TIME ENTRY
+********************************/
+
+#applicationtimeEntryScreen_body, #applicationfastEntryScreen_body {
+    padding-bottom: 7px;
+}
+#applicationtimeEntryScreen_errorTable {
+    margin-top: 5px;
+}
+.applicationtimeEntryScreen_employeeSelectionFast, .applicationfastEntryScreen_employeeSelectionFast {
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+/*******End of Time Entry******/
+
+/*********************************
+        CURRICULUM
+*********************************/
+.application_bookCurr_book_label_for
+{
+	margin-top: 11px;
+}
+.application_bookCurr_book_names {
+	float: left;
+	margin-left: 3px;
+	text-align: left;
+	width: auto;
+	margin-top: 18px;
+}
+.application_bookCurr_book_title
+{
+	margin-top: 20px;
+}
+.application_bookCurr_book_waiting
+{
+	clear: right;
+	float: none;
+	text-align: left;
+}
+/**********End of Curriculum**********/
+
+/******************************
+          DELEGATIONS
+*******************************/
+.applicationDEL_buttonsDiv
+{
+	margin-left: 0px;
+}
+.applicationDEL_checkButtonSelectAll
+{
+	left: -340px;
+	top: 6px;
+}
+.applicationDEL_divAddNewDelegationCheckboxSpecific
+{
+	margin-top: 2px;
+	text-indent: -10px;
+}
+.applicationDEL_divCurrentDelegations
+{
+	margin-left: 0px;
+}
+.applicationDEL_divCurrentDelegationsTitle
+{
+	margin-left: 0px;
+}
+.applicationDEL_divDelegatedEmployeesTitle
+{
+	margin-left: 0px;
+}
+.applicationDEL_divMailCheckboxRemoveDelegation
+{
+	margin-top: -2px;
+	text-indent: -10px;
+}
+.applicationDEL_divRadioAddNewDelegation
+{
+	margin-top: 1px;
+	text-indent: -4px;
+}
+.applicationDEL_divTextCheckboxAddNewDelegation
+{
+	margin-top: -2px;
+	text-indent: -10px;
+}
+.applicationDEL_mailRemoveButtonDiv
+{
+	margin-top: 5px;
+}
+.applicationDEL_main_text
+{
+	margin-left: 0px;
+}
+/**********End of Delegations**********/
+
+/********************************
+          FIELDS PANEL
+********************************/
+.fieldsPanel_button_next{   
+    margin-left:6px;   
+}
+.fieldsPanel_mainRadioGroup{
+    margin-bottom:40px;    
+}
+.fieldsPanel_DisplayRadioContent
+{
+	width: 95%;	
+}
+.fieldsPanel_group
+{	
+	margin-bottom: 22px;
+	margin-top: 22px;		
+}
+.fieldsPanel_radioButton
+{	
+	margin-top: 3px;
+}
+.fieldsPanel_radioGroup
+{	
+	width: 100%;
+}
+/**********End of Fields Panel**********/
+
+/***************************
+         HISTORY
+***************************/
+#application_history_content
+{
+	margin-left: 10px;
+}
+#application_history_filter_content
+{
+	margin-left: 10px;
+}
+#application_history_filter_link
+{
+	margin-left: 20px;
+}
+#application_history_price
+{
+	margin-left: 10px;
+}
+/**********End of History**********/
+
+/*****************************
+            INBOX
+******************************/
+#applicationInbox_results
+{
+	margin-left: 14px;
+}
+.applicationInbox_checkbox
+{
+	margin-left: 10px;
+	margin-top: 21px;
+}
+.applicationInbox_comments
+{
+	margin-bottom: 2px;
+}
+.applicationInbox_tdCheckbox
+{
+	margin-top: 3px;
+}
+/**********End of Inbox**********/
+
+/**************************
+        LIST CALENDAR
+***************************/
+#applicationlistCalendar_content {
+    height:       58px;
+}
+#listCalendar_clearBoth {
+    font-size: 0;
+}
+/**********End of List Calendar**********/
+
+/******************************
+            OM
+******************************/
+/************************
+   OM DELETE DELIMIT
+*************************/
+.OM_datePickerDiv
+{
+	margin-right: 70px;
+	margin-top: 15px;
+	width: 150px;
+}
+.OM_deleteDelimit_ButtonsDiv
+{
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+/**********End of Delete Delimit**********/
+/********************************
+           OM DISPLAY
+********************************/
+#OMdisplay_backToRoot
+{
+	left: 10px;
+}
+.OMdisplay_widget_initialInfo_arrow_image
+{
+	margin-top: 5px;
+}
+.OMdisplay_widget_initialInfo_arrowD_image
+{
+	margin-top: 6px;
+}
+.OMdisplay_widget_initialInfo_arrowU_image
+{
+	margin-top: 4px;
+}
+.OMdisplay_widget_rightStaff
+{
+	float: none;
+}
+.OM_fieldDispSize {
+	width: 25%;
+}
+/**********End of OM Display**********/
+/********************************
+   OM HOLDER ASSIGNMENTS
+********************************/
+.OMholderAssign_create
+{
+    margin-right:120px;
+}
+/**********End of OM Holder Assignments**********/
+/************************
+       OM MAINTAIN
+************************/
+#OM_Maintain_showLegend_link
+{
+	padding-top: 0px;
+}
+.OM_AdvSearch
+{
+	margin-right: 24px;
+}
+.OM_divCB
+{
+	margin-top: 12px;
+}
+.OM_Maintain_legend_icons_div
+{
+	margin-left: 160px;
+}
+/**********End of Maintain**********/
+/*******************************
+       OM MASS TRANSLATION
+********************************/
+
+#OM_MassTrans_title
+{
+    width:250px;
+}
+/**********End of Mass Translation**********/
+/********************************
+   OM POSITION ASSIGNMENTS
+********************************/
+.OMposAssign_details_autocompleters {
+    float:        none;
+}
+.OMposAssign_details_value {
+    float:        none;
+}
+/**********End of OM Position Assignments**********/
+/**************End of OM**************/
+
+/**************************
+        PAYSLIP
+**************************/
+.applicationPAY_content_year div
+{
+    padding-bottom:0px;
+}
+/**********End of Payslip**********/
+
+/********************************
+          PERFORMANCE
+********************************/
+.PFM_delete_cross
+{
+    margin-top:0px;
+}
+#PFM_devPlanGeneralButtons
+{
+    margin-right:20px;
+}
+#PFM_JobProfileGeneralButtons
+{
+	margin-right: 20px;
+}
+#virtualDocs_tableTeamOv
+{
+	margin-left: 10px;
+}
+.PFM_aligningWidget
+{
+	float: left;
+	margin-left: -20px;
+	text-align: left;
+	width: auto;
+}
+.PFM_DashboardLegend
+{
+	margin-left: 20px;
+}
+.PFM_detailsCss
+{
+	float: none;
+}
+.PFM_JobProfileLegend
+{
+	margin-left: 40px;
+}
+.PFM_ShowDocsGeneralButons
+{
+	margin-right: 45px;
+}
+.PFM_ShowDocsSaveChanges
+{
+    margin-left:35px;
+    margin-top:0px;
+}
+.PFM_langKey{
+    margin-bottom:12px;
+    margin-top:12px;
+}
+
+/**********End of Performance**********/
+
+/**************************
+        PREBOOK
+**************************/
+.application_prebook_footer 
+{
+    right: -280px;
+}
+/**********End of Prebook**********/
+
+/************************
+          QUOTA
+*************************/
+.quota_alignTable
+{
+    margin-left:6px;
+}
+.quota_alignText
+{
+    margin-left: 6px;
+}
+/**********End of Quota**********/
+
+/********************************
+        TEAM CALENDAR
+********************************/
+#applicationTeamCalendar_filterLabel
+{
+	width: 160px;
+}
+#applicationTeamCalendar_linkSelectAll
+{
+	float: none;
+}
+#applicationTeamCalendar_outer
+{
+	height: 58px;
+}
+.applicationTeamCalendar_cell_moreEvents
+{
+	left: 18px;
+}
+.applicationTeamCalendar_closeButton
+{
+	margin-left: 0px;
+	margin-top: 5px;
+}
+.applicationTeamCalendar_textInMiddleButton
+{
+	margin-top: 11px;
+}
+.applicationTeamCalendar_textInMiddleName
+{
+	left: 4px;
+	margin-top: 11px;
+	padding-top: 0px;
+}
+/**********End of Team Calendar**********/
+
+/**********End of APPLICATIONS**********/
+
+/*****************************
+********DEPRECATED??**********         
+******************************/
+
+/************************ 
+        LEARNING 
+*************************/
+.application_inProgress_table 
+{
+    padding-left:0px;
+}
+.application_catalog_textBox
+{
+    margin-left:10px;
+}
+.application_catalog_content_table{
+    margin-left:0px;
+    padding-top:15px;
+}
+/**********End of Learning**********/
+
+/**********End of Deprecated??**********/
+/*************************** 
+        TIMESHEET 
+***************************/
+
+#applicationtimeSheet_body {
+    margin-top: 20px;
+}
+.applicationtimeSheet_element_hoursInput {
+    width: 30px;
+}
+.applicationtimeSheet_element_targetDiv {
+    width: 27px;
+}
+.applicationtimeSheet_errorMessageDiv {
+    margin: 20px 20px 0px 0px;
+}
+
+/******** End of Timesheet *******/
+
+/**********PCR*****************/
+.PCR_SearchButton {
+    margin-top:0px;
+}
+.wizard_container_class {
+    margin-top:0px;
+}
+.PCR_lastName {
+    float:none;
+}
+.PCR_employeeDetails {
+    float:none;
+}
+.PCR_ContainerdinamicButtons {
+    margin-right:45px;
+}
+.application_pcr_changeButtons {
+    margin-right:45px;
+}
+.PCR_column0_width {
+    width: 665px;
+}
+.PCR_column2 {
+    margin-right: 22px;
+}
+.PCR_column0 {
+    clear: none;
+}
+/*********End of PCR***********/
+
+/*******Benefits***************/
+.auto_width
+{
+    width:auto !important;
+}
+/***********************************
+     Onboarding style
+***********************************/
+.Onb_search{
+    margin-left:7px;
+}
+/**********************************
+    END OF Onboarding style
+***********************************/
+
+/****************************
+   TIME SCHEDULE VISUALIZER
+*****************************/
+.timeScheduleVisualizer_labelsClockin {
+    clear: both;
+    height: 15px;
+    margin: 0px;
+    text-align:left;
+    padding-bottom: 10px;
+    font-size: 11px;
+}
+.timeScheduleVisualizer_clocking {
+    border-left: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-top: -6px;
+    float: left;
+    height: 17px;
+}
+/******** End of Time Schedule Visualizer *******/
+
+
+/**********PDC*****************/
+.PDC_employeeMessageLeft {    
+    margin-left:23px;
+}
+
+/*********End of PDC***********/

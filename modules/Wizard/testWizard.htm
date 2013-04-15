@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Wizard</title>
+
+    <script src="../../standard/web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+    <script src="../../standard/web_frameworks/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+    <script src="../../standard/origin.js" type="text/javascript"></script>
+    <script src="../../standard/web_frameworks/datejs/date.js" type="text/javascript"></script><!-- Necessary for the DatePicker -->
+    <script src="../../standard/web_frameworks/wz_jsgraphics.js" type="text/javascript"></script>
+    <script src="../buttonDisplayer/megaButtonDisplayer.js" type="text/javascript"></script>
+    <script src="Wizard.js" type="text/javascript"></script>
+    <link href="../../css/CSS2.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+            .wizardModuleDiv{
+                position:absolute;
+                top:100px;
+                left:100px;
+                width:400px;  
+            }
+    </style>
+</head>
+<body>
+<div id='main_frame'></div>
+<script type="text/javascript">
+    document.observe('EWS:testButtonClicked', function(event) {
+        var args = getArgs(event);
+        var currentStep = args.currentStep;
+        if(args.action){
+            switch(args.action){//button clicked
+                case 'previous' :
+                    var previous = wizard.getPreviousStep(currentStep);
+                    wizard.insertHtml('text in step '+ previous, previous, '<span>Title'+previous+'</span>');//in a real app, there would be a check, if visited, just go to the step without inserting html
+                    //wizard.goToStep(previous);
+                break;
+                case 'next' :
+                    var next = wizard.getNextStep(currentStep);
+                    wizard.insertHtml('text in step '+ next, next,'<span>Title'+next+'</span>');//in a real app, there would be a check, if visited, just go to the step without inserting html
+                    //wizard.goToStep(next);
+                break;
+                default:
+                    alert('action: '+args.action);
+            }
+        }
+        if(args.nextStep){//step clicked
+            wizard.insertHtml('text in step '+ args.nextStep, args.nextStep,'<span>Title'+args.nextStep+'</span>');//in a real app, there would be a check, if visited, just go to the step without inserting html
+            //wizard.goToStep(args.nextStep);
+        }
+    } .bindAsEventListener(this));
+    var div = new Element('div', { 'id': 'TestDiv', 'class': 'wizardModuleDiv' });
+    $('main_frame').insert(div);
+    var topButtons = $H({});
+    var normalButtons = $H({}); 
+    topButtons.set('WIZARD01', { mandatory: false,
+      visited: false, order: 1//optional attribute
+    });
+    topButtons.set('WIZARD02', { mandatory: true,
+      visited: false, order: 2
+    });
+    topButtons.set('WIZARD03', { mandatory: false,
+      visited: false, order: 3
+    });
+    topButtons.set('WIZARD04', { mandatory: true,
+      visited: false, order: 4
+    });
+    var arrayOfButtons = new Array();
+    arrayOfButtons.push({ action: "next", disma: "M", label_tag: "Next", okcode: "", screen: "*", tarap: "PFM_MUP", tarty: "A", type: "" });
+    arrayOfButtons.push({ action: "previous", disma: "M", label_tag: "Previous", okcode: "", screen: "*", tarap: "PFM_MUP", tarty: "A", type: "" });
+    arrayOfButtons.push({ action: "APP_PFMGOTOMUP", disma: "M", label_tag: "Details", okcode: "", screen: "*", tarap: "PFM_MUP", tarty: "A", type: "" });
+    var jsonButton = { yglui_str_wid_button: arrayOfButtons };
+    var jsonButtonPath = { o_screen_buttons: jsonButton };
+    jsonButtonPath.o_screen_buttons.yglui_str_wid_button.each(function(button){
+            normalButtons.set(button.label_tag, {
+            data: button
+        })
+    }.bind(this));
+    var wizard = new Wizard({
+        topButtons: topButtons,
+        normalButtons: normalButtons,
+        container: div,
+        //startStep: 'WIZARD01',
+        events: $H({ onClicked: 'EWS:testButtonClicked'})
+    }); 
+    wizard.insertHtml('text in step WIZARD01', 'WIZARD01', '<span>Title1</span>');
+</script>
+</body>
+</html>

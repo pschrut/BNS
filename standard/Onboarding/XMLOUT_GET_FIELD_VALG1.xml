@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_records_found>4</o_records_found> 
+  <o_values>
+    <item id="0001" service="" value="Brussels" /> 
+    <item id="0002" service="" value="Antwerp" /> 
+    <item id="0003" service="" value="Gent" /> 
+    <item id="0004" service="" value="Bergen" />
+  </o_values>
+  <labels /> 
+  <messages/>
+</EWS>

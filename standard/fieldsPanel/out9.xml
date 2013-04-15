@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="1">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="X" display_attrib="MAN" display_group="" fieldformat="S" fieldid="ANRED" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000001" seqnr="01" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="X" display_attrib="OPT" display_group="" fieldformat="V" fieldid="ANZKD" fieldlabel="" fieldsource="" fieldtype="S" label_type="" length="000004" seqnr="14" service_pai="" service_values="" show_text="" type="DEC">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="16" service_pai="" service_values="" show_text="" type="DATS">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="9999-12-31" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="ENDDA" fieldlabel="End Date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="17" service_pai="" service_values="" show_text="" type="DATS">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="S" fieldid="FAMST" fieldlabel="Marital Status" fieldsource="" fieldtype="S" label_type="V" length="000001" seqnr="13" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="GBDAT" fieldlabel="Date of birth" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="04" service_pai="" service_values="" show_text="" type="DATS">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="A" fieldid="GBLND" fieldlabel="Country of Birth" fieldsource="" fieldtype="S" label_type="V" length="000003" seqnr="11" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="GBORT" fieldlabel="Birthplace" fieldsource="" fieldtype="S" label_type="V" length="000040" seqnr="10" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="INITS" fieldlabel="Initials" fieldsource="" fieldtype="S" label_type="V" length="000010" seqnr="09" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="MAIL_PRIVATE" fieldlabel="" fieldsource="" fieldtype="S" label_type="" length="000241" seqnr="15" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="MAIL_PROF" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000241" seqnr="07" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="NATIO" depend_type="X" display_attrib="MAN" display_group="" fieldformat="I" fieldid="NACHN" fieldlabel="Last name" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="02" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="NAME2" fieldlabel="Name at Birth" fieldsource="" fieldtype="S" label_type="V" length="000040" seqnr="08" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="A" fieldid="NATI2" fieldlabel="Other nationality" fieldsource="" fieldtype="S" label_type="V" length="000003" seqnr="12" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="NATIO" fieldlabel="Nationality" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="05" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="English" default_value="E" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="SPRSL" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000002" seqnr="06" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="LANG">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="NACHN" depend_type="X" display_attrib="MAN" display_group="" fieldformat="I" fieldid="VORNA" fieldlabel="First name" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="03" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="TRANSLATION" fieldlabel="" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="03" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>
+        <yglui_str_wid_fs_record screen="2">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="X" display_attrib="MAN" display_group="" fieldformat="S" fieldid="ANRED" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000001" seqnr="01" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="X" display_attrib="OPT" display_group="" fieldformat="V" fieldid="ANZKD" fieldlabel="" fieldsource="" fieldtype="S" label_type="" length="000004" seqnr="14" service_pai="" service_values="" show_text="" type="DEC">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="BEGDA" fieldlabel="Start Date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="16" service_pai="" service_values="" show_text="" type="DATS">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="9999-12-31" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="ENDDA" fieldlabel="End Date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="17" service_pai="" service_values="" show_text="" type="DATS">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="S" fieldid="FAMST" fieldlabel="Marital Status" fieldsource="" fieldtype="S" label_type="V" length="000001" seqnr="13" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="GBDAT" fieldlabel="Date of birth" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="04" service_pai="" service_values="" show_text="" type="DATS">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="A" fieldid="GBLND" fieldlabel="Country of Birth" fieldsource="" fieldtype="S" label_type="V" length="000003" seqnr="11" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="GBORT" fieldlabel="Birthplace" fieldsource="" fieldtype="S" label_type="V" length="000040" seqnr="10" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="INITS" fieldlabel="Initials" fieldsource="" fieldtype="S" label_type="V" length="000010" seqnr="09" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="MAIL_PRIVATE" fieldlabel="" fieldsource="" fieldtype="S" label_type="" length="000241" seqnr="15" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="MAIL_PROF" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000241" seqnr="07" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="NATIO" depend_type="X" display_attrib="MAN" display_group="" fieldformat="I" fieldid="NACHN" fieldlabel="Last name" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="02" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="NAME2" fieldlabel="Name at Birth" fieldsource="" fieldtype="S" label_type="V" length="000040" seqnr="08" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="A" fieldid="NATI2" fieldlabel="Other nationality" fieldsource="" fieldtype="S" label_type="V" length="000003" seqnr="12" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="NATIO" fieldlabel="Nationality" fieldsource="" fieldtype="" label_type="V" length="000003" seqnr="05" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="CHAR">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="English" default_value="E" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="A" fieldid="SPRSL" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000002" seqnr="06" service_pai="" service_values="GET_FIELD_VAL" show_text="I" type="LANG">
+                </yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="NACHN" depend_type="X" display_attrib="MAN" display_group="" fieldformat="I" fieldid="VORNA" fieldlabel="First name" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="03" service_pai="" service_values="" show_text="" type="CHAR">
+                </yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>
+    </o_field_settings>
+
+
+
+
+
+    <o_field_values>
+        <yglui_str_wid_record rec_key="P_300004290002000" screen="1">
+            <contents>
+                <yglui_str_wid_content key_str="300004290002       9999123120090701000" rec_index="1" selected="X" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ANRED" fieldlabel="" fieldtechname="ANRED" fieldtseqnr="000000" value="3">
+                            Miss
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ANZKD" fieldlabel="" fieldtechname="ANZKD" fieldtseqnr="000000" value="0">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-07-01">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="FAMST" fieldlabel="Marital Status" fieldtechname="FAMST" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBDAT" fieldlabel="Date of birth" fieldtechname="GBDAT" fieldtseqnr="000000" value="1980-01-14">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBLND" fieldlabel="Country of Birth" fieldtechname="GBLND" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBORT" fieldlabel="Birthplace" fieldtechname="GBORT" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="INITS" fieldlabel="Initials" fieldtechname="INITS" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="MAIL_PRIVATE" fieldlabel="" fieldtechname="USRID_LONG" fieldtseqnr="000000" value="TEST@GMAIL.COM">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="MAIL_PROF" fieldlabel="" fieldtechname="USRID_LONG" fieldtseqnr="000000" value="UPDATE4@ARINSO.COM">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NACHN" fieldlabel="Last name" fieldtechname="NACHN" fieldtseqnr="000000" value="Mary">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NAME2" fieldlabel="Name at Birth" fieldtechname="NAME2" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NATI2" fieldlabel="Other nationality" fieldtechname="NATI2" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NATIO" fieldlabel="Nationality" fieldtechname="NATIO" fieldtseqnr="000000" value="FK">
+                            British
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="SPRSL" fieldlabel="" fieldtechname="SPRSL" fieldtseqnr="000000" value="EN">
+                            English
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="VORNA" fieldlabel="First name" fieldtechname="VORNA" fieldtseqnr="000000" value="James">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRANSLATION" fieldlabel="" fieldtechname="TRANSLATION" fieldtseqnr="000000" value="EN">
+                        </yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="REC_PDCHANGEPERSDET" busid="" disma="" label_tag="Change" okcode="MOD" screen="" tarap="" tarty="" type="MOD">
+                        </yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+        <yglui_str_wid_record rec_key="P_300004290002000" screen="1">
+            <contents>
+                <yglui_str_wid_content key_str="300004290002       9999123120090701000" rec_index="1" selected="X" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ANRED" fieldlabel="" fieldtechname="ANRED" fieldtseqnr="000000" value="3">
+                            Miss
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ANZKD" fieldlabel="" fieldtechname="ANZKD" fieldtseqnr="000000" value="0">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-07-01">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="FAMST" fieldlabel="Marital Status" fieldtechname="FAMST" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBDAT" fieldlabel="Date of birth" fieldtechname="GBDAT" fieldtseqnr="000000" value="1980-01-14">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBLND" fieldlabel="Country of Birth" fieldtechname="GBLND" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBORT" fieldlabel="Birthplace" fieldtechname="GBORT" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="INITS" fieldlabel="Initials" fieldtechname="INITS" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="MAIL_PRIVATE" fieldlabel="" fieldtechname="USRID_LONG" fieldtseqnr="000000" value="TEST@GMAIL.COM">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="MAIL_PROF" fieldlabel="" fieldtechname="USRID_LONG" fieldtseqnr="000000" value="UPDATE4@ARINSO.COM">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NACHN" fieldlabel="Last name" fieldtechname="NACHN" fieldtseqnr="000000" value="Mary">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NAME2" fieldlabel="Name at Birth" fieldtechname="NAME2" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NATI2" fieldlabel="Other nationality" fieldtechname="NATI2" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NATIO" fieldlabel="Nationality" fieldtechname="NATIO" fieldtseqnr="000000" value="FK">
+                            British
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="SPRSL" fieldlabel="" fieldtechname="SPRSL" fieldtseqnr="000000" value="EN">
+                            English
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="VORNA" fieldlabel="First name" fieldtechname="VORNA" fieldtseqnr="000000" value="James">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRANSLATION" fieldlabel="" fieldtechname="TRANSLATION" fieldtseqnr="000000" value="ES">
+                        </yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="REC_PDCHANGEPERSDET" busid="" disma="" label_tag="Change" okcode="MOD" screen="" tarap="" tarty="" type="MOD">
+                        </yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+        <yglui_str_wid_record rec_key="P_300004290002002" screen="2">
+            <contents>
+                <yglui_str_wid_content key_str="300004290002       9999123120090701000" rec_index="1" selected="X" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ANRED" fieldlabel="" fieldtechname="ANRED" fieldtseqnr="000000" value="3">
+                            Miss
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ANZKD" fieldlabel="" fieldtechname="ANZKD" fieldtseqnr="000000" value="0">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="BEGDA" fieldlabel="Start Date" fieldtechname="BEGDA" fieldtseqnr="000000" value="2009-07-01">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDA" fieldlabel="End Date" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="FAMST" fieldlabel="Marital Status" fieldtechname="FAMST" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBDAT" fieldlabel="Date of birth" fieldtechname="GBDAT" fieldtseqnr="000000" value="1980-01-14">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBLND" fieldlabel="Country of Birth" fieldtechname="GBLND" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GBORT" fieldlabel="Birthplace" fieldtechname="GBORT" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="INITS" fieldlabel="Initials" fieldtechname="INITS" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="MAIL_PRIVATE" fieldlabel="" fieldtechname="USRID_LONG" fieldtseqnr="000000" value="TEST@GMAIL.COM">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="MAIL_PROF" fieldlabel="" fieldtechname="USRID_LONG" fieldtseqnr="000000" value="UPDATE4@ARINSO.COM">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NACHN" fieldlabel="Last name" fieldtechname="NACHN" fieldtseqnr="000000" value="Mary">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NAME2" fieldlabel="Name at Birth" fieldtechname="NAME2" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NATI2" fieldlabel="Other nationality" fieldtechname="NATI2" fieldtseqnr="000000" value="">
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="NATIO" fieldlabel="Nationality" fieldtechname="NATIO" fieldtseqnr="000000" value="FK">
+                            British
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="SPRSL" fieldlabel="" fieldtechname="SPRSL" fieldtseqnr="000000" value="EN">
+                            English
+                        </yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="VORNA" fieldlabel="First name" fieldtechname="VORNA" fieldtseqnr="000000" value="James">
+                        </yglui_str_wid_field>
+                    </fields>
+                    <buttons>
+                        <yglui_str_wid_button action="REC_PDCHANGEPERSDET" busid="" disma="" label_tag="Change" okcode="MOD" screen="" tarap="" tarty="" type="MOD">
+                        </yglui_str_wid_button>
+                    </buttons>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+    <o_screen_buttons>
+    </o_screen_buttons>
+    <o_widget_screens screenmode="X">
+        <yglui_str_wid_screen no_translations="" all_modifiable="" appid="PD_DATA" label_tag="persDet" list_mode="" screen="1" secondary="" selected="X" table_mode=""></yglui_str_wid_screen>
+        <yglui_str_wid_screen no_translations="X" all_modifiable="" appid="PD_DATA2" label_tag="persDet2" list_mode="" screen="2" secondary="" selected="" table_mode=""></yglui_str_wid_screen>
+    </o_widget_screens>
+    <labels>
+        <item id="ADDITIONALDATA" service="" value="Extra">
+        </item>
+        <item id="ANRED" service="" value="Titel">
+        </item>
+        <item id="ANZKD" service="" value="Number of children">
+        </item>
+        <item id="ChalTitle" service="" value="Challenge">
+        </item>
+        <item id="MAIL_PRIVATE" service="" value="Private mail address">
+        </item>
+        <item id="MAIL_PROF" service="" value="Professional mail address">
+        </item>
+        <item id="SBADT" service="" value="Challenge certificate date">
+        </item>
+        <item id="SBDST" service="" value="Official agency">
+        </item>
+        <item id="SBGSZ" service="" value="Reference number">
+        </item>
+        <item id="SPRSL" service="" value="Language">
+        </item>
+        <item id="persDet" service="" value="Personal Details">
+        </item>
+    </labels>
+    <messages>
+    </messages>
+    <webmessage_type>
+    </webmessage_type>
+    <webmessage_text>
+    </webmessage_text>
+</EWS>

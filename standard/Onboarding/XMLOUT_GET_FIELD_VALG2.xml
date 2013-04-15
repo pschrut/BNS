@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_records_found>16</o_records_found> 
+  <o_values>
+    <item id="3-WK" service="" value="3week Rotating Shift" /> 
+    <item id="EXEC" service="" value="" /> 
+    <item id="GLZ" service="" value="Flextime" /> 
+    <item id="KUG" service="" value="Reduced working hrs" />
+    <item id="M3" service="" value="3-shift operation 4W" />
+    <item id="NO" service="" value="40 hours per week" />
+    <item id="NORM" service="" value="Normal shift" />
+    <item id="REG" service="" value="5 days/wk, 8 hrs/day" />
+    <item id="RRDO" service="" value="" />
+    <item id="RUFB" service="" value="On-call duty" />
+    <item id="SFT1" service="" value="Early Shift" />
+    <item id="SFT2" service="" value="Midday Shift" />
+    <item id="SFT3" service="" value="Night Shift" />
+    <item id="WNRM" service="" value="SA Period WS" />
+    <item id="WSEC" service="" value="SA Security" />
+    <item id="WSHF" service="" value="SA Alternating Shift" />
+  </o_values>
+  <labels /> 
+  <messages/>
+</EWS>

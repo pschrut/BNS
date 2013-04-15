@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="1">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="" display_group="" fieldformat="I" fieldid="ABBREVIATION" fieldlabel="Object abbreviation" fieldsource="" fieldtype="" label_type="V" length="000012" seqnr="03" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="99991231" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="D" fieldid="ENDDATE" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000010" seqnr="06" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="GENERALDESCR" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000000" seqnr="04" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="V" fieldid="PARENT" fieldlabel="ID of related object" fieldsource="" fieldtype="" label_type="V" length="000045" seqnr="08" service_pai="" service_values="" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="STARTDATE" fieldlabel="Start date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="05" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="TITLE" fieldlabel="Object name" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="02" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="R" fieldid="TRANSLATION" fieldlabel="Language Key" fieldsource="" fieldtype="" label_type="V" length="000002" seqnr="01" service_pai="" service_values="" show_text="B" type="LANG"></yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>
+    </o_field_settings>
+    <o_field_values>
+        <yglui_str_wid_record rec_key="QK5000061910001E000" screen="1">
+            <contents>
+                <yglui_str_wid_content buttons="" key_str="30001QK500006191000    1  1900010199991231E         000" rec_index="1" selected="X" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ABBREVIATION" fieldlabel="Object abbreviation" fieldtechname="SHORT" fieldtseqnr="000000" value="">euHReka</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDATE" fieldlabel="" fieldtechname="ENDDA" fieldtseqnr="000000" value="9999-12-31"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GENERALDESCR" fieldlabel="" fieldtechname="DESCRIPTION" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PARENT" fieldlabel="ID of related object" fieldtechname="SOBID" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="STARTDATE" fieldlabel="Start date" fieldtechname="BEGDA" fieldtseqnr="000000" value="1900-01-01"></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TITLE" fieldlabel="Object name" fieldtechname="STEXT" fieldtseqnr="000000" value="">euHReka - Z99</yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TRANSLATION" fieldlabel="Language Key" fieldtechname="LANGU" fieldtseqnr="000000" value="E">English</yglui_str_wid_field>
+                    </fields>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+    <o_future_date></o_future_date>
+    <o_retro_date></o_retro_date>
+    <o_screen_buttons>
+        <yglui_str_wid_button action="APP_CQK_SAVE" disma="M" label_tag="Save Competency/Competency Group" okcode="MOD" screen="*" tarap="" tarty="" type="MOD"></yglui_str_wid_button>
+    </o_screen_buttons>
+    <o_widget_screens>
+        <yglui_str_wid_screen all_modifiable="X" appid="CQK_GRP" label_tag="Competency Group" list_mode="" screen="1" selected="X"></yglui_str_wid_screen>
+        <yglui_str_wid_screen all_modifiable="X" appid="CQK_GRP" label_tag="Scale" list_mode="" screen="2" selected=""></yglui_str_wid_screen>
+    </o_widget_screens>
+    <labels>
+        <item id="ADDITIONALDATA" service="" value="Extra"></item>
+    </labels>
+    <messages></messages>
+    <webmessage_type></webmessage_type>
+    <webmessage_text></webmessage_text>
+</EWS>

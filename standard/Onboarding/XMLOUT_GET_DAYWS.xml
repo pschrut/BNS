@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_columns>
+    <yglui_str_wid_column columnid="DAWS" columnpos="1"/>
+    <yglui_str_wid_column columnid="DESC" columnpos="2"/>
+    <yglui_str_wid_column columnid="PHRS" columnpos="3"/>
+    <yglui_str_wid_column columnid="STHR" columnpos="4"/>
+    <yglui_str_wid_column columnid="ENHR" columnpos="5"/>
+    <yglui_str_wid_column columnid="STDA" columnpos="6"/>
+    <yglui_str_wid_column columnid="ENDA" columnpos="7"/>
+  </o_columns>
+  <o_tabvalues>
+    <yglui_str_wid_dwsval dwsid="DAY" dwsdesc="Day shift" plhrs="7.00" sthrs="08:00" enhrs="16:00" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="EARL" dwsdesc="Early shift" plhrs="7.00" sthrs="06:00" enhrs="15:00" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="FREE" dwsdesc="Off" plhrs="0.00" sthrs="" enhrs="" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="LATE" dwsdesc="Evening shift" plhrs="7.50" sthrs="14:00" enhrs="21:30" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="NORM" dwsdesc="Normal shift" plhrs="7.50" sthrs="08:00" enhrs="16:30" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="REG" dwsdesc="Regular hours" plhrs="8.00" sthrs="08:00" enhrs="17:00" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="REST" dwsdesc="Non-working day" plhrs="0.00" sthrs="" enhrs="" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="STF1" dwsdesc="Early shift" plhrs="8.00" sthrs="06:00" enhrs="14:00" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="STF2" dwsdesc="Midday shift" plhrs="8.00" sthrs="14:00" enhrs="22:00" stdate="01.01.1990" Endate="31.12.9999"/>
+    <yglui_str_wid_dwsval dwsid="WNRM" dwsdesc="SA Normal shift" plhrs="8.00" sthrs="08:00" enhrs="17:00" stdate="01.01.1990" Endate="31.12.9999"/>
+  </o_tabvalues>
+  <o_buttons>
+    <yglui_str_wid_button action="APP_PWS_CLOSE" busid="" disma="" label_tag="Close" okcode="DEL" screen="*" status="9Z" tarap="" tartb="" tarty="" type="DEL" views="" /> 
+  </o_buttons>
+  <labels>
+    <item id="DAWS" service="" value="DWS" />
+    <item id="DESC" service="" value="Description" />  
+    <item id="SDWS" service="" value="Select Daily work schedule" />
+    <item id="PHRS" service="" value="Pl. Hours" />
+    <item id="STHR" service="" value="Start" />
+    <item id="ENHR" service="" value="End" />
+    <item id="STDA" service="" value="Start date" />
+    <item id="ENDA" service="" value="End date" />
+  </labels>
+</EWS>

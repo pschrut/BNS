@@ -1,0 +1,1 @@
+// Included for Firefox compatability

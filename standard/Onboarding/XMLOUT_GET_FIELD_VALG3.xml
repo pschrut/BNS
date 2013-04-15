@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_records_found>5</o_records_found> 
+  <o_values>
+    <item id="01" service="" value="" /> 
+    <item id="02" service="" value="" /> 
+    <item id="03" service="" value="" /> 
+    <item id="90" service="" value="" />
+    <item id="91" service="" value="" />
+  </o_values>
+  <labels /> 
+  <messages/>
+</EWS>

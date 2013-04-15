@@ -1,0 +1,3186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Modules</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <link href="../css/CSS2.css" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="../css/CSS2_IE7.css" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="../css/CSS2_IE6.css" />
+        <![endif]-->
+        <script src="../standard/web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+        <script src="../standard/web_frameworks/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+        <script src="../standard/origin.js" type="text/javascript"></script>
+        <script src="../standard/web_frameworks/datejs/date.js" type="text/javascript"></script><!-- Necessary for the DatePicker -->
+        <script src="../standard/web_frameworks/wz_jsgraphics.js" type="text/javascript"></script><!-- Necessary for the DrawTree -->
+        <!-- modules -->
+        <script src="accordion/accordion.js" type="text/javascript"></script>
+        <script src="autocompleter/autocompleter.js" type="text/javascript"></script>
+        <script src="balloon/balloon.js" type="text/javascript"></script>
+        <script src="contextMenu/contextMenu.js" type="text/javascript"></script>
+        <script src="datePicker/datePicker.js" type="text/javascript"></script>
+        <script src="drawTree/drawTree.js" type="text/javascript"></script>
+        <script src="hourField/hourFiled.js" type="text/javascript"></script>
+        <script src="buttonDisplayer/megaButtonDisplayer.js" type="text/javascript"></script>
+        <script src="multiselectSearchbox/multiselectSearchbox.js" type="text/javascript"></script>
+        <script src="semitransparentBuilder/semitransparentBuilder.js" type="text/javascript"></script>
+        <script src="tablekit/tablekit.js" type="text/javascript"></script>
+        <script src="tabs/tabs.js" type="text/javascript"></script>
+        <script src="treeHandler/treeHandler.js" type="text/javascript"></script>
+        <script src="unmovableWidgets/unmovableWidgets.js" type="text/javascript"></script>
+        <script src="widgets/widgets.js" type="text/javascript"></script>
+        <script src="modules.js" type="text/javascript"></script>
+        <script src="multiSelect/multiSelect.js" type="text/javascript"></script>
+        <script src="listSearch/listSearch.js" type="text/javascript"></script>
+        <script src="editableDiv/editableDiv.js" type="text/javascript"></script>
+        <script src="groupedLayout/groupedLayout.js" type="text/javascript"></script>
+        <!-- /modules -->
+        <!-- blackbirdjs -->
+        <link href="../standard/web_frameworks/blackbirdjs/blackbird.css" rel="stylesheet" type="text/css" />
+        <script src="../standard/web_frameworks/blackbirdjs/blackbird.js" type="text/javascript"></script>
+        <!-- /blackbirdjs -->
+        <style type="text/css">
+            h2{
+                color: white;
+                background:#492682;
+                margin:5px;
+                padding:3px;
+                text-decoration:underline;
+                cursor: pointer;
+            }
+            h3{
+                border:solid #492682;
+                margin:5px;
+                padding:3px;
+            }
+            h4{
+                color:black;
+                margin-left:25px;
+                padding:3px;
+            }
+            h5{
+                color:black;
+                margin-left:35px;
+                padding:3px;
+            }
+            pre
+            {
+                background: #fffeee;
+                font-style: italic;
+                border: 1px solid #492682;
+                padding:3px;
+                margin: 5px;
+                margin-left: 35px;
+            }
+
+            p {
+                margin-left:25px;
+            }
+
+            .howTo {
+
+                margin-left:35px;
+                padding:3px;
+            }
+            .portal_column
+            {
+                width: 27%;
+                float: left;
+                height: 100%;
+            }
+            .code
+            {
+                clear: both;
+                background-color: #CCCCCC;
+                border: 1px solid black;
+                font-weight: bold;
+            }
+            .widget1_class{
+                width:400px;
+                float:left;
+            }
+            .widget2_class{
+                width:400px;
+                height:400px;
+                clear:right
+            }
+            .widget3_class{
+                width:800px;
+            }
+            .page2_class{
+                margin-top:100px;
+            }
+            body
+            {
+                background-image:none;
+            }
+            .textarea {
+                border: 1px solid black;
+                background-color: white;
+                width: 400px;
+                padding: 2px;
+                cursor:text;
+            }
+            .reset {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                border-right: 1px solid black;
+                float: left;
+                width: 20px;
+                height: 21px;
+                background-color: white;
+                font-family: verdana;
+                font-weight: bold;
+                line-height: 21px;
+                vertical-align:middle;
+                cursor: pointer;
+            }
+            #searchBox {
+                float:left;
+                height: 19px;
+                border: 1px solid black;
+                border-right: none;
+            }
+            .label_example{
+                 float:left;
+                 color:Gray;
+                 margin-right:30px;
+                 margin-left:5px;
+            }
+            .info_example{
+                width: 150px;
+                float:left;
+            }
+            .link_example{
+                margin-left:5px;
+            }
+		</style>
+		<script type="text/javascript">
+			var global = {
+				getLabel: function(param){return param},
+                dateFormat: 'dd.MM.yyyy'
+			};
+		    /**
+		     * Function to call the required other functions
+		     */
+		    function init() {
+				//Calling required functions
+			    __initContextMenu();
+				loadAccordions();
+				loadWidgets();
+		    }
+		</script>
+</head>
+<body onload="javascript: init()">
+   <h1>MODULES</h1>
+    <!-- <a href="#idTitleDescription"><h3>Name</h3></a>
+    <a href="#idTitleConfirmationBox"><h3>CONFIRMATION BOX</h3></a>
+    <a href="#idTitleMovableWidgets"><h3>MOVABLE WIDGETS</h3></a>
+    <a href="#idTitleSemiTransparent"><h3>SEMI TRANSPARENT</h3></a>
+    <a href="#idTitleBalloon"><h3>BALLOON</h3></a>
+    <a href="#idTitleHourField"><h3>HOUR FIELD</h3></a>
+    <a href="#idTitleTreeHandler"><h3>TREE HANDLER</h3></a>
+    <a href="#idTitleUnmovableWidgets"><h3>UNMOVABLE WIDGETS</h3></a>
+    <a href="#idTitleDrawTree"><h3>DRAW TREE</h3></a>
+    <a href="#idTitleDatePicker"><h3>DATE PICKER</h3></a>
+    <a href="#idTitleAccordion"><h3>ACCORDION</h3></a>
+    <a href="#idTitleAutocompleter"><h3>AUTOCOMPLETER</h3></a>
+    <a href="#idTitleContextMenu"><h3>CONTEXT MENU</h3></a>
+    <a href="#idTitleTabs"><h3>TABS</h3></a>
+    <a href="#idTitleTableKit"><h3>TABLEKIT</h3></a>
+    <a href="#idTitleGetRating"><h3>GET RATING</h3></a>-->
+
+
+        <hr />
+        <!-- Beginning the template for adding new modules explanations (just copy/paste this piece on your zone and include your module inside)
+    <h2>Name</h2>
+    <h3 id="idDescription">Description</h3>
+    <h3>Parameters</h3>
+    <h3>Events</h3>
+    <h3>Example #1</h3>
+    <p>(the actual example)</p>
+    <h4>How to</h4>
+    <h5>Comments on example</h5>
+    <p class="howTo">Blah</p>
+    <h5>Dependencies</h5>
+    <ul>
+        <li class="howTo">file1.js</li>
+        <li class="howTo">file2.js</li>
+    </ul>
+    <h5>Javascript Code</h5>
+    <pre>
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                // Example 1
+                var objTestConfirmationBox1 = new ConfirmationBox({
+                    htmlContent :   'All Your Base Are Belong To Us',
+                    closeButton :   $H( {
+                                'textContent': 'Bye bye',
+                                'callBack': function() {
+                                    objTestConfirmationBox1.close()
+                                    delete objTestConfirmationBox1
+                                }
+                            })
+                })
+            &lt/script&gt
+    </pre>
+    <h5>HTML Code</h5>
+    <pre>
+        <p>&lt;p&gt;Click &lt;span onclick=&quot;objTestConfirmationBox1.create();&quot;&gt;&lt;strong&gt;HERE&lt;/strong&gt;&lt;/span&gt; to see it.&lt;/p&gt;</p>
+    </pre>
+    <h3>Example #2</h3>
+    <p>(the actual example)</p>
+    <h4>How to</h4>
+    <h5>Comments on example</h5>
+    <h5>Dependencies</h5>
+    <h5>Javascript Code</h5>
+    <pre>
+    </pre>
+    <h5>HTML Code</h5>
+    <pre>
+    </pre>
+    <hr />
+     Ending the template for adding new modules explanations -->
+
+
+    <!-- For avoiding SVN conflicts, here below reserved zone for SAMUEL's code -->       
+        <!-- ########################################################### MOVABLE WIDGETS ############################################### -->
+        <h2 id="idTitleMovableWidgets" onclick="javascript:$('movableWidgetsBody').toggle()">MOVABLE WIDGETS</h2>
+        <div id='movableWidgetsBody' style="display:none">
+            <h3>Description</h3>
+            <p>Is an element of a graphical user interface (GUI) that displays an information arrangement changeable by the developer</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">height: (integer) Used to set the height of the widget custom</li>
+                <li class="howTo">closeButton: (boolean) On TRUE this will show the close button, on FALSE the oposite</li>
+                <li class="howTo">minimizeButton: (boolean) On TRUE this will show the minimize button, on FALSE the oposite</li>
+                <li class="howTo">optionsButton: (boolean) On TRUE this will show the options button, on FALSE the oposite</li>
+                <li class="howTo">events: (Hash) The hash of events</li>
+                <li class="howTo">semitrans: (boolean) If you set it to false, when you expand the widgets the semitransparence is not showed</li>
+                <li class="howTo">openMinimized: (boolean) On TRUE the widget will be opened minimized (False by default)</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onClose: Fired when the widget is closed by the user</li>
+                <li class="howTo">onMinimize: Fired when the widget is minimized</li>
+                <li class="howTo">onMaximize: Fired when the wisget is expanded</li>
+            </ul>
+
+
+            <h3>Example 1: One portal, three widgets; and, one portal, three widgets, 2 horizontal and 1 vertical</h3>
+            <div id="page">
+                <div id="widget_col_0" class="portal_column"></div>
+                <div id="widget_col_1" class="portal_column"></div>
+                <div id="widget_col_2" class="portal_column"></div>
+            </div>
+            <h3>Dinamically created portal</h3>
+            <div id="page2">
+                <div id="portal_0" class="portal_column"></div>
+                <div id="portal_1" class="portal_column"></div>
+                <div id="portal_2" class="portal_column"></div>
+            </div>
+            
+            <h3>Example 3: Fully dynamic widgets</h3>
+            <div id="idPortal3"></div>
+            
+            <script type="text/javascript">
+                function loadWidgets(){
+                    document.observe('EWS:myMinimize', function(event) {
+                        if(log){
+                            log.info("Widget 3 minimized");
+                        }
+                    }.bindAsEventListener(this));
+                    document.observe('EWS:myMaximize', function(event) {
+                        if(log){
+                            log.info("Widget 3 maximized");
+                        }
+                    }.bindAsEventListener(this));
+                    document.observe('EWS:myClose', function(event) {
+                        if(log){
+                            log.info("Widget 3 closed");
+                        }
+                    } .bindAsEventListener(this));
+
+                    var content = 'JavaScript is a scripting language most often used for client-side web development. It was the originating dialect of the ECMAScript standard. It is a dynamic, weakly typed, prototype-based language with first-class functions. JavaScript was influenced by many languages and was designed to look like Java, but be easier for non-programmers to work with.[1][2]'
+                        + 'Although best known for its use in websites (as client-side JavaScript), JavaScript is also used to enable scripting access to objects embedded in other applications (see below).'
+                        + 'JavaScript, despite the name, is essentially unrelated to the Java programming language, although both have the common C syntax, and JavaScript copies many Java names and naming conventions. The language was originally named "LiveScript" but was renamed in a co-marketing deal between Netscape and Sun, in exchange for Netscape bundling Sun\'s Java runtime with their then-dominant browser. The key design principles within JavaScript are inherited from the Self and Scheme programming languages.[3]'
+                        + '"JavaScript" is a trademark of Sun Microsystems. It was used under license for technology invented and implemented by Netscape Communications and current entities such as the Mozilla Foundation.[4]';
+
+
+                    var portal = new Widgets.Portal("#page div", 'portal1', {});
+                    portal.add(new Widgets.Widget('id1', { minimizeButton: false, height: 300, openMinimized: false, closeButton: false }).setTitle('Example 1 title').setContent('&nbsp;<h5>Widgets test 1</h5><ul><li>List</li><li>List</li><li>List</li></ul>' + content), 2);
+                    portal.add(new Widgets.Widget('id2', { minimizeButton: false, height: 300, semitrans: false, events: $H({onMaximize:'EWS:myMaximize', onMinimize: 'EWS:myMinimize', onClose:'EWS:myClose'}) }).setTitle('Example 2 title (Defined height)').setContent('<img src="http://tbn0.google.com/images?q=tbn:lZNWWRHmUKaDiM:http://movilidad.universiablogs.net/files/playa-puerto-rico.jpg"><br>' + content), 1);
+                    portal.add(new Widgets.Widget('id3', {}).setTitle('Weather').setContent('<img src="http://www.diariodigital.com.do/photos/00010997-constrain-200x200.jpeg">').insertContextMenuSeparator().insertContextMenuItem('Change location', 'chglct', function(widget, element) {
+                        element.update('<div style="padding: 10px;" id="div_example_1"><span>Insert a new location<span><input type="text"><br/> <input type="button" value="Save"></div>');
+                        $('div_example_1').insert(new Element('input', { type: 'button', value: 'Close' }).observe('click', function() { widget.closeCurrentOptionsPanel(); }));
+                    }, true), 0);
+                    
+                    
+                    
+                    var titles = ['Example 1', 'Example 2','Example 3'];
+                    var portal2 = new Widgets.Portal('#page2 div', 'portal2', {});
+                    titles.each(function(item,i) {
+                        portal2.add(new Widgets.Widget('dinamicWidgets_'+i,{}).setTitle(item).setContent(content),i%2);
+                    });
+                    
+                    
+                    // Example 3 fully dynamic
+                    var htmlPortal3 = new Element('<div id="page3"></div>');
+                    $('idPortal3').insert(htmlPortal3);
+                    var widgetTitles = [];
+                    widgetTitles[0] = 'Example Aaaaa';
+                    widgetTitles[1] = 'Example Bbbbb';
+                    widgetTitles[2] = 'Example Ccccc';
+                    
+                    for(var i=0; i<widgetTitles.length; i++) {
+                        htmlPortal3.insert({
+                            bottom:
+                                new Element('<div id="widget'+(i+1)+'" class="widget1_class"></div>')
+                        });
+                    }
+                    
+                    var innerPortal3 = new Widgets.Portal('#page3 div', 'portal3', {});
+                    for(var i=0; i<widgetTitles.length; i++) {
+                        innerPortal3.add(new Widgets.Widget('wid'+i, { closeButton: false }).setTitle('Example 1 title: '+widgetTitles[i]).setContent('&nbsp;<h5>Widgets test 3</h5><ul><li>List</li><li>List</li><li>List</li></ul>'), i);
+                    }
+
+                }
+            </script>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">In this example 3 widgets are added to one portal.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">widgets.js</li>
+                <li class="howTo">semitransparentBuilder.js</li>
+                <li class="howTo">contextMenu.js</li>
+            </ul>
+            <h5>Javascript Code (this should be called after the HTML code has been built on the screen)</h5>
+            <pre style="word-wrap: break-word; white-space: -moz-pre-wrap !important;">
+       &lt;script type="text/javascript"&gt;
+           document.observe('EWS:myMinimize', function(event) {
+               if (log) {
+                   log.info("Widget 3 minimized");
+               }
+           } .bindAsEventListener(this));
+           document.observe('EWS:myMaximize', function(event) {
+               if (log) {
+                   log.info("Widget 3 maximized");
+               }
+           } .bindAsEventListener(this));
+           document.observe('EWS:myClose', function(event) {
+               if (log) {
+                   log.info("Widget 3 closed");
+               }
+           } .bindAsEventListener(this));
+
+           var content = 'JavaScript is a scripting language most often used for client-side web development. It was the originating dialect of the ECMAScript standard. It is a dynamic, weakly typed, prototype-based language with first-class functions. JavaScript was influenced by many languages and was designed to look like Java, but be easier for non-programmers to work with.[1][2]'
+                        + 'Although best known for its use in websites (as client-side JavaScript), JavaScript is also used to enable scripting access to objects embedded in other applications (see below).'
+                        + 'JavaScript, despite the name, is essentially unrelated to the Java programming language, although both have the common C syntax, and JavaScript copies many Java names and naming conventions. The language was originally named "LiveScript" but was renamed in a co-marketing deal between Netscape and Sun, in exchange for Netscape bundling Sun\'s Java runtime with their then-dominant browser. The key design principles within JavaScript are inherited from the Self and Scheme programming languages.[3]'
+                        + '"JavaScript" is a trademark of Sun Microsystems. It was used under license for technology invented and implemented by Netscape Communications and current entities such as the Mozilla Foundation.[4]';
+
+
+           var portal = new Widgets.Portal("#page div", 'portal1', {});
+                    portal.add(new Widgets.Widget('id1', { minimizeButton: false, height: 300, openMinimized: false, closeButton: false }).setTitle('Example 1 title').setContent('&nbsp;<h5>Widgets test 1</h5><ul><li>List</li><li>List</li><li>List</li></ul>' + content), 2);
+                    portal.add(new Widgets.Widget('id2', { minimizeButton: false, height: 300, semitrans: false, events: $H({onMaximize:'EWS:myMaximize', onMinimize: 'EWS:myMinimize', onClose:'EWS:myClose'}) }).setTitle('Example 2 title (Defined height)').setContent('&lt;img src="http://tbn0.google.com/images?q=tbn:lZNWWRHmUKaDiM:http://movilidad.universiablogs.net/files/playa-puerto-rico.jpg"&gt;&lt;br&gt;' + content), 1);
+           portal.add(new Widgets.Widget('id3', {}).setTitle('Weather').setContent('&lt;img src="http://www.diariodigital.com.do/photos/00010997-constrain-200x200.jpeg"&gt;').insertContextMenuSeparator().insertContextMenuItem('Change location', 'chglct', function(widget, element) {
+               element.update('&lt;div style="padding: 10px;" id="div_example_1"&gt;&lt;span&gt;Insert a new location&lt;span&gt;&lt;input type="text"&gt;&lt;br/&gt; &lt;input type="button" value="Save"&gt;&lt;/div&gt;');
+               $('div_example_1').insert(new Element('input', { type: 'button', value: 'Close' }).observe('click', function() { widget.closeCurrentOptionsPanel(); }));
+           }, true), 2);
+
+
+
+           =============================================== "example 2" ================================================================
+
+            var portal2 = new Widgets.Portal("#page2 div", 'portal2', {});
+            portal2.add(new Widgets.Widget('wid1', { closeButton: false }).setTitle('Example 1 title').setContent('&nbsp;&lt;h5&gt;Widgets test 1&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;List&lt;/li&gt;&lt;li&gt;List&lt;/li&gt;&lt;li&gt;List&lt;/li&gt;&lt;/ul&gt;' + content), 0);
+            portal2.add(new Widgets.Widget('wid2', { minimizeButton: false, height: 300, events: $H({ onMaximize: 'EWS:myMaximize', onMinimize: 'EWS:myMinimize', onClose: 'EWS:myClose' }) }).setTitle('Example 2 title (Defined height)').setContent('&lt;img src="http://tbn0.google.com/images?q=tbn:lZNWWRHmUKaDiM:http://movilidad.universiablogs.net/files/playa-puerto-rico.jpg"&gt;&lt;br&gt;' + content), 1);
+            portal2.add(new Widgets.Widget('wid3', {}).setTitle('Weather').setContent('&lt;img src="http://www.diariodigital.com.do/photos/00010997-constrain-200x200.jpeg"&gt;').insertContextMenuSeparator().insertContextMenuItem('Change location', 'chglct', function(widget, element) {
+                element.update('&lt;div style="padding: 10px;" id="div_example_1"&gt;&lt;span&gt;Insert a new location&lt;span&gt;&lt;input type="text"&gt;&lt;br/&gt; &lt;input type="button" value="Save"&gt;&lt;/div&gt;');
+                $('div_example_1').insert(new Element('input', { type: 'button', value: 'Close' }).observe('click', function() { widget.closeCurrentOptionsPanel(); }));
+            }, true), 2);
+
+
+
+
+
+
+
+           $('movableWidgetsBody').hide();
+        &lt;/script&gt;
+            </pre>
+            <h5>HTML Code (should be placed before the JavaScrip code is called)</h5>
+            <pre>
+    &lt;div id="Div2"&gt;
+        &lt;div id="Div3" class="portal_column"&gt;&lt;/div&gt;
+        &lt;div id="Div4" class="portal_column"&gt;&lt;/div&gt;
+        &lt;div id="Div5" class="portal_column"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+
+    ============================================================"example2"============================================================
+
+     &lt;div id="Div2" class='page2_class'&gt;
+        &lt;div id="Div3" class="widget1_class"&gt;&lt;/div&gt;
+        &lt;div id="Div4" class="widget2_class"&gt;&lt;/div&gt;
+        &lt;div id="Div5" class="widget3_class"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+            </pre>
+            <h5>CSS for example 2</h5>
+            <pre>
+        .widget1_class{
+            width:400px;
+            float:left;
+        }
+        .widget2_class{
+            width:400px;
+            height:400px;
+            clear:right
+        }
+        .widget3_class{
+            width:800px;
+        }
+        .page2_class{
+            margin-top:100px;
+        }
+            </pre>
+        </div>
+        <!-- ########################################################### SEMI TRANSPARENT ############################################### -->
+        <h2 id="idTitleSemiTransparent" onclick="javascript:$('semiTransparentBody').toggle()">SEMI TRANSPARENT</h2>
+        <div id='semiTransparentBody' style="display:none">
+            <h3>Description</h3>
+            <p>The semi transparent will draw a dark transparent layer making the focus on the element that is placed above the layer more obvious.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">none</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">none</li>
+            </ul>
+
+            <h3>Example 1: Showing the layer</h3>
+            <script type="text/javascript">
+                function showTransparent() {
+                    Framework_stb.showSemitransparent();
+                    setTimeout('Framework_stb.hideSemitransparent()', 2000);
+                }
+            </script>
+            <input type="button" value="Click me to briefly see a semi transparent" onclick="showTransparent();" />
+
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">In this example a semi transparent will appear for 2 seconds.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">semitransparentBuilder.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        function showTransparent() {
+            Framework_stb.showSemitransparent();
+            setTimeout('Framework_stb.hideSemitransparent()', 2000);
+        }
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;input type=&quot;button&quot; value=&quot;Click me to briefly see a semi transparent&quot; onclick=&quot;showTransparent();&quot; /&gt;
+            </pre>
+        </div>
+        <!-- ########################################################### BALLOON ############################################### -->
+        <h2 id="idTitleBalloon" onclick="javascript:$('balloonBody').toggle()">BALLOON</h2>
+        <div id='balloonBody' style="display:none">
+            <h3>Description</h3>
+            <p>From now we don't need to create new balloons, because we use one balloon for the whole framework.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">domId: (String) The ID of the div element where the balloon will be linked to</li>
+                <li class="howTo">content: (String) The content of the balloon</li>
+                <li class="howTo">dimensions: (String) Dimensions of the balloon [width, height]</li>
+                <li class="howTo">dinamicWidth: (String) Width (in pixels) for dinamic balloons - without defined dimensions</li>
+                <li class="howTo">events: (Hash) The hash of events</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onShow: Fired when the balloon is shown</li>
+                <li class="howTo">onHide: Fired when the balloon disappears</li>
+            </ul>
+
+
+            <h3>Example 1: Example with two buttons</h3>
+            <p>The text ballon will appear near one of the following: Kate, Sawyer, <span id="ballonSpot1">Benjamin</span>, John.</p>
+            <button id="show">Show a balloon</button>
+            <button id="hide">Hide the balloon</button>
+            <script type="text/javascript">
+                document.observe('EWS:firstBalloonShow', function(event){
+                    if(log){
+                        log.info("First balloon showed");
+                    }
+                }.bindAsEventListener(this));
+                document.observe('EWS:firstBalloonHide', function(event){
+                    if(log){
+                        log.info("First balloon hidden");
+                    }
+                }.bindAsEventListener(this));
+
+                $('show').onclick = function() {
+                    balloon.setOptions($H({
+                        domId       : "ballonSpot1",
+                        events      : $H({onShow: 'EWS:firstBalloonShow', onHide: 'EWS:firstBalloonHide'}),
+                        content     : "It is me!!",
+                        dimensions  : [200,100]
+                    }));
+
+                    balloon.show();
+                };
+                $('hide').onclick = function(){ balloon.hide(); };
+            </script>
+
+
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">A small example with 1 button that will pop up the balloon and another button that closes the balloon.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">balloon.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+            $('show').onclick = function() {
+                balloon.setOptions($H({
+                    domId: &quot;ballonSpot1&quot;,
+                    content: &quot;It is me!!&quot;,
+                    dimensions: [200,100]
+                }));
+
+                balloon.show();
+            };
+            $('hide').onclick = function(){ balloon.hide(); };
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;p&gt;The text ballon will appear near one of the following: Kate, Sawyer, &lt;span id=&quot;ballonSpot1&quot;&gt;Benjamin&lt;/span&gt;, John.&lt;/p&gt;
+    &lt;button id=&quot;show&quot;&gt;Show a balloon&lt;/button&gt;
+    &lt;button id=&quot;hide&quot;&gt;Hide the balloon&lt;/button&gt;
+            </pre>
+
+            <h3>Example 2: Example with three buttons</h3>
+            <p>The text ballon will appear near one of the following: <span id="balloonSpot2">Kate</span>, Sawyer, Benjamin, <span id="balloonSpot3">John</span>.</p>
+            <button id="kateSpeak">Make Kate speak</button>
+            <button id="johnSpeak">Make John speak</button>
+            <button id="silence">No speaking</button>
+            <script type="text/javascript">
+                var content1 = "Do you really expect me to work in this dress?";
+                var content2 = "I'd say I hope that box is big enough for you to conjure yourself up another submarine in it.";
+                $('kateSpeak').onclick = function(){ balloon.showOptions($H({
+                        domId: "balloonSpot2",
+                        content: content1,
+                        dinamicWidth: 250
+                    })); };
+
+                $('johnSpeak').onclick = function(){ balloon.showOptions($H({
+                        domId: "balloonSpot3",
+                        content: content2,
+                        dinamicWidth: 400
+                    })); };
+
+                $('silence').onclick = function(){ balloon.hide(); };
+            </script>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">An example with two different balloons.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">balloon.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var content1 = &quot;Do you really expect me to work in this dress?&quot;;
+        var content2 = &quot;I'd say I hope that box is big enough for you to conjure yourself up another submarine in it.&quot;;
+        $('kateSpeak').onclick = function(){ balloon.showOptions($H({
+            domId: &quot;balloonSpot2&quot;,
+            content: content1,
+            dinamicWidth: 250
+        })); };
+
+        $('johnSpeak').onclick = function(){ balloon.showOptions($H({
+            domId: &quot;balloonSpot3&quot;,
+            content: content2,
+            dinamicWidth: 400
+        })); };
+
+        $('silence').onclick = function(){ balloon.hide(); };
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;p&gt;&lt;span id=&quot;balloonSpot2&quot;&gt;Kate&lt;/span&gt;, Sawyer, Benjamin, &lt;span id=&quot;balloonSpot3&quot;&gt;John&lt;/span&gt;.&lt;/p&gt;
+    &lt;button id=&quot;kateSpeak&quot;&gt;Make Kate speak&lt;/button&gt;
+    &lt;button id=&quot;johnSpeak&quot;&gt;Make John speak&lt;/button&gt;
+    &lt;button id=&quot;silence&quot;&gt;No speaking&lt;/button&gt;
+            </pre>
+        </div>
+
+        <!-- ########################################################### HOUR FIELD ############################################### -->
+        <h2 id="idTitleHourField" onclick="javascript:$('hourFieldBody').toggle()">HOUR FIELD</h2>
+        <div id='hourFieldBody' style="display:none">
+            <h3>Description</h3>
+            <p>The hour field will draw hour / time element consisting of some input fields and will detect if the entered values are correct.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">viewSecs: (String) Shows the seconds input field on "yes" and doesn't on "no"</li>
+                <li class="howTo">format: (String) Uses a 12 hour format on "12" and a 24 hour format on "24"</li>
+                <li class="howTo">events: (Hash) The hash of events</li>
+                <li class="howTo">defaultTime: (String) The default time that the hour input fields will contain</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onCorrectTime: Fired if the time that was entered / modified is correct</li>
+                <li class="howTo">onIncorrectTime: Fired if the time that was entered / modified is incorrect</li>
+            </ul>
+
+
+            <h3>Example 1: 12 hour format showing hour, minutes and seconds</h3>
+            <div id="hourFieldExample1" style="padding: 8px;background-color: gold;"></div>
+            <input type='button' style='width:150px;' onclick='getTime()' value='Get Sap Time' />
+            <input id='timeResult' style='width:150px;' />
+            <script type="text/javascript">
+                document.observe('EWS:hourfieldExample1Correct', function(event){
+                    if(log){
+                        log.info("Hourfield 1 was correct!");
+                    }
+                }.bindAsEventListener(this));
+                document.observe('EWS:hourfieldExample1Incorrect', function(event){
+                    if(log){
+                        log.info("Hourfield 1 was incorrect!");
+                    }
+                }.bindAsEventListener(this));
+
+                var example1 = new HourField('hourFieldExample1', {
+                    viewSecs: 'yes',
+                    format: "12",
+                    events: $H({ onCorrectTime: 'EWS:hourfieldExample1Correct', onIncorrectTime: 'EWS:hourfieldExample1Incorrect' }),
+                    defaultTime: "203000"
+                });
+                function getTime() {
+                    var sapTime = example1.getSapTime();
+                    $('timeResult').value = sapTime;
+                }
+            </script>
+
+
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This examples show a 24 hour format hour, minutes and seconds</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">hourField.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    var example1 = new HourField('example3', {
+        viewSecs: 'yes',
+        format: "12",
+        events: $H({ onCorrectTime: 'EWS:hourfieldExample1Correct', onIncorrectTime: 'EWS:hourfieldExample1Incorrect' }),
+        defaultTime: "203000"
+    });
+    function getTime() {
+            var sapTime = example1.getSapTime();
+            $(timeResult).value = sapTime;
+        }
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id=&quot;hourFieldExample1&quot; style=&quot;padding: 8px;background-color: gold;&quot;&gt;&lt;/div&gt;
+    &lt;input type='button' style='width:150px;' onclick='getTime()' value='Get Sap Time' /&gt;
+    &lt;input id='Text1' style='width:150px;' /&gt;
+            </pre>
+
+            <h3>Example 2: Showing a time example 24 hour format without seconds</h3>
+            <div id="idHourFieldExample2" style="padding: 8px;background-color: gold;"></div>
+            <script type="text/javascript">
+                var example2 = new HourField('idHourFieldExample2', {
+                    viewSecs: 'no',
+                    format: "24",
+                    events: $H({ onCorrectTime: 'EWS:hourfieldExample1Correct', onIncorrectTime: 'EWS:hourfieldExample1Incorrect' }),
+                    defaultTime: "203000"
+                });
+            </script>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">Showing a time example in SAP format.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">hourField.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+        var example2 = new HourField('idHourFieldExample2', {
+            viewSecs: 'no',
+            format: "24",
+            events: $H({ onCorrectTime: 'EWS:hourfieldExample1Correct', onIncorrectTime: 'EWS:hourfieldExample1Incorrect' }),
+            defaultTime: "203000"
+        });
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id="idHourFieldExample2" style="padding: 8px;background-color: gold;"&gt;&lt;/div&gt;
+            </pre>
+        </div>
+        <!-- ########################################################### TREE HANDLER ############################################### -->
+        <h2 id="idTitleTreeHandler" onclick="javascript:$('treeHandlerBody').toggle()">TREE HANDLER</h2>
+        <div id='treeHandlerBody' style="display:none">
+            <h3>Description</h3>
+            <p>The tree handler will present a hierarchical tree structure.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">events: The hash of events</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onClick: Fired when one of the tree elements was clicked and returns the following values: tree, node</li>
+                <li class="howTo">onExpand: Fired when a node was expanded and returns the following values: id</li>
+                <li class="howTo">onCollapse: Fired when a node was collapsed and returns the following values: id</li>
+            </ul>
+
+
+            <h3>Example 1: Simple hierarchical structure</h3>
+            <div id="idSampleTree" style="background-color: gold;"></div>
+            <script type="text/javascript">
+                document.observe('EWS:tree1Clicked', function(event){
+
+                    args = getArgs(event);
+                    if(log){
+                        log.info("Tree "+args.tree+" with node "+args.node+" was clicked");
+                    }
+                }.bindAsEventListener(this));
+                document.observe('EWS:tree1Expand', function(event){
+
+                    args = getArgs(event);
+                    if(log){
+                        log.info("Tree 1 element "+args.id+" was expanded");
+                    }
+                }.bindAsEventListener(this));
+                document.observe('EWS:tree1Collapse', function(event){
+
+                    args = getArgs(event);
+                    if(log){
+                        log.info("Tree 1 element "+args.id+" was collapsed");
+                    }
+                }.bindAsEventListener(this));
+
+
+                var objTree;
+                document.observe('EWS:treeHandler_ajaxdone', function(event){
+                    var args = getArgs(event);
+                    objTree = new TreeHandler('idSampleTree', args, {events : $H({onClick: 'EWS:tree1Clicked', onExpand: 'EWS:tree1Expand', onCollapse: 'EWS:tree1Collapse'})} );
+                }.bindAsEventListener(this));
+
+                var ajaxRequest = new Ajax.Request('treeHandler/data.xml', {
+                    method: 'GET',
+                    onSuccess: function(response){
+                        xmlDoc = response.responseXML;
+                        document.fire('EWS:treeHandler_ajaxdone', xmlDoc);
+                    }
+                });
+
+            </script>
+
+
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This examples will show a simple hierarchical structure based on the file data.xml</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">treeHandler.js</li>
+                <li class="howTo">treeHandler/data.xml</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var objTree;
+        document.observe('EWS:treeHandler_ajaxdone', function(event){
+            var args = getArgs(event);
+            objTree = new TreeHandler('idSampleTree', args, {} );
+        }.bindAsEventListener(this));
+
+        var ajaxRequest = new Ajax.Request('treeHandler/data.xml', {
+            method: 'GET',
+            onSuccess: function(response){
+                xmlDoc = response.responseXML;
+                document.fire('EWS:treeHandler_ajaxdone', xmlDoc);
+            }
+        });
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id=&quot;idSampleTree&quot; style=&quot;background-color: gold;&quot;&gt;&lt;/div&gt;
+            </pre>
+        </div>
+
+
+        <!-- ########################################################### UNMOVABLE WIDGETS ############################################### -->
+        <h2 id="idTitleUnmovableWidgets" onclick="javascript:$('unmovableWidgetsBody').toggle()">UNMOVABLE WIDGETS</h2>
+        <div id='unmovableWidgetsBody' style="display:none">
+            <h3>Description</h3>
+            <p>This module creates an unmovable widget inside a specied div.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">events: (Hash) The hash of events</li>
+                <li class="howTo">title: (String) The widget title</li>
+                <li class="howTo">contentHTML: (String) The widget content</li>
+                <li class="howTo">showByDefault: (boolean) On TRUE by default, the widget won't be shown on initialization if false (it can be shown when the method show() is called).</li>
+                <li class="howTo">collapseBut: (boolean) On TRUE this will show the minimize button, on FALSE the oposite</li>
+                <li class="howTo">actions: (Hash) The action hash having the following fields: name, callback</li>
+                <li class="howTo">targetDiv: (String) The id of the div where the widget will be placed</li>
+                <li class="howTo">onLoadCollapse: (boolean) On TRUE this will collapse the widget on load, on FALSE the oposite</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onToggle: Fired when the widget is toggled</li>
+            </ul>
+
+
+            <h3>Example 1: Simple widget</h3>
+            <div id="idUWExample" style="margin: 8px; width:200px; background-color: gold;"></div>
+            <script type="text/javascript">
+                document.observe('EWS:myWidgetToggle', function(event){
+                    args = getArgs(event);
+                    if(log){
+                        log.info('Widget toggled ('+args.targetDiv+')');
+                    }
+                }.bindAsEventListener(this));
+                var div = new Element('div').update('Chigurh: What\'s the most you\'ve ever lost on a coin toss? Proprietor: Sir? Chigurh: The most. You ever lost. On a coin toss. Proprietor: I don\'t know. I couldn\'t say. Chigurh: Call it. Proprietor: Call it? Chigurh: [sighs] Yes. Proprietor: Well - we need to know what we\'re callin\' for here. Chigurh: You need to call it. I can\'t call it for you. It wouldn\'t be fair. Proprietor: I didn\'t put nothin\' up. Chigurh: Yes you did. You been putting it up your whole life. You just didn\'t know it. You know what date is on this coin? Proprietor: No. Chigurh: Nineteen fifty-eight. It\'s been traveling twenty-two years to get here. And now it\'s here. And it\'s either heads or tails, and you have to say. Call it. Proprietor: Look... I need to know what I stand to win. Chigurh: Everything. Proprietor: How\'s that? Chigurh: You stand to win everything. Call it. Proprietor: All right. Heads then. Chigurh: Well done. Don\'t put it in your pocket. Proprietor: Sir? Chigurh: Don\'t put it in your pocket. It\'s your lucky quarter. Proprietor: Where you want me to put it? Chigurh: Anywhere not in your pocket. Or it\'ll get mixed in with the others and become just a coin. Which it is.')
+                var objOptions = $H({
+                    title         : 'Chigurh',
+                    events        : $H({onToggle: 'EWS:myWidgetToggle'}),
+                    collapseBut   : true,
+                    contentHTML   : div,
+                    onLoadCollapse: false,
+                    targetDiv     : 'idUWExample'
+                });
+                var myWidget = new unmWidget(objOptions);
+            </script>
+
+
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example will show a simple unmovable widget</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">unmovableWidgets.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        document.observe('EWS:myWidgetToggle', function(event){
+            args = getArgs(event);
+            if(log){
+                log.info('Widget toggled ('+args.targetDiv+')');
+            }
+        }.bindAsEventListener(this));
+
+        var objOptions = $H({
+                    title         : 'Chigurh',
+                    events        : $H({onToggle: 'EWS:myWidgetToggle'}),
+                    collapseBut   : true,
+                    contentHTML   : 'Chigurh: What\'s the most you\'ve ever lost on a coin toss?'+
+                                     'Proprietor: Sir?'+
+                                     'Chigurh: The most. You ever lost. On a coin toss.'+
+                                     'Proprietor: I don\'t know. I couldn\'t say.'+
+                                     'Chigurh: Call it.'+
+                                     'Proprietor: Call it?'+
+                                     'Chigurh: [sighs] Yes.'+
+                                     'Proprietor: Well - we need to know what we\'re callin\' for here.¡+
+                                     'Chigurh: You need to call it. I can\'t call it for you. It wouldn\'t be fair.'+
+                                     'Proprietor: I didn\'t put nothin\' up.'+
+                                     'Chigurh: Yes you did. You been putting it up your whole life. You just didn\'t know it. You know what date is on this coin?'+
+                                     'Proprietor: No.'+
+                                     'Chigurh: Nineteen fifty-eight. It\'s been traveling twenty-two years to get here.'+
+                                              'And now it\'s here. And it\'s either heads or tails, and you have to say. Call it.'+
+                                     'Proprietor: Look... I need to know what I stand to win.'+
+                                     'Chigurh: Everything.'+
+                                     'Proprietor: How\'s that?'+
+                                     'Chigurh: You stand to win everything. Call it.'+
+                                     'Proprietor: All right. Heads then.'+
+                                     'Chigurh: Well done. Don\'t put it in your pocket.'+
+                                     'Proprietor: Sir?'+
+                                     'Chigurh: Don\'t put it in your pocket. It\'s your lucky quarter.'+
+                                     'Proprietor: Where you want me to put it? Chigurh: Anywhere not in your pocket. Or it\'ll get mixed in with the others and become just a coin. Which it is.',
+                    onLoadCollapse: false,
+                    targetDiv     : 'idUWExample'
+                });
+        var myWidget = new unmWidget(objOptions);
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id=&quot;idUWExample&quot; style=&quot;margin: 8px; width:200px; background-color: gold;&quot;&gt;&lt;/div&gt;
+            </pre>
+        </div>
+
+        <!-- ########################################################### DRAW TREE ############################################### -->
+        <h2 id="idTitleDrawTree" onclick="javascript:$('drawTreeBody').toggle()">DRAW TREE</h2>
+        <div id='drawTreeBody'>
+            <h3>Description</h3>
+            <p>This module creates a tree structure out of some javascript code and div's.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">divHash: A hash with the divs' ids</li>
+                <li class="howTo">idFrame: The div where you want to draw the tree</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">None</li>
+            </ul>
+
+
+            <h3>Example 1: Simple structure</h3>
+            <script type="text/javascript" defer='defer'>
+                function refresh() {
+                    if ($('parentHeight').value != 'Height') {
+                        $('parent').style.height = $('parentHeight').value + 'px';
+                        myTree.refresh();
+                    }
+                    if ($('parentLeft').value != 'Margin_left') {
+                        $('parent').style.marginLeft = $('parentLeft').value + 'px';
+                        myTree.refresh();
+                    }
+                    if ($('parentTop').value != 'Margin_top') {
+                        $('parent').style.marginTop = $('parentTop').value + 'px';
+                        myTree.refresh();
+                    }
+                    if ($('staff1Left').value != 'Margin_left') {
+                        $('staff').style.marginLeft = $('staff1Left').value + 'px';
+                        myTree.refresh();
+                    }
+                    if ($('staff1Top').value != 'Margin_top') {
+                        $('staff').style.marginTop = $('staff1Top').value + 'px';
+                        myTree.refresh();
+                    }
+                    if ($('son3Left').value != 'Margin_left') {
+                        $('children3').style.marginLeft = $('son3Left').value + 'px';
+                        myTree.refresh();
+                    }
+
+                }
+            </script>
+
+            <div id='main' style='width:1200px; position:relative;'>
+                <div id='parent' style='background-color:blue; width:200px; height:100px; margin-left:300px; margin-top:20px;'>FATHER</div>
+                <div id='staff' style='background-color:Green; width:200px; height:100px; margin-left:50px; margin-top:90px; float:left;'>STAFF1</div>
+                <div id='staff2' style='background-color:Aqua; width:200px; height:100px; margin-left:750px; margin-top:50px;'>STAFF2</div>
+                <div id='children1' style='background-color:Red; width:200px; height:100px; margin-left:-50px; margin-top:300px; float:left;'>SON1</div>
+                <div id='children2' style='background-color:yellow; width:200px; height:100px; margin-left:100px; margin-top:250px; float:left;'>SON2</div>
+                <div id='children3' style='background-color:blue; width:200px; height:100px; margin-left:100px; margin-top:200px; float:left;'>SON3</div>
+            </div>
+
+            <script type="text/javascript" defer='defer'>
+                var divHash = new Hash();
+                var key = $("parent").identify();
+                var staff = [];
+                staff.push($("staff").identify());
+                staff.push($("staff2").identify());
+                var sons = [];
+                sons.push($("children1").identify());
+                sons.push($("children2").identify());
+                sons.push($("children3").identify());
+                divHash.set(key, {
+                    parent: key,
+                    staff: staff,
+                    sons: sons
+                });
+                var idFrame = $('main').identify();
+                var myTree = new drawTree(divHash, idFrame);
+
+                $('drawTreeBody').hide();
+            </script>
+
+            <div id='example' style='clear:both; margin-top:100px;'>
+                <div id='parentPar'>Parent<input id='parentHeight' type='text' value='Height' style='margin-left:30px;' /><input id='parentLeft' type='text' value='Margin_left'/><input id='parentTop' type="text" value='Margin_top'/></div>
+                <div id='Staff1Par' style='margin-top:30px;'>Staff1<input id='staff1Left' type='text' value='Margin_left' style='margin-left:30px;'/><input id='staff1Top' type="text" value='Margin_top'/></div>
+                <div id='children3Par' style='margin-top:30px;'>Son3<input id='son3Left' type='text' value='Margin_left' style='margin-left:30px;'/></div>
+                <div id='refresh'><input id='refreshButton' type='button' value='refresh' onclick='javascript:refresh();'/></div>
+            </div>
+
+            <script type="text/javascript" defer='defer'>
+                if (sons.length == 0) $('children3par').hide();
+            </script>
+
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example shows a simple tree structure</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">drawTree.js</li>
+                <li class="howTo">wz_jsgraphics.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+        TO REFRESH THE TREE
+    &ltscript type="text/javascript"&gt
+        function refresh() {
+            if ($('parentHeight').value != 'Height') {
+                $('parent').style.height = $('parentHeight').value + 'px';
+                myTree.refresh();
+            }
+            if ($('parentLeft').value != 'Margin_left') {
+                $('parent').style.marginLeft = $('parentLeft').value + 'px';
+                myTree.refresh();
+            }
+            if ($('parentTop').value != 'Margin_top') {
+                $('parent').style.marginTop = $('parentTop').value + 'px';
+                myTree.refresh();
+            }
+            if ($('staff1Left').value != 'Margin_left') {
+                $('staff').style.marginLeft = $('staff1Left').value + 'px';
+                myTree.refresh();
+            }
+            if ($('staff1Top').value != 'Margin_top') {
+                $('staff').style.marginTop = $('staff1Top').value + 'px';
+                myTree.refresh();
+            }
+            if ($('son3Left').value != 'Margin_left') {
+                $('children3').style.marginLeft = $('son3Left').value + 'px';
+                myTree.refresh();
+            }
+
+        }
+    &lt/script&gt
+
+    TO CRETE THE TREE
+    &ltscript type="text/javascript"&gt
+        var divHash = new Hash();
+        var key = $("parent").identify();
+        var staff = [];
+        staff.push($("staff").identify());
+        staff.push($("staff2").identify());
+        var sons = [];
+        sons.push($("children1").identify());
+        sons.push($("children2").identify());
+        sons.push($("children3").identify());
+        divHash.set(key, {
+            parent: key,
+            staff: staff,
+            sons: sons
+        });
+        var idFrame = $('main').identify();
+        var myTree = new drawTree(divHash, idFrame);
+    &lt/script&gt
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &ltdiv id='Div2' style='width:1200px; position:relative;'&gt
+        &ltdiv id='Div3' style='background-color:blue; width:200px; height:100px; margin-left:300px; margin-top:20px;'&gtFATHER&lt/div&gt
+        &ltdiv id='Div4' style='background-color:Green; width:200px; height:100px; margin-left:50px; margin-top:90px; float:left;'&gtSTAFF1&lt/div&gt
+        &ltdiv id='Div5' style='background-color:Aqua; width:200px; height:100px; margin-left:750px; margin-top:50px;'&gtSTAFF2&lt/div&gt
+        &ltdiv id='Div6' style='background-color:Red; width:200px; height:100px; margin-left:-50px; margin-top:300px; float:left;'&gtSON1&lt/div&gt
+        &ltdiv id='Div7' style='background-color:yellow; width:200px; height:100px; margin-left:100px; margin-top:250px; float:left;'&gtSON2&lt/div&gt
+        &ltdiv id='Div8' style='background-color:blue; width:200px; height:100px; margin-left:100px; margin-top:200px; float:left;'&gtSON3&lt/div&gt
+    &lt/div&gt
+            </pre>
+        </div>
+
+        <!-- ########################################################### DATE PICKER ############################################### -->
+        <h2 id="idTitleDatePicker" onclick="javascript:$('datePickerBody').toggle()">DATE PICKER</h2>
+        <div id='datePickerBody' style="display:none">
+            <h3>Description</h3>
+            <p>This module creates a datepicker inside a specified div.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">defaultDate: (String) The date that should be pre filled in the following format: YYYYMMDD</li>
+                <li class="howTo">fromDate: (String) The lowest date value allowed in the following format: YYYYMMDD</li>
+                <li class="howTo">toDate: (String) The highest date value allowed in the following format: YYYYMMDD</li>
+                <li class="howTo">manualDateInsertion: (boolean) Indicates whether the date can be modified manually. True as default.</li>
+                <li class="howTo">draggable: (boolean) Indicates whether the date picker panel is draggable. False as default.</li>
+                <li class="howTo">emptyDateValid: (boolean) Indicates whether the date field may be empty. True as default.</li>
+                <li class="howTo">events: (Hash) The hash of events</li>
+                <li class="howTo">labels: (Hash) The hash of labels ("jan", "feb", "mon", "thu", "previous", "next", ....)</li>
+                <li class="howTo">startDay: (integer) You can choose the first day of the week </li>
+                <li class="howTo">format: (string) If you put 'month' the format will be MM.DD.YYYY if you don't use this argument the format will be DD.MM.YYYY</li>
+                <li class="howTo">correctDateOnBlur: (boolean) Indicates whether the correctDate event should only be fired when a field of the DatePicker loses focus, or always when the date changes. False as default.</li>
+                <li class="howTo">fireEventOnInitialize: (boolean) Whether correctDate/wrongDate should be fired upon the initialization of the DatePicker </li>
+            </ul>
+            <h3>Methods</h3>
+            <ul>
+                <li class="howTo">getWeek(date): Gets the week number for a given date</li>
+                <li class="howTo">linkCalendar(calendar): Links a calendar to other (Implements the From To behaviour, It is, if you click on the first calendar on a date it will be set as minimum date on the second, and if you click on a date on the second calendar it will be set as maximum date on the second.</li>
+                <li class="howTo">isLeapYear(year): Checks if the year is a leap year</li>
+                <li class="howTo">updateRange(toDate,fromDate): Sets a new minimum and maximum date for the DatePicker. Parameters should come in YYYYMMDD format.</li>
+                <li class="howTo">getDayOfWeek(day, month, year): Calculates the day of the week for a given date</li>
+                <li class="howTo">strToDate(dateString): Converts a date string (YYYYMMDD) to a date object</li>
+                <li class="howTo">getWeekHeader(): Gets the names of the days of the week and calculates their positions</li>
+                <li class="howTo">loadCalendarPage(): This function fills in the calendar cells the days of a given month</li>
+                <li class="howTo">getMonthDays(month, year): Gets the number of days for a given month in a year</li>
+                <li class="howTo">load(): This function loads the calendar and initialize the main components</li>
+                <li class="howTo">loadYearSelectionDialog(): This function loads the Year selection list</li>
+                <li class="howTo">increaseYearSelectionDialog(): This function increases the year on the Year selection dialog</li>
+                <li class="howTo">decreaseYearSelectionDialog(): This function decreases the year on the year selection dialog</li>
+                <li class="howTo">nextMonth(): Loads next month on the calendar view</li>
+                <li class="howTo">previousMonth(): Loads previous month on the calendar view</li>
+                <li class="howTo">selectDay(event, day): Day clicking event (This function is triggered when the user clicks on a calendar day)</li>
+                <li class="howTo">showYearSelection(e): This function shows the list of the years</li>
+                <li class="howTo">showCalendar(e): This function shows and hide the calendar</li>
+                <li class="howTo">showMonthSelection(): This functios hide or show the month selection panel depending on the current state it is</li>
+                <li class="howTo">changeMonthByList(event, month): This function is called when the user clicks on the name of a month. The function change the calendar to the pressed month</li>
+                <li class="howTo">changeYearByList(event, year): This function is triggered when clicking on one of the year of the year selection list</li>
+                <li class="howTo">checkStringDateFormat(str): Replace some special characters with NaN</li>
+                <li class="howTo">checkDateFormat(noLinkedCheck, onBlur): Checks if the date format is correct. noLinkedCheck indicates if the linked calendar should be check or no. onBlur indicates if the event that invoced checkDateFormat is from blur or no</li>
+                <li class="howTo">getDateAsArray(): Gets the selected date as an array</li>
+                <li class="howTo">getActualDate(): Returns the current date of the DatePicker in YYYYMMDD format.</li>
+                <li class="howTo">initOverlay(): This function creates the overlay for the modal window that will contain the calendar</li>
+                <li class="howTo">initCalendarDiv(): This function creates the elements needed to show the DatePicker</li>
+                <li class="howTo">setDay(week, day, value, selected): This functions sets day number for a given week and day</li>
+                <li class="howTo">reloadDefaultDate(): Sets the actual date to the default date, and inserts the default date on the text fields</li>
+                <li class="howTo">checkOutside(evt): This function checks if a click is done inside 'datePicker_overlay' element or not. If the click is outside the element the function hide the calendar.</li>
+                <li class="howTo">clearFields(): Clears day, month and year fields</li>
+                <li class="howTo">checkDateAndFocus(e): Checks date and moves focus if necessary. e is the event that was fired to call this method. (Occurs on change of date)</li>
+                <li class="howTo">checkDateOnBlur(e): Checks date if it was changed. e is the event that was fired to call this method. (Occurs on blur of date fields)</li>
+                <li class="howTo">fieldWasModified(element, noLastChange): Checks if day, month or year have been modified. If so, it updates last input field. element: element to check. noLastChange: if it is true, it does not update last input.</li>
+                <li class="howTo">moveFocusToNextField(element): The focus is set in the next element if necessary (day --> month, month --> year). element: element holding the focus</li>
+                <li class="howTo">raiseInternalEvent(e): Raises an internal event in datePicker if it is included in the events options. e: the event raised</li>
+                <li class="howTo">earlierThan(dP): true if the current date is earlier than the argument date, false otherwise</li>
+                <li class="howTo">changeClassNameInAll(oldClass, newClass): Interchanges two classes for day, month and year fields</li>
+                <li class="howTo">changeClassName(element, oldClass, newClass): Interchanges two classes for the given element</li>
+                <li class="howTo">dateHasEmptyField(): Checks if any field is empty</li>
+                <li class="howTo">dateIsEmpty(): Checks if all fields are empty</li>
+                <li class="howTo">dateIsCompleted(): Checks if the date is completed, i.e., day/month/year has the minimum expected length</li>
+                <li class="howTo">setDate(date, onBlur): Sets the current date according to the param's value. onBlur: if the date has been set as an event of blur</li>
+                <li class="howTo">isOutOfRange(): If the date is out of range</li>
+                <li class="howTo">showOutOfRange(): Shows the Out Of Range message under the DatePicker</li>
+                <li class="howTo">setMonthAndDayLabels(): Sets the month and day labels</li>
+                <li class="howTo">getLabel(): Gets the label from the options or returns the id if it does not exist</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">correctDate: Fired when the selected/inserted date is correct. Returns "id", "day", "month" and "year".</li>
+                <li class="howTo">wrongDate: Fired when the selected/inserted date is incorrect. Returns "id", "day", "month" and "year".</li>
+            </ul>
+            
+            <h3>Example 1: DatePicker that can be manually modified</h3>
+            <div id="idCalendarExample1"></div>
+            <script type="text/javascript" defer="defer">
+                var objCalendarExample1 = new DatePicker('idCalendarExample1', { manualDateInsertion: true});
+            </script>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example shows a date picker that can be manually modified</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">datePicker.js</li>
+                <li class="howTo">date.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var objCalendarExample1 = new DatePicker('idCalendarExample1', { manualDateInsertion: true});
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id=&quot;idCalendarExample1&quot;&gt;&lt;/div&gt;
+            </pre>
+
+
+            <h3>Example 2: Example with custom label data</h3>
+            <div id="idCalendarExample2"></div>
+            <script type="text/javascript" defer="defer">
+
+                document.observe('EWS:onCorrectDateExample2', function(event){
+                    args = getArgs(event);
+                    if(log){
+                        log.info('Date filled in was correct ('+args.id+';'+args.day+'/'+args.month+'/'+args.year+')');
+                    }
+                }.bindAsEventListener(this));
+
+                document.observe('EWS:onWrongDateExample2', function(event){
+                    args = getArgs(event);
+                    if(log){
+                        log.info('Date filled in was incorrect ('+args.id+')');
+                    }
+                }.bindAsEventListener(this));
+
+                var objCalendarExample2 = new DatePicker('idCalendarExample2', {
+                    defaultDate: '20090430',
+                    fromDate: '20090405',
+                    toDate: '20090415',
+                    manualDateInsertion: true,
+                    draggable: true,
+                    events: $H({
+                        correctDate: "EWS:onCorrectDateExample2",
+                        wrongDate: "EWS:onWrongDateExample2"
+                    }),
+                    labels: $H({
+                        jan: 'Januari',
+                        mar: 'Maart',
+                        may: 'Mei',
+                        jul: 'Juli',
+                        aug: 'Augustus',
+                        oct: 'Oktober',
+                        dec: 'December',
+                        sun: 'Domingo',
+                        mon: 'Lunes',
+                        tue: 'Martes',
+                        wed: 'Miercoles',
+                        thu: 'Jueves',
+                        fri: 'Viernes',
+                        sat: 'Sabado',
+                        previous: 'Vorige',
+                        next: 'Volgende'
+                    }),
+                    startDay: 4
+                });
+            </script>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example shows a date picker with custom label data like the months, weekdays and navigation</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">datePicker.js</li>
+                <li class="howTo">date.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var objCalendarExample2 = new DatePicker('idCalendarExample2', {
+            defaultDate: '20090430',
+            fromDate: '20090405',
+            toDate: '20090415',
+            manualDateInsertion: true,
+            draggable: true,
+            labels: $H({
+                jan: 'Januari',
+                mar: 'Maart',
+                may: 'Mei',
+                jul: 'Juli',
+                aug: 'Augustus',
+                oct: 'Oktober',
+                dec: 'December',
+                sun: 'Zondag',
+                mon: 'Maandag',
+                tue: 'Dinsdag',
+                wed: 'Woensdag',
+                thu: 'Donderdag',
+                fri: 'Vrijdag',
+                sat: 'Zaterdag',
+                previous: 'Vorige',
+                next: 'Volgende'
+            }),
+            startDay: 1,
+        });
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id=&quot;idCalendarExample2&quot;&gt;&lt;/div&gt;
+            </pre>
+
+
+            <h3>Example 3: Linked dates</h3>
+            <div>
+                <span style="float: left;">From: &nbsp;</span><div id="idCalendarExample3From"></div>
+                <span style="float: left;">To: &nbsp;</span><div id="idCalendarExample3To"></div>
+            </div>
+            <script type="text/javascript" defer="defer">
+                var objCalendarExample3From = new DatePicker('idCalendarExample3From', {manualDateInsertion: true, emptyDateValid: true, defaultDate: '20090301'});
+                var objCalendarExample3To = new DatePicker('idCalendarExample3To', { manualDateInsertion: true, defaultDate: '20090331' });
+                objCalendarExample3From.linkCalendar(objCalendarExample3To);
+            </script>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example shows two date pickers that are linked to each other</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">datePicker.js</li>
+                <li class="howTo">date.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var objCalendarExample3From = new DatePicker('idCalendarExample3From', {manualDateInsertion: true, emptyDateValid: true});
+        var objCalendarExample3To = new DatePicker('idCalendarExample3To', {manualDateInsertion: true});
+        objCalendarExample3From.linkCalendar(objCalendarExample3To);
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div&gt;
+        &lt;span style=&quot;float: left;&quot;&gt;From: &nbsp;&lt;/span&gt;&lt;div id=&quot;idCalendarExample3From&quot;&gt;&lt;/div&gt;
+        &lt;span style=&quot;float: left;&quot;&gt;To: &nbsp;&lt;/span&gt;&lt;div id=&quot;idCalendarExample3To&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+            </pre>
+        </div>
+
+        <!-- Ending SAMUEL's zone -->
+    <!-- For avoiding SVN conflicts, here below reserved zone for PEPE's code -->
+        <h2 id="idTitleAccordion" onclick="javascript:$('accordionBody').toggle()">ACCORDION</h2>
+        <div id='accordionBody' style="display:none">
+            <h3>Description</h3>
+            <p>The Accordion allows to include text in divs and show it with the effect like an accordion</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">resizeSpeed: Time to resize the divs with the effect accordion</li>
+                <li class="howTo">classNames: names of the classes for the toogle, toogle active and the content (see the example) </li>
+                <li class="howTo">defaultSize: You can choose the width and height for the accordion</li>
+                <li class="howTo">direction: The direcction of the accordion, "horizontal" "vertical"</li>
+                <li class="howTo">onEvent: You can choose the event to launch the accordion; "click", "mouseover", etc</li>
+                <li class="howTo">actionCallback: you can define a function to react at the event</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">No Events</li>
+            </ul>
+            <h3>Vertical Accordion example with nested accordion</h3>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">Showing n example of vertical accordion</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">accordion.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+          function loadAccordions() {
+             var verticalAccordion = new Accordion('vertical_container', { multiple: true }); //we create a new accordion(vertical)
+             var nestedVerticalAccordion = new Accordion('vertical_nested_container', {//we create a new accordion(nested)
+                 classNames: {//we asign the toggle active and the content we're going to use
+                     toggle: 'accordion_vertical_toggle',
+                     toggleActive: 'accordion_vertical_toggle_active',
+                     content: 'accordion_vertical_content'
+                 }
+
+             });
+             var topAccordion = new Accordion('horizontal_container', {
+                 classNames: {
+                     toggle: 'accordion_horizontal_toggle',
+                     toggleActive: 'accordion_horizontal_toggle_active',
+                     content: 'accordion_horizontal_content'
+                 },
+                 defaultSize: {
+                     width: 525
+                 },
+                 direction: 'horizontal'
+             });
+             
+             var testAccordion2 = new Accordion('test_vertical_container4', { multiple: false });
+             
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+
+        START OF SIMPLE ACCORDION BLOCK
+        &lt;div class="accordion_toggle application_header_bar"&gt
+            SSW2.0&lt;/div&gt
+        &lt;div class="accordion_content"&gt
+            &lt;span style="font-size: 14px; color: Black"&gtLorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. In sit amet mi ut odio dapibus vestibulum. Morbi eu purus vel massa
+                scelerisque tempus. Proin sit amet pede eget lacus lacinia sodales. Suspendisse
+                potenti. Mauris ac lacus a dolor feugiat sollicitudin. Praesent tempus imperdiet
+                velit. Donec nunc elit, posuere in, aliquet vitae, vestibulum nec, urna. Nullam
+                tincidunt magna accumsan mauris. Praesent semper volutpat nisl. Aliquam non est.
+                Nam blandit molestie leo. &lt;/span&gt
+        &lt;/div&gt
+
+        START OF NESTED ACCORDION BLOCK
+            &lt;div id="vertical_nested_container"&gt
+                &lt;div class="accordion_vertical_toggle application_header_bar"&gt
+                    AAAAA1&lt;/div&gt
+                &lt;div class="accordion_vertical_content"&gt
+                    &lt;span style="font-size: 14px; color: Black"&gtLorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. In sit amet mi ut odio dapibus vestibulum. Morbi eu purus vel massa
+                        scelerisque tempus.&lt;/span&gt
+                &lt;/div&gt
+                &lt;div class="accordion_vertical_toggle application_header_bar"&gt
+                    BBBBB1&lt;/div&gt
+                &lt;div class="accordion_vertical_content"&gt
+                    &lt;span style="font-size: 14px; color: Black"&gtLorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. In sit amet mi ut odio dapibus vestibulum. Morbi eu purus vel massa
+                        scelerisque tempus.&lt;/span&gt
+                &lt;/div&gt
+            &lt;/div&gt
+            </pre>
+            <script type="text/javascript">
+                function loadAccordions() {
+                    var verticalAccordion = new Accordion('vertical_container', { multiple: true }); //we create a new accordion(vertical)
+                    var nestedVerticalAccordion = new Accordion('vertical_nested_container', {//we create a new accordion(nested)
+                        classNames: {//we asign the toggle active and the content we're going to use
+                            toggle: 'accordion_vertical_toggle',
+                            toggleActive: 'accordion_vertical_toggle_active',
+                            content: 'accordion_vertical_content'
+                        }
+
+                    });
+                    var topAccordion = new Accordion('horizontal_container', {
+                        classNames: {
+                            toggle: 'accordion_horizontal_toggle',
+                            toggleActive: 'accordion_horizontal_toggle_active',
+                            content: 'accordion_horizontal_content'
+                        },
+                        defaultSize: {
+                            width: 525
+                        },
+                        direction: 'horizontal'
+                    });
+                    //we're going to open the fist vertical accordion
+                    //verticalAccordion.activate($$('#vertical_container .accordion_toggle')[0]);
+                    $('accordionBody').hide();
+                                        
+                    var testAccordion2 = new Accordion('test_vertical_container4', { multiple: false, table:true });
+                }
+            </script>
+            <div id="vertical_container">
+                <!--***************** START OF SIMPLE ACCORDION BLOCK **********************-->
+                <div class="accordion_toggle application_header_bar">
+                SSW2.0</div>
+                <div class="accordion_content">
+                    <span style="font-size: 14px; color: Black">Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. In sit amet mi ut odio dapibus vestibulum. Morbi eu purus vel massa
+                        scelerisque tempus. Proin sit amet pede eget lacus lacinia sodales. Suspendisse
+                        potenti. Mauris ac lacus a dolor feugiat sollicitudin. Praesent tempus imperdiet
+                        velit. Donec nunc elit, posuere in, aliquet vitae, vestibulum nec, urna. Nullam
+                        tincidunt magna accumsan mauris. Praesent semper volutpat nisl. Aliquam non est.
+                    Nam blandit molestie leo. </span>
+                </div>
+                <!--***************** END OF SIMPLE ACCORDION BLOCK **********************-->
+                <div class="accordion_toggle application_header_bar">
+                NORTHGATEARINSO</div>
+                <div class="accordion_content">
+                    <span style="font-size: 14px; color: Black">Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. In sit amet mi ut odio dapibus vestibulum. Morbi eu purus vel massa
+                        scelerisque tempus. Proin sit amet pede eget lacus lacinia sodales. Suspendisse
+                        potenti. Mauris ac lacus a dolor feugiat sollicitudin. Praesent tempus imperdiet
+                        velit. Donec nunc elit, posuere in, aliquet vitae, vestibulum nec, urna. Nullam
+                        tincidunt magna accumsan mauris. Praesent semper volutpat nisl. Aliquam non est.
+                    Nam blandit molestie leo. </span>
+                </div>
+                <div class="accordion_toggle application_header_bar">
+                Nested Accordion</div>
+                <div class="accordion_content">
+                    <!--***************** START OF NESTED ACCORDION BLOCK **********************-->
+                    <div id="vertical_nested_container">
+                        <div class="accordion_vertical_toggle application_header_bar">
+                        AAAAA1</div>
+                        <div class="accordion_vertical_content">
+                            <span style="font-size: 14px; color: Black">Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit. In sit amet mi ut odio dapibus vestibulum. Morbi eu purus vel massa
+                            scelerisque tempus.</span>
+                        </div>
+                        <div class="accordion_vertical_toggle application_header_bar">
+                        BBBBB1</div>
+                        <div class="accordion_vertical_content">
+                            <span style="font-size: 14px; color: Black">Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit. In sit amet mi ut odio dapibus vestibulum. Morbi eu purus vel massa
+                            scelerisque tempus.</span>
+                        </div>
+                    </div>
+                    <!--***************** END OF NESTED ACCORDION BLOCK **********************-->
+                </div>
+                <div id="horizontal_container">
+                    <div class="accordion_horizontal_toggle">
+                    Longer Test</div>
+                    <div class="accordion_horizontal_content">
+                        <p>
+                            This is an example
+                        </p>
+                    </div>
+                    <div class="accordion_horizontal_toggle">
+                    Text 2</div>
+                    <div class="accordion_horizontal_content">
+                        <p>
+                            This is an example
+                        </p>
+                    </div>
+                    <div class="accordion_horizontal_toggle">
+                    Text 3333</div>
+                    <div class="accordion_horizontal_content">
+                        <p>
+                            This is an example
+                        </p>
+                    </div>
+                    <div class="accordion_horizontal_toggle">
+                    Text 4</div>
+                    <div class="accordion_horizontal_content">
+                        <p>
+                            This is an example
+                        </p>
+                    </div>
+                    <div class="accordion_horizontal_toggle">
+                    Text 5</div>
+                    <div class="accordion_horizontal_content">
+                        <p>
+                            This is an example
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both">
+                accordion works also with tables, but only if you have more then one "table_toggle" and "table_toggle"
+                <table id="test_vertical_container4">
+                    <tr class="accordion_toggle application_header_bar">
+                        <td>
+                            Number Number Number Number Number Number
+                        </td>
+                        <td>
+                            Content Content Content Content Content Content
+                        </td>
+                    </tr>
+                    <tr class="accordion_content">
+                        <td>
+                            100
+                        </td>
+                        <td>
+                            NorthgateArinso is a leading global Human Resources software & services provider
+                            offering innovative HR business solutions to employers of all sizes, including Global
+                            Fortune 500 companies and many Public Sector organizations.
+                        </td>
+                    </tr>
+                    <tr class="accordion_toggle application_header_bar">
+                        <td>
+                            Number Number Number Number Number Number
+                        </td>
+                        <td>
+                            Content Content Content Content Content Content
+                        </td>
+                    </tr>
+                    <tr class="accordion_content">
+                        <td>
+                            100
+                        </td>
+                        <td>
+                            NorthgateArinso is a leading global Human Resources software & services provider
+                            offering innovative HR business solutions to employers of all sizes, including Global
+                            Fortune 500 companies and many Public Sector organizations.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!--***************************************************************-->
+        <h2 id="idTitleTableKit" onclick="javascript:$('tableKitBody').toggle()" style='clear:both;'>TABLEKIT</h2>
+        <div id='tableKitBody' style="display:none">
+            <h3>Description</h3>
+            <p>The tableKit module allows to the users to create sortable tables</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">marginL :(integer) Is used to position the pagination into the tFoot</li>
+                <li class="howTo">pages : Number of lines in pages if you want pagination in tables</li>
+                <li class="howTo">Option : Default</li>
+                <li class="howTo">autoLoad : true: If you don't want the script to load automatically set this to false</li>
+                <li class="howTo">stripe : true: enables row striping</li>
+                <li class="howTo">sortable : true: enables column sorting</li>
+                <li class="howTo">resizable : true: enables column resizing</li>
+                <li class="howTo">editable : false: enables cell editing</li>
+                <li class="howTo">rowEvenClass : 'table_roweven': css class used for row striping</li>
+                <li class="howTo">rowOddClass : 'table_rowodd': css class used for row striping</li>
+                <li class="howTo">sortableSelector : ['table.sortable']: selector for finding tables to make sortable</li>
+                <li class="howTo">columnClass : 'table_sortcol': css class for each sortable column header cell</li>
+                <li class="howTo">descendingClass : 'table_sortColDesc': css class for sortable column header cell when sorted descending</li>
+                <li class="howTo">ascendingClass : 'table_sortColAsc': css class for sortable column header cell when sorted ascending</li>
+                <li class="howTo">noSortClass : 'nosort': css class for sortable column header cell to disable sorting for that column</li>
+                <li class="howTo">defaultSortDirection : 1: initial sort direction for all columns, 1 means ascending, -1 means desceding.</li>
+                <li class="howTo">sortFirstAscendingClass : 'table_sortfirstasc': css class for sortable column header cell to trigger initial ascendant sorting for that column</li>
+                <li class="howTo">sortFirstDecendingClass : 'table_sortfirstdesc': css class for sortable column header cell to trigger initial decendant sorting for that column</li>
+                <li class="howTo">resizableSelector : ['table.resizable']: selector for finding tables to make resizable</li>
+                <li class="howTo">minWidth : 10: minimum width in pixels of a resizable column</li>
+                <li class="howTo">showHandle : true: shows the resize handle, with this set to false cell no handle is visible and resize is immediate with mousemove</li>
+                <li class="howTo">resizeOnHandleClass : 'table_resize-handle-active': css class applied to header cell when the mouse pointer is in the resize handle zone (right hand cell border)</li>
+                <li class="howTo">editableSelector : ['table.editable']: selector for finding tables to make editable</li>
+                <li class="howTo">formClassName : 'table_editable-cell-form': css class given to the form when a cell is made editable</li>
+                <li class="howTo">noEditClass : 'noedit': css class used on a header cell to indicate column is not editable, or on an individual body cell to indicate that cell is not editable.</li>
+                <li class="howTo">editAjaxURI : '/': form data is POSTed to this URI from the editable cell forms</li>
+                <li class="howTo">editAjaxOptions : {}: options for the <a href="http://prototypejs.org/api/ajax/updater" title="Prototype API">Prototype Ajax.Updater</a> used in editable cells</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">NO events</li>
+            </ul>
+            <h4>Comments on example</h4>
+            <p class="howTo">If you have a really big header title, you can have problems because the table may grow, so what you have to do is assign a fixed with to the header, and the column will adapt to this width. Other thing you have to do is create an acronym for the div inside the th, that contents the text:</p>
+            <p><b>&quot;&lt;tr&gt;&lt;th class=&#39;table_sortfirstdesc OM_massTransWidthTitle&#39;&gt;&lt;acronym title=&quot; titleLabel &quot;&gt;&quot; titleLabel &quot;&lt;/acronym&gt;&quot;</b></p>
+            <p>This way the column will adapt to the text with the fixed size you have assign to the header, and you will see a text cutted, but if you put the mouse over the text, you will see the complete text</p>
+            <h3>Example #1</h3>
+            <p>TableKit with pagination; 5 lines per page and margin = 100px</p>
+            <div id='contentTable' style='width:1000px;'>
+                <table class="sortable" id='exampleTable'>
+                    <thead>
+                        <tr>
+                            <th class="table_sortfirstdesc" id="urgency" style='width:80px;'>Urgency</th>
+                            <th id="creation-date" style='width:150px;'>Date</th>
+                            <th id="time" style='width:70px;'>Time</th>
+                            <th id="title" style='width:200px;'>Title</th>
+                            <th id="status" style='width:100px;'>Status</th>
+                            <th id="author" style='width:100px;'>Requested By</th>
+                            <th id="cost" style='width:100px;'>Cost</th>
+                            <th id="size" style='width:100px;'>Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="N938747839">
+                            <td><div class="urg5">5</div></td>
+                            <td>24/10/2005 10:47:41 AM</td>
+                            <td>10:47:41 AM</td>
+                            <td>Keyboard is Broken</td>
+                            <td>In Progress</td>
+                            <td>Tom</td>
+                            <td>$200.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr id="N938712239">
+                            <td><div class="urg5">5</div></td>
+                            <td>24/10/2005 10:49:41 AM</td>
+                            <td>10:49:41 AM</td>
+                            <td>Keyboard is Broken</td>
+                            <td>In Progress</td>
+                            <td>Tom</td>
+                            <td>$200.00</td>
+                            <td>30 KB</td>
+                        </tr>
+                        <tr id="N938744539">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="N938746764">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <script type="text/javascript">
+                TableKit.Sortable.init($('exampleTable'), { pages: 5, marginL:100 });
+                TableKit.options.autoLoad = false;
+            </script>
+
+            <h4>How to</h4>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">TableKit.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+         &ltscript type="text/javascript"&gt
+             TableKit.Sortable.init($('exampleTable'), { pages: 5 });
+             TableKit.options.autoLoad = false;
+        &lt/script&gt
+
+        <b>If you want to use the pagination make sure that the option autoload is setting to false!!!</b>
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id='Div1'&gt
+        &lt;table class="sortable resizable" id='Table1'&gt
+            &lt;thead&gt
+                &lt;tr&gt
+                    &lt;th class="table_sortfirstdesc" id="Th1"&gtUrgency&lt;/th&gt
+                    &lt;th id="Th2"&gtDate&lt;/th&gt
+                    &lt;th id="Th3"&gtTime&lt;/th&gt
+                    &lt;th id="Th4"&gtTitle&lt;/th&gt
+                    &lt;th id="Th5" style="width:500px;"&gtStatus&lt;/th&gt
+                    &lt;th id="Th6"&gtRequested By&lt;/th&gt
+                    &lt;th id="Th7"&gtCost&lt;/th&gt
+                    &lt;th id="Th8"&gtSize&lt;/th&gt
+                &lt;/tr&gt
+            &lt;/thead&gt
+            &lt;tbody&gt
+                &lt;tr id="Tr1"&gt
+                    &lt;td&gt&lt;div class="urg5"&gt5&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt24/10/2005 10:47:41 AM&lt;/td&gt
+                    &lt;td&gt10:47:41 AM&lt;/td&gt
+                    &lt;td&gtKeyboard is Broken&lt;/td&gt
+                    &lt;td&gtIn Progress&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$200.00&lt;/td&gt
+                    &lt;td&gt30KB&lt;/td&gt
+                &lt;/tr&gt
+                &lt;tr id="Tr2"&gt
+                    &lt;td&gt&lt;div class="urg5"&gt5&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt24/10/2005 10:49:41 AM&lt;/td&gt
+                    &lt;td&gt10:49:41 AM&lt;/td&gt
+                    &lt;td&gtKeyboard is Broken&lt;/td&gt
+                    &lt;td&gtIn Progress&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$200.00&lt;/td&gt
+                    &lt;td&gt30 KB&lt;/td&gt
+                &lt;/tr&gt
+                &lt;tr id="Tr3"&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt24/10/2005 10:49:41 PM&lt;/td&gt
+                    &lt;td&gt10:49:41 PM&lt;/td&gt
+                    &lt;td&gtWindows is crashing&lt;/td&gt
+                    &lt;td&gtNew&lt;/td&gt&lt;td&gtBill&lt;/td&gt
+                    &lt;td&gt$300.00&lt;/td&gt
+                    &lt;td&gt30MB&lt;/td&gt
+                &lt;/tr&gt
+                &lt;tr id="Tr4"&gt
+                    &lt;td&gt&lt;div class="urg4"&gt4&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt17/02/2006&lt;/td&gt
+                    &lt;td&gt12:43:16 PM&lt;/td&gt
+                    &lt;td&gtHelp, I'm on fire!&lt;/td&gt
+                    &lt;td&gtNew&lt;/td&gt
+                    &lt;td&gtJohn&lt;/td&gt
+                    &lt;td&gt$250.00&lt;/td&gt
+                    &lt;td&gt30KB&lt;/td&gt
+                &lt;/tr&gt
+                &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/07/2006xxx&lt;/td&gt
+                    &lt;td&gt03:04:34 PM&lt;/td&gt
+                    &lt;td&gtThe ring came&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$200.50&lt;/td&gt
+                    &lt;td&gt30GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt16/07/2008xxx&lt;/td&gt
+                    &lt;td&gt03:11:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 1&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$300.50&lt;/td&gt
+                    &lt;td&gt40GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/10/2006xxx&lt;/td&gt
+                    &lt;td&gt13:04:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 2&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$204.50&lt;/td&gt
+                    &lt;td&gt50GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/11/2006xxx&lt;/td&gt
+                    &lt;td&gt14:04:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 3&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$240.50&lt;/td&gt
+                    &lt;td&gt60GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/07/2016xxx&lt;/td&gt
+                    &lt;td&gt03:14:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 4&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$234.50&lt;/td&gt
+                    &lt;td&gt70GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt30/07/2006xxx&lt;/td&gt
+                    &lt;td&gt03:24:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 5&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$340.50&lt;/td&gt
+                    &lt;td&gt80GB&lt;/td&gt
+                 &lt;/tr&gt
+                 &lt;tr&gt
+                    &lt;td&gt&lt;div class="urg3"&gt3&lt;/div&gt&lt;/td&gt
+                    &lt;td&gt06/07/2006xxx&lt;/td&gt
+                    &lt;td&gt03:54:34 PM&lt;/td&gt
+                    &lt;td&gtexample pagination 6&lt;/td&gt
+                    &lt;td&gtAssigned&lt;/td&gt
+                    &lt;td&gtTom&lt;/td&gt
+                    &lt;td&gt$200.50&lt;/td&gt
+                    &lt;td&gt90GB&lt;/td&gt
+                 &lt;/tr&gt
+            &lt;/tbody&gt
+        &lt;/table&gt
+    &lt;/div&gt
+            </pre>
+            <h3>Example #2</h3>
+            <p>Sortable tableKit without pagination</p>
+            <div id='Div1'>
+                <table class="sortable resizable" id='exampleTable2'>
+                    <thead>
+                        <tr>
+                            <th class="table_sortfirstdesc" id="Th1">Urgency</th>
+                            <th id="Th2">Date</th>
+                            <th id="Th3">Time</th>
+                            <th id="Th4">Title</th>
+                            <th id="Th5" style="width:500px;">Status</th>
+                            <th id="Th6">Requested By</th>
+                            <th id="Th7">Cost</th>
+                            <th id="Th8">Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="Tr1">
+                            <td><div class="urg5">5</div></td>
+                            <td>24/10/2005 10:47:41 AM</td>
+                            <td>10:47:41 AM</td>
+                            <td>Keyboard is Broken</td>
+                            <td>In Progress</td>
+                            <td>Tom</td>
+                            <td>$200.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr id="Tr2">
+                            <td><div class="urg5">5</div></td>
+                            <td>24/10/2005 10:49:41 AM</td>
+                            <td>10:49:41 AM</td>
+                            <td>Keyboard is Broken</td>
+                            <td>In Progress</td>
+                            <td>Tom</td>
+                            <td>$200.00</td>
+                            <td>30 KB</td>
+                        </tr>
+                        <tr id="Tr3">
+                            <td><div class="urg3">3</div></td>
+                            <td>24/10/2005 10:49:41 PM</td>
+                            <td>10:49:41 PM</td>
+                            <td>Windows is crashing</td>
+                            <td>New</td><td>Bill</td>
+                            <td>$300.00</td>
+                            <td>30MB</td>
+                        </tr>
+                        <tr id="Tr4">
+                            <td><div class="urg4">4</div></td>
+                            <td>17/02/2006</td>
+                            <td>12:43:16 PM</td>
+                            <td>Help, I'm on fire!</td>
+                            <td>New</td>
+                            <td>John</td>
+                            <td>$250.00</td>
+                            <td>30KB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:04:34 PM</td>
+                            <td>The ring came</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>30GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>16/07/2008xxx</td>
+                            <td>03:11:34 PM</td>
+                            <td>example pagination 1</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$300.50</td>
+                            <td>40GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/10/2006xxx</td>
+                            <td>13:04:34 PM</td>
+                            <td>example pagination 2</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$204.50</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/11/2006xxx</td>
+                            <td>14:04:34 PM</td>
+                            <td>example pagination 3</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$240.50</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2016xxx</td>
+                            <td>03:14:34 PM</td>
+                            <td>example pagination 4</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$234.50</td>
+                            <td>70GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>30/07/2006xxx</td>
+                            <td>03:24:34 PM</td>
+                            <td>example pagination 5</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$340.50</td>
+                            <td>80GB</td>
+                        </tr>
+                        <tr>
+                            <td><div class="urg3">3</div></td>
+                            <td>06/07/2006xxx</td>
+                            <td>03:54:34 PM</td>
+                            <td>example pagination 6</td>
+                            <td>Assigned</td>
+                            <td>Tom</td>
+                            <td>$200.50</td>
+                            <td>90GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <script type="text/javascript">
+                TableKit.Sortable.init($('exampleTable2'));
+            </script>
+
+            <h4>How to</h4>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">Tablekit.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+        TableKit.Sortable.init($('exampleTable2'));
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+        The same HTML code than in the example 1 but changing the id of the table
+            </pre>
+            <hr />
+        </div>
+        <!-- Ending PEPE's zone -->
+    <!-- For avoiding SVN conflicts, here below reserved zone for PACO's code -->
+        <h2 id="idTitleAutocompleter" onclick="javascript:$('autocompletersBody').toggle()">AUTOCOMPLETER</h2>
+        <div id='autocompletersBody' style="display:none">
+            <h3>Description</h3>
+            <p>The Autocompleters Module allows to the user to choose values on an input box while the module helps to the user showing matching values retrieved from the backend</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">label (string, null by default): a label to be shown inside the autocompleter if there is not chosen any value.</li>
+                <li class="howTo">autoWidth (boolean, false by default): when true the text area width is auto calculated, so the whole text fits it.</li>
+                <li class="howTo">showEverythingOnButtonClick (boolean, false by default): when true on arrow button click list shows unfiltered options list.</li>
+                <li class="howTo">emptyOnBlur (boolean, false by default): when true the text area is cleared if it lost the focus and there's not valid text entered. When false the autocompleter will show the last valid selected option.</li>
+                <li class="howTo">minChars (integer, 3 by default): how many characters the user has to type before the options list is shown.</li>
+                <li class="howTo">timeout (integer, 5000 by default): number of milisecond to wait (at least) between to consecutive events to ask for new data.</li>
+                <li class="howTo">templateOptionsList (template, '#{text} &lt;#{data}&gt;' by default): a string representing the template wanted to be used in options list.</li>
+                <li class="howTo">templateResult (template, '#{text}' by default): a string representing the template wanted to be used in text area when a new result is selected.</li>
+                <li class="howTo">splitSelectors (array, ['\\.', ',', '@'] by default): an Array of characters to be used as selectors.</li>
+                <li class="howTo">maxShown (integer or 'auto', 'auto' by default): how many results are shown at the same time, if auto, it shows as many as div's height and scroll is enabled</li>
+                <li class="howTo">noFilter (boolean, false by default): if true, the autocompleter won't take into account the text typed on the box, useful when we retrieve values already filtered from SAP, database...</li>
+                <li class="howTo">events (hash, $H({}) by default): hash with the events that we want to activate</li>
+				<li class="howTo">xmlToSend (string): Contains the XML to send to the service, with &lt;SEARCH_PATTERN /&gt; where the search query should go</li>
+				<li class="howTo">searchWithService (boolean, false by default): If the search should be done through a service or no</li>
+				<li class="howTo">url (string): URL of the service to be called</li>
+				<li class="howTo">method (string): Method type of the service to be called (usually POST)</li>
+
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onGetNewXml : Fired when the autocompleter asks for new data to the data source.</li>
+                <li class="howTo">onResultSelected: Event fired when the user selects any value from the autocompleter.</li>
+                <li class="howTo">onDataLoaded: Event fired when the data is loaded in the list.</li>
+            </ul>
+            <h3>Attributes inside the object that defines the autocompleter's list:</h3>
+            <ul>
+                <li class="howTo">data</li>
+                <li class="howTo">text</li>
+                <li class="howTo">title (if not defined, the templateOptionsList will be used as title, it's the tooltip displayed when the mouse is over the list option)</li>
+                <li class="howTo">def (it can be used just once, since it defines the value selected by default)</li>
+            </ul>
+            
+            <h3>Example #1</h3>
+            <p>Autocompleter with default value set by JSON attribute, launching events, showing all when clicked on the arrow, 5 seconds of waiting for new requests, results template and maxShown = 5</p>
+            <div id="sample_autocompleter"></div>
+            <script type="text/javascript">
+                var global;
+                var json = {
+                    autocompleter:{
+                        object:[
+                            {
+                                data:' Javier.Lopez@northgatearinso.com ',
+                                text:' Javier Lopez '
+                            },
+                            {
+                                data:' Lydia.Fernandez@northgatearinso.com ',
+                                text:' Lydia Fernandez '
+                            },
+                            {
+                                data:' Jose.Garrido@northgatearinso.com ',
+                                text:' Jose Garrido '
+                            },
+                            {
+                                data:' Luis.Aguirre@northgatearinso.com ',
+                                text:' Luis Aguirre '
+                            },
+                            {
+                                data:' FranciscoJose.Casas@northgatearinso.com ',
+                                text:' Francisco Jose Casas '
+                            },
+                            {
+                                data:' Leonor.Martinez@northgatearinso.com ',
+                                text:' Leonor Martinez '
+                            },
+                            {
+                                data:'Ana.Rodriguez@northgatearinso.com',
+                                text:'Ana Rodriguez'
+                            },
+                            {
+                                data:'Ulises.Torres@northgatearinso.com',
+                                text:'Ulises Torres'
+                            },
+                            {
+                                data:'Miguel.Jesus.Araque@northgatearinso.com',
+                                text:'Miguel Jesus Araque'
+                            },
+                            {
+                                def:'X',
+                                data:'Marcos.Marquez@northgatearinso.com',
+                                text:'Marcos Marquez'
+                            },
+                            {
+                                data:'Daniel.Galan@northgatearinso.com',
+                                text:'Daniel Galan'
+                            },
+                            {
+                                data:'Sergio.Garriguez@northgatearinso.com',
+                                text:'Sergio Garriguez'
+                            },
+                            {
+                                data:'Alejandra.Moreno@northgatearinso.com',
+                                text:'Alejandra Moreno'
+                            },
+                            {
+                                data:'Roberto.Ceron@northgatearinso.com',
+                                text:'Roberto Ceron'
+                            },
+                            {
+                                data: 'Chemine',
+                                text: 'Chemine'
+                            },
+                            {
+                                data: 'No Collective Agreement',
+                                text: 'No Collective Agreement'
+                            }
+                        ],
+                        multilanguage:{
+                            no_results:'No results found',
+                            search:'Search'
+                        }
+                    }
+                }
+                autocompleter = new JSONAutocompleter('sample_autocompleter', {
+                    events: $H({onGetNewXml: 'EWS:autocompleterGetNewXml',
+                        onResultSelected: 'EWS:autocompleterResultSelected'}),
+                    showEverythingOnButtonClick: true,
+                    //timeout: 5000,
+                    templateResult: '#{text}',
+                    maxShown:5,
+                    minChars:3
+                }, json);
+                document.observe('EWS:autocompleterGetNewXml', function(event){
+                    if(log)
+                        log.info('autocompleter has asked for new data')
+                }.bindAsEventListener(this));
+                document.observe('EWS:autocompleterResultSelected', function(event){
+                    if(log)
+                        log.info('It has been chosen a result in autocompleter')
+                }.bindAsEventListener(this));
+            </script>
+            <h4>How to</h4>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">None</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+                    var json = {
+                        autocompleter:{
+                            object:[
+                                {
+                                    data:' Javier.Lopez@northgatearinso.com ',
+                                    text:' Javier Lopez '
+                                },
+                                {
+                                    data:' Lydia.Fernandez@northgatearinso.com ',
+                                    text:' Lydia Fernandez '
+                                },
+                                {
+                                    data:' Jose.Garrido@northgatearinso.com ',
+                                    text:' Jose Garrido '
+                                },
+                                {
+                                    data:' Luis.Aguirre@northgatearinso.com ',
+                                    text:' Luis Aguirre '
+                                },
+                                {
+                                    data:' FranciscoJose.Casas@northgatearinso.com ',
+                                    text:' Francisco Jose Casas '
+                                },
+                                {
+                                    data:' Leonor.Martinez@northgatearinso.com ',
+                                    text:' Leonor Martinez '
+                                },
+                                {
+                                    data:'Ana.Rodriguez@northgatearinso.com',
+                                    text:'Ana Rodriguez'
+                                },
+                                {
+                                    data:'Ulises.Torres@northgatearinso.com',
+                                    text:'Ulises Torres'
+                                },
+                                {
+                                    data:'Miguel.Jesus.Araque@northgatearinso.com',
+                                    text:'Miguel Jesus Araque'
+                                },
+                                {
+                                    def:'X',
+                                    data:'Marcos.Marquez@northgatearinso.com',
+                                    text:'Marcos Marquez'
+                                },
+                                {
+                                    data:'Daniel.Galan@northgatearinso.com',
+                                    text:'Daniel Galan'
+                                },
+                                {
+                                    data:'Sergio.Garriguez@northgatearinso.com',
+                                    text:'Sergio Garriguez'
+                                },
+                                {
+                                    data:'Alejandra.Moreno@northgatearinso.com',
+                                    text:'Alejandra Moreno'
+                                },
+                                {
+                                    data:'Roberto.Ceron@northgatearinso.com',
+                                    text:'Roberto Ceron'
+                                }
+                            ],
+                            multilanguage:{
+                                no_results:'No results found',
+                                search:'Search'
+                            }
+                        }
+                    }
+
+                    autocompleter = new JSONAutocompleter('sample_autocompleter', {
+                        events: $H({onGetNewXml: 'EWS:autocompleterGetNewXml',
+                                    onResultSelected: 'EWS:autocompleterResultSelected'}),
+                   showEverythingOnButtonClick: true,
+                   timeout: 5000,
+                   templateResult: '#{text}',
+                   maxShown:5
+         }, json);
+
+         document.observe('EWS:autocompleterGetNewXml', function(event){
+            if(log)
+                log.info('autocompleter has asked for new data')
+         }.bindAsEventListener(this));
+         document.observe('EWS:autocompleterResultSelected', function(event){
+            if(log)
+                log.info('It has been chosen a result in autocompleter')
+         }.bindAsEventListener(this));
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+                    &lt;div id=&quot;sample_autocompleter&quot; style=&quot;margin-left:10px;&quot;&gt;&lt;/div&gt;
+            </pre>
+            <h3>Example #2</h3>
+            <p>Autocompleter with showEverythingOnButtonClick = false, title attribute defined, resultSelected event set, label, autoWidth and minChars = 1</p>
+            <div id="sample_autocompleterCities"></div>
+            <script type="text/javascript">
+                var jsonCities = {
+                    autocompleter:{
+                        object:[
+                            {
+                                data:' 04 ',
+                                text:' Almeria ',
+                                title:'Population: 187.521'
+                            },
+                            {
+                                data:' 11 ',
+                                text:' Cadiz ',
+                                title:'Population: 127.200'
+                            },
+                            {
+                                data:' 14 ',
+                                text:' Cordoba ',
+                                title:'Population: 325.453'
+                            },
+                            {
+                                data:' 18 ',
+                                text:' Granada ',
+                                title:'Population: 236.988'
+                            },
+                            {
+                                data:' 21 ',
+                                text:' Huelva ',
+                                title:'Population: 148.027'
+                            },
+                            {
+                                data:' 23 ',
+                                text:' Jaen ',
+                                title:'Population: 116.417'
+                            },
+                            {
+                                data:' 29 ',
+                                text:' Malaga ',
+                                title:'Population: 566.447'
+                            },
+                            {
+                                data:' 41 ',
+                                text:' Sevilla ',
+                                title:'Population: 699.759'
+                            }
+                        ]
+                    }
+                }
+                autocompleterCities = new JSONAutocompleter('sample_autocompleterCities', {
+                    events: $H({onResultSelected: 'EWS:autocompleterCitiesResultSelected'}),
+                    showEverythingOnButtonClick: false,
+                    templateResult: '#{text} #{data}',
+                    label:  'Type a city',
+                    autoWidth: true,
+                    minChars: 1
+                }, jsonCities);
+                document.observe('EWS:autocompleterCitiesResultSelected', function(event){
+                    if(log)
+                        log.info('It has been chosen a result in autocompleterCities')
+                }.bindAsEventListener(this));
+            </script>
+            <h4>How to</h4>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">None</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+                    var jsonCities = {
+                        autocompleter:{
+                            object:[
+                                {
+                                data:' 04 ',
+                                text:' Almeria ',
+                                title:'Population: 187.521'
+                            },
+                            {
+                                data:' 11 ',
+                                text:' Cadiz ',
+                                title:'Population: 127.200'
+                            },
+                            {
+                                data:' 14 ',
+                                text:' Cordoba ',
+                                title:'Population: 325.453'
+                            },
+                            {
+                                data:' 18 ',
+                                text:' Granada ',
+                                title:'Population: 236.988'
+                            },
+                            {
+                                data:' 21 ',
+                                text:' Huelva ',
+                                title:'Population: 148.027'
+                            },
+                            {
+                                data:' 23 ',
+                                text:' Jaen ',
+                                title:'Population: 116.417'
+                            },
+                            {
+                                data:' 29 ',
+                                text:' Malaga ',
+                                title:'Population: 566.447'
+                            },
+                            {
+                                data:' 41 ',
+                                text:' Sevilla ',
+                                title:'Population: 699.759'
+                            }
+                            ]
+                        }
+                    }
+                    autocompleterCities = new JSONAutocompleter('sample_autocompleterCities', {
+                        events: $H({onResultSelected: 'EWS:autocompleterCitiesResultSelected'}),
+                        showEverythingOnButtonClick: false,
+                        templateResult: '#{text} #{data}',
+                        label:  'Type a city',
+                        autoWidth: true,
+                        minChars: 1
+                    }, jsonCities);
+
+         document.observe('EWS:autocompleterCitiesResultSelected', function(event){
+                if(log)
+                   log.info('It has been chosen a result in autocompleterCities')
+         }.bindAsEventListener(this));
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id=&quot;sample_autocompleterCities&quot; style=&quot;margin-left:10px;&quot;&gt;&lt;/div&gt;
+            </pre>
+            <hr />
+        </div>
+        <!--*****************************************************************************************-->
+
+        <h2 id="idTitleContextMenu" onclick="javascript:$('contextMenuBody').toggle()">CONTEXT MENU</h2>
+        <div id='contextMenuBody' style="display:none">
+            <h3>Description</h3>
+            <p>This module provides to the user a way to display menus when a certain id is clicked.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">selector (string, ".contextMenu" by default): context menu will be shown when element with this id is clicked.</li>
+                <li class="howTo">className (string, "contextMenu" by default): this is a class which will be attached to menu container (used for css styling).</li>
+                <li class="howTo">menuItems (array, [] by default): array with items that will be shown, it can be included HTML code inside.</li>
+                <li class="howTo">separator (boolean, false by default): when included as item on menuItems, a line will be displayed.</li>
+                <li class="howTo">fade (boolean, false by default): when true the menu appears with a fade effect.</li>
+                <li class="howTo">zIndex (integer, 5500 by default): with this option the developer can set the zIndex property. (see <a href="http://www.w3schools.com/Css/pr_pos_z-index.asp" target=_blank>http://www.w3schools.com/Css/pr_pos_z-index.asp <a/> for further information).</li>
+                <li class="howTo">beforeShow (function, empty function by default): function executed before the menu is shown.</li>
+                <li class="howTo">beforeHide (function, empty function by default): function executed before the menu is hidden.</li>
+                <li class="howTo">beforeSelect (function, empty function by default): function executed before the menu is selected.</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">None</li>
+            </ul>
+            <h3>Example #1</h3>
+            <p>Clicking on the button, a context menu will be shown</p>
+            <input id="buttonContextMenu" type="button" value="Show Menu" style="margin-left:80px;"/>
+            <script type="text/javascript">
+                var menu = null;
+                function __initContextMenu() {
+                    var myMenuItems = [
+                        {
+                            name: 'New',
+                            callback: function(e) {
+                                alert('Creating new item...');
+                            }
+                        },{
+                            separator: true
+                        },{
+                            name: 'Edit',
+                            callback: function() {
+                                alert('Forward function called');
+                            }
+                        },{
+                            name: 'Copy',
+                            callback: function() {
+                                alert('Copy function called');
+                            }
+                        },{
+                            name: 'Delete',
+                            disabled: true
+                        },{
+                            separator: true
+                        },{
+                            name: 'Save',
+                            callback: function() {
+                                alert('Saving...');
+                            }
+                        },{
+                            separator: true
+                        },{
+                            name: 'Save as .xsl',
+                            callback: function() {
+                                alert('Saving as .xsl');
+                            }
+                        },{
+                            name: 'Save as .doc',
+                            callback: function() {
+                                alert('Saving as .doc');
+                            }
+                        },{
+                            name: 'Save as .pdf',
+                            callback: function() {
+                                alert('Saving as .pdf');
+                            }
+                        },{
+                            separator: true
+                        },{
+                            name: 'Send to...',
+                            disabled: true
+                        }
+                    ];
+
+                    menu = new Proto.Menu({
+                        beforeShow: function(){if(log)log.info('Showing menu')},
+                        menuItems: myMenuItems
+                    })
+                }
+                $('buttonContextMenu').observe('click', function(evt) { menu.show(evt); });
+            </script>
+            <h4>How to</h4>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">None</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    var menu = null;
+    function __initContextMenu() {
+        var myMenuItems = [
+          {
+            name: 'New',
+            callback: function(e) {
+              alert('Creating new item...');
+            }
+          },{
+            separator: true
+          },{
+            name: 'Edit',
+            callback: function() {
+              alert('Forward function called');
+            }
+          },{
+            name: 'Copy',
+            callback: function() {
+              alert('Copy function called');
+            }
+          },{
+            name: 'Delete',
+            disabled: true
+          },{
+            separator: true
+          },{
+            name: 'Save',
+            callback: function() {
+              alert('Saving...');
+            }
+          },{
+            separator: true
+          },{
+            name: 'Save as .xsl',
+            callback: function() {
+              alert('Saving as .xsl');
+            }
+          },{
+            name: 'Save as .doc',
+            callback: function() {
+              alert('Saving as .doc');
+            }
+          },{
+            name: 'Save as .pdf',
+            callback: function() {
+              alert('Saving as .pdf');
+            }
+          },{
+            separator: true
+          },{
+            name: 'Send to...',
+            disabled: true
+          }
+        ];
+
+        menu = new Proto.Menu({
+          beforeShow: function(){if(log)log.info('Showing menu')},
+          menuItems: myMenuItems
+        })
+    }
+    $('buttonContextMenu').observe('click', function(evt) { menu.show(evt); });
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;input id=&quot;button&quot; type=&quot;button&quot; value=&quot;Show Menu&quot; style=&quot;margin-left:80px;&quot;/&gt;
+            </pre>
+            <hr />
+        </div>
+        <!--**************************************************************************-->
+
+        <h2 id="idTitleTabs" onclick="javascript:$('tabsBody').toggle()">TABS</h2>
+        <div id='tabsBody' style="display:none">
+            <h3>Description</h3>
+            <p>This module allows to the user to display a tabs container, every tab with its own associated function</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">labels (array, ['1','2','3','4'] by default): array with the label of every tab.</li>
+                <li class="howTo">ids (array, [] by default): array with the id of every tab.</li>
+                <li class="howTo">active (integer, 0 by default): index of the tab that will be active on initialization</li>
+                <li class="howTo">callback (function, empty by default): function executed when a tab is clicked</li>
+                <li class="howTo">mode (string ('normal' or 'max'), 'normal' by default): mode for the tabs' width, see explanation below</li>
+                <li class="howTo">width (integer, screen/2 by default): width of the tabs container when 'max' mode is activated</li>
+                <li class="howTo">target (string, '' by default): div's id where the tabs container will be placed.</li>
+                <li class="howTo">firstRun (string ('y'/'n', 'n' by default): if 'yes' the callback function associated to the first active tab will be executed on initialization.</li>
+                <li class="howTo">events (hash, $H({}) by default): hash with the events that we want to activate</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onTabClicked : Fired when the user clicks on a tab.</li>
+            </ul>
+            <h3>Example #1</h3>
+            <p>5 TABS, MAX MODE, THE ACTIVE ONE IS THE 4, AND THE LABELS: '1','2','3','4','5'.</p>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <pre>
+         You only have to set a div which id has to be passed as a parameter to the
+         Tab constructor, this parameter is called TARGET(field of the options Hash).
+         The LABELS options field, set the text to be displayed in the tabs headers.
+         The CALLBACK options field, here it is set a function that is executed when a tab is clicked.
+         If not defined, the 'openApplication' event is executed whith the ID field as parameter.
+         The IDS options field, set the tabs ids and provides to the programmer more options.
+         The ACTIVE options field, set the active tab, at the moment the tabs handler has just
+         been created.
+         The FIRSTRUN options field, here you can define if the event/function associated to the
+         active tab is executed during the initialization. (y/n)
+         The MODE options field, set if we want to keep the standard width of the tab handler,
+         or be able to change it:
+                - 'normal' mode --> standard width(we don´t take in account the number
+                                    that is set in the field WIDTH).
+                - 'max' mode --> by setting the value of the field WIDTH, you can modify
+                                 the tabs handler width.
+         The WIDTH field, set the width of the tabs handler in 'max' mode.
+            </pre>
+            <div id='tab' style="margin:50px;"></div>
+            <script type="text/javascript" defer="defer">
+                var options = $H({
+                    labels         : ['1','2','3','4','5'],
+                    ids            : ['1','2','3','4','5'],
+                    events         : $H({onTabClicked: 'EWS:tabClicked'}),
+                    active         : 4,
+                    callback       : function(tab) { if(log)log.info("tab: "+tab); },
+                    mode           : 'max',
+                    width          : 700,
+                    target         : 'tab',
+                    firstRun       : 'y'
+                });
+                var tab = new Tabs(options);
+                document.observe('EWS:tabClicked',function(event){
+                    var args = getArgs(event);
+                    if(log){
+                        log.info("The event TAB_CLICKED has been thrown by the tab: "+args);
+                    }
+                });
+            </script>
+            <p class="howTo"></p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">None</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var options = $H({
+            labels         : ['1','2','3','4','5'],
+            ids            : ['1','2','3','4','5'],
+            events         : $H({onTabClicked: 'EWS:tabClicked'}),
+            active         : 4,
+            callback       : function(tab) { if(log)log.info(&quot;tab: &quot;+tab); },
+            mode           : 'max',
+            width          : 700,
+            target         : 'tab',
+            firstRun       : 'y'
+        });
+        var tab = new Tabs(options);
+    &lt;/script&gt;
+
+    document.observe('EWS:tabClicked',function(event){
+        var args = getArgs(event);
+        if(log){
+            log.info(&quot;The event TAB_CLICKED has been thrown by the tab: &quot;+args);
+        }
+    });
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id='tab' style=&quot;margin:50px;&quot;&gt;&lt;/div&gt;
+            </pre>
+            <h3>Example #2</h3>
+            <p>4 TABS, NORMAL MODE, THE ACTIVE ONE IS THE 2, AND THE LABELS: 'My calendar','My payslip','My team','My quotas'</p>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <pre>
+         In this example, it is not defined a callback function, then the module automatically throws the event 'openApplication'
+         with the tab Id as parameter when clicked. In this example we do not want to execute this event for the default tab
+         (firstRun : 'n'). This event is only executed when a tab is clicked.
+            </pre>
+            <div id='tab2' style="margin:50px;"></div>
+            <script type="text/javascript" defer="defer">
+                var options2 = $H({
+                    labels         : ['My calendar','My payslip','My team','My quotas'],
+                    ids            : ['CAL','PAY','teamCalendar','QOT'],
+                    events         : $H({onTabClicked: 'EWS:tab2Clicked'}),
+                    active         : 2,
+                    //callback       :  ,
+                    firstRun       : 'n',
+                    mode           : 'normal',
+                    width          : 1000,
+                    target         : 'tab2'
+                });
+                var tab2 = new Tabs(options2);
+                document.observe('EWS:tab2Clicked',function(event){
+                    var args = getArgs(event);
+                    if(log){
+                        log.info("The event TAB2_CLICKED has been thrown by the tab: "+args);
+                    }
+                });
+            </script>
+            <p class="howTo"></p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">None</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+       &lt;script type=&quot;text/javascript&quot;&gt;
+        var options2 = $H({
+            labels         : ['My calendar','My payslip','My team','My quotas'],
+            ids            : ['CAL','PAY','teamCalendar','QOT'],
+            events         : $H({onTabClicked: 'EWS:tab2Clicked'}),
+            active         : 2,
+          //callback       :  ,
+            firstRun       : 'n',
+            mode           : 'normal',
+            width          : 1000,
+            target         : 'tab2'
+        });
+        var tab2 = new Tabs(options2);
+        document.observe('EWS:tab2Clicked',function(event){
+            var args = getArgs(event);
+            if(log){
+               log.info(&quot;The event TAB2_CLICKED has been thrown by the tab: &quot;+args);
+            }
+        });
+      &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id='tab2' style=&quot;margin:50px;&quot;&gt;&lt;/div&gt;
+            </pre>
+            <hr />
+        </div>
+        <!-- Ending PACO's zone -->
+        <h2 id="multiSelectTitle" onclick="javascript: $('multiSelectBody').toggle();">MULTISELECT</h2>
+        <div id="multiSelectBody" style="display: none;">
+            <h3 id="idDescription">Description</h3>
+            <p>
+                The mulstiSelect is a module for making item selections from an autocompleter. It behaves like a textarea where instead of making text insertions we insert boxes corresponding to items. Those insertions are made by using the autocompleter which will drop down a list while we are typing text. The autocompleter will be inside of the textarea-like div invisible whitout border and will be positioned after the last item box (that will simulate the textarea carret)
+            </p>
+            <h3>Parameters</h3>
+            <ul>
+                <li> element - The ID of the div that will behave like the textarea </li>
+                <li> options - An object that will set the module options, by the moment you can only set options to the autocompleter
+                <pre>{autocompleter: {showEverythingOnButtonClick: true,
+                    timeout: 5000,
+                    templateResult: '#{text}',
+                    maxShown:5,
+                    minChars: 1,
+                    maxSelectedElements: 5
+                }}
+                </pre>
+                <li> timeout: Timeout for the call</li>
+                <li> maxShown: Is the max Number of elements coincident, that the autocomplete can show </li>
+                <li> minChar: This number represents the minimum number of characters for make a call and recovery the elements. </li>
+                <li> maxSelectedElements: Maximum number of elements selectables in multiselect</li>
+                <li> JSON - The data set in JSON format. It is the data that will be searchable on the textarea, for more information about the JSON format see autocompleter module.</li>
+            </ul>
+            <h3>Methods</h3>
+            <ul>
+                <li><b>getSelect()</b>: Returns a list of the current select items in the same format as in the data set</li>
+                <li><b>updateInput(JSON)</b>: Updates the autocompleter list with a new data set, its very usefull in the case we want to request the data at the moment of performing the search on the autocompleter, for further information about doing that see autocompleter documentation</li>
+                <li><b>disableElement()</b>: Disables the multiselect</li>
+                <li><b>enableElement()</b>: Enables the multiselect to add elements</li>
+            </ul>
+            <h3>Events</h3>
+            <p>No events</p>
+            <h3>Example #1</h3>
+            <p>Firs of all for creating a new multiSelect we should create a div that will behave like a text area, we should take care of styling it and indicate the overflow behaviour. Next when initializing the multiSelect we will indicate the ID of the div.</p>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">Blah</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">autocompleter.js (We should include the autocompleter since the multiSelect module inherits from it)</li>
+                <li class="howTo">multiSelect.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            Now we need to create the data that will be searchable on the module, it should be done using the autocompleter format (See autocompleter documentation). E.g.
+            <pre>
+                //Creating the data set with the format autocompleter.object
+                var JSON = {
+                autocompleter: {
+                    object: [
+                        {
+                            data: '000001',
+                            text: 'Gustavson Johansson'
+                        },
+                        {
+                            data: '000002',
+                            text: 'Hilary dollar'
+                        },
+                        {
+                            data: '000003',
+                            text: 'EWS Development team'
+                        },
+                        {
+                            data: '000004',
+                            text: 'Payroll employees'
+                        }
+                    ]
+                }
+            };
+            </pre>
+            <p>Next step is create the multiSelect object. Now we should pass as parameters the ID of the textarea-like div, the options object and the data JSON.</p>
+            <pre>
+                var multiSelect = new MultiSelect('textarea',{autocompleter: {showEverythingOnButtonClick: true,
+                    timeout: 5000,
+                    templateResult: '#{text}',
+                    maxShown:5,
+                    minChars: 1
+                }},JSON);
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+        <p>&lt;div id="textarea" class="textarea">&lt;/div>&lt;/p>
+            </pre>
+            <h3>Example</h3>
+            <p>Type on the text area to insert employees</p>
+            <p>
+                <div id="textarea" class="textarea"></div>
+                <script type="text/javascript">
+                    var JSON = {
+                        autocompleter: {
+                            object: [
+                                {
+                                    data: '000001',
+                                    text: 'Gustavson Johansson'
+                                },
+                                {
+                                    data: '000002',
+                                    text: 'Hilary dollar'
+                                },
+                                {
+                                    data: '000003',
+                                    text: 'EWS Development team'
+                                },
+                                {
+                                    data: '000004',
+                                    text: 'Payroll employees'
+                                }
+                            ]
+                        }
+                    };
+                    var JSON2 = {
+                        autocompleter: {
+                            object: [
+                                {
+                                    data: '000005',
+                                    text: 'Gustavson Johansson 2'
+                                },
+                                {
+                                    data: '000002',
+                                    text: 'Hilary dollar'
+                                },
+                                {
+                                    data: '000003',
+                                    text: 'EWS Development team'
+                                },
+                                {
+                                    data: '000004',
+                                    text: 'Payroll employees'
+                                }
+                            ]
+                        }
+                    };
+                    var multiSelect = new MultiSelect('textarea',{autocompleter: {showEverythingOnButtonClick: true,
+                            timeout: 5000,
+                            templateResult: '#{text}',
+                            maxShown:5,
+                            minChars: 1
+                        }},JSON);
+                </script>
+                <input type="button" id="button1" value="Click to refresh the autocompleter JSON"/>
+                <script type="text/javascript">
+                    $('button1').observe('click', function(args) {
+                        multiSelect.updateInput(JSON2);
+                    });
+                </script>
+            </p>
+        </div>
+        <h2 id="listSearchTitle" onclick="javascript: $('listSearchBody').toggle();">LIST SEARCH</h2>
+        <div id="listSearchBody" style="display: none;">            
+            <h3 id="idDescription">Description</h3>
+            List search is a very basic module for perform a search on a list, What it provides is a way of perform a seach on the list using a method. Once the seach is done an event is fired with the items that contains the search string.
+            <h3>Parameters</h3>
+            <ul>
+                <li>listSearch: a JSON object whith the data set to perform the seach. Format example</li>
+                <pre>
+                    var data = [
+                    {
+                        text: 'Gustavson Johansson',
+                        id: '0001'
+                    },
+                    {
+                        text: 'Hillary Dollar',
+                        id: '0002'
+                    },
+                    {
+                        text: 'Daniel Chaplin',
+                        id: '0003'
+                    },
+                    {
+                        text: 'Pamela Jassen',
+                        id: '0004'
+                    }
+                ];
+                </pre>
+                <li>options: An object with the module options
+                <ul>
+                    <li>dataFilteredEvent: The name of the event that will be fired when performing a search. By default EWS:listSearchFiltered</li>
+                    <li>maxNumberOfResults: The max number of results for a seach, by default -1 (All)</li>
+                    <li>caseSensitive: The search will be case sensitive, by default false</li>
+                    <li>returnHash: If we want to receive a Hash instead of a list as result. By default false.</li>
+                    <li>searchField: If we want to associate a text field. It will be added the observers to control key pressing, and do the search when observing that event.</li>
+                </ul>
+                </li>
+            </ul>
+            <h3>Methods</h3>
+            <p>
+                <ul>
+                    <li><b>performSearch(searchString)</b>: This is the method for performig a search, you should pass a parameter the string to search in the list. For getting the results you should listed to the "Search Performed" defined on the options</li>
+                    <li><b>getResults()</b>: Gets the results of the last search.</li>
+                </ul>
+            </p>
+            <h3>Events</h3>
+            <p>
+                EWS:listSearchFiltered or user defined event - This event is fired everytime we perform a search on the list
+            </p>
+            <h3>Example #1</h3>
+            <p>On this example you can see how the module works and the way for performing a search from a text field and how the filtered results are shown on the screen</p>
+            <script type="text/javascript">
+                var data = [
+                    {
+                        text: 'Gustavson Johansson',
+                        id: '0001'
+                    },
+                    {
+                        text: 'Hillary Dollar',
+                        id: '0002'
+                    },
+                    {
+                        text: 'Daniel Chaplin',
+                        id: '0003'
+                    },
+                    {
+                        text: 'Pamela Jassen',
+                        id: '0004'
+                    }
+                ];
+                var search = new ListSearch(data,{caseSensitive: false});
+                document.observe('EWS:listSearchFiltered', function(data) {
+                    $('searchResult').update('');
+                    data.memo.searchResult.each(function(item) {
+                        $('searchResult').insert(item.text+'<br />');
+                    });
+                });
+                function _search() {
+                    javascript:search.performSearch($('searchBox').value);
+                }
+            </script>
+            <div class="listSearch_container">
+                <div><input id="searchBox" type="text" onkeyup="javascript: _search();"/>
+                <div class="reset" onclick="javascript:$('searchBox').value = ''; _search();">X</div></div>
+                <div id="searchResult" style="clear: both;"></div>
+            </div>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">listSearch.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+            &lt;script type="text/javascript">
+                //This is the data object
+                var data = [
+                    {
+                        text: 'Gustavson Johansson',
+                        id: '0001'
+                    },
+                    {
+                        text: 'Hillary Dollar',
+                        id: '0002'
+                    },
+                    {
+                        text: 'Daniel Chaplin',
+                        id: '0003'
+                    },
+                    {
+                        text: 'Pamela Jassen',
+                        id: '0004'
+                    }
+                ];
+                //Now we instantiate the List Search module
+                var search = new ListSearch(data,{caseSensitive: false});
+                //Observing the the search performed event, it prints the results
+                document.observe('EWS:listSearchFiltered', function(data) {
+                    $('searchResult').update('');
+                    data.memo.searchResult.each(function(item) {
+                        $('searchResult').insert(item.text+'<br />');
+                    });
+                });
+                //This method is called everytime an keydown occurs on the text field where we insert the search text,
+                // it calls the performSearch method on the ListSearch instance and pass as a parameter the
+                // input value
+                function _search() {
+                    javascript:search.performSearch($('searchBox').value);
+                }
+            &lt;/script>
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+        <p>&lt;p&gt;Click &lt;span onclick=&quot;objTestConfirmationBox1.create();&quot;&gt;&lt;strong&gt;HERE&lt;/strong&gt;&lt;/span&gt; to see it.&lt;/p&gt;</p>
+            </pre>
+        </div>
+        <h2 id="idTitleEditableDiv" onclick="javascript:$('editableDiv').toggle()">EDITABLE DIV</h2>
+        <div id='editableDiv' style="display:none">
+            <h3>Description</h3>
+            <p>This module allows the user to turn a normal Div into an Editable one.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">targetDiv (string or HTML Element, '' by default): div or div id we want to turn into an Editable div</li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">onFocus : Fired when the user clicks on the targetDiv.</li>
+                <li class="howTo">onBlur : Fired when the user clicks outside of the targetDiv.</li>
+            </ul>
+            <h3>Example: Editable Div</h3>
+            <div id="editableDiv_myDiv" style="margin:20px;width:250px;height:70px;">I´m not editable yet, click on the button</div>
+            <input id="editableButton" style="margin-left:20px" type="button" value="Click" onclick="new EditDiv('editableDiv_myDiv');$('editableButton').hide();"/>
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example shows how to turn a normal Div into an editable one.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">editableDiv.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var aux = new EditDiv('editableDiv_myDiv');
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id=&quot;editableDiv_myDiv&quot; style=&quot;margin:20px;width:100px;height:20px;&quot;&gt;I´m not editable yet, click on the button&lt;/div&gt;
+            </pre>
+        </div>
+
+        <!-- Starting Lydia's zone -->
+        <h2 id="idTitleGetRating" onclick="javascript:$('GetRatingDiv').toggle()">GET RATING</h2>
+        <div id='GetRatingDiv' style="display:none">
+            <h3>Description</h3>
+            <p>This module allows the user to tget the html code to draw a rating.</p>
+            <h3>Parameters</h3>
+            <ul>
+                <li class="howTo">total (Integer) The number of possible levels --> The cells</li>
+                <li class="howTo">current (Integer) The current level --> The green/yellow bar </li>
+                <li class="howTo">required (Integer) The required level --> The grey bar. If required == -1, then the bar 'required' is not displayed. </li>
+                <li class="howTo">viewBorders (Boolean) If true, each column will be displayed with borders. </li>
+            </ul>
+            <h3>Events</h3>
+            <ul>
+                <li class="howTo">No events</li>
+            </ul>
+            <h3>Example: Get Rating</h3>
+            <div id="GetRatingDiv_example" style="margin:20px;width:250px;height:20px;">Normal rating</div>
+            <div id="GetRatingDiv_exampleResult" style="margin:20px;width:250px;height:50px;"></div>
+            <script>
+                $('GetRatingDiv_exampleResult').update(getRating(5,4,3,true));
+            </script>
+            <div id="GetRatingDiv_example2" style="margin:20px;width:250px;height:20px;">Warning rating</div>
+            <div id="GetRatingDiv_exampleResult2" style="margin:20px;width:250px;height:50px;"></div>
+            <script>
+                $('GetRatingDiv_exampleResult2').update(getRating(5,3,4,true));
+            </script>
+            <div id="GetRatingDiv_example3" style="margin:20px;width:250px;height:20px;">Simple rating (without bar 'required')</div>
+            <div id="GetRatingDiv_exampleResult3" style="margin:20px;width:250px;height:50px;"></div>
+            <script>
+                $('GetRatingDiv_exampleResult3').update(getRating(5,4,-1,true));
+            </script>
+           <div id="GetRatingDiv_example4" style="margin:20px;width:250px;height:20px;">Rating without bars</div>
+            <div id="GetRatingDiv_exampleResult4" style="margin:20px;width:250px;height:50px;"></div>
+            <script>
+                $('GetRatingDiv_exampleResult4').update(getRating(20,10,-1));
+            </script>            
+            <h4>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example shows how to draw a 'good' rating, which is a rating where the current level is bigger than the required one.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">origin.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var possibleLevels = 5;
+        var currentLevel = 4;
+        var requiredLevel = 3;
+        $('GetRatingDiv_exampleResult').update(getRating(possibleLevels,currentLevel,requiredLevel,true));
+        $('GetRatingDiv_exampleResult2').update(getRating(5,3,4,true));
+        $('GetRatingDiv_exampleResult3').update(getRating(5,4,-1,true));
+        $('GetRatingDiv_exampleResult4').update(getRating(20,10,-1));
+    &lt;/script&gt;
+    </pre>
+    <h5>HTML Code</h5>
+    <pre>
+    &lt;div id=&quot;GetRatingDiv_example&quot; style=&quot;margin:20px;width:100px;height:20px;&quot;&gt;Normal rating&lt;/div&gt;
+    </pre>
+    </div> 
+      <!-----------------------------------------------------------Legend ----------------------------------------------------------->
+     <h2 id="H1" onclick="javascript:$('containLegend').toggle()">LEGEND</h2>
+    <div id='containLegend' style="display:none">
+        <h3>Description</h3>
+    <p>This module allows the user to tget the html code to draw a legend.</p>
+    <h3>Parameters</h3>
+    <ul>
+        <li class="howTo">myJSONObject (Json) You have to pass the imagen's class into the label img and the legend's text in the label text</li>
+        <li class="howTo">showLabel (string) The label that you want to show the legend. </li>        
+        <li class="howTo">hideLabel (string) The label that you want to hide the legend. </li>        
+    </ul>
+    <h3>Events</h3>
+    <ul>
+        <li class="howTo">No events</li>
+    </ul>
+    <h3>Example: Get legend</h3>
+    <div id='contain' style='margin-top:50px; margin-left:50px;'></div>
+    <script type="text/javascript">
+        var myJSONObject = { legend: [
+            { img: "application_icon_green", text: "icon green" },
+            { img: "application_icon_red", text: "icon red" },
+            { img: "application_icon_orange", text: "icon orange" },
+            { img: "application_icon_orange", text: "icon orange" },
+            { img: "application_icon_red", text: "icon red" },
+            { img: "application_icon_green", text: "icon green" }
+        ],
+            showLabel: "Show Legend",
+            hideLabel: "Hide Legend"
+        };
+
+                var html = getLegend(myJSONObject);
+                $('contain').insert(html);
+            </script>
+            <h4 style='clear:both;'>How to</h4>
+            <h5>Comments on example</h5>
+            <p class="howTo">This example shows how to draw a legend.</p>
+            <h5>Dependencies</h5>
+            <ul>
+                <li class="howTo">origin.js</li>
+            </ul>
+            <h5>Javascript Code</h5>
+            <pre>
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var myJSONObject = { legend: [
+            { img: "application_icon_green", text: "icon green" },
+            { img: "application_icon_red", text: "icon red" },
+            { img: "application_icon_orange", text: "icon orange" },
+            { img: "application_icon_orange", text: "icon orange" },
+            { img: "application_icon_red", text: "icon red" },
+            { img: "application_icon_green", text: "icon green" }
+        ],
+            showLabel: "Show Legend",
+            hideLabel: "Hide Legend"
+        };
+
+        var html = getLegend(myJSONObject);
+        $('contain').insert(html);
+    &lt;/script&gt;
+            </pre>
+            <h5>HTML Code</h5>
+            <pre>
+    &lt;div id='Div2' style='margin-top:50px; margin-left:50px;'&gt;&lt;/div&gt;
+    </pre>
+    </div>
+    
+  
+         
+</body>
+</html>

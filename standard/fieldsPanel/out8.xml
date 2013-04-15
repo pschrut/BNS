@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+    <o_date_ranges></o_date_ranges>
+    <o_field_settings>
+        <yglui_str_wid_fs_record screen="1">
+            <fs_fields>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="" display_group="" fieldformat="I" fieldid="ABBREVIATION" fieldlabel="Object abbreviation" fieldsource="" fieldtype="" label_type="V" length="000012" seqnr="02" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="99991231" depend_field="" depend_type="" display_attrib="HID" display_group="" fieldformat="D" fieldid="ENDDATE" fieldlabel="" fieldsource="" fieldtype="" label_type="N" length="000010" seqnr="05" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OPT" display_group="" fieldformat="I" fieldid="GENERALDESCR" fieldlabel="" fieldsource="" fieldtype="" label_type="" length="000000" seqnr="03" service_pai="" service_values="" show_text="" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="OUO" display_group="" fieldformat="V" fieldid="PARENT" fieldlabel="ID of related object" fieldsource="" fieldtype="" label_type="V" length="000045" seqnr="07" service_pai="" service_values="" show_text="B" type="CHAR"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="P" fieldid="STARTDATE" fieldlabel="Start date" fieldsource="" fieldtype="" label_type="V" length="000010" seqnr="04" service_pai="" service_values="" show_text="" type="DATS"></yglui_str_wid_fs_field>
+                <yglui_str_wid_fs_field default_text="" default_value="" depend_field="" depend_type="" display_attrib="MAN" display_group="" fieldformat="I" fieldid="TITLE" fieldlabel="Object name" fieldsource="" fieldtype="" label_type="V" length="000040" seqnr="01" service_pai="" service_values="" show_text="X" type="CHAR"></yglui_str_wid_fs_field>
+            </fs_fields>
+        </yglui_str_wid_fs_record>
+    </o_field_settings>
+    <o_field_values>
+        <yglui_str_wid_record rec_key="" screen="1">
+            <contents>
+                <yglui_str_wid_content buttons="" key_str="" rec_index="0" selected="" tcontents="">
+                    <fields>
+                        <yglui_str_wid_field fieldid="ABBREVIATION" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="ENDDATE" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="GENERALDESCR" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="PARENT" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="STARTDATE" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                        <yglui_str_wid_field fieldid="TITLE" fieldlabel="" fieldtechname="" fieldtseqnr="000000" value=""></yglui_str_wid_field>
+                    </fields>
+                </yglui_str_wid_content>
+            </contents>
+        </yglui_str_wid_record>
+    </o_field_values>
+    <o_screen_buttons></o_screen_buttons>
+    <o_widget_screens>
+        <yglui_str_wid_screen all_modifiable="X" appid="JOB_DF" label_tag="Job" list_mode="" screen="1" secondary="" selected="X"></yglui_str_wid_screen>
+        <yglui_str_wid_screen all_modifiable="X" appid="JOB_DF" label_tag="Job Competencies" list_mode="X" screen="2" secondary="" selected=""></yglui_str_wid_screen>
+    </o_widget_screens>
+    <labels>
+        <item id="ADDITIONALDATA" service="" value="Extra"></item>
+    </labels>
+    <messages></messages>
+    <webmessage_type></webmessage_type>
+    <webmessage_text></webmessage_text>
+</EWS>

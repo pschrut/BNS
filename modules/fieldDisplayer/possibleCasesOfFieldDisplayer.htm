@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Field Panel</title>
+    <link href="../../css/CSS2.css" rel="stylesheet" type="text/css" />
+    <script src="../../standard/web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+    <script src="../../standard/web_frameworks/scriptaculous/src/effects.js" type="text/javascript"></script>
+    <script src="../../standard/web_frameworks/scriptaculous/src/builder.js" type="text/javascript"></script>
+    <script src="../../standard/web_frameworks/scriptaculous/src/dragdrop.js" type="text/javascript"></script>
+    <script src="../../standard/web_frameworks/scriptaculous/src/controls.js" type="text/javascript"></script>
+    <script src="../../standard/web_frameworks/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+    <script src="../../standard/origin.js" type="text/javascript"></script>
+    <script src="../../standard/global.js" type="text/javascript"></script>
+    <script src="../../modules/contextMenu/contextMenu.js" type="text/javascript"></script>
+    <script src="../../modules/widgets/widgets.js" type="text/javascript"></script>
+    <style type="text/css">
+        .portal_column
+        {
+            width: 27%;
+            float: left;
+            height: 100%;
+        }                
+        </style>            
+    <script type="text/javascript">
+        function createWidgets(){
+            this.portal = new Widgets.Portal("#page div", 'portal', {});
+            var content="<div class='fieldPanel fieldDispTotalWidth'>" +
+                                "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                    "<label for='select1' class='fieldDispFloatLeft'>Titel* test test test test test test test test test</label>" +
+                                    "<div class='hourFieldWrap' id='select1'>here comes the <b>hourfield</b></div>" +
+                                "</div>" +
+                                "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                    "<label for='select17' class='fieldDispFloatLeft'>Titel* test test test test test test test test test</label>" +
+                                    "<select id='select17' class='fieldDispFloatLeft'></select>" +
+                                "</div>" +                                
+                                "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                    "<label for='LABEL_TEST' class='fieldDispFloatLeft'>Label Sample*</label>" +
+                                    "<input type='text' value='test' id='LABEL_TEST' class='fieldDispFloatLeft'/>" +
+                                "</div>" +                                
+                                "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                    "<label for='LABEL_TEST2' class='fieldDispFloatLeft'>Label Sample sss *</label>" +
+                                    "<input type='text' value='test' id='LABEL_TEST2' class='fieldDispFloatLeft'/>" +
+                                "</div>" +                                  
+                                "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                    "<label for='hobbies' class='fieldDispFloatLeft'>Hobbies</label>" +
+                                    "<div class='fieldClearBoth' id='hobbies'>" +
+                                        "<div class='fieldClearBoth'><input type='checkbox' class='fieldDispFloatLeft'/><label><acronym title='Football'>Football</acronym></label></div>" +
+                                        "<div class='fieldClearBoth'><input type='checkbox' class='fieldDispFloatLeft'/><label><acronym title='Music'>Music</acronym></label></div>" +
+                                        "<div class='fieldClearBoth'><input type='checkbox' class='fieldDispFloatLeft'/><label><acronym title='Books'>Books</acronym></label></div>" +
+                                        "<div class='fieldClearBoth'><input type='checkbox' class='fieldDispFloatLeft'/><label><acronym title='Television'>Television</acronym></label></div>" +
+                                        "<div class='fieldClearBoth'><input type='checkbox' class='fieldDispFloatLeft'/><label><acronym title='Basket'>Basket</acronym></label></div>" +
+                                    "</div>" +
+                                "</div>" +
+                                "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                    "<label for='hobbies7' class='fieldDispFloatLeft'>radiobuttons with selectboxes</label>" +
+                                    "<div class='fieldClearBoth' id='hobbies7'>" +
+                                        "<div class='checkBoxWrapMargin fieldDispFloatLeft fieldDispTotalWidth'><input type='radio' class='fieldDispFloatLeft'/><div class='noClear fieldDispFloatLeft fieldDispHalfSize'><input type='text' value='test'/></div></div>" +
+                                        "<div class='checkBoxWrapMargin fieldDispFloatLeft fieldDispTotalWidth'><input type='radio' class='fieldDispFloatLeft'/><div class='noClear fieldDispFloatLeft fieldDispHalfSize'><input type='text' value='test' /></div></div>" +
+                                        "<div class='checkBoxWrapMargin fieldDispFloatLeft fieldDispTotalWidth'><input type='radio' class='fieldDispFloatLeft'/><div class='noClear fieldDispFloatLeft fieldDispHalfSize'><input type='text' value='test' /></div></div>" +
+                                        "<div class='checkBoxWrapMargin fieldDispFloatLeft fieldDispTotalWidth'><input type='radio' class='fieldDispFloatLeft'/><div class='noClear fieldDispFloatLeft fieldDispHalfSize'><input type='text' value='test' /></div></div>" +
+                                        "<div class='checkBoxWrapMargin fieldDispFloatLeft fieldDispTotalWidth'><input type='radio' class='fieldDispFloatLeft'/><div class='noClear fieldDispFloatLeft fieldDispHalfSize'><input type='text' value='test' /></div></div>" +
+                                    "</div>" +
+                                "</div>" +                                
+                                "<div style='clear:both;'>&nbsp</div>" +
+                        "</div>";
+            this.portal.add(new Widgets.Widget('id2', { minimizeButton: false, semitrans: false, events: $H({onMaximize:'EWS:myMaximize', onMinimize: 'EWS:myMinimize', onClose:'EWS:myClose'}) }).setTitle('Example several fields').setContent(content), 1);
+            var content2="<div class='fieldPanel fieldDispTotalWidth'>" +
+                                "<table class='fieldClearBoth'>"+
+                                    "<tr>" +
+                                        "<td>" +                                        
+                                            "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                                "<label for='select12' class='fieldDispFloatLeft'>Titel*</label>" +
+                                                "<select id='select12' class='floatRight'></select>" +
+                                            "</div>" +                                        
+                                        "</td>" +
+                                        "<td>" +
+                                            "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                                "<label for='LABEL_TEST2' class='fieldDispFloatLeft'>Label Sample*</label>" +
+                                                "<input type='text' value='test' id='LABEL_TEST2' class='fieldDispFloatLeft'/>" +
+                                            "</div>" +                                                                                   
+                                        "</td>" +
+                                        "<td>" +
+                                            "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                                "<label for='LABEL_TEST22' class='fieldDispFloatLeft'>Label Sample sss *</label>" +
+                                                "<input type='text' value='test' id='LABEL_TEST22' class='fieldDispFloatLeft'/>" +
+                                            "</div>" +  
+                                        "</td>" +                                                                                
+                                        "<td>" +
+                                            "<div class='fieldWrap fieldClearBoth fieldDispFloatLeft fieldDispTotalWidth'>" +
+                                                "<label for='hobbies2' class='fieldDispFloatLeft'>Hobbies</label>" +
+                                                "<div class='fieldClearBoth' id='hobbies2'>" +
+                                                    "<div><input type='checkbox' /><label><acronym title='Football'>Football</acronym></label></div>" +
+                                                    "<div><input type='checkbox' /><label><acronym title='Music'>Music</acronym></label></div>" +
+                                                    "<div><input type='checkbox' /><label><acronym title='Books'>Books</acronym></label></div>" +
+                                                    "<div><input type='checkbox' /><label><acronym title='Television'>Television</acronym></label></div>" +
+                                                    "<div><input type='checkbox' /><label><acronym title='Basket'>Basket</acronym></label></div>" +
+                                                "</div>" +
+                                            "</div>" +
+                                        "</td>" +                                        
+                                     "</tr>"   +                                     
+                                "</table>"+    
+                                "<div style='clear:both;'>&nbsp</div>" +
+                        "</div>";
+            this.portal.add(new Widgets.Widget('id2', { minimizeButton: false, semitrans: false, events: $H({onMaximize:'EWS:myMaximize', onMinimize: 'EWS:myMinimize', onClose:'EWS:myClose'}) }).setTitle('Example several fields').setContent(content2), 2);                                   
+        }
+    </script>
+</head>
+<body onload="javascript:createWidgets()">
+<div id="page">
+        <div id="Div3" class="portal_column"></div>       
+</div>
+</body>
+</html>

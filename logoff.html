@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>.:euHReka Workspace:.</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <script src="standard/web_frameworks/prototype.js" type="text/javascript"></script>
+        <!-- origin layer -->
+        <script type="text/javascript" src="standard/origin.js"></script>
+        <script type="text/javascript" src="standard/global.js"></script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> 
+
+        <script language="javascript" type="text/javascript">
+            function CheckLanguage() {
+                $('msg').innerHTML = decodeURIComponent(getURLParam('msg'));
+            }
+
+            function getURLParam(strParamName) {
+                var strHref = window.location.href;
+                var params = strHref.toQueryParams();
+                var firstPartParams = $H(strHref.toQueryParams());
+                var secondPartParams = $H(strHref.substr(strHref.indexOf("#") + 1).toQueryParams());
+                var result = firstPartParams.merge(secondPartParams);
+                return (result.get(strParamName)) ? result.get(strParamName) : '';
+            }
+        </script>
+</head>
+<body onload="CheckLanguage();">
+    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+        <tr>
+            <td height="50"></td>
+        </tr>
+        <tr>
+            <td><div id='msg'></div></td>
+        </tr>
+        <tr>
+            <td height="50"></td>
+        </tr>
+    </table>
+</body>
+</html>

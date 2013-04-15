@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<EWS xmlns:asx="http://www.sap.com/abapxml">
+  <o_values>
+    <yglui_str_wid_wrktime fieldid="DWHRS" hours="7,00"/>
+    <yglui_str_wid_wrktime fieldid="WWHRS" hours="35,00"/>
+    <yglui_str_wid_wrktime fieldid="AWHRS" hours="1820,00"/>
+    <yglui_str_wid_wrktime fieldid="MWHRS" hours="151,67"/>
+  </o_values>
+</EWS>

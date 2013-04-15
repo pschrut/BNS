@@ -1,0 +1,104 @@
+﻿<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>TimeScheduleVisualizer Example</title>
+        <link href="../../css/CSS2.css" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+            <link rel="stylesheet" type="text/css" href="../../css/CSS2_IE7.css" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="../../css/CSS2_IE6.css" />
+        <![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="../../standard/web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+        <script src="../../standard/web_frameworks/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+        <script src="../../standard/web_frameworks/datejs/date.js" type="text/javascript"></script>
+        <script src="../../standard/origin.js" type="text/javascript"></script>
+        <script src="TimeScheduleVisualizer.js" type="text/javascript"></script>
+        <style type="text/css">
+            #schedule {
+                margin-top: 150px;
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="schedule"></div>
+        <script type="text/javascript" language="javascript">
+            var timeObject = [
+                //******** TYPE_TIME_BLOCK ********
+                {
+                    time:   "07:30:00",
+                    type:   "TYPE_TIME_BLOCK",
+                    color: "#0033CC",
+                    length: 15
+                },                 
+                {
+                    time:   "07:45:00",
+                    type:   "TYPE_TIME_BLOCK",
+                    color: "#FF0000",
+                    length: 315 
+                },
+                {
+                    time:   "13:00:00",
+                    type:   "TYPE_TIME_BLOCK",
+                    color: "#FFFF00",
+                    length: 60
+                },
+                {
+                    time:   "14:00:00",
+                    type:   "TYPE_TIME_BLOCK",
+                    color: "#FF0000",
+                    length: 180
+                },
+                {
+                    time:   "17:00:00",
+                    type:   "TYPE_TIME_BLOCK",
+                    color: "#0033CC",
+                    length: 15
+                },
+                
+                //********* TYPE_TIME_CLOCKIN ********
+                
+                {
+                    time:   "07:40:00",
+                    type:   "TYPE_TIME_CLOCKIN",
+                    color:  null
+                }/*,
+                {
+                    time:   "07:57:00",
+                    type:   "TYPE_TIME_CLOCKIN",
+                    color:  null
+                },
+                
+                
+                {
+                    time:   "08:30:00",
+                    type:   "TYPE_TIME_CLOCKIN",
+                    color:  null
+                },
+                {
+                    time:   "13:00:00",
+                    type:   "TYPE_TIME_CLOCKIN",
+                    color:  null
+                },
+                {
+                    time:   "17:15:00",
+                    type:   "TYPE_TIME_CLOCKIN",
+                    color:  null
+                }*/
+                
+            ];
+            var obj = new TimeScheduleVisualizer($H({
+                fitInto: 585,
+                timeData: timeObject
+            }));
+
+            $("schedule").insert(obj.getHtml());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodes>
+<node childs="X">
+  <name>SSW Development</name>
+  <id>node0</id>
+  <node childs="X">
+    <name>Workforce Administration</name>
+    <id>node1</id>
+    <node childs="X">
+      <name>First Node Inside</name>
+      <id>node4</id>
+      <node childs="no_child">
+        <name>First Node Inside</name>
+        <id>node6</id>
+      </node>
+      <node childs="no_child">
+        <name>Second Node Inside</name>
+        <id>node7</id>
+      </node>
+    </node>
+    <node childs="no_child">
+      <name>Second Node Inside</name>
+      <id>node5</id>
+    </node>
+  </node>
+  <node childs="no_child">
+    <name>Talent Management</name>
+    <id>node2</id>
+  </node>
+  <node childs="X">
+    <name>Recruitment</name>
+    <id>node3</id>
+    <node childs="no_child">
+      <name>First Node Inside</name>
+      <id>node8</id>
+    </node>
+    <node childs="no_child">
+      <name>Second Node Inside</name>
+      <id>node9</id>
+    </node>
+    <node childs="no_child">
+      <name>Dani Node</name>
+      <id>daninode</id>
+    </node>
+    <node childs="X">
+      <name>Dani Node</name>
+      <id>daninode2</id>
+      <node childs="X">
+        <name>Dani Node</name>
+        <id>daninode3</id>
+        <node childs="X">
+          <name >Dani Node</name>
+          <id>daninode4</id>
+          <node childs="no_child">
+            <name>Dani Node</name>
+            <id>daninode5</id>
+          </node>
+          <node childs="X">
+            <name>Dani Node</name>
+            <id>daninode6</id>
+            <node childs="X">
+              <name>Dani Node</name>
+              <id>daninode7</id>
+              <node childs="X">
+                <name>Dani Node</name>
+                <id>daninode8</id>
+                <node childs="X">
+                  <name>Dani Node</name>
+                  <id>daninode9</id>
+                  <node childs="X">
+                    <name>Dani Node</name>
+                    <id>daninode10</id>
+                    <node childs="X">
+                      <name>Dani Node</name>
+                      <id>daninode11</id>
+                      <node childs="X">
+                        <name>Dani Node</name>
+                        <id>daninode12</id>
+                        <node childs="X">
+                          <name>Dani Node</name>
+                          <id>daninode13</id>
+                          <node childs="X">
+                            <name>Dani Node</name>
+                            <id>daninode14</id>
+                            <node childs="no_child">
+                              <name>Dani Node</name>
+                              <id>daninode15</id>
+                            </node>
+                            <node childs="no_child">
+                              <name>Dani Node</name>
+                              <id>daninode16</id>
+                            </node>
+                            <node childs="X">
+                              <name>Dani Node</name>
+                              <id>daninode17</id>
+                              <node childs="no_child">
+                                <name>Dani Node</name>
+                                <id>daninode18</id>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</node>
+</nodes>
+

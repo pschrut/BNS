@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head id="abapdoc_head"> 
+        <title>.:Debug Logon:.</title> 
+        <script src="standard/web_frameworks/prototype-1.6.0.3.js" type="text/javascript"></script>
+<script>
+    function getURLParam(strParamName) {
+        var strHref = window.location.href;
+        var params = strHref.toQueryParams();
+        var firstPartParams = $H(strHref.toQueryParams());
+        var secondPartParams = $H(strHref.substr(strHref.indexOf("#") + 1).toQueryParams());
+        var result = firstPartParams.merge(secondPartParams);
+        return (result.get(strParamName)) ? result.get(strParamName) : '';
+    }
+    function redo() {
+        $("results").update("Logging off...");
+        $("XMLOUT").value = "";
+        var __hostName = "proxy.aspx?url=" + escape("http://scxecdci.securex.erp:8000/sap/bc/yglui_req_sso?sap-client=312&session=close");
+        new Ajax.Request(__hostName, {
+            method: 'post',
+            postBody: "<EWS></EWS>",
+            onSuccess: function(transport) {
+                $("results").update("<span>Logged off!</span>");
+                //callxdoc();
+            },
+            onFailure: function() {
+                $("results").insert("<p>Logoff failed</p>");
+                $("results").insert("<p>address: " + $("SAPCALLER_ADDRESS").value + "</p>");
+            }
+        });
+    }
+    function callxdoc() {
+        $("results").update("Requesting Logon");
+        $("XMLOUT").value = "";
+        var __hostName = "proxy.aspx?url=" + escape("http://scxecdci.securex.erp:8000/sap/bc/yglui_req_sso?sap-client=312");
+        new Ajax.Request(__hostName, {
+            method: 'post',
+            postBody: "<EWS><SERVICE>CHECK</SERVICE><PARAM></PARAM></EWS>",
+            onSuccess: function(transport) {
+                $("XMLOUT").insert(transport.responseText);
+                //$("results").update("<span>Connected!<span><br/><a href='index.html'>Enter EWS</a>");
+                window.location = 'index.html';
+            },
+            onFailure: function() {
+                $("results").insert("<p>request failed</p>");
+                $("results").insert("<p>address: " + $("SAPCALLER_ADDRESS").value + "</p>");
+            }
+        });
+    }
+    
+</script> 
+</head>
+    <body id="abapdoc" onload="javascript:callxdoc();"> 
+                <div id="XMLOUT"></div> 
+                <div id="results"></div> 
+    </body> 
+</html>
+    
