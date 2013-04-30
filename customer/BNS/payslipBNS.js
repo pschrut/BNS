@@ -27,10 +27,11 @@ var PAY = Class.create(PAY,
         })
         this.audiblePayslipCheckbox = new Element('input', {
             'type': 'checkbox',
-            'title': global.getLabel('audible_pay')
+            'title': global.getLabel('audible_pay'),
+			'id': 'audCheckbox'
         })
         audiblePayslip.insert(this.audiblePayslipCheckbox)
-        audiblePayslip.insert('<span>' + global.getLabel('audible_pay') + '</span>')
+        audiblePayslip.insert('<label for="audCheckbox">' + global.getLabel('audible_pay') + '</label>')
         audiblePayslip.hide();
         this.audiblePayslipDiv = audiblePayslip
         this.virtualHtml.insert(this.taxformsDatePickers);
@@ -71,7 +72,7 @@ var PAY = Class.create(PAY,
             templateResult: '#{text}',
             label: text_lab,
             width: '250px',
-            minChars: 4
+            minChars: 1
         }, jsonYears);
         //setting the default value
         this.autocompleterYears.setDefaultValue(dateBegin, false, false);
