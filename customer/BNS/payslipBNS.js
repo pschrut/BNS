@@ -159,8 +159,8 @@ var PAY = Class.create(PAY,
                         this.hashOfDates.set(idSelect, { offcy: listOfDates[i]['@offcy'], pabrj: listOfDates[i]['@pabrj'], pabrp: listOfDates[i]['@pabrp'], offCycle: false, payid: listOfDates[i]['@payid'], docType: documentType, inpid: listOfDates[i]['@inpid'] });
                     //Scotia - creaate table
                     tablePay = new Element('table', { cellspacing: '0', cellpadding: '0', id: 'tablePay', className: 'sortable FWK_EmptyDiv', style: 'float:left;width:50%' });
-                    var header = '<thead><tr><td class="table_sortfirstdesc table_sortcol" ><div class="emptyButton sortable" tabindex="0" title="' + global.getLabel('pay_date') + '">' + global.getLabel('pay_date') +
-                    '</div></td><td class="table_sortfirstdesc table_sortcol" ><div class="emptyButton sortable" tabindex="0" title="' + global.getLabel('net_amt') + '">' + global.getLabel('net_amt') + '</div></td></tr>'
+                    var header = '<thead><tr><th class="table_sortfirstdesc table_sortcol" ><div class="emptyButton sortable" tabindex="0" title="' + global.getLabel('pay_date') + '">' + global.getLabel('pay_date') +
+                    '</div></th><th class="table_sortfirstdesc table_sortcol" ><div class="emptyButton sortable" tabindex="0" title="' + global.getLabel('net_amt') + '">' + global.getLabel('net_amt') + '</div></th></tr>'
                     tablePay.insert(header);
 
                     if (Date.parseExact(listOfDates[i]['@paydt'].gsub('-', ""), "yyyyMMdd").between(parsedBegDate, parsedEndDate)) {
@@ -170,7 +170,7 @@ var PAY = Class.create(PAY,
                                 gotPayslip = true;
                                 html = "<tr class='#{text}'><td><div class=''><button tabindex='0' id=" + idOffCicle + " class='application_action_link' title='" + Date.parseExact(listOfDates[i]['@paydt'], "yyyy-MM-dd").toString(global.dateFormat) + "'>"
                                             + Date.parseExact(listOfDates[i]['@paydt'], "yyyy-MM-dd").toString(global.dateFormat)
-                                            + "</button></div></td><td><div tabindex='0'  class='emptyButton sortable' title='" + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "'>"
+                                            + "</button></div></td><td><div class='emptyButton sortable' title='" + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "'>"
                                             + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "</div></td></tr>";
                                 //removed the offcycle
                                 //                                html = "<tr class='#{text}'><td><div class=''><button id=" + idOffCicle + " class='application_action_link'>"
@@ -184,7 +184,7 @@ var PAY = Class.create(PAY,
                                 gotPayslip = true;
                                 html = "<tr class='#{text}'><td><div class=''><button  tabindex='0' id=" + idOffCicle
                                 + " class='application_action_link' title='" + Date.parseExact(listOfDates[i]['@paydt'], "yyyy-MM-dd").toString(global.dateFormat) + "'>" + Date.parseExact(listOfDates[i]['@paydt'], "yyyy-MM-dd").toString(global.dateFormat)
-                                + "</button></div></td><td><div tabindex='0' class='emptyButton sortable' title='" + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "'>"
+                                + "</button></div></td><td><div class='emptyButton sortable' title='" + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "'>"
                                 + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "</div></td></tr>";
                                 //removed the offcycle
                                 //                                html = "<tr class='#{text}'><td><div class=''><button id=" + idOffCicle
@@ -206,7 +206,7 @@ var PAY = Class.create(PAY,
                             gotPayslip = true;
                             html = "<tr class='#{text}'><td><div class=''><button tabindex='0' id='payslip_" + idSelect
                             + "' class='application_action_link' title='" + Date.parseExact(listOfDates[i]['@paydt'], "yyyy-MM-dd").toString(global.dateFormat) + "'>" + Date.parseExact(listOfDates[i]['@paydt'], "yyyy-MM-dd").toString(global.dateFormat)
-                            + "</button></div></td><td><div tabindex='0' class='emptyButton sortable' title='" + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "'>" + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "</div></td></tr>";
+                            + "</button></div></td><td><div  class='emptyButton sortable' title='" + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "'>" + longToDisplay(parseFloat(listOfDates[i]['@betrg'], 10), 2) + "</div></td></tr>";
                         }
 
                         if (documentType.toUpperCase() == 'PAYSLIP') {

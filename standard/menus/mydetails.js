@@ -134,6 +134,7 @@ getPositionElement: function (objectId, position, positionIndex, detailElements)
 
     //make the objectId text be able to hide and show the details
     idSpan.observe("click", detailsContainer.toggle.bind(detailsContainer));
+    idSpan.observe("keydown", detailsContainer.toggle.bind(detailsContainer));
 
     //Create the position name container
     var positionContainer = new Element("div", {
