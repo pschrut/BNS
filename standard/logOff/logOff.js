@@ -172,14 +172,14 @@ var LOGOFF = Class.create(Application, {
 				this.redirectToHome();
 
             //Added by KL: ticket: 1002594
-            /*if (logOutAvo) { //already clear, not need to refresh
+            if (logOutAvo) { //already clear, not need to refresh
                     logOutAvo.goingOut = true;
                     logOutAvo.notResetFlag = true;
             }
             //Added by Kevin Feb 21st 2011
             //Modified by Mike Viray Feb 21st 2011
             //BNS Logoff Issue
-                window.location = '../yglui_bsp_pub/logoff.html?msg=' + encodeURIComponent(global.getLabel('ZZ_LOGOFF'));*/
+                window.location = '../yglui_bsp_ews/logoff.html?msg=' + encodeURIComponent(global.getLabel('ZZ_LOGOFF'));
         }
     },
 

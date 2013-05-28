@@ -37,7 +37,7 @@ var PAY = Class.create(PAY,
         this.virtualHtml.insert(this.taxformsDatePickers);
         this.virtualHtml.insert(audiblePayslip);
         this.taxformsDatePickers.insert(
-            "<div class='payslipSpanDP'>" + global.getLabel('TAX_YEAR') + "</div>"
+            "<label for='text_area_autocompleterYears' class='payslipSpanDP'>" + global.getLabel('TAX_YEAR') + "</label>"
         );
 
         //audbile payslip

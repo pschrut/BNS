@@ -14,7 +14,7 @@
         document.observe('EWS:changeRefreshFlag', this.onchangeRefreshFlagBinding);
         document.observe('EWS:changeURL', this.onchangeURLBinding);
 
-        /*Event.observe(window, 'beforeunload', function(event) {
+        Event.observe(window, 'beforeunload', function(event) {
             if (this.notResetFlag)
                 setTimeout('this.notResetFlag = false;', 7000);
             else {
@@ -57,7 +57,7 @@
                 }
             }
         } .bind(this));
-        setTimeout('document.fire("EWS:changeLogo");', 5000);*/
+        setTimeout('document.fire("EWS:changeLogo");', 5000);
     },
 
     onchangeURL: function() {
