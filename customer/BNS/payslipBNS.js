@@ -5,7 +5,21 @@
 */
 var PAY = Class.create(PAY,
 {
-    createrHtml: function ($super) {
+
+    run: function($super) {
+        //call to run method of the superclass        
+        $super();
+        if (this.firstRun) {
+            this.createrHtml();
+        }
+        if (global.o_language == 'E')
+            document.title = "Payslip | Scotiabank";
+        else
+            document.title = "Afficher fiche de paye | Scotiabank";
+        document.observe("EWS:payslip_CorrectDate", this.clickOnSelectedDatesBinding);
+    },
+    
+    createrHtml: function($super) {
         this.createAutoCompleter();
         $super();
         this.payslipDatePickers.hide();
@@ -13,7 +27,7 @@ var PAY = Class.create(PAY,
         this.virtualHtml.insert("<div id='PAY_Note'></div>");
     },
     //to create the autocompleter for payslip
-    createAutoCompleter: function () {
+    createAutoCompleter: function() {
         this.taxformsDatePickers = new Element('div', {
             'class': 'payslip_datePickersDiv',
             'style': 'float:left;width:300px',
@@ -28,7 +42,7 @@ var PAY = Class.create(PAY,
         this.audiblePayslipCheckbox = new Element('input', {
             'type': 'checkbox',
             'title': global.getLabel('audible_pay'),
-			'id': 'audCheckbox'
+            'id': 'audCheckbox'
         })
         audiblePayslip.insert(this.audiblePayslipCheckbox)
         audiblePayslip.insert('<label for="audCheckbox">' + global.getLabel('audible_pay') + '</label>')
@@ -45,7 +59,7 @@ var PAY = Class.create(PAY,
         this.audiblePayslipCheckbox.stopObserving('click', this.audiblePayslipCheckboxBinding);
         this.audiblePayslipCheckbox.observe('click', this.audiblePayslipCheckboxBinding);
     },
-    createAutocompleterYears: function () {
+    createAutocompleterYears: function() {
         var arrayYears = new Array();
         // First you for which taxes are available
         var dateBegin = Date.today().toString('yyyy-MM-dd').split('-')[0];
@@ -53,7 +67,7 @@ var PAY = Class.create(PAY,
         //only show the years that contains paylsip.
         for (var i = 0; i < this.hashOfDates.keys().size(); i++) {
             var year = this.hashOfDates.keys()[i].substring(0, 4)
-            if ((arrayYears.select(function (item) { if (item.data == year) return true })).size() == 0)
+            if ((arrayYears.select(function(item) { if (item.data == year) return true })).size() == 0)
                 arrayYears.push({ data: year, text: year })
             if (i == 0) dateBegin = year
         }
@@ -86,7 +100,7 @@ var PAY = Class.create(PAY,
     *its search results list.
     *@description It gets a node context (parent and siblings) from SAP.
     */
-    payslipYearSelected: function (args, year) {
+    payslipYearSelected: function(args, year) {
         this.payYear = args ? args.memo.idAdded : year;
         var parsedBegDate = Date.parseExact(this.payYear.toString() + '0101', 'yyyyMMdd')
         var parsedEndDate = Date.parseExact(this.payYear.toString() + '1231', 'yyyyMMdd')
@@ -98,11 +112,11 @@ var PAY = Class.create(PAY,
     *its search results list.
     *@description It gets a node context (parent and siblings) from SAP.
     */
-    audiblePayslipCheckboxSelected: function (args) {
+    audiblePayslipCheckboxSelected: function(args) {
         //do something
         //this.audiblePayslipCheckbox.checked
     },
-    getListOfPayslip: function (json, begDate, endDate) {
+    getListOfPayslip: function(json, begDate, endDate) {
         this.json = json;
         //show the chexkbox or not
         if (!Object.isEmpty(json.EWS.o_audpay_show))
@@ -269,7 +283,7 @@ var PAY = Class.create(PAY,
     },
 
     //to prevent error on click
-    clickOnDateShowPayslip: function ($super, event) {
+    clickOnDateShowPayslip: function($super, event) {
         var idOfLinkSelected = event.element().identify();
         var splitOfId = idOfLinkSelected.split('_');
         if (Object.isEmpty(splitOfId)) return;
@@ -319,12 +333,12 @@ var PAY = Class.create(PAY,
             /*say what you want to do when downloaded*/
             /*
             this.virtualHtml.down('iframe#payslip_iframePDF').onreadystatechange = function () { //IE
-                if (this.virtualHtml.down('iframe#payslip_iframePDF').readyState == "loaded" || this.virtualHtml.down('iframe#payslip_iframePDF').readyState == "complete") {
-                    this.virtualHtml.down('div#PAY_textLoading').update('');
-                }
+            if (this.virtualHtml.down('iframe#payslip_iframePDF').readyState == "loaded" || this.virtualHtml.down('iframe#payslip_iframePDF').readyState == "complete") {
+            this.virtualHtml.down('div#PAY_textLoading').update('');
+            }
             } .bind(this);
             this.virtualHtml.down('iframe#payslip_iframePDF').onload = function () { //FF                
-                this.virtualHtml.down('div#PAY_textLoading').update('');
+            this.virtualHtml.down('div#PAY_textLoading').update('');
             } .bind(this);
             */
             var url = this.url;

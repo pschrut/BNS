@@ -15,12 +15,17 @@ var YCA_TAXF = Class.create(YCA_TAXF,
 */
 {
 
+    createrHtml: function () {
+        document.title = "Year End Tax Forms | Scotiabank";
+        $super();
+    },
+
 /**
 * @method getListOfPayslip - BNS, to diplay amended X
 *@param json: json Object with the dates from sap
 *@description we test if the dates are between dates in date pickers
 */
-getListOfTaxForms: function (json) {
+getListOfTaxForms: function(json) {
     this.virtualHtml.down('div#PAY_outer').update();
     this.virtualHtml.down('div#W2_outer').update();
     this.virtualHtml.down('div#PAY_textLoading').update('');

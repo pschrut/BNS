@@ -129,7 +129,7 @@ var unmWidget = Class.create(
         this.widgetTitle = new Element('div', {
             id: 'unmWidgetTitle_' + this.targetDiv,
             'class': 'unmWidgets_titleDiv'
-        }).update("<div id='unmWidgetTitleHTML_" + this.targetDiv + "'><button class='unmWidgets_header_text application_text_bolder' title='" + this.title + "'>" + this.title + "</button></div>");
+        }).update("<div id='unmWidgetTitleHTML_" + this.targetDiv + "'><div class='unmWidgets_header_text application_text_bolder' title='" + this.title + "'>" + this.title + "</div></div>");
         //and add the collapse and menu buttons
         this.widgetTitle.insert(this.widgetCollapseButton);
         this.widgetTitle.insert(this.widgetActionsButton);
@@ -241,7 +241,7 @@ var unmWidget = Class.create(
         if (Object.isEmpty(this.targetDiv)) {
             this.title = title
         } else {
-            var html = "<button class='unmWidgets_header_text application_text_bolder' title='" + title + "'>" + title + "</button>";
+            var html = "<div class='unmWidgets_header_text application_text_bolder' title='" + title + "'>" + title + "</div>";
             this.widgetTitleText.update(html);
         }
     },

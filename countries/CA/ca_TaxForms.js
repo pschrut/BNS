@@ -78,6 +78,10 @@ run: function ($super) {
     if (this.firstRun) {
         this.createrHtml();
     }
+    if (global.o_language == 'E')
+        document.title = "Year End Tax Forms | Scotiabank";
+    else
+        document.title = "Imprimés fiscaux de fin d'année | Scotiabank";
     document.observe('EWS:TaxYearSelected', this.TaxYearSelectedBinding);
 },
 /**
@@ -92,8 +96,7 @@ close: function ($super) {
 * @method createrHtml
 *@description Creates the html structure of the application
 */
-createrHtml: function () {
-
+createrHtml: function() {
     this.taxformsDatePickers = new Element('div', {
         'class': 'payslip_datePickersDiv',
         'id': 'tax_datePickers'
