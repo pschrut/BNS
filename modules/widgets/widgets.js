@@ -177,22 +177,26 @@ Object.extend(Widgets.Widget.prototype, {
         if (this.options.closeButton) {
             this.closeButton = new Element('div', {
                 'class': 'application_rounded_close menus_widget_align_icon',
-                'title': 'Close'
+                'title': 'Close',
+                'tabindex': '0'
             });
             //Inserting the close button
             buttonContainer.insert(this.closeButton);
             //When clicking on the close button
             this.closeButton.observe('click', this.closeButtonAction.bind(this));
+            this.closeButton.observe('keydown', this.closeButtonAction.bind(this));
         }
         if (this.options.minimizeButton) {
             this.minimizeButton = new Element('div', {
-                'class': 'application_rounded_minimize menus_widget_align_icon',
-                'title': 'Minimize'
+                'class': 'application_rounded_mi nimize menus_widget_align_icon',
+                'title': 'Minimize',
+                'tabindex': '0'
             });
             //Inserting the minimize button
             buttonContainer.insert(this.minimizeButton);
             //When clicking on the minimize button
             this.minimizeButton.observe('click', this.minimizeButtonAction.bind(this));
+            this.minimizeButton.observe('keydown', this.minimizeButtonAction.bind(this));
         }
         if (this.options.optionsButton) {
             this.contextMenu = new Proto.Menu({

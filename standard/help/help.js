@@ -92,8 +92,9 @@ var Help = Class.create(Application, {
                 bdyA[i].setAttribute('url_content', bdyA[i].getAttribute('href'));
                 bdyA[i].removeAttribute('href');
             }
-            this.moreButton = new Element('span', { 'class': 'application_action_link', 'title': this.label + ' ' + this.here }).update(this.here);
+            this.moreButton = new Element('span', { 'class': 'application_action_link', 'id': 'here_help_link', 'tabindex': '0', 'title': this.label + ' ' + this.here }).update(this.here);
             this.moreButton.observe('click', this.moreButtonHandlerBinding);
+            this.moreButton.observe('onkeydown', this.moreButtonHandlerBinding);
             this.summary.insert("... " + this.label + " ");
             this.summary.appendChild(this.moreButton);
 
@@ -107,7 +108,8 @@ var Help = Class.create(Application, {
         });
 
         this.virtualHtml.insert(targetDiv);
-
+        if (!Object.isEmpty($('here_help_link')))
+            $('here_help_link').focus();
         var options = $H({
             title: this.title,
             collapseBut: true,

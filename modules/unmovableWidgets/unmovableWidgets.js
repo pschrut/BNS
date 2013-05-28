@@ -97,7 +97,8 @@ var unmWidget = Class.create(
         if (this.collapseBut) {
             this.widgetCollapseButton = new Element('div', {
                 id: 'unmWidgetCollapseButton_' + this.targetDiv,
-                'class': 'menus_align_icon'
+                'class': 'menus_align_icon',
+                'tabindex': '0'
             });
             //add proper class to the button
             if (this.onLoadCollapse)
@@ -106,7 +107,8 @@ var unmWidget = Class.create(
                 this.widgetCollapseButton.addClassName('application_rounded_minimize');
 
             //store the binding properly
-            this._listenToggleBinding = this._listenToggle.bind(this)
+            this._listenToggleBinding = this._listenToggle.bind(this);
+            this.widgetCollapseButton.observe('keydown', this._listenToggle2.bind(this));
         }
 
         //create the conext menu button if needed
@@ -192,6 +194,10 @@ var unmWidget = Class.create(
     /**
     * @description function executed when the event 'unmWidgetToggle' is triggered
     */
+    _listenToggle2: function(event) {
+        if (event.keyCode != Event.KEY_TAB)
+            this._listenToggle()
+    },
     _listenToggle: function() {
         if (this.widgetContent.visible()) {
             this._collapse();
