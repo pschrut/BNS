@@ -9,14 +9,10 @@ var PAY = Class.create(PAY,
     run: function($super) {
         //call to run method of the superclass        
         $super();
-        if (this.firstRun) {
-            this.createrHtml();
-        }
         if (global.o_language == 'E')
             document.title = "Payslip | Scotiabank";
         else
             document.title = "Afficher fiche de paye | Scotiabank";
-        document.observe("EWS:payslip_CorrectDate", this.clickOnSelectedDatesBinding);
     },
     
     createrHtml: function($super) {
