@@ -144,7 +144,13 @@ _addCallbackToCloseButton: function() {
     // The will check if the confirmation box has been drawn, the close button is available and a call back function String was provided.
     if (!this.boBoxIsDrawn && !Object.isEmpty(this.obCloseButton.get('callBack'))) {
         $('idModuleInfoPopUp_closeButton').observe('click', this.obCloseButton.get('callBack').bindAsEventListener(this));
+        $(document.body).observe('keydown', this._addCallBackToEscButton.bind(this));
     }
+},
+
+_addCallBackToEscButton: function(event){
+	if (event.keyCode == Event.KEY_ESC)
+		this.obCloseButton.get('callBack')();
 },
 /**
 * @description This method will stop / remove all the event listners associated with the infoPopUp.
@@ -154,6 +160,7 @@ _stopObserving: function() {
     if (!Object.isEmpty(this.obCloseButton) && !Object.isEmpty(this.obCloseButton.get('callBack')) && this.showCloseButton) {
         var closeButton = $('idModuleInfoPopUp_closeButton');
         if (closeButton) {
+			$(document.body).stopObserving();
             closeButton.stopObserving();
         }
     }

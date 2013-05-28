@@ -77,7 +77,8 @@ var megaButtonDisplayer = Class.create({
 
                 aux = new Element('div', {
                     'class': button.className,
-                    'id': button.idButton
+                    'id': button.idButton,
+					'tabindex': 1
                 });
                 var auxLeft = new Element('div', {
                     'class': 'leftRoundedCorner'
@@ -132,17 +133,47 @@ var megaButtonDisplayer = Class.create({
                     //                        log.info('No handler has been defined for the button '+button.idButton);
                 };
             } .bind(button);
+
+            observeHandlerKD =
+            function() {
+					if (event.keyCode == 13){
+					try {
+						if (!Object.isEmpty(this.handlerContext))
+							this.handler.call(this.handlerContext, this.data);
+						else
+							this.handler.call();
+					} catch (e) {
+						//                    if(log)
+						//                        log.info('No handler has been defined for the button '+button.idButton);
+					};
+				}
+            } .bind(button);
+			
             aux.observe('click', observeHandler);
+            aux.observe('keydown', observeHandlerKD);
         } else if (!Object.isEmpty(button.event)) {
             observeHandler =
             function() {
                 document.fire(this.event, this.data);
             } .bind(button);
+			
+			observeHandlerKD =
+			function(){
+				if (event.keyCode == 13){
+					document.fire(this.event, this.data);
+				}
+            } .bind(button);
             aux.observe('click', observeHandler);
+            aux.observe('keydown', observeHandlerKD);
         }
         this.buttons.insert(aux);
         this.hash.get(button.idButton).push(aux);
         this.hash.get(button.idButton).push(observeHandler);
+		
+		$(document.body).observe('keydown', function(event){
+			if (event.keyCode == Event.KEY_TAB)
+				$(button.idButton).focus();
+		});
     },
     enable: function(idButton) {
         this.hash.get(idButton)[0].enabled = true;
