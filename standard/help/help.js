@@ -240,7 +240,7 @@ buildRelatedLinks: function(json) {
         if(global.o_language == 'E')
             rlSpan.update('<a href="http://' + window.location.hostname + '/sap/bc/bsp/sap/yglui_bsp_ews/customer/BNS/statdeden.pdf" target="_blank" class="application_action_link">Statutory deductions</a>');
         else
-            rlSpan.update('<a href="http://' + window.location.hostname + '/sap/bc/bsp/sap/yglui_bsp_ews/customer/BNS/statdedfr.pdf" target="_blank" class="application_action_link">Déductions Statutaires</a>');
+            rlSpan.update('<a href="http://' + window.location.hostname + '/sap/bc/bsp/sap/yglui_bsp_ews/customer/BNS/statdenfr.pdf" target="_blank" class="application_action_link">Déductions Statutaires</a>');
     } else {
         // Add PDF link.
         var rlSpan = new Element("div", { 'class': 'application_action_link' }).update("");

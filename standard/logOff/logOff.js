@@ -8,10 +8,10 @@ var LOGOFF = Class.create(Application, {
     *@description Fires when the user do something in the application
     *@@param args The app
     */
-    initialize: function ($super, args) {
+    initialize: function($super, args) {
         $super(args);
         Ajax.Responders.register({
-            onCreate: function () {
+            onCreate: function() {
                 //update the initial date because the user has done something in the application
                 this.initialDate = new Date();
             } .bind(this)
@@ -24,7 +24,7 @@ var LOGOFF = Class.create(Application, {
     * @param $super The superclass run method
     * @description Executes the super class run method    
     */
-    run: function ($super, args) {
+    run: function($super, args) {
         $super(args);
         this.createHtml();
     },
@@ -32,7 +32,7 @@ var LOGOFF = Class.create(Application, {
     /**
     *@description Creates a periodicalExecuter. Checks each minute if the user is working in the application
     */
-    iniTimeOut: function () {
+    iniTimeOut: function() {
         var timer = new PeriodicalExecuter(
                         function timeExpired(timer) {
                             var actualDate = new Date();
@@ -49,7 +49,7 @@ var LOGOFF = Class.create(Application, {
     /**
     *@description Shows a message and 2buttons to confirm the log off
     */
-    createHtml: function () {
+    createHtml: function() {
         var div = new Element('div', { 'id': 'containerButtonsId', 'class': 'containerButtonsCss' });
         this.virtualHtml.update(div);
         var messageLogOff = new Element('div', { 'id': 'messageLogOffId', 'class': 'messageLog' });
@@ -73,7 +73,7 @@ var LOGOFF = Class.create(Application, {
             idButton: 'btn_No',
             label: global.getLabel('no'),
             className: 'logOffButtons',
-            handler: this.closePopUp.bind(this),
+            handler: this.closePopUp2.bind(this),
             handlerContext: null,
             type: 'button',
             standardButton: true
@@ -87,7 +87,7 @@ var LOGOFF = Class.create(Application, {
     /**
     * Function called when the timer has expired
     */
-    timeExpired: function () {
+    timeExpired: function() {
         var logOffXml = "<EWS><SERVICE>CLEAR_SESSION</SERVICE><PARAM><SSO>CLEAR</SSO><AREA/></PARAM></EWS>";
         this.makeAJAXrequest($H({
             xml: logOffXml,
@@ -98,7 +98,7 @@ var LOGOFF = Class.create(Application, {
     /**
     * After being logged off, show a screen with information about that. Then 
     */
-    showLoggedOffScreen: function () {
+    showLoggedOffScreen: function() {
         if ($('idDivInfoPopUpContainer')) {
             $('idDivInfoPopUpContainer').remove();
         }
@@ -122,7 +122,7 @@ var LOGOFF = Class.create(Application, {
 
         var popup = new infoPopUp({
             closeButton: $H(
-                { 'callBack': function () {
+                { 'callBack': function() {
                     popup.close();
                     delete popup;
                 }
@@ -138,7 +138,7 @@ var LOGOFF = Class.create(Application, {
     /**
     * Redirects to home page
     */
-    redirectToHome: function () {
+    redirectToHome: function() {
         var url = __logOnUrl;
         if (!Object.isEmpty(global.redirectURL)) {
             url = global.redirectURL
@@ -149,45 +149,57 @@ var LOGOFF = Class.create(Application, {
     /**
     *@description Log off and return to the homepage.
     */
-    buttonClickedYes: function () {
+    buttonClickedYes: function() {
+        /*
         var logOffXml = "<EWS><SERVICE>CLEAR_SESSION</SERVICE><PARAM><SSO>CLEAR</SSO><AREA/></PARAM></EWS>";
         this.makeAJAXrequest($H({
-            xml: logOffXml,
-            successMethod: this.closePopUp.bind(this)
+        xml: logOffXml,
+        successMethod: this.closePopUp.bind(this)
         }));
+        */
+        this.closePopUp();
     },
 
-    /**
-    *@description Close the current page
-    */
-    closePopUp: function (json) {
+    closePopUp2: function(json) {
         this.close();
         if (!Object.isEmpty(this.popUpApplication)) {
             this.popUpApplication.close();
             delete this.popUpApplication;
         }
-        if (!Object.isEmpty(json)) {
-            var messageType = json.EWS.messages.item['@msgty'];
-            if (messageType == 'S')
-				this.redirectToHome();
+    },
 
-            //Added by KL: ticket: 1002594
-            if (logOutAvo) { //already clear, not need to refresh
-                    logOutAvo.goingOut = true;
-                    logOutAvo.notResetFlag = true;
-            }
-            //Added by Kevin Feb 21st 2011
-            //Modified by Mike Viray Feb 21st 2011
-            //BNS Logoff Issue
-                window.location = '../yglui_bsp_ews/logoff.html?msg=' + encodeURIComponent(global.getLabel('ZZ_LOGOFF'));
+    /**
+    *@description Close the current page
+    */
+    closePopUp: function(json) {
+        this.close();
+        if (!Object.isEmpty(this.popUpApplication)) {
+            this.popUpApplication.close();
+            delete this.popUpApplication;
         }
+        //if (!Object.isEmpty(json)) {
+        var messageType = 'S'; //json.EWS.messages.item['@msgty'];
+        if (messageType == 'S')
+            this.redirectToHome();
+
+        //Added by KL: ticket: 1002594
+        if (logOutAvo) { //already clear, not need to refresh
+            logOutAvo.goingOut = true;
+            logOutAvo.notResetFlag = true;
+        }
+        //Added by Kevin Feb 21st 2011
+        //Modified by Mike Viray Feb 21st 2011
+        //BNS Logoff Issue
+        //    window.location = '../yglui_bsp_ews/logoff.html?msg=' + encodeURIComponent(global.getLabel('ZZ_LOGOFF'));
+        // window.location = window.location.protocol + '//' + window.location.host + '/SSO_Redirect/logoff.jsp';
+        //}
     },
 
     /**
     *@description Closes the application
     *@param $super The superclass: logOff
     */
-    close: function ($super) {
+    close: function($super) {
         $super();
     }
 });

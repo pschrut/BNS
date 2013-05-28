@@ -15,49 +15,20 @@
         document.observe('EWS:changeURL', this.onchangeURLBinding);
 
         Event.observe(window, 'beforeunload', function(event) {
-            if (this.notResetFlag)
-                setTimeout('this.notResetFlag = false;', 7000);
-            else {
-                if (!this.goingOut) {
-                    var logOffXml = "<EWS><SERVICE>CLEAR_SESSION</SERVICE><PARAM><SSO>CLEAR</SSO><AREA/></PARAM></EWS>";
-                    this.makeAJAXrequest($H({
-                        xml: logOffXml,
-                        successMethod: this.showLoggedOffScreen.bind(this),
-                        errorMethod: this.showLoggedOffScreen.bind(this),
-                        warningMethod: this.showLoggedOffScreen.bind(this),
-                        infoMethod: this.showLoggedOffScreen.bind(this)
-                    }));
-                    this.goingOut = true;
-                    alert(global.getLabel('ZZ_LOGOFF'));
-                }
-            }
-
         } .bind(this));
 
         Event.observe(window, 'unload', function(event) {
-            if (!this.notResetFlag) {
-                var cont = 0;
-                while (!this.letItGo) {
-                    var logOffXml = "<EWS><SERVICE>CLEAR_SESSION</SERVICE><PARAM><SSO>CLEAR</SSO><AREA/></PARAM></EWS>";
-                    this.makeAJAXrequest($H({
-                        xml: logOffXml,
-                        successMethod: this.showLoggedOffScreen.bind(this),
-                        errorMethod: this.showLoggedOffScreen.bind(this),
-                        warningMethod: this.showLoggedOffScreen.bind(this),
-                        infoMethod: this.showLoggedOffScreen.bind(this)
-                    }));
-                    //wait
-                    var date = new Date();
-                    var curDate = null;
-                    do { curDate = new Date(); }
-                    while (curDate - date < 3000);
-                    cont++;
-                    if (cont == 3)
-                        this.letItGo = true; //prevent infite loop
-                }
-            }
+            window.location = window.location.protocol + '//' + window.location.host + '/SSO_Redirect/logoff.jsp';
+            var logOffXml = "<EWS><SERVICE>CLEAR_SESSION</SERVICE><PARAM><SSO>CLEAR</SSO><AREA/></PARAM></EWS>";
+            this.makeAJAXrequest($H({
+                xml: logOffXml,
+                successMethod: this.showLoggedOffScreen.bind(this),
+                errorMethod: this.showLoggedOffScreen.bind(this),
+                warningMethod: this.showLoggedOffScreen.bind(this),
+                infoMethod: this.showLoggedOffScreen.bind(this)
+            }));
+            this.goingOut = true;
         } .bind(this));
-        setTimeout('document.fire("EWS:changeLogo");', 5000);
     },
 
     onchangeURL: function() {
@@ -95,7 +66,7 @@
             var protocol = window.location.protocol;
             url = protocol + '//' + global.redirectURL;
         }
-        window.location = url;
+        //window.location = url;
     },
 
     showLoggedOffScreen: function(args) {
