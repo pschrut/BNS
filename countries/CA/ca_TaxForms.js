@@ -111,10 +111,10 @@ createrHtml: function() {
     var first_year = 2010;
 
     var dateBegin = Date.today().toString('yyyy-MM-dd').split('-')[0] - 1;
-    this.taxYear = "'" + dateBegin + "'";
+    this.taxYear = dateBegin;
 
     this.taxformsDatePickers.insert("<div id=\"autocompleterYears\"></div>");
-    var year1 = "'" + dateBegin + "'";
+    var year1 = dateBegin;
 
     var jsonYears;
     //debugger;
@@ -131,7 +131,7 @@ createrHtml: function() {
     } // if 0
     else { // else 0
         var y2 = dateBegin - 1;
-        var year2 = "'" + y2 + "'";
+        var year2 = y2;
         if (y2 == first_year) {
             jsonYears = {
                 autocompleter: {
@@ -148,7 +148,7 @@ createrHtml: function() {
         } // if 1
         else { // else 1
             var y3 = dateBegin - 2;
-            var year3 = "'" + y3 + "'";
+            var year3 = y3;
             if (y3 == first_year) { // if 2
                 jsonYears = {
                     autocompleter: {
@@ -170,7 +170,7 @@ createrHtml: function() {
             else // else 2
             {
                 var y4 = dateBegin - 3;
-                var year4 = "'" + y4 + "'";
+                var year4 = y4;
                 if (y4 == first_year) { // if 3
                     jsonYears = {
                         autocompleter: {
@@ -196,7 +196,7 @@ createrHtml: function() {
                 else //else 3
                 {
                     var y5 = dateBegin - 4;
-                    var year5 = "'" + y5 + "'";
+                    var year5 = y5;
 
                     if (y5 == first_year) { //if 4
                         jsonYears = {
@@ -226,7 +226,7 @@ createrHtml: function() {
                     } //if 4
                     else { // else 5
                         var y6 = dateBegin - 5;
-                        var year6 = "'" + y6 + "'";
+                        var year6 = y6;
 
                         if (y6 == first_year) { //if 5
                             jsonYears = {
@@ -260,7 +260,7 @@ createrHtml: function() {
                         } //if 5
                         else { // else 6
                             var y7 = dateBegin - 6;
-                            var year7 = "'" + y7 + "'";
+                            var year7 = y7;
 
                             var jsonYears = {
                                 autocompleter: {
@@ -310,7 +310,7 @@ createrHtml: function() {
         templateResult: '#{text}',
         label: text_lab,
         width: '250px',
-        minChars: 4
+        minChars: 1
     }, jsonYears);
 
     this.virtualHtml.insert(
@@ -345,7 +345,7 @@ callToGetListOfTaxForms: function () {
     var xmlToGetTaxFList = "<EWS>" +
                                     "<SERVICE>" + this.getTaxFormList + "</SERVICE>" +
                                     '<OBJECT TYPE="P">' + pernr + '</OBJECT>' +
-                                    "<PARAM><TAX_YEAR>" + this.taxYear.slice(1, 5) + "</TAX_YEAR>" +
+                                    "<PARAM><TAX_YEAR>" + this.taxYear + "</TAX_YEAR>" +
                                     "</PARAM>" +
                            "</EWS>";
     this.makeAJAXrequest($H({ xml: xmlToGetTaxFList, successMethod: 'getListOfTaxForms' }));

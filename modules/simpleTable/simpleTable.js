@@ -149,7 +149,8 @@ var SimpleTable = Class.create(
                     row.insert(cellElement);
                     if (item.value.element && i == 0) {
                         var arrow = new Element('button', {
-                            'class': 'icon treeHandler_align_verticalArrow application_verticalR_arrow'
+                            'class': 'icon treeHandler_align_verticalArrow application_verticalR_arrow',
+							'title': 'More information arrow'
                         });
                         if (!this.typeLink) {
                             cellElement.insert(arrow);

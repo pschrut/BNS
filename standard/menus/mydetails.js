@@ -150,7 +150,7 @@ getPositionElement: function (objectId, position, positionIndex, detailElements)
     //Get the color element for the object Id (only if it's the first one)
     if (positionIndex == 0) {
         var colorElement = this.getColorElement(objectId);
-        positionIdContainer.insert(colorElement);
+        //positionIdContainer.insert(colorElement);
         if (global.employeeIsSelected(objectId)) {
             this.select(objectId);
         }
